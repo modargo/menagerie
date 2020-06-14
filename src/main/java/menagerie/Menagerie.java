@@ -1,0 +1,211 @@
+package menagerie;
+
+import actlikeit.dungeons.CustomDungeon;
+import basemod.BaseMod;
+import basemod.ModPanel;
+import basemod.interfaces.EditCardsSubscriber;
+import basemod.interfaces.EditRelicsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.PostInitializeSubscriber;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.MonsterGroup;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import menagerie.act.Encounters;
+import menagerie.act.MenagerieAct;
+import menagerie.cards.Necropotence;
+import menagerie.monsters.bosses.Chimera;
+import menagerie.monsters.elites.Hydra;
+import menagerie.monsters.elites.VoidReaper;
+import menagerie.monsters.normals.*;
+import menagerie.util.TextureLoader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import static com.megacrit.cardcrawl.core.Settings.GameLanguage;
+import static com.megacrit.cardcrawl.core.Settings.language;
+
+@SpireInitializer
+public class Menagerie implements
+        PostInitializeSubscriber,
+        EditCardsSubscriber,
+        EditRelicsSubscriber,
+        EditStringsSubscriber {
+    private static final float X1 = -350.0F;
+    private static final float X2 = 0.0F;
+
+    public static final Logger logger = LogManager.getLogger(Menagerie.class.getName());
+
+    public Menagerie() {
+        BaseMod.subscribe(this);
+    }
+
+    public static void initialize() {
+        new Menagerie();
+    }
+
+    @Override
+    public void receivePostInitialize() {
+        Texture badgeTexture = new Texture("menagerie/images/MenagerieBadge.png");
+        BaseMod.registerModBadge(badgeTexture, "Menagerie", "modargo", "TODO", new ModPanel());
+
+        CustomDungeon.addAct(MenagerieAct.ACT_NUM, new MenagerieAct());
+        addMonsters();
+        addEvents();
+        addRelics();
+    }
+
+    private static void addMonsters() {
+        //Weak encounters
+        BaseMod.addMonster(MonstrousExperiment.ID, (BaseMod.GetMonster)MonstrousExperiment::new);
+        BaseMod.addMonster(WhisperingWraith.ID, (BaseMod.GetMonster)WhisperingWraith::new);
+        BaseMod.addMonster(StygianBoar.ID, (BaseMod.GetMonster)StygianBoar::new);
+        BaseMod.addMonster(Encounters.RABBITS_2, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new SilkyRabbit(X1, 0.0F),
+                        new FeatherRabbit(X2, 0.0F)
+                }));
+
+        //Hard encounters
+        BaseMod.addMonster(EntropyWarlock.ID, (BaseMod.GetMonster)EntropyWarlock::new);
+        BaseMod.addMonster(MeltingSalamander.ID, (BaseMod.GetMonster)MeltingSalamander::new);
+        BaseMod.addMonster(RedMage.ID, (BaseMod.GetMonster)RedMage::new);
+        BaseMod.addMonster(Encounters.MONSTROUS_EXPERIMENTS_2, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new MonstrousExperiment(X1, 0.0F),
+                        new MonstrousExperiment(X2, 0.0F)
+                }));
+        BaseMod.addMonster(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new WhisperingWraith(X1, 0.0F),
+                        new StygianBoar(X2, 0.0F)
+                }));
+        BaseMod.addMonster(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new MonstrousExperiment(X1, 0.0F),
+                        new StygianBoar(X2, 0.0F)
+                }));
+        BaseMod.addMonster(Encounters.RABBITS_3, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new SilkyRabbit(-400.0F, 0.0F),
+                        new FeatherRabbit(-175.0F, 0.0F),
+                        new FeatherRabbit(50.0F, 0.0F)
+                }));
+        BaseMod.addMonster(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new ProwlingAmalgam(X1, 0.0F),
+                        new BeastMage(X2, 0.0F)
+                }));
+        BaseMod.addMonster(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new GraftedWorm(-500.0F, 0.0F),
+                        new DreadMoth(-250.0F, 125.0F),
+                        new DreadMoth(0.0F, 125.0F),
+                }));
+        BaseMod.addMonster(Encounters.MENAGERIE_WILDLIFE, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new GraftedWorm(-550.0F, 0.0F),
+                        new GraftedWorm(-300.0F, 0.0F),
+                        new DreadMoth(-50.0F, 125.0F),
+                        new FeatherRabbit(200.0F, 0.0F)
+                }));
+
+        //Elites
+        BaseMod.addMonster(Hydra.ID, (BaseMod.GetMonster)Hydra::new);
+        BaseMod.addMonster(VoidReaper.ID, (BaseMod.GetMonster)VoidReaper::new);
+
+        //Bosses
+        BaseMod.addMonster(Chimera.ID, (BaseMod.GetMonster)Chimera::new);
+        BaseMod.addBoss(MenagerieAct.ID, Chimera.ID, "menagerie/images/map/bosses/Chimera.png", "menagerie/images/map/bosses/ChimeraOutline.png");
+
+        //Special fights
+    }
+
+    private static void addEvents() {
+    }
+
+    private static void addRelics() {
+    }
+
+    @Override
+    public void receiveEditCards() {
+        BaseMod.addCard(new Necropotence());
+    }
+
+    @Override
+    public void receiveEditRelics() {
+    }
+
+    private static String makeLocPath(Settings.GameLanguage language, String filename)
+    {
+        String ret = "localization/";
+        switch (language) {
+            default:
+                ret += "eng";
+                break;
+        }
+        return "menagerie/" + ret + "/" + filename + ".json";
+    }
+
+    private void loadLocFiles(GameLanguage language)
+    {
+        BaseMod.loadCustomStringsFile(CardStrings.class, makeLocPath(language, "Menagerie-Card-Strings"));
+        BaseMod.loadCustomStringsFile(EventStrings.class, makeLocPath(language, "Menagerie-Event-Strings"));
+        BaseMod.loadCustomStringsFile(MonsterStrings.class, makeLocPath(language, "Menagerie-Monster-Strings"));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, makeLocPath(language, "Menagerie-Relic-Strings"));
+        BaseMod.loadCustomStringsFile(PowerStrings.class, makeLocPath(language, "Menagerie-Power-Strings"));
+        BaseMod.loadCustomStringsFile(UIStrings.class, makeLocPath(language, "Menagerie-ui"));
+    }
+
+    @Override
+    public void receiveEditStrings()
+    {
+        loadLocFiles(GameLanguage.ENG);
+        if (language != GameLanguage.ENG) {
+            loadLocFiles(language);
+        }
+    }
+
+    public static String cardImage(String id) {
+        return "menagerie/images/cards/" + removeModId(id) + ".png";
+    }
+    public static String eventImage(String id) {
+        return "menagerie/images/events/" + removeModId(id) + ".png";
+    }
+    public static String relicImage(String id) {
+        return "menagerie/images/relics/" + removeModId(id) + ".png";
+    }
+    public static String powerImage32(String id) {
+        return "menagerie/images/powers/" + removeModId(id) + "32.png";
+    }
+    public static String powerImage84(String id) {
+        return "menagerie/images/powers/" + removeModId(id) + "84.png";
+    }
+    public static String monsterImage(String id) {
+        return "menagerie/images/monsters/" + removeModId(id) + "/" + removeModId(id) + ".png";
+    }
+    public static String relicOutlineImage(String id) {
+        return "menagerie/images/relics/outline/" + removeModId(id) + ".png";
+    }
+
+    public static String removeModId(String id) {
+        if (id.startsWith("Menagerie:")) {
+            return id.substring(id.indexOf(':') + 1);
+        } else {
+            logger.warn("Missing mod id on: " + id);
+            return id;
+        }
+    }
+
+    public static void LoadPowerImage(AbstractPower power) {
+        Texture tex84 = TextureLoader.getTexture(Menagerie.powerImage84(power.ID));
+        Texture tex32 = TextureLoader.getTexture(Menagerie.powerImage32(power.ID));
+        power.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
+        power.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
+    }
+
+}

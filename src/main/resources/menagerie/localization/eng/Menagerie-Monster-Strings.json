@@ -1,0 +1,119 @@
+{
+  "Menagerie:Hydra": {
+    "MOVES": [
+      "Tail Whip",
+      "Swipe",
+      "Ravenous Hunger"
+    ],
+    "NAME": "Hydra"
+  },
+  "Menagerie:VoidReaper": {
+    "MOVES": [
+      "Cut the Future",
+      "Reap",
+      "Scythe Dance"
+    ],
+    "NAME": "Void Reaper"
+  },
+  "Menagerie:MonstrousExperiment": {
+    "MOVES": [
+      "Slimy Appendage",
+      "Thrash",
+      "Degenerate"
+    ],
+    "NAME": "Monstrous Experiment"
+  },
+  "Menagerie:WhisperingWraith": {
+    "MOVES": [
+      "Fade Away",
+      "Ghostly Touch",
+      "Absorb Life"
+    ],
+    "NAME": "Whispering Wraith",
+    "DIALOG": ["You were a fool to come here.", "Your quest is meaningless.", "The spire is eternal.", "You will suffer less if you give up now."]
+  },
+  "Menagerie:SilkyRabbit": {
+    "MOVES": [
+      "Bite",
+      "Ear Swat"
+    ],
+    "NAME": "Silky Rabbit"
+  },
+  "Menagerie:FeatherRabbit": {
+    "MOVES": [
+      "Bite",
+      "Ear Twitch"
+    ],
+    "NAME": "Feather Rabbit"
+  },
+  "Menagerie:StygianBoar": {
+    "MOVES": [
+      "Tusk Slash",
+      "Breathe Fire",
+      "Enraging Charge"
+    ],
+    "NAME": "Stygian Boar"
+  },
+  "Menagerie:Chimera": {
+    "MOVES": [
+      "Triple Bite",
+      "Squabble",
+      "Claw and Horn",
+      "Spit Venom",
+      "Three As One"
+    ],
+    "NAME": "Chimera"
+  },
+  "Menagerie:BeastMage": {
+    "MOVES": [
+      "Enervate",
+      "Hex",
+      "Arcane Bulwark",
+      "Bestial Rage"
+    ],
+    "NAME": "Beast Mage"
+  },
+  "Menagerie:ProwlingAmalgam": {
+    "MOVES": [
+      "Bite and Stomp",
+      "Rabid Frenzy"
+    ],
+    "NAME": "Prowling Amalgam"
+  },
+  "Menagerie:EntropyWarlock": {
+    "MOVES": [
+      "Dark Incantation",
+      "Tentacle Grasp"
+    ],
+    "NAME": "Entropy Warlock"
+  },
+  "Menagerie:GraftedWorm": {
+    "MOVES": [
+      "Leaf Blade"
+    ],
+    "NAME": "Grafted Worm"
+  },
+  "Menagerie:DreadMoth": {
+    "MOVES": [
+      "Wing Ward",
+      "Dread Wave"
+    ],
+    "NAME": "Dread Moth"
+  },
+  "Menagerie:MeltingSalamander": {
+    "MOVES": [
+      "Fiery Spit",
+      "Overheat",
+      "Meltdown"
+    ],
+    "NAME": "Melting Salamander"
+  },
+  "Menagerie:RedMage": {
+    "MOVES": [
+      "Muddle",
+      "Riposte",
+      "Bolt"
+    ],
+    "NAME": "Red Mage"
+  }
+}

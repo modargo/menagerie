@@ -1,0 +1,11 @@
+{
+  "Menagerie:Necropotence": {
+    "NAME": "Necropotence",
+    "DESCRIPTION": "Retain. NL Draw !M! card. NL Lose 1 HP. NL Return this card to your hand.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Draw !M! cards. NL Lose 1 HP. NL Return this card to your hand."
+  },
+  "Menagerie:PurgingElixir": {
+    "NAME": "Purging Elixir",
+    "DESCRIPTION": "Retain. NL Remove all constricted, negative Strength, and negative Dexterity. NL Lose !M! HP."
+  }
+}

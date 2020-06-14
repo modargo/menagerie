@@ -1,0 +1,40 @@
+{
+  "Menagerie:HydraHeads": {
+    "NAME": "Hydra Heads",
+    "DESCRIPTIONS": ["Has #b1 #yStrength per head. When this enemy takes #b{0} or more damage from a single hit, loses a head. Regrows twice as many heads in two turns."]
+  },
+  "Menagerie:HydraHeadRegrowth": {
+    "NAME": "Head Regrowth",
+    "DESCRIPTIONS": ["Regrowing #b{0} heads in two turns."]
+  },
+  "Menagerie:DrawReductionSingleTurn": {
+    "NAME": "Draw Reduction",
+    "DESCRIPTIONS": ["Draw #b1 less card next turn.", "Draw #b{0} less cards next turn."]
+  },
+  "Menagerie:SerpentsGaze": {
+    "NAME": "Serpent's Gaze",
+    "DESCRIPTIONS": ["The first card you draw costs #b{0} more this turn."]
+  },
+  "Menagerie:SquabblingHeads": {
+    "NAME": "Squabbling Heads",
+    "DESCRIPTIONS": [
+      "The Chimera's heads squabble for dominance. Gains an effect based on the current head. Switches heads every three cards you play. NL Lion's Maw: Whenever you receive attack damage from this enemy, add a #ySlimed, #yWound, or #yBurn into your discard pile. NL Goat's Horn: This enemy gains #b1 #yMalleable. NL Serpent's Gaze: The first card you draw costs #b1 more this turn.",
+      "#bAll #bheads #bare #bactive!",
+      "The #blion head is active.",
+      "The #bgoat head is active.",
+      "The #bserpent head is active."
+    ]
+  },
+  "Menagerie:EntropyAura": {
+    "NAME": "Entropy Aura",
+    "DESCRIPTIONS": ["At the start of this enemy's turn, you lose #b1 Strength and #b1 Dexterity."]
+  },
+  "Menagerie:LeafSpores": {
+    "NAME": "Leaf Spores",
+    "DESCRIPTIONS": ["On death, applies #b{0} #yWeak and #b{0} #yFrail."]
+  },
+  "Menagerie:Melting": {
+    "NAME": "Leaf Spores",
+    "DESCRIPTIONS": ["This enemy is melting down! Loses #b{0} #yMetallicize each turn. NL When all #yMetallicize is lost, performs a dangerous attack."]
+  }
+}
