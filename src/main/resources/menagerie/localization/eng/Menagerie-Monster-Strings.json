@@ -115,5 +115,20 @@
       "Bolt"
     ],
     "NAME": "Red Mage"
+  },
+  "Menagerie:FrozenSoldier": {
+    "MOVES": [
+      "Ice Barrier",
+      "Explosive Thaw"
+    ],
+    "NAME": "Frozen Soldier"
+  },
+  "Menagerie:MaskedSummoner": {
+    "MOVES": [
+      "Gentle Snow",
+      "Frost Summon",
+      "Silent Spear"
+    ],
+    "NAME": "Masked Summoner"
   }
 }

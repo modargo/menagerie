@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.saveAndContinue.SaveFile;
 import com.megacrit.cardcrawl.scenes.AbstractScene;
 import com.megacrit.cardcrawl.scenes.TheBottomScene;
 import menagerie.monsters.elites.Hydra;
+import menagerie.monsters.elites.MaskedSummoner;
 import menagerie.monsters.normals.*;
 import menagerie.monsters.elites.VoidReaper;
 import org.apache.logging.log4j.LogManager;
@@ -111,6 +112,7 @@ public class MenagerieAct extends CustomDungeon {
         ArrayList<MonsterInfo> monsters = new ArrayList<>();
         monsters.add(new MonsterInfo(Hydra.ID, 1.0F));
         monsters.add(new MonsterInfo(VoidReaper.ID, 1.0F));
+        monsters.add(new MonsterInfo(MaskedSummoner.ID, 1.0F));
         MonsterInfo.normalizeWeights(monsters);
         this.populateMonsterList(monsters, count, true);
     }

@@ -20,6 +20,7 @@ import menagerie.act.MenagerieAct;
 import menagerie.cards.Necropotence;
 import menagerie.monsters.bosses.Chimera;
 import menagerie.monsters.elites.Hydra;
+import menagerie.monsters.elites.MaskedSummoner;
 import menagerie.monsters.elites.VoidReaper;
 import menagerie.monsters.normals.*;
 import menagerie.util.TextureLoader;
@@ -117,6 +118,7 @@ public class Menagerie implements
         //Elites
         BaseMod.addMonster(Hydra.ID, (BaseMod.GetMonster)Hydra::new);
         BaseMod.addMonster(VoidReaper.ID, (BaseMod.GetMonster)VoidReaper::new);
+        BaseMod.addMonster(MaskedSummoner.ID, () -> new MaskedSummoner(200.0F, 0.0F));
 
         //Bosses
         BaseMod.addMonster(Chimera.ID, (BaseMod.GetMonster)Chimera::new);

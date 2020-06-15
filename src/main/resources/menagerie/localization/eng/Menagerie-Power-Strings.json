@@ -36,5 +36,9 @@
   "Menagerie:Melting": {
     "NAME": "Leaf Spores",
     "DESCRIPTIONS": ["This enemy is melting down! Loses #b{0} #yMetallicize each turn. NL When all #yMetallicize is lost, performs a dangerous attack."]
+  },
+  "Menagerie:Thawing": {
+    "NAME": "Thawing",
+    "DESCRIPTIONS": ["This enemy will thaw in #b{0} turns. The turn it thaws, it will attack, dealing #b{1} extra damage got each HP it has, then die."]
   }
 }
