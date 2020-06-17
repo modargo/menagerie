@@ -40,5 +40,29 @@
   "Menagerie:Thawing": {
     "NAME": "Thawing",
     "DESCRIPTIONS": ["This enemy will thaw in #b{0} turns. The turn it thaws, it will attack, dealing #b{1} extra damage got each HP it has, then die."]
+  },
+  "Menagerie:WisdomAura": {
+    "NAME": "Wisdom Aura",
+    "DESCRIPTIONS": ["While this enemy is alive, at the start of your turn, draw #b{0} additional cards. At the end of each round, apply #b{1} #yFrail. On death, all enemies gain #b{2} #yThorns."]
+  },
+  "Menagerie:Wisdom": {
+    "NAME": "Wisdom",
+    "DESCRIPTIONS": ["At the start of your turn, draw #b{0} additional cards."]
+  },
+  "Menagerie:CunningAura": {
+    "NAME": "Cunning Aura",
+    "DESCRIPTIONS": ["While this enemy is alive, gain #b{0} #yDexterity. Whenever you play a card, take #b{1} damage. On death, all enemies gain #b{2} #yPlated #yArmor."]
+  },
+  "Menagerie:Cunning": {
+    "NAME": "Cunning",
+    "DESCRIPTIONS": ["Gain #b{0} #yDexterity."]
+  },
+  "Menagerie:VigorAura": {
+    "NAME": "Vigor Aura",
+    "DESCRIPTIONS": ["While this enemy is alive, at the start of your turn, gain [E] . At the end of each round, shuffle #b{1} #yDazed into your deck. On death, apply {2} #yVulnerable."]
+  },
+  "Menagerie:Vigor": {
+    "NAME": "Vigor",
+    "DESCRIPTIONS": ["At the start of your turn, gain [E] ."]
   }
 }

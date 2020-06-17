@@ -119,7 +119,7 @@
   "Menagerie:FrozenSoldier": {
     "MOVES": [
       "Ice Barrier",
-      "Explosive Thaw"
+      "Violent Thaw"
     ],
     "NAME": "Frozen Soldier"
   },
@@ -130,5 +130,28 @@
       "Silent Spear"
     ],
     "NAME": "Masked Summoner"
+  },
+  "Menagerie:AvatarOfWisdom": {
+    "MOVES": [
+      "Sharp Claw",
+      "Insight of the Wise",
+      "Osmosis"
+    ],
+    "NAME": "Avatar Of Wisdom"
+  },
+  "Menagerie:AvatarOfCunning": {
+    "MOVES": [
+      "Finesse of the Cunning",
+      "Assail"
+    ],
+    "NAME": "Avatar Of Cunning"
+  },
+  "Menagerie:AvatarOfVigor": {
+    "MOVES": [
+      "Endurance of the Vigorous",
+      "Assault",
+      "Body Slam"
+    ],
+    "NAME": "Avatar Of Vigor"
   }
 }

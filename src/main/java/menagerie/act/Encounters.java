@@ -9,4 +9,5 @@ public class Encounters {
     public static final String BEAST_MAGE_AND_PROWLING_AMALGAM = "Menagerie:BEAST_MAGE_AND_PROWLING_AMALGAM";
     public static final String DREAD_MOTHS_AND_GRAFTED_WORM = "Menagerie:DREAD_MOTHS_AND_GRAFTED_WORM";
     public static final String MENAGERIE_WILDLIFE = "Menagerie:MENAGERIE_WILDLIFE";
+    public static final String AVATARS = "Menagerie:AVATARS";
 }

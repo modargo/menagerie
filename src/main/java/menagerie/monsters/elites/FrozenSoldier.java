@@ -25,7 +25,7 @@ public class FrozenSoldier extends CustomMonster
     private static final String IMG = Menagerie.monsterImage(ID);
     private boolean firstMove = true;
     private static final byte ICE_BARRIER_MOVE = 1;
-    private static final byte EXPLOSIVE_THAW_ATTACK = 2;
+    private static final byte VIOLENT_THAW_ATTACK = 2;
     private static final int EXPLOSIVE_THAW_DAMAGE = 2;
     private static final int A3_EXPLOSIVE_THAW_DAMAGE = 3;
     private static final int ICE_BARRIER_BLOCK = 2;
@@ -93,12 +93,12 @@ public class FrozenSoldier extends CustomMonster
                     }
                 }
                 break;
-            case EXPLOSIVE_THAW_ATTACK:
+            case VIOLENT_THAW_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new FastShakeAction(this, 0.5F, 0.2F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-                this.addToBot(new RemoveAllBlockAction(this, this));
-                this.addToBot(new VFXAction(new ExplosionSmallEffect(this.hb.cX, this.hb.cY), 0.1F));
-                this.addToBot(new SuicideAction(this));
+                AbstractDungeon.actionManager.addToBottom(new RemoveAllBlockAction(this, this));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ExplosionSmallEffect(this.hb.cX, this.hb.cY), 0.1F));
+                AbstractDungeon.actionManager.addToBottom(new SuicideAction(this));
                 break;
         }
         AbstractDungeon.actionManager.addToBottom(new RollMoveAction(this));
@@ -107,7 +107,7 @@ public class FrozenSoldier extends CustomMonster
     @Override
     protected void getMove(final int num) {
         if (this.lastMove(ICE_BARRIER_MOVE) && this.lastMoveBefore(ICE_BARRIER_MOVE)) {
-            this.setMove(MOVES[1], EXPLOSIVE_THAW_ATTACK, Intent.ATTACK, this.explosiveThawDamage);
+            this.setMove(MOVES[1], VIOLENT_THAW_ATTACK, Intent.ATTACK, this.explosiveThawDamage);
         }
         else {
             this.setMove(MOVES[0], ICE_BARRIER_MOVE, Intent.DEFEND);
@@ -122,6 +122,7 @@ public class FrozenSoldier extends CustomMonster
 
         super.damage(info);
 
+        // To recalculate attack intent damage, since it changes based on HP due to Thawing
         this.applyPowers();
     }
 

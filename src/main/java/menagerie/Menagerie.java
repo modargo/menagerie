@@ -18,6 +18,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
 import menagerie.cards.Necropotence;
+import menagerie.monsters.bosses.AvatarOfCunning;
+import menagerie.monsters.bosses.AvatarOfVigor;
+import menagerie.monsters.bosses.AvatarOfWisdom;
 import menagerie.monsters.bosses.Chimera;
 import menagerie.monsters.elites.Hydra;
 import menagerie.monsters.elites.MaskedSummoner;
@@ -123,6 +126,13 @@ public class Menagerie implements
         //Bosses
         BaseMod.addMonster(Chimera.ID, (BaseMod.GetMonster)Chimera::new);
         BaseMod.addBoss(MenagerieAct.ID, Chimera.ID, "menagerie/images/map/bosses/Chimera.png", "menagerie/images/map/bosses/ChimeraOutline.png");
+        BaseMod.addMonster(Encounters.AVATARS, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new AvatarOfVigor(-550.0F, 50.0F),
+                        new AvatarOfCunning(-200.0F, 50.0F),
+                        new AvatarOfWisdom(150.0F, 0.0F),
+                }));
+        BaseMod.addBoss(MenagerieAct.ID, Encounters.AVATARS, "menagerie/images/map/bosses/Avatars.png", "menagerie/images/map/bosses/AvatarsOutline.png");
 
         //Special fights
     }
