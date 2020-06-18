@@ -10,10 +10,14 @@
   },
   "Menagerie:Dismember": {
     "NAME": "Dismember",
-    "DESCRIPTION": "Enemy loses !M! #yStrength this turn and loses !M! HP. NL #yExhaust."
+    "DESCRIPTION": "Enemy loses !M! Strength this turn and loses !M! HP. NL Exhaust."
   },
   "Menagerie:Languish": {
     "NAME": "Dismember",
-    "DESCRIPTION": "ALL enemies lose !M! #yStrength this turn and lose !M! HP. NL #yExhaust."
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn and lose !M! HP. NL Exhaust."
+  },
+  "Menagerie:BeastSpirit": {
+    "NAME": "BeastSpirit",
+    "DESCRIPTION": "Gain !M! Strength, !M! Dexterity, and !M! Thorns."
   }
 }

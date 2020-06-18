@@ -1,2 +1,13 @@
 {
+  "Menagerie:BeastSpiritShrine": {
+    "NAME": "Beast Spirit Shrine",
+    "DESCRIPTIONS": [
+      "A curious silence reveals the presence of a small shrine, cracked and covered with vines but still standing. Even your footsteps are swallowed by the silence. NL NL Peering inside, carvings and statues of #ganimals and #gbeasts fill the structure. A power fills the air, and you feel something is #bwatching you, #b~judging~ you. You are drawn to kneel at the #statues that you can see within.",
+      "You kneel before the #gstatues. You feel bestial spirits vigor and cunning come to you. Their claws and fangs dig into your flesh, but you feel that the spirits remain with you, empowering you. You rise, stronger, fiercer, bestial."
+    ],
+    "OPTIONS": [
+      "[Kneel] #gGain Beast Spirit. #rLose #r{1} #rHP.",
+      "[Leave]"
+    ]
+  }
 }
