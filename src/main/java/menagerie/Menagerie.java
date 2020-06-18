@@ -17,7 +17,10 @@ import com.megacrit.cardcrawl.monsters.MonsterGroup;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
+import menagerie.cards.Dismember;
+import menagerie.cards.Languish;
 import menagerie.cards.Necropotence;
+import menagerie.cards.PurgingElixir;
 import menagerie.monsters.bosses.AvatarOfCunning;
 import menagerie.monsters.bosses.AvatarOfVigor;
 import menagerie.monsters.bosses.AvatarOfWisdom;
@@ -146,6 +149,9 @@ public class Menagerie implements
     @Override
     public void receiveEditCards() {
         BaseMod.addCard(new Necropotence());
+        BaseMod.addCard(new PurgingElixir());
+        BaseMod.addCard(new Dismember());
+        BaseMod.addCard(new Languish());
     }
 
     @Override

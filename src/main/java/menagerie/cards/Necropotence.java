@@ -50,6 +50,6 @@ public class Necropotence extends CustomCard {
     }
 
     public AbstractCard makeCopy() {
-        return new Necropotence();
+        return new Dismember();
     }
 }

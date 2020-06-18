@@ -7,5 +7,13 @@
   "Menagerie:PurgingElixir": {
     "NAME": "Purging Elixir",
     "DESCRIPTION": "Retain. NL Remove all constricted, negative Strength, and negative Dexterity. NL Lose !M! HP."
+  },
+  "Menagerie:Dismember": {
+    "NAME": "Dismember",
+    "DESCRIPTION": "Enemy loses !M! #yStrength this turn and loses !M! HP. NL #yExhaust."
+  },
+  "Menagerie:Languish": {
+    "NAME": "Dismember",
+    "DESCRIPTION": "ALL enemies lose !M! #yStrength this turn and lose !M! HP. NL #yExhaust."
   }
 }
