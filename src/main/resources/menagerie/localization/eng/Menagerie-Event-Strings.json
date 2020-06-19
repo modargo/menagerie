@@ -33,8 +33,24 @@
     ],
     "OPTIONS": [
       "[Peek] #gAdd #ga #gpowerful #gspell #gto #gyour #gdeck.",
-      "[Read] #gAdd #g3 #gpowerful #gspells #gto #gyour #gdeck. #rLose #r{0} #rMax #rHP. #rGain #ra #rcurse.",
+      "[Read] #gAdd #g3 #gpowerful #gspells #gto #gyour #gdeck. #rLose #r{0} #rMax #rHP. #rBecome #rCursed #r- #rPain.",
       "[Leave]"
+    ]
+  },
+  "Menagerie:ThreeAnimals": {
+    "NAME": "Three Animals",
+    "DESCRIPTIONS": [
+      "Walking through an area of gloom and shadow, you find yourself confronted by the ghostly heads of three animals: a #ylion, a #bgoat, and a #gsnake. No matter how you move, they float in front of you, and you realize that you need to walk through one of the ghostly heads to continue on your journey. NL NL As you pause to consider, you begin to think that each one has something to offer you....",
+      "Walking through the #ylion, you feel a #rsharp #rbite, but find yourself in possession of a #gnew #grelic as well.",
+      "Walking through the #bgoat, you feel #ginvigorated.",
+      "Walking through the #gsnake, you feel your thoughts sharpen."
+    ],
+    "OPTIONS": [
+      "[Lion] #gGain #ga #grelic. #rBecome #rCursed #r- #rInjury.",
+      "[Goat] #gHeal #g{0} #gHP.",
+      "[Snake] #gRemove #ga #gcard #gfrom #gyour #gdeck.",
+      "[Leave]",
+      "Select a Card to Remove."
     ]
   }
 }
