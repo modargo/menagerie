@@ -45,7 +45,7 @@ public class OvergrownLibrary extends AbstractImageEvent {
         this.curse = new Pain();
         float maxHealthLossPercent = AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH_LOSS_PERCENT : MAX_HEALTH_LOSS_PERCENT;
         int maxHealthLossFloor = AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH_LOSS_FLOOR : MAX_HEALTH_LOSS_FLOOR;
-        this.maxHealthLoss = Math.max(MathUtils.ceil((float)AbstractDungeon.player.maxHealth * maxHealthLossPercent), maxHealthLossFloor);
+        this.maxHealthLoss = Math.max((int)((float)AbstractDungeon.player.maxHealth * maxHealthLossPercent), maxHealthLossFloor);
 
         imageEventText.setDialogOption(OPTIONS[0]);
         imageEventText.setDialogOption(MessageFormat.format(OPTIONS[1], this.maxHealthLoss), this.curse);

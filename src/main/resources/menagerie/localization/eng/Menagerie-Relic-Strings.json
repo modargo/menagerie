@@ -1,2 +1,9 @@
 {
+  "Elementarium:HuntersKnife": {
+    "NAME": "Hunter's Knife",
+    "FLAVOR": "A knife used for skinning after a successful hunt, sharp-edged and hungry.",
+    "DESCRIPTIONS": [
+      "When you kill a non-minion normal enemy, gain #b5 gold."
+    ]
+  }
 }

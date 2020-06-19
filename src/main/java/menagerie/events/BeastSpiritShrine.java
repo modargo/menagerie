@@ -19,8 +19,8 @@ public class BeastSpiritShrine extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final int MAX_HEALTH_LOSS = 5;
-    private static final int A15_MAX_HEALTH_LOSS = 3;
+    private static final int MAX_HEALTH_LOSS = 3;
+    private static final int A15_MAX_HEALTH_LOSS = 5;
 
     private int maxHealthLoss;
     private AbstractCard card;

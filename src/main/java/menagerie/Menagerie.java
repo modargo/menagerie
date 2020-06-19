@@ -3,6 +3,7 @@ package menagerie;
 import actlikeit.dungeons.CustomDungeon;
 import basemod.BaseMod;
 import basemod.ModPanel;
+import basemod.helpers.RelicType;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
@@ -11,6 +12,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.events.exordium.GoldenIdolEvent;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
@@ -19,9 +21,7 @@ import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
 import menagerie.cards.*;
 import menagerie.cards.spells.*;
-import menagerie.events.BeastSpiritShrine;
-import menagerie.events.MageAndMonster;
-import menagerie.events.OvergrownLibrary;
+import menagerie.events.*;
 import menagerie.monsters.bosses.AvatarOfCunning;
 import menagerie.monsters.bosses.AvatarOfVigor;
 import menagerie.monsters.bosses.AvatarOfWisdom;
@@ -30,6 +30,7 @@ import menagerie.monsters.elites.Hydra;
 import menagerie.monsters.elites.MaskedSummoner;
 import menagerie.monsters.elites.VoidReaper;
 import menagerie.monsters.normals.*;
+import menagerie.relics.HuntersKnife;
 import menagerie.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -142,12 +143,17 @@ public class Menagerie implements
     }
 
     private static void addEvents() {
+        //BaseMod.addEvent(GoldenIdolEvent.ID, GoldenIdolEvent.class, MenagerieAct.ID);
+
         BaseMod.addEvent(BeastSpiritShrine.ID, BeastSpiritShrine.class, MenagerieAct.ID);
         BaseMod.addEvent(MageAndMonster.ID, MageAndMonster.class, MenagerieAct.ID);
         BaseMod.addEvent(OvergrownLibrary.ID, OvergrownLibrary.class, MenagerieAct.ID);
+        BaseMod.addEvent(ThreeAnimals.ID, OvergrownLibrary.class, MenagerieAct.ID);
+        BaseMod.addEvent(BigGameHunter.ID, OvergrownLibrary.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
+        BaseMod.addRelic(new HuntersKnife(), RelicType.SHARED);
     }
 
     @Override
