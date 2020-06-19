@@ -22,10 +22,10 @@ public class BeastSpiritShrine extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final int HEALTH_LOSS = 7;
-    private static final int A15_HEALTH_LOSS = 7;
+    private static final int MAX_HEALTH_LOSS = 5;
+    private static final int A15_MAX_HEALTH_LOSS = 3;
 
-    private int healthLoss;
+    private int maxHealthLoss;
     private AbstractCard card;
     private int screenNum = 0;
 
@@ -33,9 +33,9 @@ public class BeastSpiritShrine extends AbstractImageEvent {
         super(NAME, DESCRIPTIONS[0], IMG);
 
         this.card = new BeastSpirit();
-        this.healthLoss = AbstractDungeon.ascensionLevel >= 15 ? A15_HEALTH_LOSS : HEALTH_LOSS;
+        this.maxHealthLoss = AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH_LOSS : MAX_HEALTH_LOSS;
 
-        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.healthLoss), this.card);
+        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.maxHealthLoss), this.card);
         imageEventText.setDialogOption(OPTIONS[1]);
     }
 
@@ -46,8 +46,7 @@ public class BeastSpiritShrine extends AbstractImageEvent {
                 switch (buttonPressed) {
                     case 0: // Kneel
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                        AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.healthLoss));
-                        AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+                        AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.card, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[1]);

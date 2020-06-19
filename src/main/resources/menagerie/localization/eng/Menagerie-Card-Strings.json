@@ -19,5 +19,18 @@
   "Menagerie:BeastSpirit": {
     "NAME": "BeastSpirit",
     "DESCRIPTION": "Gain !M! Strength, !M! Dexterity, and !M! Thorns."
+  },
+  "Menagerie:Slaughter": {
+    "NAME": "Slaughter",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Exhaust a random card in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Exhaust a card in your hand."
+  },
+  "Menagerie:SagesJudgement": {
+    "NAME": "Sage's Judgement",
+    "DESCRIPTION": "Deal damage to ALL enemies equal to half the number of cards in your deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal damage to ALL enemies equal to two-thirds the number of cards in your deck. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
   }
 }

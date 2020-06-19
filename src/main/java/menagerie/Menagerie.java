@@ -19,6 +19,7 @@ import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
 import menagerie.cards.*;
 import menagerie.events.BeastSpiritShrine;
+import menagerie.events.MageAndMonster;
 import menagerie.monsters.bosses.AvatarOfCunning;
 import menagerie.monsters.bosses.AvatarOfVigor;
 import menagerie.monsters.bosses.AvatarOfWisdom;
@@ -140,6 +141,7 @@ public class Menagerie implements
 
     private static void addEvents() {
         BaseMod.addEvent(BeastSpiritShrine.ID, BeastSpiritShrine.class, MenagerieAct.ID);
+        BaseMod.addEvent(MageAndMonster.ID, MageAndMonster.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
@@ -152,6 +154,8 @@ public class Menagerie implements
         BaseMod.addCard(new Dismember());
         BaseMod.addCard(new Languish());
         BaseMod.addCard(new BeastSpirit());
+        BaseMod.addCard(new Slaughter());
+        BaseMod.addCard(new SagesJudgement());
     }
 
     @Override

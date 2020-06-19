@@ -6,7 +6,21 @@
       "You kneel before the #gstatues. You feel bestial spirits vigor and cunning come to you. Their claws and fangs dig into your flesh, but you feel that the spirits remain with you, empowering you. You rise, stronger, fiercer, bestial."
     ],
     "OPTIONS": [
-      "[Kneel] #gGain Beast Spirit. #rLose #r{1} #rHP.",
+      "[Kneel] #gGain Beast Spirit. #rLose #r{1} #rMax #rHP.",
+      "[Leave]"
+    ]
+  },
+  "Menagerie:MageAndMonster": {
+    "NAME": "Mage and Monster",
+    "DESCRIPTIONS": [
+      "You come across a pitched battle! A powerful #bmage is fighting an equally fierce #rmonster, and the battle seems to be evenly matched.",
+      "You join the #bmage in attacking the #rmonster, adding your strength to his. The #rmonster is no match for both of you, and your coordinated attacks bring it down. NL NL Before parting with the #bmage, he teaches you a way to strike at your enemies with your #ginnate #gpower.",
+      "You cut down the #bmage from behind, wounding him and giving the #rmonster an opening to strike. Unable to defend against both of you, the mage quickly falls and the battle is over. NL NL As the #rmonster wanders off, you have a flash of insight as you realize that you can mimic its #gfrenzied #gstrikes.",
+      "Best not to get involved. Nothing good ever comes of it."
+    ],
+    "OPTIONS": [
+      "[Help the mage] #gGain Sage's Judgement. #rLose #r{0} #rHP.",
+      "[Help the monster] #gGain Outburst. #rLose #r{0} #rHP.",
       "[Leave]"
     ]
   }
