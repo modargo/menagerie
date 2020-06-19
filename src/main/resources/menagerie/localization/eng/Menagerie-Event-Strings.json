@@ -23,5 +23,18 @@
       "[Help the monster] #gGain Outburst. #rLose #r{0} #rHP.",
       "[Leave]"
     ]
+  },
+  "Menagerie:OvergrownLibrary": {
+    "NAME": "Overgrown Library",
+    "DESCRIPTIONS": [
+      "Hidden amidst the ruins, you find a small #blibrary, overgrown with #gvegetation. NL NL Searching for anything useful, you find a shelf with intact books. As you reach out to touch them, you feel the tingle of #p~power.~ This book is #rdangerous to read too closely.",
+      "Respecting the signs of #rdanger, you take a quick peek into the book. It's filled with spells, alive with magic! You remember one to use later.",
+      "Ignoring the signs of #rdanger, you sit down for careful study of the book. The spells describes inside entrance you. NL NL Some time later, you come out of your trance, realizing that the spells of the book have #rtaken #rpart #rof #ryou #rto #rfeed #rthemselves and left #p~something~ #p~else~ behind."
+    ],
+    "OPTIONS": [
+      "[Peek] #gAdd #ga #gpowerful #gspell #gto #gyour #gdeck.",
+      "[Read] #gAdd #g3 #gpowerful #gspells #gto #gyour #gdeck. #rLose #r{0} #rMax #rHP. #rGain #ra #rcurse.",
+      "[Leave]"
+    ]
   }
 }

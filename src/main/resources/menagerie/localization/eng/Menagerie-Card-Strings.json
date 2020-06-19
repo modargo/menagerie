@@ -22,7 +22,7 @@
   },
   "Menagerie:Slaughter": {
     "NAME": "Slaughter",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. Exhaust a random card in your hand.",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaust a random card in your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Exhaust a card in your hand."
   },
   "Menagerie:SagesJudgement": {
@@ -32,5 +32,49 @@
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
+  },
+  "Menagerie:MirarisWake": {
+    "NAME": "Mirari's Wake",
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn gain [E] . NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength. Gain !M! Dexterity. At the start of your turn, gain [E] ."
+  },
+  "Menagerie:Skullclamp": {
+    "NAME": "Skullclamp",
+    "DESCRIPTION": "Gain !M! Strength. NL Lose !M! Dexterity. NL At the start of your turn, draw 1 additional card. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength. Lose !M! Dexterity. At the start of your turn, draw 1 additional card."
+  },
+  "Menagerie:WallOfBlossoms": {
+    "NAME": "Wall of Blossoms",
+    "DESCRIPTION": "Gain !M! Dexterity. NL Draw 1 card."
+  },
+  "Menagerie:DarkRitual": {
+    "NAME": "Dark Ritual",
+    "DESCRIPTION": "Gain [E] [E] [E] . NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E] [E] . NL Exhaust."
+  },
+  "Menagerie:LightningHelix": {
+    "NAME": "Lightning Helix",
+    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP."
+  },
+  "Menagerie:Foresee": {
+    "NAME": "Foresee",
+    "DESCRIPTION": "Scry !M!. NL Draw 2 cards."
+  },
+  "Menagerie:LoxodonWarhammer": {
+    "NAME": "Loxodon Warhammer",
+    "DESCRIPTION": "Gain 2 Strength. Heal 1 HP the next !M! times you deal unblocked attack damage."
+  },
+  "Menagerie:CrumblingSanctuary": {
+    "NAME": "Crumbling Sanctuary",
+    "DESCRIPTION": "If your draw pile isn't empty, for each damage you would take, instead Exhaust the top card of your draw pile. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "If your draw pile isn't empty, for each damage you would take, instead Exhaust the top card of your draw pile."
+  },
+  "Menagerie:RelicOfProgenitus": {
+    "NAME": "Relic of Progenitus",
+    "DESCRIPTION": "Exhaust all cards in your discard pile. NL Draw !M! card."
+  },
+  "Menagerie:Tinker": {
+    "NAME": "Tinker",
+    "DESCRIPTION": "Search your deck for a power and play it. Lose !M Strength. Lose !M! Dexterity."
   }
 }

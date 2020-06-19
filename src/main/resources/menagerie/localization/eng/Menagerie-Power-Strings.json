@@ -64,5 +64,9 @@
   "Menagerie:Vigor": {
     "NAME": "Vigor",
     "DESCRIPTIONS": ["At the start of your turn, gain [E] ."]
+  },
+  "Menagerie:Lifelink": {
+    "NAME": "Lifelink",
+    "DESCRIPTIONS": ["The next #b{0} times you deal unblocked attack damage, heal #b1 HP."]
   }
 }

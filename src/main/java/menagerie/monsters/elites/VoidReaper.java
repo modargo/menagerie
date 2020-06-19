@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import menagerie.Menagerie;
-import menagerie.cards.Dismember;
+import menagerie.cards.spells.Dismember;
 import menagerie.powers.DrawReductionSingleTurnPower;
 
 public class VoidReaper extends CustomMonster

@@ -1,4 +1,4 @@
-package menagerie.cards;
+package menagerie.cards.spells;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
+import menagerie.cards.CustomTags;
 
 public class Dismember extends CustomCard {
     public static final String ID = "Menagerie:Dismember";

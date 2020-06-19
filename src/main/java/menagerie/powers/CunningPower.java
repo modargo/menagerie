@@ -31,6 +31,7 @@ public class CunningPower extends AbstractPower {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this.owner, new DexterityPower(AbstractDungeon.player, DEX_AMOUNT), DEX_AMOUNT));
     }
 
+    @Override
     public void onRemove() {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this.owner, new DexterityPower(AbstractDungeon.player, -DEX_AMOUNT), -DEX_AMOUNT));
     }

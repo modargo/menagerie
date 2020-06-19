@@ -18,8 +18,10 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
 import menagerie.cards.*;
+import menagerie.cards.spells.*;
 import menagerie.events.BeastSpiritShrine;
 import menagerie.events.MageAndMonster;
+import menagerie.events.OvergrownLibrary;
 import menagerie.monsters.bosses.AvatarOfCunning;
 import menagerie.monsters.bosses.AvatarOfVigor;
 import menagerie.monsters.bosses.AvatarOfWisdom;
@@ -142,6 +144,7 @@ public class Menagerie implements
     private static void addEvents() {
         BaseMod.addEvent(BeastSpiritShrine.ID, BeastSpiritShrine.class, MenagerieAct.ID);
         BaseMod.addEvent(MageAndMonster.ID, MageAndMonster.class, MenagerieAct.ID);
+        BaseMod.addEvent(OvergrownLibrary.ID, OvergrownLibrary.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
@@ -151,11 +154,23 @@ public class Menagerie implements
     public void receiveEditCards() {
         BaseMod.addCard(new Necropotence());
         BaseMod.addCard(new PurgingElixir());
-        BaseMod.addCard(new Dismember());
-        BaseMod.addCard(new Languish());
         BaseMod.addCard(new BeastSpirit());
         BaseMod.addCard(new Slaughter());
         BaseMod.addCard(new SagesJudgement());
+
+        //Grand Magus Spells
+        BaseMod.addCard(new CrumblingSanctuary());
+        BaseMod.addCard(new DarkRitual());
+        BaseMod.addCard(new Dismember());
+        BaseMod.addCard(new Foresee());
+        BaseMod.addCard(new Languish());
+        BaseMod.addCard(new LightningHelix());
+        BaseMod.addCard(new LoxodonWarhammer());
+        BaseMod.addCard(new MirarisWake());
+        BaseMod.addCard(new RelicOfProgenitus());
+        BaseMod.addCard(new Skullclamp());
+        BaseMod.addCard(new Tinker());
+        BaseMod.addCard(new WallOfBlossoms());
     }
 
     @Override
