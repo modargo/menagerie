@@ -155,6 +155,7 @@ public class Menagerie implements
         BaseMod.addEvent(ScentOfGold.ID, ScentOfGold.class, MenagerieAct.ID);
         BaseMod.addEvent(StasisChamber.ID, StasisChamber.class, MenagerieAct.ID);
         BaseMod.addEvent(SpiderNest.ID, SpiderNest.class, MenagerieAct.ID);
+        BaseMod.addEvent(MossyPath.ID, MossyPath.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {

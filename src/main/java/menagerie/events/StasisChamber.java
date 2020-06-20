@@ -31,7 +31,6 @@ public class StasisChamber extends Colosseum {
 
     private int screenNum = 0;
     private String actID;
-    private int maxHpLoss;
 
     public StasisChamber() {
         super();
@@ -106,7 +105,7 @@ public class StasisChamber extends Colosseum {
             case 0:
                 switch (buttonPressed) {
                     case 0: // Release
-                        this.screenNum = 2;
+                        this.screenNum = 1;
                         String elite = this.getRandomElite(this.actID);
                         logger.info("Spawning elite: " + elite);
                         AbstractDungeon.getCurrRoom().monsters = MonsterHelper.getEncounter(elite);

@@ -99,5 +99,16 @@
       "[Raid] #gGain {0} #ggold. #rBecome #rCursed #r- #rShame.",
       "[Leave]"
     ]
+  },
+  "Menagerie:MossyPath": {
+    "NAME": "Mossy Path",
+    "DESCRIPTIONS": [
+      "Walking down a path overrun with moss, you can feel your surroundings humming with #glife and #genergy. Larger than normal plants  are growing everywhere, and the path ahead of you fades into light and fog. It's starting to become overwhelming. It looks like the #genergy of this place has also accelerated the grow of the fauna of the area, so going around will surely result in a fight.",
+      "The life energy heals you, but sets up a strange reaction in your body."
+    ],
+    "OPTIONS": [
+      "[Continue] #gHeal #g{0} #gHP. #rBecome #rCursed #r- #rDecay.",
+      "[Detour] Fight a group of normal enemies with low rewards."
+    ]
   }
 }

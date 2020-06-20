@@ -29,7 +29,7 @@ public class HuntersKnife extends CustomRelic {
 
     @Override
     public void onMonsterDeath(AbstractMonster m) {
-        if (m.currentHealth == 0 && !m.halfDead && !m.hasPower(MinionPower.POWER_ID)) {
+        if (m.type == AbstractMonster.EnemyType.NORMAL && m.currentHealth == 0 && !m.halfDead && !m.hasPower(MinionPower.POWER_ID)) {
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(m, this));
             this.addToBot(new GainGoldAction(GOLD));
