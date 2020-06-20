@@ -88,5 +88,16 @@
       "[Release] Fight an elite from {0}.",
       "[Leave]"
     ]
+  },
+  "Menagerie:SpiderNest": {
+    "NAME": "Spider Nest",
+    "DESCRIPTIONS": [
+      "You start to notice #bwebs along the edges of the path, formed of sticky, resilient string, getting larger and thicker as you continue forward. Soon you find yourself in an area coated with webs, with #ygold and #yvaluables and #pskeletons all around. NL NL You wonder what kind of spider would be crazy enough to make its lair in a place like this... and how big it must be. You decide you don't want to find out. NL NL The only remaining question is whether you raid the #bspider's #blair for #yvaluables before getting as far away from this place as you can.",
+      "You feel a bit ashamed for stealing from a spider."
+    ],
+    "OPTIONS": [
+      "[Raid] #gGain {0} #ggold. #rBecome #rCursed #r- #rShame.",
+      "[Leave]"
+    ]
   }
 }
