@@ -3,17 +3,19 @@ package menagerie.monsters.elites;
 import basemod.abstracts.CustomMonster;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.RollMoveAction;
+import com.megacrit.cardcrawl.actions.animations.ShoutAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import menagerie.Menagerie;
 import menagerie.actions.SummonFrozenSoldierAction;
+
+import java.util.Iterator;
 
 public class MaskedSummoner extends CustomMonster
 {
@@ -199,6 +201,17 @@ public class MaskedSummoner extends CustomMonster
             case 2: return -300.0F;
             case 3: return -450.0F;
             default: return -600.0F;
+        }
+    }
+
+    @Override
+    public void die() {
+        super.die();
+        for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (m.id == FrozenSoldier.ID && !m.isDying) {
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ExplosionSmallEffect(m.hb.cX, m.hb.cY), 0.1F));
+                AbstractDungeon.actionManager.addToBottom(new SuicideAction(m));
+            }
         }
     }
 

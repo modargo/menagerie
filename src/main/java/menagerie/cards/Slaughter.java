@@ -47,6 +47,7 @@ public class Slaughter extends CustomCard {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_DAMAGE);
             this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

@@ -19,6 +19,7 @@ public class Skullclamp extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
     private static final int STATS = 1;
 
@@ -41,7 +42,7 @@ public class Skullclamp extends CustomCard {
         if (!this.upgraded) {
             this.isEthereal = false;
             this.upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }

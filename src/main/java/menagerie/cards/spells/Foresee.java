@@ -19,7 +19,7 @@ public class Foresee extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int SCRY = 4;
-    private static final int UPGRADE_SCRY = 6;
+    private static final int UPGRADE_SCRY = 2;
     private static final int DRAW = 2;
 
     public Foresee() {

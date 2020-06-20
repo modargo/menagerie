@@ -68,5 +68,9 @@
   "Menagerie:Lifelink": {
     "NAME": "Lifelink",
     "DESCRIPTIONS": ["The next #b{0} times you deal unblocked attack damage, heal #b1 HP."]
+  },
+  "Menagerie:CrumblingSanctuary": {
+    "NAME": "Crumbling Sanctuary",
+    "DESCRIPTIONS": ["If your draw pile isn't empty, for each damage you would take, instead #yExhaust the top card of your draw pile."]
   }
 }

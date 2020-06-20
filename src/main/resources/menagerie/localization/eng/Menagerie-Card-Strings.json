@@ -10,10 +10,10 @@
   },
   "Menagerie:Dismember": {
     "NAME": "Dismember",
-    "DESCRIPTION": "Enemy loses !M! Strength this turn and loses !M! HP. NL Exhaust."
+    "DESCRIPTION": "Enemy loses !M! Strength this turn and loses !M! HP. NL Lose 2 HP. NL Exhaust."
   },
   "Menagerie:Languish": {
-    "NAME": "Dismember",
+    "NAME": "Languish",
     "DESCRIPTION": "ALL enemies lose !M! Strength this turn and lose !M! HP. NL Exhaust."
   },
   "Menagerie:BeastSpirit": {
@@ -36,7 +36,7 @@
   "Menagerie:MirarisWake": {
     "NAME": "Mirari's Wake",
     "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn gain [E] . NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Strength. Gain !M! Dexterity. At the start of your turn, gain [E] ."
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn, gain [E] ."
   },
   "Menagerie:Skullclamp": {
     "NAME": "Skullclamp",
@@ -75,6 +75,6 @@
   },
   "Menagerie:Tinker": {
     "NAME": "Tinker",
-    "DESCRIPTION": "Search your deck for a power and play it. Lose !M Strength. Lose !M! Dexterity."
+    "DESCRIPTION": "Search your deck for a power and play it. Lose !M! Strength. Lose !M! Dexterity."
   }
 }
