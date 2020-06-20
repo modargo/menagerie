@@ -51,20 +51,20 @@
       "[Snake] #gRemove #ga #gcard #gfrom #gyour #gdeck.",
       "[Leave]",
       "Select a Card to Remove."
+    ]
+  },
+  "Menagerie:BigGameHunter": {
+    "NAME": "Big Game Hunter",
+    "DESCRIPTIONS": [
+      "Navigating the overgrown ruins, you come across a strangely dressed figure setting up camp. It's covered in so much gear and carrying so many weapons that you can't tell what the creature itself looks like under all of it. As you approach, the figure turns and greets you. NL NL \"Ho there, friend!\" he shouts at you. \"You must be here to hunt exotic game, the same reason I am! The #ybeasts and #yabominations of this place make normal game pale in comparison. Let me tell you about all the #g@exhilirating@ things I've seen!\" NL NL The figure regales you with tales of its exploits.",
+      "Finally, after a story about hunting #ymany-headed #ymonsters, the figure switches topics. NL NL \"I see you're just starting out, so perhaps you'd be interested in my old gear? I've got my knife, which just needs a bit of #r~blood~ to sharpen it's edge.\"",
+      "\"Always a #gpleasure to meet a fellow #bhunter!\" The figure wishes you luck in your hunting as you leave."
     ],
-    "Menagerie:BigGameHunter": {
-      "NAME": "Big Game Hunter",
-      "DESCRIPTIONS": [
-        "Navigating the overgrown ruins, you come across a strangely dressed figure setting up camp. It's covered in so much gear and carrying so many weapons that you can't tell what the creature itself looks like under all of it. As you approach, the figure turns and greets you. NL NL \"Ho there, friend!\" he shouts at you. \"You must be here to hunt exotic game, the same reason I am! The #ybeasts and #yabominations of this place make normal game pale in comparison. Let me tell you about all the #g@exhilirating@ things I've seen!\" NL NL The figure regales you with tales of its exploits.",
-        "Finally, after a story about hunting #ymany-headed #ymonsters, the figure switches topics. NL NL \"I see you're just starting out, so perhaps you'd be interested in my old gear? I've got my knife, which just needs a bit of #r~blood~ to sharpen it's edge.\"",
-        "\"Always a #gpleasure to meet a fellow #bhunter!\" The figure wishes you luck in your hunting as you leave."
-      ],
-      "OPTIONS": [
-        "[Listen]",
-        "[Take] #rLose #r{0} #rMax #rHP. #gGain #gthe #gknife.",
-        "[Leave]"
-      ]
-    }
+    "OPTIONS": [
+      "[Listen]",
+      "[Take] #rLose #r{0} #rMax #rHP. #gGain #gthe #gknife.",
+      "[Leave]"
+    ]
   },
   "Menagerie:ScentOfGold": {
     "NAME": "Scent of Gold",
@@ -76,6 +76,16 @@
     "OPTIONS": [
       "[Pacify] #gGain {0}.",
       "[Run] #rLose #r{0} #rHP.",
+      "[Leave]"
+    ]
+  },
+  "Menagerie:StasisChamber": {
+    "NAME": "Stasis Chamber",
+    "DESCRIPTIONS": [
+      "Amidst the wreckage of a laboratory, you find a fully intact #bstasis #bchamber. Swirling gasses obscure whatever is inside it, and try as you might, you can't make anything out. NL NL The only hint is a small plaque at the front of the chamber, which reads \"Specimen of {0}. Do not touch!\" NL NL As you circle the chamber for a third time, you conclude that you either need to release what's in the chamber sight unseen, or move on."
+    ],
+    "OPTIONS": [
+      "[Release] Fight an elite from {0}.",
       "[Leave]"
     ]
   }

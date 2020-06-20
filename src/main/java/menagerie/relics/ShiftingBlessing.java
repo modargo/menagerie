@@ -19,7 +19,6 @@ public class ShiftingBlessing extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(Menagerie.relicImage(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(Menagerie.relicOutlineImage(ID));
     private static final int STAT = 1;
-    private boolean firstTurn = true;
 
     public ShiftingBlessing() {
         super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.SPECIAL, LandingSound.CLINK);

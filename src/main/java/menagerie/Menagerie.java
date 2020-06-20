@@ -152,6 +152,8 @@ public class Menagerie implements
         BaseMod.addEvent(OvergrownLibrary.ID, OvergrownLibrary.class, MenagerieAct.ID);
         BaseMod.addEvent(ThreeAnimals.ID, ThreeAnimals.class, MenagerieAct.ID);
         BaseMod.addEvent(BigGameHunter.ID, BigGameHunter.class, MenagerieAct.ID);
+        BaseMod.addEvent(ScentOfGold.ID, ScentOfGold.class, MenagerieAct.ID);
+        BaseMod.addEvent(StasisChamber.ID, StasisChamber.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
