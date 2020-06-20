@@ -110,5 +110,73 @@
       "[Continue] #gHeal #g{0} #gHP. #rBecome #rCursed #r- #rDecay.",
       "[Detour] Fight a group of normal enemies with low rewards."
     ]
+  },
+  "Menagerie:LunarGift": {
+    "NAME": "Lunar Gift",
+    "DESCRIPTIONS": [
+      "As you struggle through rough terrain, somehow you catch a glance of the #bmoon shining over you, lighting your way. Your spirits lift, and you thank the moon for its assistance. NL NL Looking up, you feel like you could almost reach up and ~touch~ it....",
+      "You close your hand around the moon! A #g~shocking~ #g~current~ runs through you, opening new pathways within your body."
+    ],
+    "OPTIONS": [
+      "[Touch] #gGain #ga #grelic. #rLose #r{0} #rHP.",
+      "[Leave]"
+    ]
+  },
+  "Menagerie:MagicPeddler": {
+    "NAME": "Magic Peddler",
+    "DESCRIPTIONS": [
+      "\"Hail, friend! Would you care to purchase one of these #gmagical #gscrolls? Perfect for an adventurer seeking #yfame and #yfortune in the spire. My scrolls can give you #ghealth, or help build your #gskills. And if you're not interested in that, perhaps you'd care for a #gmagical #gelixir?",
+      "The peddler thanks you for your purchase and wishes you luck in the spire before packing up shop, headed for another location."
+    ],
+    "OPTIONS": [
+      "[Potion] #y{0} #yGold: #gGain #ga #gpotion.",
+      "[Heal] #y{0} #yGold: #gHeal #g{1} #gHP.",
+      "[Upgrade] #y{0} #yGold: #gUpgrade #g2 #grandom #gcards.",
+      "[Leave]",
+      "[Locked] Requires {0} Gold."
+    ]
+  },
+  "Menagerie:HarrowingRitual": {
+    "NAME": "Harrowing Ritual",
+    "DESCRIPTIONS": [
+      "#rViolent #renergies pour forth from the remnants of a #p~dark~ #p~ritual.~ The dried #rblood of the diagrams, the bones strewn all around, the wreckage of a circle of ash... something #pterrible happened here. NL NL But something remains of the #gpower that once was summoned here. You can sense the energies, still there, waiting. They could make you more powerful. Is it worth it?",
+      "You shield yourself with your most powerful defenses and advance. The #rviolent #renergy pours out, but your defenses withstand it. The experience makes you sturdier.",
+      "You accept that contact with the #rviolent #renergy is inevitable. Passing through it hurts... but you can feel a lingering power from it."
+    ],
+    "OPTIONS": [
+      "[Shield] #gGain #g{0} #gMax #gHP.",
+      "[Accept] #gUpgrade #ga #grandom #gcard. #rLose #r{0} #rHP.",
+      "[Leave]",
+      "[Locked] Requires card with {0} or more block."
+    ]
+  },
+  "Menagerie:MagesHand": {
+    "NAME": "Mage's Hand",
+    "DESCRIPTIONS": [
+      "Before you is a #p~disturbing~ sight: a severed mage's hand, candles planted on its fingertips. It floats in the air, pulsing with power as it moves around. Whoever it came from is nowhere to be seen. The mage's who once ruled this place must have created it through some terrible ritual.",
+      "You grasp the hand in your own! A small portion of the knowledge its former owner had comes to you, replacing something that you previously knew."
+    ],
+    "OPTIONS": [
+      "[Grasp] #gRemove #ga #gcard #gfrom #gyour #gdeck. #gGain #ga #gpowerful #gspell.",
+      "[Leave]",
+      "Select a Card to Remove."
+    ]
+  },
+  "Menagerie:CloudVision": {
+    "NAME": "Cloud Vision",
+    "DESCRIPTIONS": [
+      "You have a strange vision of the open sky through the clouds. Images form in your head, and you have a chance to gain insight into one of the powers that rule this place. But which one?",
+      "Vigor shall strengthen you.",
+      "Cunning shall defeat your foes.",
+      "Wisdom shall guide your way."
+    ],
+    "OPTIONS": [
+      "[Vigor] #gTransform #ga #gcard. #gGain #g{0} #gMax #gHP.",
+      "[Cunning] #gUpgrade #ga #grandom #gcard. #gGain #g{0} #gGold.",
+      "[Wisdom] #gRemove #ga #gcard #gfrom #gyour #gdeck.",
+      "[Leave]",
+      "Select a Card to Transform.",
+      "Select a Card to Remove."
+    ]
   }
 }

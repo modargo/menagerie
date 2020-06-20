@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import menagerie.Menagerie;
+import menagerie.cards.CardUtil;
 import menagerie.cards.spells.*;
 
 import java.text.MessageFormat;
@@ -92,45 +93,11 @@ public class OvergrownLibrary extends AbstractImageEvent {
         AbstractDungeon.getCurrRoom().rewards.clear();
         for(int i = 0; i < numCards; ++i) {
             RewardItem reward = new RewardItem();
-            reward.cards = returnGrandMagusSpellReward();
+            reward.cards = CardUtil.getGrandMagusSpellReward();
             AbstractDungeon.getCurrRoom().addCardReward(reward);
         }
 
         AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
         AbstractDungeon.combatRewardScreen.open();
-    }
-
-    private static ArrayList<AbstractCard> returnGrandMagusSpellReward() {
-        List<AbstractCard> list = Arrays.asList(
-                new CrumblingSanctuary(),
-                new DarkRitual(),
-                new Dismember(),
-                new Foresee(),
-                new Languish(),
-                new LightningHelix(),
-                new LoxodonWarhammer(),
-                new MirarisWake(),
-                new RelicOfProgenitus(),
-                new Skullclamp(),
-                new Tinker(),
-                new WallOfBlossoms()
-        );
-        Collections.shuffle(list, AbstractDungeon.cardRng.random);
-
-        int numCards = 3;
-        for (AbstractRelic r : AbstractDungeon.player.relics) {
-            numCards = r.changeNumberOfCardsInReward(numCards);
-        }
-        if (ModHelper.isModEnabled("Binary")) {
-            --numCards;
-        }
-        List<AbstractCard> rewardCards = list.subList(0, numCards);
-        for (AbstractRelic r : AbstractDungeon.player.relics) {
-            for (AbstractCard c : rewardCards) {
-                r.onPreviewObtainCard(c);
-            }
-        }
-
-        return new ArrayList(rewardCards);
     }
 }

@@ -21,8 +21,8 @@ public class MossyPath extends Colosseum {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final float HEAL_PERCENT = 30;
-    private static final float A15_HEAL_PERCENT = 25;
+    private static final float HEAL_PERCENT = 0.3f;
+    private static final float A15_HEAL_PERCENT = 0.25f;
     private static final String ENCOUNTER = Encounters.MENAGERIE_WILDLIFE;
 
     private int healAmount;
@@ -35,7 +35,7 @@ public class MossyPath extends Colosseum {
         this.roomEventText.clear();
         this.title = NAME;
         this.imageEventText.loadImage(IMG);
-        this.type = EventType.IMAGE;
+        type = EventType.IMAGE;
         this.noCardsInRewards = true;
 
         this.curse = new Decay();

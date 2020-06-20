@@ -40,11 +40,15 @@ public class ShiftingBlessing extends CustomRelic {
         this.flash();
         if (this.counter == 1) {
             this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, STAT), STAT));
-            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LoseStrengthPower(AbstractDungeon.player, STAT), STAT));
+            AbstractPower temporaryPower = new LoseStrengthPower(AbstractDungeon.player, STAT);
+            temporaryPower.type = AbstractPower.PowerType.BUFF;
+            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, temporaryPower, STAT));
         }
         else {
             this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, STAT), STAT));
-            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LoseDexterityPower(AbstractDungeon.player, STAT), STAT));
+            AbstractPower temporaryPower = new LoseDexterityPower(AbstractDungeon.player, STAT);
+            temporaryPower.type = AbstractPower.PowerType.BUFF;
+            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, temporaryPower, STAT));
         }
     }
 

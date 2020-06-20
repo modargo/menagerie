@@ -18,6 +18,13 @@ public class EventFilter {
                     eventsToRemove.add(event);
                 }
             }
+
+            if (event.equals(MagicPeddler.ID)) {
+                int goldRequired = AbstractDungeon.ascensionLevel >= 15 ? MagicPeddler.A15_POTION_COST : MagicPeddler.POTION_COST;
+                if (!(AbstractDungeon.player.gold >= goldRequired)) {
+                    eventsToRemove.add(event);
+                }
+            }
         }
         return eventsToRemove;
     }

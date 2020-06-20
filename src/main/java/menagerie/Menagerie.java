@@ -145,7 +145,7 @@ public class Menagerie implements
     }
 
     private static void addEvents() {
-        //BaseMod.addEvent(GoldenIdolEvent.ID, GoldenIdolEvent.class, MenagerieAct.ID);
+        BaseMod.addEvent(GoldenIdolEvent.ID, GoldenIdolEvent.class, MenagerieAct.ID);
 
         BaseMod.addEvent(BeastSpiritShrine.ID, BeastSpiritShrine.class, MenagerieAct.ID);
         BaseMod.addEvent(MageAndMonster.ID, MageAndMonster.class, MenagerieAct.ID);
@@ -156,6 +156,11 @@ public class Menagerie implements
         BaseMod.addEvent(StasisChamber.ID, StasisChamber.class, MenagerieAct.ID);
         BaseMod.addEvent(SpiderNest.ID, SpiderNest.class, MenagerieAct.ID);
         BaseMod.addEvent(MossyPath.ID, MossyPath.class, MenagerieAct.ID);
+        BaseMod.addEvent(LunarGift.ID, LunarGift.class, MenagerieAct.ID);
+        BaseMod.addEvent(MagicPeddler.ID, MagicPeddler.class, MenagerieAct.ID);
+        BaseMod.addEvent(HarrowingRitual.ID, HarrowingRitual.class, MenagerieAct.ID);
+        BaseMod.addEvent(MagesHand.ID, MagesHand.class, MenagerieAct.ID);
+        BaseMod.addEvent(CloudVision.ID, CloudVision.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
