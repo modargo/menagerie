@@ -1,9 +1,23 @@
 {
-  "Elementarium:HuntersKnife": {
+  "Menagerie:HuntersKnife": {
     "NAME": "Hunter's Knife",
     "FLAVOR": "A knife used for skinning after a successful hunt, sharp-edged and hungry.",
     "DESCRIPTIONS": [
       "When you kill a non-minion normal enemy, gain #b5 gold."
+    ]
+  },
+  "Menagerie:ShiftingBlessing": {
+    "NAME": "Shifting Blessing",
+    "FLAVOR": "The blessing of the moon, ever shifting.",
+    "DESCRIPTIONS": [
+      "At the start of each odd turn, gain #b1 temporary #yStrength. At the start of each even turn, gain #b1 temporary #yDexterity."
+    ]
+  },
+  "Menagerie:Aurumvore": {
+    "NAME": "Aurumvore",
+    "FLAVOR": "What does it do with the gold it eats?",
+    "DESCRIPTIONS": [
+      "Eats half your current gold and half of gold you gain. For each #b{0} gold eaten, start each combat with #b1 #yStrength."
     ]
   }
 }

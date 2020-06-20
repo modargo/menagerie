@@ -30,7 +30,9 @@ import menagerie.monsters.elites.Hydra;
 import menagerie.monsters.elites.MaskedSummoner;
 import menagerie.monsters.elites.VoidReaper;
 import menagerie.monsters.normals.*;
+import menagerie.relics.Aurumvore;
 import menagerie.relics.HuntersKnife;
+import menagerie.relics.ShiftingBlessing;
 import menagerie.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -148,12 +150,14 @@ public class Menagerie implements
         BaseMod.addEvent(BeastSpiritShrine.ID, BeastSpiritShrine.class, MenagerieAct.ID);
         BaseMod.addEvent(MageAndMonster.ID, MageAndMonster.class, MenagerieAct.ID);
         BaseMod.addEvent(OvergrownLibrary.ID, OvergrownLibrary.class, MenagerieAct.ID);
-        BaseMod.addEvent(ThreeAnimals.ID, OvergrownLibrary.class, MenagerieAct.ID);
-        BaseMod.addEvent(BigGameHunter.ID, OvergrownLibrary.class, MenagerieAct.ID);
+        BaseMod.addEvent(ThreeAnimals.ID, ThreeAnimals.class, MenagerieAct.ID);
+        BaseMod.addEvent(BigGameHunter.ID, BigGameHunter.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
+        BaseMod.addRelic(new Aurumvore(), RelicType.SHARED);
         BaseMod.addRelic(new HuntersKnife(), RelicType.SHARED);
+        BaseMod.addRelic(new ShiftingBlessing(), RelicType.SHARED);
     }
 
     @Override

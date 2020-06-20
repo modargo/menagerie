@@ -65,5 +65,18 @@
         "[Leave]"
       ]
     }
+  },
+  "Menagerie:ScentOfGold": {
+    "NAME": "Scent of Gold",
+    "DESCRIPTIONS": [
+      "As you prepare for your next encounter with the beasts of the #bMenagerie, you realize that one of the beasts is hunting #byou! It stalks towards you on many legs. NL NL The creature's nose twitches, and you realize that its attention is on your #ygold #ypouch. You wonder if you might be able to pacify this creature in some way... and if you can't, you're not sure you can stay ahead of its claws.",
+      "You open your gold pouch and hold it out, and the creature's nose twitches again as it draws close. Hoping that this isn't going to get you mauled, you're relieved as the beast sticks its nose and tongue into the #ygold #ypouch, slurping out some of the #ygold. NL NL It seems to like the taste. After a bit of eating, it looks expectantly at you, ready to follow you anywhere if it will result in more #g~delicious~ #y~gold~.",
+      "You take off running. The creature makes a powerful leap and #rswipes you with its claws, dealing a glancing blow, but you quickly make your escape through a nearby passage that the creature doesn't fit into. NL NL As it angrily howls after you, you're thankful you didn't try to fight in when a single #rswipe did so much #rdamage."
+    ],
+    "OPTIONS": [
+      "[Pacify] #gGain {0}.",
+      "[Run] #rLose #r{0} #rHP.",
+      "[Leave]"
+    ]
   }
 }
