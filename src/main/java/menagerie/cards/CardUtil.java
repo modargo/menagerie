@@ -69,6 +69,7 @@ public class CardUtil {
                 new MirarisWake(),
                 new RelicOfProgenitus(),
                 new Skullclamp(),
+                new SteelWall(),
                 new Tinker(),
                 new WallOfBlossoms()
         );

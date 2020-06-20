@@ -76,5 +76,9 @@
   "Menagerie:Tinker": {
     "NAME": "Tinker",
     "DESCRIPTION": "Search your deck for a power and play it. Lose !M! Strength. Lose !M! Dexterity."
+  },
+  "Menagerie:SteelWall": {
+    "NAME": "Steel Wall",
+    "DESCRIPTION": "Gain !B! block. NL Gain !M! plated armor. NL Exhaust."
   }
 }
