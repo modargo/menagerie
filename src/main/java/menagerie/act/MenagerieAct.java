@@ -96,11 +96,12 @@ public class MenagerieAct extends CustomDungeon {
         monsters.add(new MonsterInfo(MeltingSalamander.ID, 16.0F));
         monsters.add(new MonsterInfo(RedMage.ID, 16.0F));
         monsters.add(new MonsterInfo(Hexasnake.ID, 16.0F));
+        monsters.add(new MonsterInfo(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, 16.0F));
+        monsters.add(new MonsterInfo(Encounters.KEEPER_AND_YOUNG_SUNSTALKER, 16.0F));
         monsters.add(new MonsterInfo(Encounters.MONSTROUS_EXPERIMENTS_2, 16.0F));
         monsters.add(new MonsterInfo(Encounters.RABBITS_3, 16.0F));
         monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, 16.0F));
         monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, 16.0F));
         monsters.add(new MonsterInfo(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, 16.0F));
         monsters.add(new MonsterInfo(Encounters.MENAGERIE_WILDLIFE, 16.0F));
         MonsterInfo.normalizeWeights(monsters);

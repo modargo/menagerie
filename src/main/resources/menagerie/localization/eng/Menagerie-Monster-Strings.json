@@ -179,5 +179,19 @@
       "Constrict"
     ],
     "NAME": "Hexasnake"
+  },
+  "Menagerie:YoungSunstalker": {
+    "MOVES": [
+      "Tentacle Slap",
+      "Sunbathe"
+    ],
+    "NAME": "Young Sunstalker"
+  },
+  "Menagerie:KeeperOfTheSacredPool": {
+    "MOVES": [
+      "Invoke the Sun",
+      "Triple Blast"
+    ],
+    "NAME": "Keeper of the Sacred Pool"
   }
 }

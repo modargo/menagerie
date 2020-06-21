@@ -14,6 +14,7 @@ public class SerpentsGazePower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
+    private static final int ADDITIONAL_COST = 1;
     private int counter;
 
     public SerpentsGazePower(AbstractCreature owner, int amount) {
@@ -29,7 +30,7 @@ public class SerpentsGazePower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = MessageFormat.format(DESCRIPTIONS[0], this.amount);
+        this.description = this.amount == 1 ? MessageFormat.format(DESCRIPTIONS[0], ADDITIONAL_COST) : MessageFormat.format(DESCRIPTIONS[1], this.amount, ADDITIONAL_COST);
     }
 
     @Override
@@ -37,7 +38,7 @@ public class SerpentsGazePower extends AbstractPower {
         if (this.counter > 0) {
             this.flash();
             if (card.cost >= 0) {
-                card.setCostForTurn(Math.max(card.cost, card.costForTurn) + 1);
+                card.setCostForTurn(Math.max(card.cost, card.costForTurn) + ADDITIONAL_COST);
             }
             this.counter--;
         }

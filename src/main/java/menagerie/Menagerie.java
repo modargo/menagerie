@@ -85,6 +85,16 @@ public class Menagerie implements
         BaseMod.addMonster(MeltingSalamander.ID, (BaseMod.GetMonster)MeltingSalamander::new);
         BaseMod.addMonster(RedMage.ID, (BaseMod.GetMonster)RedMage::new);
         BaseMod.addMonster(Hexasnake.ID, (BaseMod.GetMonster)Hexasnake::new);
+        BaseMod.addMonster(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new ProwlingAmalgam(X1, 0.0F),
+                        new BeastMage(X2, 0.0F)
+                }));
+        BaseMod.addMonster(Encounters.KEEPER_AND_YOUNG_SUNSTALKER, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new YoungSunstalker(X1, 0.0F),
+                        new KeeperOfTheSacredPool(X2, 0.0F)
+                }));
         BaseMod.addMonster(Encounters.MONSTROUS_EXPERIMENTS_2, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new MonstrousExperiment(X1, 0.0F),
@@ -105,11 +115,6 @@ public class Menagerie implements
                         new SilkyRabbit(-400.0F, 0.0F),
                         new FeatherRabbit(-175.0F, 0.0F),
                         new FeatherRabbit(50.0F, 0.0F)
-                }));
-        BaseMod.addMonster(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, () -> new MonsterGroup(
-                new AbstractMonster[] {
-                        new ProwlingAmalgam(X1, 0.0F),
-                        new BeastMage(X2, 0.0F)
                 }));
         BaseMod.addMonster(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, () -> new MonsterGroup(
                 new AbstractMonster[] {
