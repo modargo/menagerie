@@ -34,7 +34,6 @@ public class Skullclamp extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
         this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));
-        //TODO: Switch to a custom power instead of using berserk
         this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, 1), 1));
     }
 

@@ -44,7 +44,7 @@ public class GrandMagus extends CustomMonster
     private static final int LIGHTNING_BOLT_DAMAGE = 10;
     private static final int A3_LIGHTNING_BOLT_DAMAGE = 12;
     private static final int DARKBLAST_DAMAGE = 2;
-    private static final int A3_DARKBLAST_DAMAGE = 2;
+    private static final int A3_DARKBLAST_DAMAGE = 3;
     private static final int DARKBLAST_STATS = 1;
     private static final int SULFURIC_VORTEX_AMOUNT = 2;
     private static final int A18_SULFURIC_VORTEX_AMOUNT = 3;

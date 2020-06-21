@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
 import menagerie.cards.CustomTags;
+import menagerie.powers.MirarisWakePower;
 
 public class MirarisWake extends CustomCard {
     public static final String ID = "Menagerie:MirarisWake";
@@ -33,8 +34,7 @@ public class MirarisWake extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
         this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
-        //TODO: Switch to a custom power instead of using berserk
-        this.addToBot(new ApplyPowerAction(p, p, new BerserkPower(p, 1), 1));
+        this.addToBot(new ApplyPowerAction(p, p, new MirarisWakePower(p, 1), 1));
     }
 
     public void upgrade() {

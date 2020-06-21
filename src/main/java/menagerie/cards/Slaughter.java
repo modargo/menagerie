@@ -31,7 +31,6 @@ public class Slaughter extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //TODO Customize the effect here
         this.addToBot(new SFXAction("ATTACK_HEAVY"));
         this.addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
