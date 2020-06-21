@@ -54,7 +54,7 @@
   },
   "Menagerie:LightningHelix": {
     "NAME": "Lightning Helix",
-    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP."
+    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP. NL Exhaust."
   },
   "Menagerie:Foresee": {
     "NAME": "Foresee",

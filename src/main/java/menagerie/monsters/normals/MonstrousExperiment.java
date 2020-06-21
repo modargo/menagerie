@@ -154,8 +154,7 @@ public class MonstrousExperiment extends CustomMonster
             //AbstractGameAction.AttackEffect.NONE,
             AbstractGameAction.AttackEffect.FIRE,
             AbstractGameAction.AttackEffect.POISON,
-            AbstractGameAction.AttackEffect.SHIELD,
-            AbstractGameAction.AttackEffect.LIGHTNING);
+            AbstractGameAction.AttackEffect.SHIELD);
 
         return attackEffects.get(this.random.nextInt(attackEffects.size()));
     }

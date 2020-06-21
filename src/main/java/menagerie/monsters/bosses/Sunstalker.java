@@ -4,7 +4,6 @@ import basemod.abstracts.CustomMonster;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
-import com.megacrit.cardcrawl.actions.animations.AnimateSlowAttackAction;
 import com.megacrit.cardcrawl.actions.animations.FastShakeAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -19,8 +18,10 @@ import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
-import com.megacrit.cardcrawl.vfx.combat.SmallLaserEffect;
+import com.megacrit.cardcrawl.vfx.combat.RoomTintEffect;
 import menagerie.Menagerie;
+import menagerie.effects.FireEffect;
+import menagerie.effects.SmallColorLaserEffect;
 import menagerie.powers.SolarChargePower;
 
 public class Sunstalker extends CustomMonster
@@ -113,24 +114,21 @@ public class Sunstalker extends CustomMonster
                 }
                 break;
             case BEAM_ATTACK:
-                AbstractDungeon.actionManager.addToBottom(new ChangeStateAction(this, "ATTACK"));
                 AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_MAGIC_BEAM_SHORT", 0.5F));
-                AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
-                if (Settings.FAST_MODE) {
-                    AbstractDungeon.actionManager.addToBottom(new VFXAction(new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY), 0.1F));
-                } else {
-                    AbstractDungeon.actionManager.addToBottom(new VFXAction(new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY), 0.3F));
-                }
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.RED)));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new SmallColorLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY, Color.RED), Settings.FAST_MODE ? 0.1F : 0.3F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(1), AbstractGameAction.AttackEffect.NONE, Settings.FAST_MODE));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new SolarChargePower(this, this.beamCharges), this.beamCharges));
                 break;
             case SOLAR_ENERGY:
                 AbstractDungeon.actionManager.addToBottom(new FastShakeAction(AbstractDungeon.player, 0.6F, 0.2F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.ORANGE)));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new SolarChargePower(this, this.solarEnergyCharges), this.solarEnergyCharges));
                 break;
             case SOLAR_FLARE:
-                AbstractDungeon.actionManager.addToBottom(new AnimateSlowAttackAction(this));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new RoomTintEffect(Color.RED, 0.5F)));
                 for (int i = 0; i < FLARE_HITS; i++) {
+                    AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.power.amount), 0.2F));
                     AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(2), AbstractGameAction.AttackEffect.FIRE));
                 }
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new VulnerablePower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));

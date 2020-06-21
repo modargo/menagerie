@@ -17,8 +17,10 @@ import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ScreenOnFireEffect;
 import menagerie.Menagerie;
+import menagerie.effects.FireEffect;
 import menagerie.powers.MeltingPower;
 
 public class MeltingSalamander extends CustomMonster
@@ -102,13 +104,10 @@ public class MeltingSalamander extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.FIRE));
                 break;
             case OVERHEAT_MOVE:
-                AbstractDungeon.actionManager.addToBottom(new AnimateShakeAction(this, 0.5F, 0.2F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(this, new InflameEffect(this), 0.25F));
                 break;
             case MELTDOWN_MOVE:
                 AbstractDungeon.actionManager.addToBottom(new FastShakeAction(this, 0.5F, 0.2F));
-                //this.addToBot(new VFXAction(this, new BorderLongFlashEffect(Color.RED), 0.0F, true));
-                //this.addToBot(new VFXAction(this, new BorderLongFlashEffect(Color.ORANGE), 0.0F, true));
-                //this.addToBot(new VFXAction(this, new BorderLongFlashEffect(Color.RED), 0.0F, true));
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(this, new ScreenOnFireEffect(), 1.0F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(1), AbstractGameAction.AttackEffect.FIRE));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, MELTDOWN_FRAIL_AND_WEAK, true), MELTDOWN_FRAIL_AND_WEAK));
