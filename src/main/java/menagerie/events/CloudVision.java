@@ -77,10 +77,12 @@ public class CloudVision extends AbstractImageEvent {
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
-                        this.pickCard = true;
-                        this.remove = false;
                         AbstractDungeon.player.increaseMaxHp(this.maxHealth, true);
-                        AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[4], false, true, false, false);
+                        if (CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()).size() > 0) {
+                            this.pickCard = true;
+                            this.remove = false;
+                            AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[4], false, true, false, false);
+                        }
                         break;
                     case 1: // Cunning
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
@@ -95,9 +97,11 @@ public class CloudVision extends AbstractImageEvent {
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
-                        this.pickCard = true;
-                        this.remove = true;
-                        AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[5], false, false, false, true);
+                        if (CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()).size() > 0) {
+                            this.pickCard = true;
+                            this.remove = true;
+                            AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[5], false, false, false, true);
+                        }
                         break;
                 }
                 break;

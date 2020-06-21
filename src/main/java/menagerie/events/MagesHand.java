@@ -52,7 +52,9 @@ public class MagesHand extends AbstractImageEvent {
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[1]);
                         this.imageEventText.clearRemainingOptions();
-                        AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[2], false, false, false, true);
+                        if (CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()).size() > 0) {
+                            AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[2], false, false, false, true);
+                        }
                         break;
                     default: // Leave
                         this.openMap();
