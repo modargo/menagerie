@@ -92,18 +92,17 @@ public class MenagerieAct extends CustomDungeon {
     @Override
     protected void generateStrongEnemies(int count) {
         ArrayList<MonsterInfo> monsters = new ArrayList<>();
-        monsters.add(new MonsterInfo(EntropyWarlock.ID, 16.0F));
-        monsters.add(new MonsterInfo(MeltingSalamander.ID, 16.0F));
-        monsters.add(new MonsterInfo(RedMage.ID, 16.0F));
-        monsters.add(new MonsterInfo(Hexasnake.ID, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.KEEPER_AND_YOUNG_SUNSTALKER, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.MONSTROUS_EXPERIMENTS_2, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.RABBITS_3, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, 16.0F));
-        monsters.add(new MonsterInfo(Encounters.MENAGERIE_WILDLIFE, 16.0F));
+        monsters.add(new MonsterInfo(EntropyWarlock.ID, 10.0F));
+        monsters.add(new MonsterInfo(MeltingSalamander.ID, 6.0F));
+        monsters.add(new MonsterInfo(RedMage.ID, 14.0F));
+        monsters.add(new MonsterInfo(Hexasnake.ID, 6.0F));
+        monsters.add(new MonsterInfo(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, 10.0F));
+        monsters.add(new MonsterInfo(Encounters.KEEPER_AND_YOUNG_SUNSTALKER, 6.0F));
+        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, 5.0F));
+        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT, 5.0F));
+        monsters.add(new MonsterInfo(Encounters.RABBITS_3, 14.0F));
+        monsters.add(new MonsterInfo(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, 6.0F));
+        monsters.add(new MonsterInfo(Encounters.MENAGERIE_WILDLIFE, 10.0F));
         MonsterInfo.normalizeWeights(monsters);
         this.populateFirstStrongEnemy(monsters, this.generateExclusions());
         this.populateMonsterList(monsters, count, false);
@@ -125,7 +124,6 @@ public class MenagerieAct extends CustomDungeon {
         switch (monsterList.get(monsterList.size() - 1))
         {
             case MonstrousExperiment.ID:
-                retVal.add(Encounters.MONSTROUS_EXPERIMENTS_2);
                 retVal.add(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT);
                 break;
             case WhisperingWraith.ID:
@@ -134,6 +132,11 @@ public class MenagerieAct extends CustomDungeon {
             case StygianBoar.ID:
                 retVal.add(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT);
                 retVal.add(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH);
+                break;
+            case Encounters.RABBITS_2:
+                retVal.add(Encounters.RABBITS_3);
+                retVal.add(Encounters.MENAGERIE_WILDLIFE);
+                break;
         }
 
         return retVal;

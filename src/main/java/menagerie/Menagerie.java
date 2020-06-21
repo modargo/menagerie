@@ -95,11 +95,6 @@ public class Menagerie implements
                         new YoungSunstalker(X1, 0.0F),
                         new KeeperOfTheSacredPool(X2, 0.0F)
                 }));
-        BaseMod.addMonster(Encounters.MONSTROUS_EXPERIMENTS_2, () -> new MonsterGroup(
-                new AbstractMonster[] {
-                        new MonstrousExperiment(X1, 0.0F),
-                        new MonstrousExperiment(X2, 0.0F)
-                }));
         BaseMod.addMonster(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new WhisperingWraith(X1, 0.0F),
@@ -150,6 +145,13 @@ public class Menagerie implements
 
         //Special fights
         BaseMod.addMonster(GrandMagus.ID, (BaseMod.GetMonster)GrandMagus::new);
+        BaseMod.addMonster(Encounters.MOSSY_WILDLIFE, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new GraftedWorm(-550.0F, 0.0F),
+                        new DreadMoth(-300.0F, 125.0F),
+                        new SilkyRabbit(-50.0F, 0.0F),
+                        new MonstrousExperiment(200.0F, 0.0F)
+                }));
     }
 
     private static void addEvents() {

@@ -23,7 +23,7 @@ public class MossyPath extends Colosseum {
     public static final String IMG = Menagerie.eventImage(ID);
     private static final float HEAL_PERCENT = 0.3f;
     private static final float A15_HEAL_PERCENT = 0.25f;
-    private static final String ENCOUNTER = Encounters.MENAGERIE_WILDLIFE;
+    private static final String ENCOUNTER = Encounters.MOSSY_WILDLIFE;
 
     private int healAmount;
     private AbstractCard curse;
