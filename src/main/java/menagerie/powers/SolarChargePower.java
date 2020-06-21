@@ -9,8 +9,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
 
-import java.text.MessageFormat;
-
 public class SolarChargePower extends AbstractPower {
     public static final String POWER_ID = "Menagerie:SolarCharge";
     private static final PowerStrings powerStrings;

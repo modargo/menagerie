@@ -3,7 +3,6 @@ package menagerie.monsters.normals;
 import basemod.abstracts.CustomMonster;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
-import com.megacrit.cardcrawl.actions.animations.AnimateShakeAction;
 import com.megacrit.cardcrawl.actions.animations.FastShakeAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -20,7 +19,6 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ScreenOnFireEffect;
 import menagerie.Menagerie;
-import menagerie.effects.FireEffect;
 import menagerie.powers.MeltingPower;
 
 public class MeltingSalamander extends CustomMonster

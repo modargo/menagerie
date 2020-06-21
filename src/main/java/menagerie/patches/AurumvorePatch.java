@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CtBehavior;
-import menagerie.Menagerie;
 import menagerie.relics.Aurumvore;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -205,7 +205,7 @@ public class MaskedSummoner extends CustomMonster
     public void die() {
         super.die();
         for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (m.id == FrozenSoldier.ID && !m.isDying) {
+            if (m.id.equals(FrozenSoldier.ID) && !m.isDying) {
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new ExplosionSmallEffect(m.hb.cX, m.hb.cY), 0.1F));
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(m));
             }

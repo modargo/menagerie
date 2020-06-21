@@ -38,7 +38,7 @@ public class StasisChamber extends Colosseum {
         this.roomEventText.clear();
         this.title = NAME;
         this.imageEventText.loadImage(IMG);
-        this.type = EventType.IMAGE;
+        type = EventType.IMAGE;
         this.noCardsInRewards = false;
         this.actID = this.getRandomAct();
 
@@ -81,12 +81,13 @@ public class StasisChamber extends Colosseum {
                 elites.add("Hallownest:eliteVengeflyKing");
                 break;
             default:
-                if (actID != Exordium.ID) {
+                if (!actID.equals(Exordium.ID)) {
                     logger.warn("Unknown act for getting random elite: " + actID);
                 }
                 elites.add("Gremlin Nob");
                 elites.add("3 Sentries");
                 elites.add("Lagavulin");
+                break;
         }
         return elites.get(AbstractDungeon.miscRng.random(elites.size() - 1));
     }

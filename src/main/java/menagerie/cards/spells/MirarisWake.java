@@ -34,7 +34,7 @@ public class MirarisWake extends CustomCard {
         this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
         this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
         //TODO: Switch to a custom power instead of using berserk
-        this.addToBot(new ApplyPowerAction(p, p, new BerserkPower(p, 1), 1));;
+        this.addToBot(new ApplyPowerAction(p, p, new BerserkPower(p, 1), 1));
     }
 
     public void upgrade() {

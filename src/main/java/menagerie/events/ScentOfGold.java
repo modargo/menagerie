@@ -1,7 +1,6 @@
 package menagerie.events;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -10,10 +9,8 @@ import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.Circlet;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import menagerie.Menagerie;
-import menagerie.cards.BeastSpirit;
 import menagerie.relics.Aurumvore;
 
 import java.text.MessageFormat;
@@ -60,7 +57,7 @@ public class ScentOfGold extends AbstractImageEvent {
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         break;
-                    case 1: // LeaRunve
+                    case 1: // Run
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.healthLoss));
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.SLASH_HEAVY));

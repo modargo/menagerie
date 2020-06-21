@@ -41,13 +41,13 @@ public class CardUtil {
 
     public static ArrayList<AbstractCard> getGrandMagusSpells(int count, Random random) {
         ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells(random);
-        ArrayList<AbstractCard> list2 = new ArrayList<AbstractCard>();
+        ArrayList<AbstractCard> list2 = new ArrayList<>();
         for (AbstractCard c : list) {
             if (!c.hasTag(AbstractCard.CardTags.HEALING)) {
                 list2.add(c);
             }
         }
-        return new ArrayList(list2.subList(0, count));
+        return new ArrayList<>(list2.subList(0, count));
     }
 
     public static ArrayList<AbstractCard> getGrandMagusSpellReward() {
@@ -66,7 +66,7 @@ public class CardUtil {
             }
         }
 
-        return new ArrayList(rewardCards);
+        return new ArrayList<>(rewardCards);
     }
 
     private static ArrayList<AbstractCard> getRandomlyOrderedGrandMagusSpells(Random random) {
@@ -87,6 +87,6 @@ public class CardUtil {
                 new WallOfBlossoms()
         );
         Collections.shuffle(list, random.random);
-        return new ArrayList(list);
+        return new ArrayList<>(list);
     }
 }

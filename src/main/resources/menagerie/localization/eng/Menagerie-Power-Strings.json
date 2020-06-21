@@ -13,7 +13,7 @@
   },
   "Menagerie:SerpentsGaze": {
     "NAME": "Serpent's Gaze",
-    "DESCRIPTIONS": ["The first card you draw costs #b{0} more this turn.", ,"The first #b{0} cards you draw cost #b{1} more this turn."]
+    "DESCRIPTIONS": ["The first card you draw costs #b{0} more this turn.", "The first #b{0} cards you draw cost #b{1} more this turn."]
   },
   "Menagerie:SquabblingHeads": {
     "NAME": "Squabbling Heads",

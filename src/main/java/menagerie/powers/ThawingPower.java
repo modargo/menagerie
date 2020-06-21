@@ -1,17 +1,12 @@
 package menagerie.powers;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.MetallicizePower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
 
 import java.text.MessageFormat;
@@ -21,7 +16,7 @@ public class ThawingPower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    private static final int HEALTH_DAMAGE_MULTIPLER = 3;
+    private static final int HEALTH_DAMAGE_MULTIPLIER = 3;
     private boolean justApplied = true;
 
     public ThawingPower(AbstractCreature owner, int amount) {
@@ -37,7 +32,7 @@ public class ThawingPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = MessageFormat.format(DESCRIPTIONS[0], this.amount, HEALTH_DAMAGE_MULTIPLER);
+        this.description = MessageFormat.format(DESCRIPTIONS[0], this.amount, HEALTH_DAMAGE_MULTIPLIER);
     }
 
     @Override
@@ -55,7 +50,7 @@ public class ThawingPower extends AbstractPower {
 
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return type == DamageInfo.DamageType.NORMAL ? damage + (float)this.owner.currentHealth * HEALTH_DAMAGE_MULTIPLER : damage;
+        return type == DamageInfo.DamageType.NORMAL ? damage + (float)this.owner.currentHealth * HEALTH_DAMAGE_MULTIPLIER : damage;
     }
 
     static {

@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.Circlet;
 import menagerie.Menagerie;
-import menagerie.act.Encounters;
 import menagerie.monsters.specials.GrandMagus;
 import menagerie.relics.GrandMagusSpellbook;
 

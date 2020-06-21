@@ -33,6 +33,7 @@ public class VoidReaper extends CustomMonster
     private static final int SCYTHE_DANCE_DAMAGE = 4;
     private static final int A3_SCYTHE_DANCE_DAMAGE = 5;
     private static final int SCYTHE_DANCE_HITS = 3;
+    private static final int A18_SCYTHE_DANCE_HITS = 3;
     private static final int SCYTHE_DANCE_BLOCK = 1;
     private static final int A8_SCYTHE_DANCE_BLOCK = 2;
     private static final int HP_MIN = 102;
@@ -76,7 +77,7 @@ public class VoidReaper extends CustomMonster
 
         if (AbstractDungeon.ascensionLevel >= 18) {
             this.cutTheFutureDrawReduction = A18_CUT_THE_FUTURE_DRAW_REDUCTION;
-            this.scytheDanceHits = SCYTHE_DANCE_HITS;
+            this.scytheDanceHits = A18_SCYTHE_DANCE_HITS;
         }
         else {
             this.cutTheFutureDrawReduction = CUT_THE_FUTURE_DRAW_REDUCTION;

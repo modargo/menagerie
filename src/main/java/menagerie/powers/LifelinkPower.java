@@ -15,7 +15,6 @@ public class LifelinkPower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    private static final int ENERGY = 1;
 
     public LifelinkPower(AbstractCreature owner, int amount) {
         this.name = NAME;

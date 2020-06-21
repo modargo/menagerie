@@ -61,7 +61,7 @@ public class Menagerie implements
     @Override
     public void receivePostInitialize() {
         Texture badgeTexture = new Texture("menagerie/images/MenagerieBadge.png");
-        BaseMod.registerModBadge(badgeTexture, "Menagerie", "modargo", "TODO", new ModPanel());
+        BaseMod.registerModBadge(badgeTexture, "Menagerie", "modargo", "An alternate act 1 themed around beasts and mages. Once the stronghold of a cabal of mages who experimented with the boundaries of life itself, the Menagerie is now overrun by their twisted creations.", new ModPanel());
 
         CustomDungeon.addAct(MenagerieAct.ACT_NUM, new MenagerieAct());
         addMonsters();
