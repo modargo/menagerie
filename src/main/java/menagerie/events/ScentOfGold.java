@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import menagerie.Menagerie;
@@ -49,7 +50,12 @@ public class ScentOfGold extends AbstractImageEvent {
                 switch (buttonPressed) {
                     case 0: // Pacify
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                        AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), this.relic);
+                        if (!AbstractDungeon.player.hasRelic(this.relic.relicId)) {
+                            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), this.relic);
+                        }
+                        else {
+                            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), new Circlet());
+                        }
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();

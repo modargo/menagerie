@@ -31,6 +31,7 @@ public class LightningHelix extends CustomCard {
         this.baseMagicNumber = HEALING;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.tags.add(CardTags.HEALING);
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }
 

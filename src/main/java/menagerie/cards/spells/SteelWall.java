@@ -25,7 +25,7 @@ public class SteelWall extends CustomCard {
 
     public SteelWall() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
-        this.block = BLOCK;
+        this.baseBlock = BLOCK;
         this.baseMagicNumber = PLATED_ARMOR;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;

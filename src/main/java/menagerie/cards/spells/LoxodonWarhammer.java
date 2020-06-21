@@ -27,6 +27,7 @@ public class LoxodonWarhammer extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseMagicNumber = LIFELINK;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CardTags.HEALING);
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }
 

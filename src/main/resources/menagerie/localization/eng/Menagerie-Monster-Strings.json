@@ -153,5 +153,14 @@
       "Body Slam"
     ],
     "NAME": "Avatar Of Vigor"
+  },
+  "Menagerie:GrandMagus": {
+    "MOVES": [
+      "Mind Twist",
+      "Lightning Bolt",
+      "Darkblast",
+      "Sulfuric Vortex"
+    ],
+    "NAME": "The Grand Magus"
   }
 }

@@ -30,7 +30,9 @@ import menagerie.monsters.elites.Hydra;
 import menagerie.monsters.elites.MaskedSummoner;
 import menagerie.monsters.elites.VoidReaper;
 import menagerie.monsters.normals.*;
+import menagerie.monsters.specials.GrandMagus;
 import menagerie.relics.Aurumvore;
+import menagerie.relics.GrandMagusSpellbook;
 import menagerie.relics.HuntersKnife;
 import menagerie.relics.ShiftingBlessing;
 import menagerie.util.TextureLoader;
@@ -142,6 +144,7 @@ public class Menagerie implements
         BaseMod.addBoss(MenagerieAct.ID, Encounters.AVATARS, "menagerie/images/map/bosses/Avatars.png", "menagerie/images/map/bosses/AvatarsOutline.png");
 
         //Special fights
+        BaseMod.addMonster(GrandMagus.ID, (BaseMod.GetMonster)GrandMagus::new);
     }
 
     private static void addEvents() {
@@ -161,10 +164,12 @@ public class Menagerie implements
         BaseMod.addEvent(HarrowingRitual.ID, HarrowingRitual.class, MenagerieAct.ID);
         BaseMod.addEvent(MagesHand.ID, MagesHand.class, MenagerieAct.ID);
         BaseMod.addEvent(CloudVision.ID, CloudVision.class, MenagerieAct.ID);
+        BaseMod.addEvent(GrandMagusTower.ID, GrandMagusTower.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
         BaseMod.addRelic(new Aurumvore(), RelicType.SHARED);
+        BaseMod.addRelic(new GrandMagusSpellbook(), RelicType.SHARED);
         BaseMod.addRelic(new HuntersKnife(), RelicType.SHARED);
         BaseMod.addRelic(new ShiftingBlessing(), RelicType.SHARED);
     }

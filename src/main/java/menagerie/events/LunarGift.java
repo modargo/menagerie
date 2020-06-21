@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import menagerie.Menagerie;
 import menagerie.relics.ShiftingBlessing;
@@ -47,7 +48,12 @@ public class LunarGift extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.healthLoss));
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.LIGHTNING));
-                        AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), this.relic);
+                        if (!AbstractDungeon.player.hasRelic(this.relic.relicId)) {
+                            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), this.relic);
+                        }
+                        else {
+                            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), new Circlet());
+                        }
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[1]);
                         this.imageEventText.clearRemainingOptions();

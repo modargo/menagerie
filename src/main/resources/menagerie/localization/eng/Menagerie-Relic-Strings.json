@@ -19,5 +19,12 @@
     "DESCRIPTIONS": [
       "Eats half your current gold and half of gold you gain. For each #b{0} gold eaten, start each combat with #b1 #yStrength."
     ]
+  },
+  "Menagerie:GrandMagusSpellbook": {
+    "NAME": "Grand Magus's Spellbook",
+    "FLAVOR": "Filled with doodles of hybrid beasts.",
+    "DESCRIPTIONS": [
+      "At the start of combat and every #b{0} turns thereafter, add one of the Grand Magus's spells to your hand."
+    ]
   }
 }

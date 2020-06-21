@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ModHelper;
+import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
@@ -34,12 +35,23 @@ public class CardUtil {
     }
 
     public static AbstractCard getGrandMagusSpell() {
-        ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells();
+        ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells(AbstractDungeon.cardRng);
         return list.get(0);
     }
 
+    public static ArrayList<AbstractCard> getGrandMagusSpells(int count, Random random) {
+        ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells(random);
+        ArrayList<AbstractCard> list2 = new ArrayList<AbstractCard>();
+        for (AbstractCard c : list) {
+            if (!c.hasTag(AbstractCard.CardTags.HEALING)) {
+                list2.add(c);
+            }
+        }
+        return new ArrayList(list2.subList(0, count));
+    }
+
     public static ArrayList<AbstractCard> getGrandMagusSpellReward() {
-        ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells();
+        ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells(AbstractDungeon.cardRng);
         int numCards = 3;
         for (AbstractRelic r : AbstractDungeon.player.relics) {
             numCards = r.changeNumberOfCardsInReward(numCards);
@@ -57,7 +69,7 @@ public class CardUtil {
         return new ArrayList(rewardCards);
     }
 
-    private static ArrayList<AbstractCard> getRandomlyOrderedGrandMagusSpells() {
+    private static ArrayList<AbstractCard> getRandomlyOrderedGrandMagusSpells(Random random) {
         List<AbstractCard> list = Arrays.asList(
                 new CrumblingSanctuary(),
                 new DarkRitual(),
@@ -73,7 +85,7 @@ public class CardUtil {
                 new Tinker(),
                 new WallOfBlossoms()
         );
-        Collections.shuffle(list, AbstractDungeon.cardRng.random);
+        Collections.shuffle(list, random.random);
         return new ArrayList(list);
     }
 }

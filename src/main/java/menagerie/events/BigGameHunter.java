@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.relics.Circlet;
 import menagerie.Menagerie;
 import menagerie.relics.HuntersKnife;
 
@@ -50,7 +51,12 @@ public class BigGameHunter extends AbstractImageEvent {
                     case 0: //Take
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         this.screenNum = 2;
-                        AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), this.relic);
+                        if (!AbstractDungeon.player.hasRelic(this.relic.relicId)) {
+                            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), this.relic);
+                        }
+                        else {
+                            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), new Circlet());
+                        }
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         break;

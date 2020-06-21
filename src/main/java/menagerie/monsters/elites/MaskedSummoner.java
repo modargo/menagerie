@@ -3,7 +3,6 @@ package menagerie.monsters.elites;
 import basemod.abstracts.CustomMonster;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
-import com.megacrit.cardcrawl.actions.animations.ShoutAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -14,8 +13,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import menagerie.Menagerie;
 import menagerie.actions.SummonFrozenSoldierAction;
-
-import java.util.Iterator;
 
 public class MaskedSummoner extends CustomMonster
 {
