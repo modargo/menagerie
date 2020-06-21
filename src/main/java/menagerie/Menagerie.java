@@ -84,6 +84,7 @@ public class Menagerie implements
         BaseMod.addMonster(EntropyWarlock.ID, (BaseMod.GetMonster)EntropyWarlock::new);
         BaseMod.addMonster(MeltingSalamander.ID, (BaseMod.GetMonster)MeltingSalamander::new);
         BaseMod.addMonster(RedMage.ID, (BaseMod.GetMonster)RedMage::new);
+        BaseMod.addMonster(Hexasnake.ID, (BaseMod.GetMonster)Hexasnake::new);
         BaseMod.addMonster(Encounters.MONSTROUS_EXPERIMENTS_2, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new MonstrousExperiment(X1, 0.0F),

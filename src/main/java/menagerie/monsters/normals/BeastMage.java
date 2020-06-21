@@ -18,8 +18,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import menagerie.Menagerie;
 
-public class BeastMage extends CustomMonster
-{
+public class BeastMage extends CustomMonster {
     public static final String ID = "Menagerie:BeastMage";
     private static final MonsterStrings monsterStrings;
     public static final String NAME;
@@ -125,14 +124,11 @@ public class BeastMage extends CustomMonster
         }
         if (!hasAllies && !this.lastMove(BESTIAL_RAGE_ATTACK)) {
             this.setMove(MOVES[3], BESTIAL_RAGE_ATTACK, Intent.ATTACK_DEFEND, this.bestialRageDamage);
-        }
-        else if (!hasAllies || this.lastMove(ENERVATE_DEBUFF)) {
+        } else if (!hasAllies || this.lastMove(ENERVATE_DEBUFF)) {
             this.setMove(MOVES[1], HEX_DEBUFF, Intent.STRONG_DEBUFF);
-        }
-        else if (this.lastMove(HEX_DEBUFF)) {
+        } else if (this.lastMove(HEX_DEBUFF)) {
             this.setMove(MOVES[2], ARCANE_BULWARK_MOVE, Intent.DEFEND);
-        }
-        else {
+        } else {
             this.setMove(MOVES[0], ENERVATE_DEBUFF, Intent.DEBUFF);
         }
     }

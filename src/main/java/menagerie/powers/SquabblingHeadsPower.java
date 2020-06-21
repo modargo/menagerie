@@ -21,6 +21,7 @@ public class SquabblingHeadsPower extends AbstractPower {
     public static final String[] DESCRIPTIONS;
     private static int SWITCH_THRESHOLD = 3;
     private static int MALLEABLE_AMOUNT = 2;
+    private static int SERPENTS_GAZE_AMOUNT = 1;
     private boolean lionActive;
     private boolean goatActive;
     private boolean snakeActive;
@@ -120,7 +121,7 @@ public class SquabblingHeadsPower extends AbstractPower {
 
     private void setSnakeActive(boolean isActive) {
         if (!this.snakeActive && isActive) {
-            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, this.owner, new SerpentsGazePower(this.owner)));
+            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, this.owner, new SerpentsGazePower(this.owner, SERPENTS_GAZE_AMOUNT), SERPENTS_GAZE_AMOUNT));
         }
         if (this.snakeActive && !isActive) {
             this.addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, this.owner, SerpentsGazePower.POWER_ID));

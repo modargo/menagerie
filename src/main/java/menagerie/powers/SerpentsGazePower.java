@@ -14,13 +14,14 @@ public class SerpentsGazePower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    private static int CARDS = 1;
-    private boolean active = true;
+    private int counter;
 
-    public SerpentsGazePower(AbstractCreature owner) {
+    public SerpentsGazePower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
+        this.amount = amount;
+        this.counter = 0;
         this.updateDescription();
         this.priority = 50;
         Menagerie.LoadPowerImage(this);
@@ -28,23 +29,23 @@ public class SerpentsGazePower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = MessageFormat.format(DESCRIPTIONS[0], CARDS);
+        this.description = MessageFormat.format(DESCRIPTIONS[0], this.amount);
     }
 
     @Override
     public void onCardDraw(AbstractCard card) {
-        if (this.active) {
+        if (this.counter > 0) {
             this.flash();
             if (card.cost >= 0) {
                 card.setCostForTurn(Math.max(card.cost, card.costForTurn) + 1);
             }
-            this.active = false;
+            this.counter--;
         }
     }
 
     @Override
     public void atStartOfTurn() {
-        this.active = true;
+        this.counter = this.amount;
     }
 
     static {

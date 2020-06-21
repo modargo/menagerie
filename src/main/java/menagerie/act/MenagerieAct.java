@@ -95,6 +95,7 @@ public class MenagerieAct extends CustomDungeon {
         monsters.add(new MonsterInfo(EntropyWarlock.ID, 16.0F));
         monsters.add(new MonsterInfo(MeltingSalamander.ID, 16.0F));
         monsters.add(new MonsterInfo(RedMage.ID, 16.0F));
+        monsters.add(new MonsterInfo(Hexasnake.ID, 16.0F));
         monsters.add(new MonsterInfo(Encounters.MONSTROUS_EXPERIMENTS_2, 16.0F));
         monsters.add(new MonsterInfo(Encounters.RABBITS_3, 16.0F));
         monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, 16.0F));

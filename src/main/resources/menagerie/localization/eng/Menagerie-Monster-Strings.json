@@ -171,5 +171,13 @@
       "Solar Flare"
     ],
     "NAME": "Sunstalker"
+  },
+  "Menagerie:Hexasnake": {
+    "MOVES": [
+      "Serpent's Gaze",
+      "Venomous Bite",
+      "Constrict"
+    ],
+    "NAME": "Hexasnake"
   }
 }
