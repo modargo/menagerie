@@ -189,6 +189,7 @@ public class Menagerie implements
         BaseMod.addCard(new Dismember());
         BaseMod.addCard(new Foresee());
         BaseMod.addCard(new Languish());
+        BaseMod.addCard(new LightningBolt());
         BaseMod.addCard(new LightningHelix());
         BaseMod.addCard(new LoxodonWarhammer());
         BaseMod.addCard(new MirarisWake());

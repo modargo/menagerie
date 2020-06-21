@@ -76,6 +76,7 @@ public class CardUtil {
                 new Dismember(),
                 new Foresee(),
                 new Languish(),
+                new LightningBolt(),
                 new LightningHelix(),
                 new LoxodonWarhammer(),
                 new MirarisWake(),
