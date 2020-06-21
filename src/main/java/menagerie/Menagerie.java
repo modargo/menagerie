@@ -181,6 +181,7 @@ public class Menagerie implements
         BaseMod.addCard(new BeastSpirit());
         BaseMod.addCard(new Slaughter());
         BaseMod.addCard(new SagesJudgement());
+        BaseMod.addCard(new BloodySpellbook());
 
         //Grand Magus Spells
         BaseMod.addCard(new CrumblingSanctuary());

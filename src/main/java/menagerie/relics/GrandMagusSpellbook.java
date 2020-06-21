@@ -2,16 +2,13 @@ package menagerie.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainGoldAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.vfx.GainPennyEffect;
 import menagerie.Menagerie;
 import menagerie.actions.GrandMagusSpellbookAction;
+import menagerie.cards.BloodySpellbook;
 import menagerie.util.TextureLoader;
 
 import java.text.MessageFormat;
@@ -34,6 +31,7 @@ public class GrandMagusSpellbook extends CustomRelic {
     @Override
     public void atBattleStart() {
         this.counter = -1;
+        this.addToBot(new MakeTempCardInDrawPileAction(new BloodySpellbook(), 1, true, true));
     }
 
     @Override
