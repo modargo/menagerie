@@ -162,5 +162,14 @@
       "Sulfuric Vortex"
     ],
     "NAME": "The Grand Magus"
+  },
+  "Menagerie:Sunstalker": {
+    "MOVES": [
+      "Tentacle Slap",
+      "Beam",
+      "Solar Energy",
+      "Solar Flare"
+    ],
+    "NAME": "Sunstalker"
   }
 }

@@ -81,6 +81,10 @@
     "NAME": "Steel Wall",
     "DESCRIPTION": "Gain !B! block. NL Gain !M! plated armor. NL Exhaust."
   },
+  "Menagerie:LightningBolt": {
+    "NAME": "Lightning Bolt",
+    "DESCRIPTION": "Deal !D! damage."
+  },
   "Menagerie:BloodySpellbook": {
     "NAME": "Bloody Spellbook",
     "DESCRIPTION": "Unplayable. NL While in hand, lose !M! HP when one of the Grand Magus's spells is played."

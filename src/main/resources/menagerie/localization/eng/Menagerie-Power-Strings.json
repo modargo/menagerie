@@ -76,5 +76,9 @@
   "Menagerie:SulfuricVortex": {
     "NAME": "Sulfuric Vortex",
     "DESCRIPTIONS": ["At the end of your turn, take #b{0} damage."]
+  },
+  "Menagerie:SolarCharge": {
+    "NAME": "Solar Charge",
+    "DESCRIPTIONS": ["Every time one of this enemy's attacks is fully blocked, this enemy gains a #ysolar #ycharge. NL For every #b{0} damage you deal in a turn, this enemy gains a #ysolar #ycharge. NL Each solar charge adds #b1 #yStrength. NL At the start of this enemy's turn, if it has #b{1} or more #ysolar #ycharges, uses a strong attack and loses #b{1} #ysolar #ycharges."]
   }
 }

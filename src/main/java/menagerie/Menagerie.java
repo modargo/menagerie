@@ -22,10 +22,7 @@ import menagerie.act.MenagerieAct;
 import menagerie.cards.*;
 import menagerie.cards.spells.*;
 import menagerie.events.*;
-import menagerie.monsters.bosses.AvatarOfCunning;
-import menagerie.monsters.bosses.AvatarOfVigor;
-import menagerie.monsters.bosses.AvatarOfWisdom;
-import menagerie.monsters.bosses.Chimera;
+import menagerie.monsters.bosses.*;
 import menagerie.monsters.elites.Hydra;
 import menagerie.monsters.elites.MaskedSummoner;
 import menagerie.monsters.elites.VoidReaper;
@@ -135,6 +132,8 @@ public class Menagerie implements
         //Bosses
         BaseMod.addMonster(Chimera.ID, (BaseMod.GetMonster)Chimera::new);
         BaseMod.addBoss(MenagerieAct.ID, Chimera.ID, "menagerie/images/map/bosses/Chimera.png", "menagerie/images/map/bosses/ChimeraOutline.png");
+        BaseMod.addMonster(Sunstalker.ID, (BaseMod.GetMonster)Sunstalker::new);
+        BaseMod.addBoss(MenagerieAct.ID, Sunstalker.ID, "menagerie/images/map/bosses/Sunstalker.png", "menagerie/images/map/bosses/SunstalkerOutline.png");
         BaseMod.addMonster(Encounters.AVATARS, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new AvatarOfVigor(-550.0F, 50.0F),
