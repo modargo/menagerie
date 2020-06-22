@@ -43,7 +43,7 @@
   },
   "Menagerie:WisdomAura": {
     "NAME": "Wisdom Aura",
-    "DESCRIPTIONS": ["While this enemy is alive, at the start of your turn, draw #b{0} additional cards. At the end of each round, apply #b{1} #yFrail. On death, all enemies gain #b{2} #yThorns."]
+    "DESCRIPTIONS": ["While this enemy is alive, at the start of your turn, draw #b{0} additional cards. NL At the start of every other turn, applies #b{1} #yFrail. NL On death, all enemies gain #b{2} #yThorns."]
   },
   "Menagerie:Wisdom": {
     "NAME": "Wisdom",
@@ -51,7 +51,7 @@
   },
   "Menagerie:CunningAura": {
     "NAME": "Cunning Aura",
-    "DESCRIPTIONS": ["While this enemy is alive, gain #b{0} #yDexterity. Whenever you play a card, take #b{1} damage. On death, all enemies gain #b{2} #yPlated #yArmor."]
+    "DESCRIPTIONS": ["While this enemy is alive, gain #b{0} #yDexterity. NL Whenever you play a card, take #b{1} damage. NL On death, all enemies gain #b{2} #yPlated #yArmor."]
   },
   "Menagerie:Cunning": {
     "NAME": "Cunning",
@@ -59,7 +59,7 @@
   },
   "Menagerie:VigorAura": {
     "NAME": "Vigor Aura",
-    "DESCRIPTIONS": ["While this enemy is alive, at the start of your turn, gain [E] . At the end of each round, shuffle #b{1} #yDazed into your deck. On death, apply {2} #yVulnerable."]
+    "DESCRIPTIONS": ["While this enemy is alive, at the start of your turn, gain [E] . NL At the end of each round, add #b{1} #yDazed to your discard pile. NL On death, apply {2} #yVulnerable."]
   },
   "Menagerie:Vigor": {
     "NAME": "Vigor",

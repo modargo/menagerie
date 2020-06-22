@@ -21,12 +21,14 @@ public class WisdomAuraPower extends AbstractPower {
     public static final String[] DESCRIPTIONS;
     private static final int DRAW_AMOUNT = 2;
     private static final int FRAIL_AMOUNT = 1;
+    private int counter;
 
     public WisdomAuraPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
+        this.counter = 0;
         this.updateDescription();
         this.priority = 50;
         Menagerie.LoadPowerImage(this);
@@ -43,8 +45,11 @@ public class WisdomAuraPower extends AbstractPower {
     }
 
     @Override
-    public void atEndOfRound() {
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, this.owner, new FrailPower(AbstractDungeon.player, FRAIL_AMOUNT, true)));
+    public void atStartOfTurn() {
+        this.counter = 1 - this.counter;
+        if (this.counter == 1) {
+            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, this.owner, new FrailPower(AbstractDungeon.player, FRAIL_AMOUNT, true)));
+        }
     }
 
     @Override
