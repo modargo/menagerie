@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import menagerie.Menagerie;
+import menagerie.powers.LoseDexterityNonDebuffPower;
+import menagerie.powers.LoseStrengthNonDebuffPower;
 import menagerie.util.TextureLoader;
 
 public class ShiftingBlessing extends CustomRelic {
@@ -35,15 +37,11 @@ public class ShiftingBlessing extends CustomRelic {
         this.flash();
         if (this.counter == 1) {
             this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, STAT), STAT));
-            AbstractPower temporaryPower = new LoseStrengthPower(AbstractDungeon.player, STAT);
-            temporaryPower.type = AbstractPower.PowerType.BUFF;
-            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, temporaryPower, STAT));
+            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LoseStrengthNonDebuffPower(AbstractDungeon.player, STAT), STAT));
         }
         else {
             this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, STAT), STAT));
-            AbstractPower temporaryPower = new LoseDexterityPower(AbstractDungeon.player, STAT);
-            temporaryPower.type = AbstractPower.PowerType.BUFF;
-            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, temporaryPower, STAT));
+            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LoseDexterityNonDebuffPower(AbstractDungeon.player, STAT), STAT));
         }
     }
 

@@ -1,4 +1,3 @@
-
 package menagerie.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
