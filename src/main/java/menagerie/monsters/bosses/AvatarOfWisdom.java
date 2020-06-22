@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.RollMoveAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -77,6 +78,10 @@ public class AvatarOfWisdom extends CustomMonster
 
     @Override
     public void usePreBattleAction() {
+        CardCrawlGame.music.unsilenceBGM();
+        AbstractDungeon.scene.fadeOutAmbiance();
+        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new WisdomAuraPower(this, this.wisdomAuraThorns)));
     }
 
@@ -114,6 +119,16 @@ public class AvatarOfWisdom extends CustomMonster
             this.setMove(MOVES[1], INSIGHT_OF_THE_WISE_BUFF, Intent.BUFF);
         } else {
             this.setMove(MOVES[2], OSMOSIS_ATTACK, Intent.ATTACK_BUFF, this.osmosisDamage);
+        }
+    }
+
+    @Override
+    public void die() {
+        super.die();
+        if (AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            this.useFastShakeAnimation(5.0F);
+            CardCrawlGame.screenShake.rumble(4.0F);
+            this.onBossVictoryLogic();
         }
     }
 

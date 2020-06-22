@@ -83,6 +83,10 @@ public class Chimera extends CustomMonster
 
     @Override
     public void usePreBattleAction() {
+        CardCrawlGame.music.unsilenceBGM();
+        AbstractDungeon.scene.fadeOutAmbiance();
+        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+
         this.power = new SquabblingHeadsPower(this);
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, this.power));
     }
@@ -141,6 +145,16 @@ public class Chimera extends CustomMonster
             this.setMove(MOVES[2], CLAW_AND_HORN_ATTACK, Intent.ATTACK_DEFEND, this.clawAndHornDamage);
         } else {
             this.setMove(MOVES[3], VENOM_SPIT_ATTACK, Intent.ATTACK_DEBUFF, this.venomSpitDamage);
+        }
+    }
+
+    @Override
+    public void die() {
+        super.die();
+        if (AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            this.useFastShakeAnimation(5.0F);
+            CardCrawlGame.screenShake.rumble(4.0F);
+            this.onBossVictoryLogic();
         }
     }
 

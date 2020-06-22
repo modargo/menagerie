@@ -97,6 +97,10 @@ public class Sunstalker extends CustomMonster
 
     @Override
     public void usePreBattleAction() {
+        CardCrawlGame.music.unsilenceBGM();
+        AbstractDungeon.scene.fadeOutAmbiance();
+        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+
         this.power = new SolarChargePower(this, 0);
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, this.power));
     }

@@ -128,6 +128,16 @@ public class AvatarOfVigor extends CustomMonster
         }
     }
 
+    @Override
+    public void die() {
+        super.die();
+        if (AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            this.useFastShakeAnimation(5.0F);
+            CardCrawlGame.screenShake.rumble(4.0F);
+            this.onBossVictoryLogic();
+        }
+    }
+
     static {
         monsterStrings = CardCrawlGame.languagePack.getMonsterStrings(ID);
         NAME = AvatarOfVigor.monsterStrings.NAME;
