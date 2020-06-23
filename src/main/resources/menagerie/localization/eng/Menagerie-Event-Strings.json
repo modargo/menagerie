@@ -6,7 +6,7 @@
       "You kneel before the #gstatues. You feel bestial spirits vigor and cunning come to you. Their claws and fangs dig into your flesh, but you feel that the spirits remain with you, empowering you. You rise, stronger, fiercer, bestial."
     ],
     "OPTIONS": [
-      "[Kneel] #gGain Beast Spirit. #rLose #r{1} #rMax #rHP.",
+      "[Kneel] #gGain Beast Spirit. #rLose #r{0} #rMax #rHP.",
       "[Leave]"
     ]
   },
