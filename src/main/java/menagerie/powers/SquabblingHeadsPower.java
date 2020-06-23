@@ -77,6 +77,15 @@ public class SquabblingHeadsPower extends AbstractPower {
     public void activateAll() {
         this.flash();
         this.amount = 0;
+        if (this.lionActive) {
+            this.setLionActive(false);
+        }
+        if (this.goatActive) {
+            this.setGoatActive(false);
+        }
+        if (this.snakeActive) {
+            this.setSnakeActive(false);
+        }
         this.setLionActive(true);
         this.setGoatActive(true);
         this.setSnakeActive(true);
