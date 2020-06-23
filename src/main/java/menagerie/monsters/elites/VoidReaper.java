@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import menagerie.Menagerie;
-import menagerie.cards.spells.Dismember;
+import menagerie.cards.Necropotence;
 import menagerie.powers.DrawReductionSingleTurnPower;
 
 public class VoidReaper extends CustomMonster
@@ -87,7 +87,7 @@ public class VoidReaper extends CustomMonster
 
     @Override
     public void usePreBattleAction() {
-        this.addToBot(new MakeTempCardInHandAction(new Dismember(), false));
+        this.addToBot(new MakeTempCardInHandAction(new Necropotence(), false));
     }
 
     @Override
