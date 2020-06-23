@@ -33,8 +33,8 @@ public class ScentOfGold extends AbstractImageEvent {
         super(NAME, DESCRIPTIONS[0], IMG);
 
         this.relic = new Aurumvore();
-        float healthLossPercent = AbstractDungeon.ascensionLevel >= 15 ? A15_HEALTH_LOSS_PERCENT : HEALTH_LOSS_PERCENT;
-        this.healthLoss = (int)((float)AbstractDungeon.player.maxHealth * healthLossPercent);
+        int healthLossPercent = AbstractDungeon.ascensionLevel >= 15 ? A15_HEALTH_LOSS_PERCENT : HEALTH_LOSS_PERCENT;
+        this.healthLoss = (AbstractDungeon.player.maxHealth * healthLossPercent) / 100;
 
         imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.relic.name), this.relic);
         imageEventText.setDialogOption(MessageFormat.format(OPTIONS[1], this.healthLoss));
