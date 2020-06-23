@@ -31,10 +31,12 @@ public class FrozenSoldier extends CustomMonster
     private static final int ICE_BARRIER_BLOCK = 2;
     private static final int A8_ICE_BARRIER_BLOCK = 3;
     private static final int THAWING_AMOUNT = 3;
+    private static final int A18_THAWING_AMOUNT = 2;
     private static final int HP = 2;
-    private static final int A18_HP = 3;
+    private static final int A18_HP = 2;
     private int iceBarrierBlock;
     private int explosiveThawDamage;
+    private int thawingAmount;
     private boolean startOfCombat;
 
     public FrozenSoldier() {
@@ -46,8 +48,10 @@ public class FrozenSoldier extends CustomMonster
         this.type = EnemyType.ELITE;
         if (AbstractDungeon.ascensionLevel >= 18) {
             this.setHp(A18_HP);
+            this.thawingAmount = A18_THAWING_AMOUNT;
         } else {
             this.setHp(HP);
+            this.thawingAmount = THAWING_AMOUNT;
         }
 
         if (AbstractDungeon.ascensionLevel >= 3) {
@@ -63,13 +67,14 @@ public class FrozenSoldier extends CustomMonster
             this.iceBarrierBlock = ICE_BARRIER_BLOCK;
         }
 
+
         this.startOfCombat = startOfCombat;
     }
 
     @Override
     public void usePreBattleAction() {
-        AbstractPower thawing = new ThawingPower(this, THAWING_AMOUNT);
-        AbstractPower intangible = new IntangiblePower(this, THAWING_AMOUNT);
+        AbstractPower thawing = new ThawingPower(this, this.thawingAmount);
+        AbstractPower intangible = new IntangiblePower(this, this.thawingAmount);
         if (this.startOfCombat) {
             // To force justApplied to be false
             thawing.atEndOfRound();
