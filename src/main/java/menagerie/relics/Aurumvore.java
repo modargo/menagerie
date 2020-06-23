@@ -31,7 +31,7 @@ public class Aurumvore extends CustomRelic implements CustomSavable<Integer> {
     public void onEquip() {
         int goldEaten = (AbstractDungeon.player.gold + 1) / 2;
         AbstractDungeon.player.loseGold(goldEaten);
-        this.counter += goldEaten;
+        this.counter = goldEaten;
     }
 
     @Override
