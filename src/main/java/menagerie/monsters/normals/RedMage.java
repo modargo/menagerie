@@ -39,10 +39,10 @@ public class RedMage extends CustomMonster
     private static final int BOLT_DAMAGE = 6;
     private static final int A2_BOLT_DAMAGE = 7;
     private static final int BOLT_HITS = 2;
-    private static final int HP_MIN = 55;
-    private static final int HP_MAX = 57;
-    private static final int A7_HP_MIN = 56;
-    private static final int A7_HP_MAX = 58;
+    private static final int HP_MIN = 61;
+    private static final int HP_MAX = 63;
+    private static final int A7_HP_MIN = 62;
+    private static final int A7_HP_MAX = 64;
     private int muddleFrail;
     private int riposteDamage;
     private int riposteBlock;

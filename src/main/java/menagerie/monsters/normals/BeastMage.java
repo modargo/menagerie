@@ -38,10 +38,10 @@ public class BeastMage extends CustomMonster {
     private static final int A2_BESTIAL_RAGE_DAMAGE = 13;
     private static final int BESTIAL_RAGE_BLOCK = 8;
     private static final int A7_BESTIAL_RAGE_BLOCK = 10;
-    private static final int HP_MIN = 45;
-    private static final int HP_MAX = 50;
-    private static final int A7_HP_MIN = 48;
-    private static final int A7_HP_MAX = 53;
+    private static final int HP_MIN = 40;
+    private static final int HP_MAX = 45;
+    private static final int A7_HP_MIN = 43;
+    private static final int A7_HP_MAX = 48;
     private int enervateWeak;
     private int hexVulnerable;
     private int arcaneBulwarkBlock;

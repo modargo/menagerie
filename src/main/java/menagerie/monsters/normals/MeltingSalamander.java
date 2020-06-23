@@ -34,8 +34,8 @@ public class MeltingSalamander extends CustomMonster
     private static final byte MELTDOWN_MOVE = 3;
     private static final int FIERY_SPIT_DAMAGE = 7;
     private static final int A2_FIERY_SPIT_DAMAGE = 8;
-    private static final int MELTDOWN_DAMAGE = 21;
-    private static final int A2_MELTDOWN_DAMAGE = 24;
+    private static final int MELTDOWN_DAMAGE = 18;
+    private static final int A2_MELTDOWN_DAMAGE = 21;
     private static final int MELTDOWN_SELF_DAMAGE = 10;
     private static final int MELTDOWN_FRAIL_AND_WEAK = 3;
     private static final int STARTING_METALLICIZE = 9;

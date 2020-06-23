@@ -29,10 +29,10 @@ public class ProwlingAmalgam extends CustomMonster
     private static final int A2_RABID_FRENZY_DAMAGE = 4;
     private static final int RABID_FRENZY_HITS = 3;
     private static final int A17_RABID_FRENZY_HITS = 4;
-    private static final int HP_MIN = 51;
-    private static final int HP_MAX = 54;
-    private static final int A7_HP_MIN = 53;
-    private static final int A7_HP_MAX = 56;
+    private static final int HP_MIN = 45;
+    private static final int HP_MAX = 48;
+    private static final int A7_HP_MIN = 47;
+    private static final int A7_HP_MAX = 50;
     private int biteAndStompDamage;
     private int rabidFrenzyDamage;
     private int rabidFrenzyHits;

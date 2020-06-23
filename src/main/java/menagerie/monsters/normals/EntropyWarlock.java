@@ -36,10 +36,10 @@ public class EntropyWarlock extends CustomMonster
     private static final int A2_TENTACLE_GRASP_DAMAGE = 6;
     private static final int TENTACLE_GRASP_CONSTRICT = 1;
     private static final int A17_TENTACLE_GRASP_CONSTRICT = 2;
-    private static final int HP_MIN = 45;
-    private static final int HP_MAX = 50;
-    private static final int A7_HP_MIN = 48;
-    private static final int A7_HP_MAX = 53;
+    private static final int HP_MIN = 51;
+    private static final int HP_MAX = 55;
+    private static final int A7_HP_MIN = 54;
+    private static final int A7_HP_MAX = 58;
     private int darkIncantationDamage;
     private int tentacleGraspDamage;
     private int tentacleGraspConstrict;
