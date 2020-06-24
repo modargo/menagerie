@@ -22,8 +22,8 @@ public class ScentOfGold extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final int HEALTH_LOSS_PERCENT = 20;
-    private static final int A15_HEALTH_LOSS_PERCENT = 30;
+    private static final int HEALTH_LOSS_PERCENT = 15;
+    private static final int A15_HEALTH_LOSS_PERCENT = 20;
 
     private int healthLoss;
     private AbstractRelic relic;
