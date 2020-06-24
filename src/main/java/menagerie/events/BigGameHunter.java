@@ -51,6 +51,7 @@ public class BigGameHunter extends AbstractImageEvent {
                     case 0: //Take
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         this.screenNum = 2;
+                        AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
                         if (!AbstractDungeon.player.hasRelic(this.relic.relicId)) {
                             AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), this.relic);
                         }
