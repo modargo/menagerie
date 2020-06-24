@@ -118,7 +118,7 @@
       "You close your hand around the moon! A #g~shocking~ #g~current~ runs through you, opening new pathways within your body."
     ],
     "OPTIONS": [
-      "[Touch] #gGain #ga #grelic. #rLose #r{0} #rHP.",
+      "[Touch] #gGain {0}. #rLose #r{1} #rHP.",
       "[Leave]"
     ]
   },

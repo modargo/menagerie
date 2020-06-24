@@ -34,7 +34,7 @@ public class LunarGift extends AbstractImageEvent {
         this.relic = new ShiftingBlessing();
         this.healthLoss = AbstractDungeon.ascensionLevel >= 15 ? A15_HEALTH_LOSS : HEALTH_LOSS;
 
-        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.healthLoss), this.relic);
+        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.relic.name, this.healthLoss), this.relic);
         imageEventText.setDialogOption(OPTIONS[1]);
     }
 
