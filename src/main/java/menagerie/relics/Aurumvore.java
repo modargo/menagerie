@@ -16,7 +16,7 @@ public class Aurumvore extends CustomRelic implements CustomSavable<Integer> {
     public static final String ID = "Menagerie:Aurumvore";
     private static final Texture IMG = TextureLoader.getTexture(Menagerie.relicImage(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(Menagerie.relicOutlineImage(ID));
-    private static final int GOLD_PER_STRENGTH = 200;
+    private static final int GOLD_PER_STRENGTH = 150;
 
     public Aurumvore() {
         super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.SPECIAL, LandingSound.CLINK);
