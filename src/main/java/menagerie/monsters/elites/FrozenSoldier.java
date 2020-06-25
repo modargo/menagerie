@@ -111,7 +111,7 @@ public class FrozenSoldier extends CustomMonster
 
     @Override
     protected void getMove(final int num) {
-        if (this.lastMove(ICE_BARRIER_MOVE) && this.lastMoveBefore(ICE_BARRIER_MOVE)) {
+        if (this.moveHistory.size() > this.thawingAmount - 2) {
             this.setMove(MOVES[1], VIOLENT_THAW_ATTACK, Intent.ATTACK, this.explosiveThawDamage);
         }
         else {
