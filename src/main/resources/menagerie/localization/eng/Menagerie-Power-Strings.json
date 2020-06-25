@@ -39,7 +39,7 @@
   },
   "Menagerie:Thawing": {
     "NAME": "Thawing",
-    "DESCRIPTIONS": ["This enemy will thaw in #b{0} turns. The turn it thaws, it will attack, dealing #b{1} extra damage got each HP it has, then die."]
+    "DESCRIPTIONS": ["This enemy will thaw in #b{0} turns. The turn it thaws, it will attack, dealing #b{1} extra damage got each HP it has, then die. NL When killed, Masked Summoner loses {2} health."]
   },
   "Menagerie:WisdomAura": {
     "NAME": "Wisdom Aura",

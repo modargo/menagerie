@@ -38,6 +38,7 @@ public class FrozenSoldier extends CustomMonster
     private int explosiveThawDamage;
     private int thawingAmount;
     private boolean startOfCombat;
+    public boolean explosiveThawUsed;
 
     public FrozenSoldier() {
         this(0.0f, 0.0f, false);
@@ -67,8 +68,8 @@ public class FrozenSoldier extends CustomMonster
             this.iceBarrierBlock = ICE_BARRIER_BLOCK;
         }
 
-
         this.startOfCombat = startOfCombat;
+        this.explosiveThawUsed = false;
     }
 
     @Override
@@ -99,6 +100,7 @@ public class FrozenSoldier extends CustomMonster
                 }
                 break;
             case VIOLENT_THAW_ATTACK:
+                this.explosiveThawUsed = true;
                 AbstractDungeon.actionManager.addToBottom(new FastShakeAction(this, 0.5F, 0.2F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                 AbstractDungeon.actionManager.addToBottom(new RemoveAllBlockAction(this, this));
