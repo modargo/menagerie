@@ -20,6 +20,7 @@ public class SteelWall extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int BLOCK = 7;
+    private static final int UPGRADE_BLOCK = 1;
     private static final int PLATED_ARMOR = 1;
     private static final int UPGRADE_PLATED_ARMOR = 1;
 
@@ -40,6 +41,7 @@ public class SteelWall extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeBlock(UPGRADE_BLOCK);
             this.upgradeMagicNumber(UPGRADE_PLATED_ARMOR);
         }
     }
