@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import menagerie.Menagerie;
 import menagerie.actions.SummonFrozenSoldierAction;
@@ -25,7 +26,10 @@ public class MaskedSummoner extends CustomMonster
     private static final byte GENTLE_SNOW_BUFF = 1;
     private static final byte FROST_SUMMON_MOVE = 2;
     private static final byte SILENT_SPEAR_ATTACK = 3;
-    private static final int GENTLE_SNOW_HEAL = 1;
+    private static final int GENTLE_SNOW_HEAL = 0;
+    private static final int A18_GENTLE_SNOW_HEAL = 1;
+    private static final int GENTLE_SNOW_STRENGTH = 2;
+    private static final int A18_GENTLE_SNOW_STRENGTH = 2;
     private static final int GENTLE_SNOW_BLOCK = 4;
     private static final int A8_GENTLE_SNOW_BLOCK = 6;
     private static final int FROST_SUMMON_COUNT = 2;
@@ -37,6 +41,8 @@ public class MaskedSummoner extends CustomMonster
     private static final int HP_MAX = 118;
     private static final int A8_HP_MIN = 116;
     private static final int A8_HP_MAX = 122;
+    private int gentleSnowHeal;
+    private int gentleSnowStrength;
     private int gentleSnowBlock;
     private int silentSpearDamage;
     private int startingSummons;
@@ -65,9 +71,13 @@ public class MaskedSummoner extends CustomMonster
         this.damage.add(new DamageInfo(this, this.silentSpearDamage));
 
         if (AbstractDungeon.ascensionLevel >= 18) {
+            this.gentleSnowHeal = A18_GENTLE_SNOW_HEAL;
+            this.gentleSnowStrength = A18_GENTLE_SNOW_STRENGTH;
             this.startingSummons = A18_STARTING_SUMMONS;
         }
         else {
+            this.gentleSnowHeal = GENTLE_SNOW_HEAL;
+            this.gentleSnowStrength = GENTLE_SNOW_STRENGTH;
             this.startingSummons = STARTING_SUMMONS;
         }
     }
@@ -86,7 +96,12 @@ public class MaskedSummoner extends CustomMonster
             case GENTLE_SNOW_BUFF:
                 for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
                     if (m != this && !m.isDying) {
-                        AbstractDungeon.actionManager.addToBottom(new HealAction(m, this, GENTLE_SNOW_HEAL));
+                        if (this.gentleSnowHeal > 0) {
+                            AbstractDungeon.actionManager.addToBottom(new HealAction(m, this, this.gentleSnowHeal));
+                        }
+                        if (this.gentleSnowStrength > 0) {
+                            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, this.gentleSnowStrength), this.gentleSnowStrength));
+                        }
                     }
                 }
                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.gentleSnowBlock));

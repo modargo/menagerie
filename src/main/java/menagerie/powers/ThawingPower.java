@@ -16,7 +16,7 @@ public class ThawingPower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    private static final int HEALTH_DAMAGE_MULTIPLIER = 5;
+    private static final int HEALTH_DAMAGE_MULTIPLIER = 3;
     private boolean justApplied = true;
 
     public ThawingPower(AbstractCreature owner, int amount) {
