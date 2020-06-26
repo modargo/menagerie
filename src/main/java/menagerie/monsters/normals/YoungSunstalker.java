@@ -29,10 +29,10 @@ public class YoungSunstalker extends CustomMonster
     private static final int TENTACLE_SLAP_DAMAGE = 2;
     private static final int A2_TENTACLE_SLAP_DAMAGE = 3;
     private static final int TENTACLE_SLAP_HITS = 3;
-    private static final int SUNBATHE_BLOCK = 3;
-    private static final int A7_SUNBATHE_BLOCK = 4;
-    private static final int SUNBATHE_PLATED_ARMOR = 2;
-    private static final int A17_SUNBATHE_PLATED_ARMOR = 3;
+    private static final int SUNBATHE_BLOCK = 0;
+    private static final int A7_SUNBATHE_BLOCK = 0;
+    private static final int SUNBATHE_PLATED_ARMOR = 1;
+    private static final int A17_SUNBATHE_PLATED_ARMOR = 2;
     private static final int HP_MIN = 41;
     private static final int HP_MAX = 46;
     private static final int A7_HP_MIN = 44;
@@ -86,7 +86,9 @@ public class YoungSunstalker extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new FastShakeAction(this, 0.5F, 0.2F));
                 for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
                     if (m == this || !m.isDying) {
-                        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(m, this.sunbatheBlock));
+                        if (this.sunbatheBlock > 0) {
+                            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(m, this.sunbatheBlock));
+                        }
                         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new PlatedArmorPower(m, this.sunbathePlatedArmor), this.sunbathePlatedArmor));
                     }
                 }
