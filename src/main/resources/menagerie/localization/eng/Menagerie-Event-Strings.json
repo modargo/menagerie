@@ -125,13 +125,13 @@
   "Menagerie:MagicPeddler": {
     "NAME": "Magic Peddler",
     "DESCRIPTIONS": [
-      "\"Hail, friend! Would you care to purchase one of these #gmagical #gscrolls? Perfect for an adventurer seeking #yfame and #yfortune in the spire. My scrolls can give you #ghealth, or help build your #gskills. And if you're not interested in that, perhaps you'd care for a #gmagical #gelixir?",
+      "\"Hail, friend! Would you care to purchase one of these #gmagical #gscrolls? Perfect for an adventurer seeking #yfame and #yfortune in the spire. My scrolls can give you #ghealth, or help build your #gskills, or master powerful spells of your own. What would you care to buy?",
       "The peddler thanks you for your purchase and wishes you luck in the spire before packing up shop, headed for another location."
     ],
     "OPTIONS": [
       "[Potion] #y{0} #yGold: #gGain #ga #gpotion.",
       "[Heal] #y{0} #yGold: #gHeal #g{1} #gHP.",
-      "[Upgrade] #y{0} #yGold: #gUpgrade #g2 #grandom #gcards.",
+      "[Spells] #y{0} #yGold: #gAdd #g{1} #gpowerful #gspells #gto #gyour #gdeck.",
       "[Leave]",
       "[Locked] Requires {0} Gold."
     ]
