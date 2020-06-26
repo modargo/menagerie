@@ -34,10 +34,10 @@ public class KeeperOfTheSacredPool extends CustomMonster
     private static final int TRIPLE_BLAST_HITS = 3;
     private static final int INVOKE_THE_SUN_STRENGTH = 1;
     private static final int A17_INVOKE_THE_SUN_STRENGTH = 1;
-    private static final int HP_MIN = 47;
-    private static final int HP_MAX = 52;
-    private static final int A7_HP_MIN = 51;
-    private static final int A7_HP_MAX = 56;
+    private static final int HP_MIN = 41;
+    private static final int HP_MAX = 46;
+    private static final int A7_HP_MIN = 44;
+    private static final int A7_HP_MAX = 49;
     private int tripleBlastDamage;
     private int invokeTheSunStrength;
 
@@ -86,7 +86,7 @@ public class KeeperOfTheSacredPool extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new AnimateFastAttackAction(this));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.FIRE));
                 this.addToBot(new VFXAction(new LightningEffect(AbstractDungeon.player.drawX, AbstractDungeon.player.drawY), Settings.FAST_MODE ? 0.0F : 0.1F));
-                this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
+                this.addToBot(new SFXAction("ORB_LIGHTNING_EVOKE"));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.NONE));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.POISON));
                 break;
