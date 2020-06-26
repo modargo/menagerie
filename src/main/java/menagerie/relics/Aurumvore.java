@@ -37,7 +37,9 @@ public class Aurumvore extends CustomRelic implements CustomSavable<Integer> {
     @Override
     public void atBattleStart() {
         int strength = this.counter / GOLD_PER_STRENGTH;
-        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, strength), strength));
+        if (strength > 0) {
+            this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, strength), strength));
+        }
     }
 
     public AbstractRelic makeCopy() {
