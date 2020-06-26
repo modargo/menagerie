@@ -25,14 +25,14 @@ public class DreadMoth extends CustomMonster
     private boolean firstMove = true;
     private static final byte WING_WARD_MOVE = 1;
     private static final byte DREAD_WAVE_ATTACK = 2;
-    private static final int WING_WARD_BLOCk = 6;
-    private static final int A7_WING_WARD_BLOCk = 8;
-    private static final int DREAD_WAVE_DAMAGE = 8;
-    private static final int A2_DREAD_WAVE_DAMAGE = 10;
+    private static final int WING_WARD_BLOCK = 3;
+    private static final int A7_WING_WARD_BLOCK = 5;
+    private static final int DREAD_WAVE_DAMAGE = 5;
+    private static final int A2_DREAD_WAVE_DAMAGE = 6;
     private static final int HP = 6;
     private static final int A7_HP = 8;
-    private static final int STARTING_BLOCK = 5;
-    private static final int A17_STARTING_BLOCK = 10;
+    private static final int STARTING_BLOCK = 4;
+    private static final int A17_STARTING_BLOCK = 7;
     private static final int BEAT_OF_DEATH_AMOUNT = 1;
     private int wingWardBlock;
     private int dreadWaveDamage;
@@ -43,14 +43,14 @@ public class DreadMoth extends CustomMonster
     }
 
     public DreadMoth(final float x, final float y) {
-        super(GraftedWorm.NAME, ID, HP, -5.0F, 0, 155.0f, 150.0f, IMG, x, y);
+        super(DreadMoth.NAME, ID, HP, -5.0F, 0, 155.0f, 150.0f, IMG, x, y);
         this.type = EnemyType.NORMAL;
         if (AbstractDungeon.ascensionLevel >= 7) {
             this.setHp(A7_HP);
-            this.wingWardBlock = A7_WING_WARD_BLOCk;
+            this.wingWardBlock = A7_WING_WARD_BLOCK;
         } else {
             this.setHp(HP);
-            this.wingWardBlock = WING_WARD_BLOCk;
+            this.wingWardBlock = WING_WARD_BLOCK;
         }
 
         if (AbstractDungeon.ascensionLevel >= 2) {
