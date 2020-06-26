@@ -103,7 +103,7 @@ public class GrandMagus extends CustomMonster
             case LIGHTNING_BOLT_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new AnimateSlowAttackAction(this));
                 this.addToBot(new VFXAction(new LightningEffect(AbstractDungeon.player.drawX, AbstractDungeon.player.drawY), Settings.FAST_MODE ? 0.0F : 0.1F));
-                this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
+                this.addToBot(new SFXAction("ORB_LIGHTNING_EVOKE"));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.NONE));
                 break;
             case DARKBLAST_ATTACK:

@@ -98,7 +98,7 @@ public class RedMage extends CustomMonster
             case BOLT_ATTACK:
                 for (int i = 0; i < BOLT_HITS; i++) {
                     this.addToBot(new VFXAction(new LightningEffect(AbstractDungeon.player.drawX, AbstractDungeon.player.drawY), Settings.FAST_MODE ? 0.0F : 0.1F));
-                    this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
+                    this.addToBot(new SFXAction("ORB_LIGHTNING_EVOKE"));
                     AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(1), AbstractGameAction.AttackEffect.NONE));
                 }
                 break;

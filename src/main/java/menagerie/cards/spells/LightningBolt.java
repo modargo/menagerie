@@ -34,7 +34,7 @@ public class LightningBolt extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new VFXAction(new LightningEffect(m.drawX, m.drawY), Settings.FAST_MODE ? 0.0F : 0.1F));
-        this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
+        this.addToBot(new SFXAction("ORB_LIGHTNING_EVOKE"));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
     }
 
