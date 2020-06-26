@@ -30,10 +30,10 @@ public class EntropyWarlock extends CustomMonster
     private boolean firstMove = true;
     private static final byte DARK_INCANTATION_ATTACK = 1;
     private static final byte TENTACLE_GRASP_ATTACK = 2;
-    private static final int DARK_INCANTATION_DAMAGE = 9;
-    private static final int A2_DARK_INCANTATION_DAMAGE = 10;
-    private static final int TENTACLE_GRASP_DAMAGE = 5;
-    private static final int A2_TENTACLE_GRASP_DAMAGE = 6;
+    private static final int DARK_INCANTATION_DAMAGE = 8;
+    private static final int A2_DARK_INCANTATION_DAMAGE = 9;
+    private static final int TENTACLE_GRASP_DAMAGE = 3;
+    private static final int A2_TENTACLE_GRASP_DAMAGE = 4;
     private static final int TENTACLE_GRASP_CONSTRICT = 1;
     private static final int A17_TENTACLE_GRASP_CONSTRICT = 2;
     private static final int HP_MIN = 51;
