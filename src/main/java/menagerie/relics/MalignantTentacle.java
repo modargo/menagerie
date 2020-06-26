@@ -19,7 +19,7 @@ public class MalignantTentacle extends CustomRelic {
     private static final int TURNS = 2;
 
     public MalignantTentacle() {
-        super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.SPECIAL, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.SPECIAL, LandingSound.HEAVY);
     }
 
     @Override

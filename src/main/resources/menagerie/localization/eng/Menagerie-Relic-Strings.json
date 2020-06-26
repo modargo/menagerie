@@ -26,5 +26,12 @@
     "DESCRIPTIONS": [
       "At the start of combat and every #b{0} turns thereafter, add one of the Grand Magus's spells to your hand. NL At the start of combat, shuffle a curse into your draw pile."
     ]
+  },
+  "Menagerie:MalignantTentacle": {
+    "NAME": "Malignant Tentacle",
+    "FLAVOR": "It's growing larger.",
+    "DESCRIPTIONS": [
+      "At the start of combat and every #b{0} turns thereafter, gain {1} #yConstricted."
+    ]
   }
 }
