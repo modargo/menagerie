@@ -1,7 +1,6 @@
 package menagerie.powers;
 
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -62,10 +61,10 @@ public class ThawingPower extends AbstractPower {
 
     @Override
     public void onDeath() {
-        if (!((FrozenSoldier)this.owner).explosiveThawUsed) {
+        if (!((FrozenSoldier)this.owner).violentThawUsed) {
             for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (m != this.owner && !m.isDying && m.id.equals(MaskedSummoner.ID)) {
-                    AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(this.owner, DAMAGE_WHEN_KILLED, DamageInfo.DamageType.HP_LOSS)));
+                    AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(m, DAMAGE_WHEN_KILLED, DamageInfo.DamageType.HP_LOSS)));
                 }
             }
         }

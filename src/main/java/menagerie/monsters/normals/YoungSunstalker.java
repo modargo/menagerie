@@ -26,8 +26,8 @@ public class YoungSunstalker extends CustomMonster
     private boolean firstMove = true;
     private static final byte TENTACLE_SLAP_ATTACK = 1;
     private static final byte SUNBATHE_MOVE = 2;
-    private static final int TENTACLE_SLAP_DAMAGE = 3;
-    private static final int A2_TENTACLE_SLAP_DAMAGE = 4;
+    private static final int TENTACLE_SLAP_DAMAGE = 2;
+    private static final int A2_TENTACLE_SLAP_DAMAGE = 3;
     private static final int TENTACLE_SLAP_HITS = 3;
     private static final int SUNBATHE_BLOCK = 8;
     private static final int A7_SUNBATHE_BLOCK = 12;

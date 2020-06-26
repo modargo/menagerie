@@ -29,8 +29,8 @@ public class KeeperOfTheSacredPool extends CustomMonster
     private boolean firstMove = true;
     private static final byte INVOKE_THE_SUN_BUFF = 1;
     private static final byte TRIPLE_BLAST_ATTACK = 2;
-    private static final int TRIPLE_BLAST_DAMAGE = 3;
-    private static final int A2_TRIPLE_BLAST_DAMAGE = 4;
+    private static final int TRIPLE_BLAST_DAMAGE = 2;
+    private static final int A2_TRIPLE_BLAST_DAMAGE = 3;
     private static final int TRIPLE_BLAST_HITS = 3;
     private static final int INVOKE_THE_SUN_STRENGTH = 1;
     private static final int A17_INVOKE_THE_SUN_STRENGTH = 1;
