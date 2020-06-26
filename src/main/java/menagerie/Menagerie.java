@@ -113,16 +113,16 @@ public class Menagerie implements
                 }));
         BaseMod.addMonster(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, () -> new MonsterGroup(
                 new AbstractMonster[] {
-                        new GraftedWorm(-500.0F, 0.0F),
-                        new DreadMoth(-250.0F, 125.0F),
-                        new DreadMoth(0.0F, 125.0F),
-                }));
-        BaseMod.addMonster(Encounters.MENAGERIE_WILDLIFE, () -> new MonsterGroup(
-                new AbstractMonster[] {
                         new GraftedWorm(-550.0F, 0.0F),
                         new GraftedWorm(-300.0F, 0.0F),
                         new DreadMoth(-50.0F, 125.0F),
-                        new FeatherRabbit(200.0F, 0.0F)
+                        new DreadMoth(-200.0F, 125.0F),
+                }));
+        BaseMod.addMonster(Encounters.MENAGERIE_WILDLIFE, () -> new MonsterGroup(
+                new AbstractMonster[] {
+                        new GraftedWorm(-500.0F, 0.0F),
+                        new DreadMoth(-250.0F, 125.0F),
+                        new FeatherRabbit(0.0F, 0.0F)
                 }));
 
         //Elites
@@ -147,10 +147,9 @@ public class Menagerie implements
         BaseMod.addMonster(GrandMagus.ID, (BaseMod.GetMonster)GrandMagus::new);
         BaseMod.addMonster(Encounters.MOSSY_WILDLIFE, () -> new MonsterGroup(
                 new AbstractMonster[] {
-                        new GraftedWorm(-550.0F, 0.0F),
-                        new DreadMoth(-300.0F, 125.0F),
-                        new SilkyRabbit(-50.0F, 0.0F),
-                        new MonstrousExperiment(200.0F, 0.0F)
+                        new DreadMoth(-500.0F, 125.0F),
+                        new SilkyRabbit(-250.0F, 0.0F),
+                        new MonstrousExperiment(0.0F, 0.0F)
                 }));
     }
 
