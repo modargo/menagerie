@@ -192,5 +192,17 @@
       "[Steal] #gGain #ga #grelic. #rFight #rthe #rGrand #rMagus.",
       "[Leave]"
     ]
+  },
+  "Menagerie:CorruptingLight": {
+    "NAME": "Corrupting Light",
+    "DESCRIPTIONS": [
+      "You find a #pmass #pof #penergy encompassing the center of the room. NL NL Its ~mesmerizing~ ~glow~ and ~pulsing~ ~patterns~ invite you in.",
+      "As you walk through the light, you notice that the light is absorbed into you. NL It's #p@entropic@ and #r@corrupting@ ! However, the pain quickly recedes. NL You feel #binvigorated, as though you received a new appendage.",
+      "You walk around it, wondering what could have been."
+    ],
+    "OPTIONS": [
+      "[Enter] #gUpgrade #g{0} #grandom #gcards. #rGain {1}.",
+      "[Leave]"
+    ]
   }
 }

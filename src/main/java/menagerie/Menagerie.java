@@ -28,10 +28,7 @@ import menagerie.monsters.elites.MaskedSummoner;
 import menagerie.monsters.elites.VoidReaper;
 import menagerie.monsters.normals.*;
 import menagerie.monsters.specials.GrandMagus;
-import menagerie.relics.Aurumvore;
-import menagerie.relics.GrandMagusSpellbook;
-import menagerie.relics.HuntersKnife;
-import menagerie.relics.ShiftingBlessing;
+import menagerie.relics.*;
 import menagerie.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -171,6 +168,7 @@ public class Menagerie implements
         BaseMod.addEvent(MagesHand.ID, MagesHand.class, MenagerieAct.ID);
         BaseMod.addEvent(CloudVision.ID, CloudVision.class, MenagerieAct.ID);
         BaseMod.addEvent(GrandMagusTower.ID, GrandMagusTower.class, MenagerieAct.ID);
+        BaseMod.addEvent(CorruptingLight.ID, CorruptingLight.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {
@@ -178,6 +176,7 @@ public class Menagerie implements
         BaseMod.addRelic(new GrandMagusSpellbook(), RelicType.SHARED);
         BaseMod.addRelic(new HuntersKnife(), RelicType.SHARED);
         BaseMod.addRelic(new ShiftingBlessing(), RelicType.SHARED);
+        BaseMod.addRelic(new MalignantTentacle(), RelicType.SHARED);
     }
 
     @Override
