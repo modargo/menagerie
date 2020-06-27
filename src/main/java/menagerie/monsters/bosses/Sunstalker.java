@@ -36,11 +36,11 @@ public class Sunstalker extends CustomMonster
     private static final byte BEAM_ATTACK = 2;
     private static final byte SOLAR_ENERGY = 3;
     private static final byte SOLAR_FLARE = 4;
-    private static final int TENTACLE_SLAP_DAMAGE = 1;
-    private static final int A4_TENTACLE_SLAP_DAMAGE = 2;
+    private static final int TENTACLE_SLAP_DAMAGE = 0;
+    private static final int A4_TENTACLE_SLAP_DAMAGE = 1;
     private static final int TENTACLE_SLAP_HITS = 3;
-    private static final int BEAM_DAMAGE = 7;
-    private static final int A4_BEAM_DAMAGE = 8;
+    private static final int BEAM_DAMAGE = 6;
+    private static final int A4_BEAM_DAMAGE = 7;
     private static final int BEAM_CHARGES = 1;
     private static final int A19_BEAM_CHARGES = 2;
     private static final int SOLAR_ENERGY_CHARGES = 3;
@@ -50,8 +50,8 @@ public class Sunstalker extends CustomMonster
     private static final int FLARE_HITS = 2;
     private static final int FLARE_DEBUFFS = 1;
     private static final int FLARE_BURNS = 1;
-    private static final int HP = 220;
-    private static final int A9_HP = 240;
+    private static final int HP = 175;
+    private static final int A9_HP = 190;
     private int tentacleSlapDamage;
     private int beamDamage;
     private int beamCharges;
