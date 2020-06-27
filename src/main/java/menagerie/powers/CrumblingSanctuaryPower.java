@@ -17,12 +17,12 @@ public class CrumblingSanctuaryPower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static final int DAMAGE_PER_CARD = 2;
 
-    public CrumblingSanctuaryPower(AbstractCreature owner) {
+    public CrumblingSanctuaryPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
+        this.amount = amount;
         this.updateDescription();
         Menagerie.LoadPowerImage(this);
     }
@@ -34,7 +34,7 @@ public class CrumblingSanctuaryPower extends AbstractPower {
         while (modifiedDamage > 0 && drawPileLeft > 0) {
             AbstractCard card = AbstractDungeon.player.drawPile.group.get(drawPileLeft - 1);
             this.addToTop(new ExhaustSpecificCardAction(card, AbstractDungeon.player.drawPile, true));
-            modifiedDamage = modifiedDamage - DAMAGE_PER_CARD;
+            modifiedDamage = modifiedDamage - this.amount;
             drawPileLeft--;
         }
 
@@ -43,7 +43,7 @@ public class CrumblingSanctuaryPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = MessageFormat.format(DESCRIPTIONS[0], DAMAGE_PER_CARD);
+        this.description = MessageFormat.format(DESCRIPTIONS[0], this.amount);
     }
 
     static {

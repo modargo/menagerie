@@ -18,25 +18,24 @@ public class CrumblingSanctuary extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 3;
+    public static final int DAMAGE_PER_CARD = 2;
+    public static final int UPGRADE_DAMAGE_PER_CARD = 3;
 
     public CrumblingSanctuary() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
-        this.baseMagicNumber = CrumblingSanctuaryPower.DAMAGE_PER_CARD;
+        this.baseMagicNumber = DAMAGE_PER_CARD;
         this.magicNumber = this.baseMagicNumber;
-        this.isEthereal = true;
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new CrumblingSanctuaryPower(p)));
+        this.addToBot(new ApplyPowerAction(p, p, new CrumblingSanctuaryPower(p, this.magicNumber)));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
-            this.isEthereal = false;
             this.upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeMagicNumber(UPGRADE_DAMAGE_PER_CARD);
         }
     }
 
