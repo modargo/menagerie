@@ -135,9 +135,9 @@ public class Sunstalker extends CustomMonster
                     AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.power.amount), 0.2F));
                     AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(2), AbstractGameAction.AttackEffect.FIRE));
                 }
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new VulnerablePower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new WeakPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new FrailPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new WeakPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
                 AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Burn(), FLARE_BURNS));
                 AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this, this, SolarChargePower.POWER_ID, SolarChargePower.CHARGES_FOR_FLARE));
                 break;
@@ -198,6 +198,16 @@ public class Sunstalker extends CustomMonster
 
     private boolean lastMoveX(byte move, int movesAgo) {
         return this.moveHistory.size() >= movesAgo && this.moveHistory.get(this.moveHistory.size() - movesAgo) == move;
+    }
+
+    @Override
+    public void die() {
+        super.die();
+        if (AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            this.useFastShakeAnimation(5.0F);
+            CardCrawlGame.screenShake.rumble(4.0F);
+            this.onBossVictoryLogic();
+        }
     }
 
     static {
