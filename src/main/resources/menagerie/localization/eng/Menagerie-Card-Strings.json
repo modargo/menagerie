@@ -92,6 +92,6 @@
   },
   "Menagerie:Staggershock": {
     "NAME": "Staggershock",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. At the start of your next turn, deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. At the start of your next turn, play this card again."
   }
 }

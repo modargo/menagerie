@@ -84,5 +84,9 @@
   "Menagerie:MirarisWake": {
     "NAME": "Mirari's Wake",
     "DESCRIPTIONS": ["At the start of your turn, gain {0} ."]
+  },
+  "Menagerie:StaggershockRebound": {
+    "NAME": "Staggershock Rebound",
+    "DESCRIPTIONS": ["At the start of your next turn, play Staggershock."]
   }
 }
