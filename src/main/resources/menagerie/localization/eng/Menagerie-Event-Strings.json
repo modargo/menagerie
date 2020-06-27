@@ -157,7 +157,7 @@
       "You grasp the hand in your own! A small portion of the knowledge its former owner had comes to you, replacing something that you previously knew."
     ],
     "OPTIONS": [
-      "[Grasp] #gRemove #ga #gcard #gfrom #gyour #gdeck. #gGain #ga #gpowerful #gspell.",
+      "[Grasp] #Transform #ga #gcard #gfrom #gyour #gdeck #ginto #ga #gpowerful #gspell.",
       "[Leave]",
       "Select a Card to Remove."
     ]

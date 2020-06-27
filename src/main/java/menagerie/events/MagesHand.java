@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import menagerie.Menagerie;
+import menagerie.cards.BloodySpellbook;
 import menagerie.cards.CardUtil;
 
 public class MagesHand extends AbstractImageEvent {
@@ -36,8 +37,14 @@ public class MagesHand extends AbstractImageEvent {
             AbstractDungeon.player.masterDeck.removeCard(c);
             AbstractDungeon.gridSelectScreen.selectedCards.remove(c);
 
-            AbstractCard spell = CardUtil.getGrandMagusSpell();
-            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(spell, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+            AbstractCard card;
+            if (c.type == AbstractCard.CardType.CURSE) {
+                card = new BloodySpellbook();
+            }
+            else {
+                card = CardUtil.getGrandMagusSpell();
+            }
+            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(card, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
         }
     }
 
