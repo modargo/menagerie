@@ -21,6 +21,8 @@ public class CrumblingSanctuary extends CustomCard {
 
     public CrumblingSanctuary() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
+        this.baseMagicNumber = CrumblingSanctuaryPower.DAMAGE_PER_CARD;
+        this.magicNumber = this.baseMagicNumber;
         this.isEthereal = true;
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }

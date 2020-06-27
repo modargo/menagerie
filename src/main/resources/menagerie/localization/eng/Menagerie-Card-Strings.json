@@ -66,8 +66,8 @@
   },
   "Menagerie:CrumblingSanctuary": {
     "NAME": "Crumbling Sanctuary",
-    "DESCRIPTION": "If your draw pile isn't empty, for each damage you would take, instead Exhaust the top card of your draw pile. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "If your draw pile isn't empty, for each damage you would take, instead Exhaust the top card of your draw pile."
+    "DESCRIPTION": "If your draw pile isn't empty, for every !M! damage you would take, instead Exhaust the top card of your draw pile. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "If your draw pile isn't empty, for every !M! damage you would take, instead Exhaust the top card of your draw pile."
   },
   "Menagerie:RelicOfProgenitus": {
     "NAME": "Relic of Progenitus",

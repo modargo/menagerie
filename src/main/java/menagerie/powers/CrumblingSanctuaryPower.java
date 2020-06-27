@@ -10,11 +10,14 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.Menagerie;
 
+import java.text.MessageFormat;
+
 public class CrumblingSanctuaryPower extends AbstractPower {
     public static final String POWER_ID = "Menagerie:CrumblingSanctuary";
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
+    public static final int DAMAGE_PER_CARD = 2;
 
     public CrumblingSanctuaryPower(AbstractCreature owner) {
         this.name = NAME;
@@ -31,16 +34,16 @@ public class CrumblingSanctuaryPower extends AbstractPower {
         while (modifiedDamage > 0 && drawPileLeft > 0) {
             AbstractCard card = AbstractDungeon.player.drawPile.group.get(drawPileLeft - 1);
             this.addToTop(new ExhaustSpecificCardAction(card, AbstractDungeon.player.drawPile, true));
-            modifiedDamage--;
+            modifiedDamage = modifiedDamage - DAMAGE_PER_CARD;
             drawPileLeft--;
         }
 
-        return modifiedDamage;
+        return Math.max(modifiedDamage, 0);
     }
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = MessageFormat.format(DESCRIPTIONS[0], DAMAGE_PER_CARD);
     }
 
     static {
