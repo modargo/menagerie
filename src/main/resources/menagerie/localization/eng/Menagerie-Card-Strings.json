@@ -36,12 +36,12 @@
   },
   "Menagerie:MirarisWake": {
     "NAME": "Mirari's Wake",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn gain [E] . NL Ethereal.",
+    "DESCRIPTION": "Ethereal. NL Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn gain [E] .",
     "UPGRADE_DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn, gain [E] ."
   },
   "Menagerie:Skullclamp": {
     "NAME": "Skullclamp",
-    "DESCRIPTION": "Gain !M! Strength. NL Lose !M! Dexterity. NL At the start of your turn, draw 1 additional card. NL Ethereal.",
+    "DESCRIPTION": "Ethereal. NL Gain !M! Strength. NL Lose !M! Dexterity. NL At the start of your turn, draw 1 additional card.",
     "UPGRADE_DESCRIPTION": "Gain !M! Strength. Lose !M! Dexterity. At the start of your turn, draw 1 additional card."
   },
   "Menagerie:WallOfBlossoms": {
