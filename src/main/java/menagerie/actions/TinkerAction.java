@@ -32,10 +32,14 @@ public class TinkerAction extends AbstractGameAction {
                     }
                 }
 
-                temp.sortAlphabetically(true);
-                temp.sortByRarityPlusStatusCardType(false);
-                AbstractDungeon.gridSelectScreen.open(temp, 1, TEXT[0], false);
-                this.tickDuration();
+                if (temp.isEmpty()) {
+                    this.isDone = true;
+                } else {
+                    temp.sortAlphabetically(true);
+                    temp.sortByRarityPlusStatusCardType(false);
+                    AbstractDungeon.gridSelectScreen.open(temp, 1, TEXT[0], false);
+                    this.tickDuration();
+                }
             }
         } else {
             if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
