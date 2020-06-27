@@ -22,7 +22,6 @@ public class StaggershockReboundPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.staggershock = (Staggershock)staggershock.makeSameInstanceOf();
-        this.amount = 1
         this.updateDescription();
         this.priority = 50;
         Menagerie.LoadPowerImage(this);
