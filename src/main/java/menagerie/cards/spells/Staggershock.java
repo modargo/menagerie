@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import menagerie.Menagerie;
+import menagerie.cards.CustomTags;
 import menagerie.powers.StaggershockReboundPower;
 
 public class Staggershock extends CustomCard {
@@ -29,6 +30,7 @@ public class Staggershock extends CustomCard {
     public Staggershock() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = DAMAGE;
+        this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

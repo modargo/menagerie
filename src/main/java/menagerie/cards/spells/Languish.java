@@ -21,15 +21,16 @@ public class Languish extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int EFFECT = 4;
-    private static final int UPGRADE_EFFECT = 2;
 
     public Languish() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseMagicNumber = EFFECT;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.isEthereal = true;
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }
 
@@ -45,8 +46,10 @@ public class Languish extends CustomCard {
 
     public void upgrade() {
         if (!this.upgraded) {
+            this.isEthereal = false;
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_EFFECT);
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

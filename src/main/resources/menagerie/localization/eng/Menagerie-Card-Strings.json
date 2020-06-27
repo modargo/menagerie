@@ -14,7 +14,8 @@
   },
   "Menagerie:Languish": {
     "NAME": "Languish",
-    "DESCRIPTION": "ALL enemies lose !M! Strength this turn and lose !M! HP. NL Exhaust."
+    "DESCRIPTION": "Ethereal. NL ALL enemies lose !M! Strength this turn and lose !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "ALL enemies lose !M! Strength this turn and lose !M! HP. NL Exhaust."
   },
   "Menagerie:BeastSpirit": {
     "NAME": "Beast Spirit",
