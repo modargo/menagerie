@@ -88,5 +88,9 @@
   "Menagerie:BloodySpellbook": {
     "NAME": "Bloody Spellbook",
     "DESCRIPTION": "Unplayable. NL While in hand, lose !M! HP when one of the Grand Magus's spells is played."
+  },
+  "Menagerie:Staggershock": {
+    "NAME": "Staggershock",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. At the start of your next turn, deal !D! damage to ALL enemies."
   }
 }

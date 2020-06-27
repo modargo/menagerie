@@ -46,6 +46,7 @@ public class Necropotence extends CustomCard {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_DRAW);
             this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

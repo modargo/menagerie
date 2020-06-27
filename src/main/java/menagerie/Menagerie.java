@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
 import menagerie.cards.*;
+import menagerie.cards.Staggershock;
 import menagerie.cards.spells.*;
 import menagerie.events.*;
 import menagerie.monsters.bosses.*;
@@ -200,6 +201,7 @@ public class Menagerie implements
         BaseMod.addCard(new MirarisWake());
         BaseMod.addCard(new RelicOfProgenitus());
         BaseMod.addCard(new Skullclamp());
+        BaseMod.addCard(new Staggershock());
         BaseMod.addCard(new SteelWall());
         BaseMod.addCard(new Tinker());
         BaseMod.addCard(new WallOfBlossoms());
