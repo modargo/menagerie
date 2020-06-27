@@ -75,7 +75,8 @@
   },
   "Menagerie:Tinker": {
     "NAME": "Tinker",
-    "DESCRIPTION": "Search your deck for a power and play it. Lose !M! Strength. Lose !M! Dexterity."
+    "DESCRIPTION": "Search your deck for a power and play it. NL Exhaust a random card in your hand.",
+    "UPGRADE_DESCRIPTION": "Search your deck for a power and play it. NL Exhaust a card in your hand.",
   },
   "Menagerie:SteelWall": {
     "NAME": "Steel Wall",
