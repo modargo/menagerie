@@ -11,6 +11,7 @@ import basemod.interfaces.PostInitializeSubscriber;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.events.exordium.GoldenIdolEvent;
 import com.megacrit.cardcrawl.localization.*;
@@ -20,7 +21,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
 import menagerie.cards.*;
-import menagerie.cards.Staggershock;
 import menagerie.cards.spells.*;
 import menagerie.events.*;
 import menagerie.monsters.bosses.*;
@@ -190,21 +190,9 @@ public class Menagerie implements
         BaseMod.addCard(new BloodySpellbook());
 
         //Grand Magus Spells
-        BaseMod.addCard(new CrumblingSanctuary());
-        BaseMod.addCard(new DarkRitual());
-        BaseMod.addCard(new Dismember());
-        BaseMod.addCard(new Foresee());
-        BaseMod.addCard(new Languish());
-        BaseMod.addCard(new LightningBolt());
-        BaseMod.addCard(new LightningHelix());
-        BaseMod.addCard(new LoxodonWarhammer());
-        BaseMod.addCard(new MirarisWake());
-        BaseMod.addCard(new RelicOfProgenitus());
-        BaseMod.addCard(new Skullclamp());
-        BaseMod.addCard(new Staggershock());
-        BaseMod.addCard(new SteelWall());
-        BaseMod.addCard(new Tinker());
-        BaseMod.addCard(new WallOfBlossoms());
+        for (AbstractCard c : CardUtil.getAllGrandMagusSpells()) {
+            BaseMod.addCard(c);
+        }
     }
 
     @Override

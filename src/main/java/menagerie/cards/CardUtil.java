@@ -70,6 +70,12 @@ public class CardUtil {
     }
 
     private static ArrayList<AbstractCard> getRandomlyOrderedGrandMagusSpells(Random random) {
+        ArrayList<AbstractCard> list = CardUtil.getAllGrandMagusSpells();
+        Collections.shuffle(list, random.random);
+        return new ArrayList<>(list);
+    }
+
+    public static ArrayList<AbstractCard> getAllGrandMagusSpells() {
         List<AbstractCard> list = Arrays.asList(
                 new CrumblingSanctuary(),
                 new DarkRitual(),
@@ -87,7 +93,6 @@ public class CardUtil {
                 new Tinker(),
                 new WallOfBlossoms()
         );
-        Collections.shuffle(list, random.random);
         return new ArrayList<>(list);
     }
 }
