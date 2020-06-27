@@ -22,8 +22,8 @@ public class OvergrownLibrary extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final float MAX_HEALTH_LOSS_PERCENT = 0.18F;
-    private static final float A15_MAX_HEALTH_LOSS_PERCENT = 0.24F;
+    private static final float MAX_HEALTH_LOSS_PERCENT = 0.15F;
+    private static final float A15_MAX_HEALTH_LOSS_PERCENT = 0.20F;
     private static final int MAX_HEALTH_LOSS_FLOOR = 8;
     private static final int A15_MAX_HEALTH_LOSS_FLOOR = 10;
 
