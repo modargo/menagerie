@@ -36,18 +36,17 @@ public class Sunstalker extends CustomMonster
     private static final byte BEAM_ATTACK = 2;
     private static final byte SOLAR_ENERGY = 3;
     private static final byte SOLAR_FLARE = 4;
-    private static final int TENTACLE_SLAP_DAMAGE = 0;
-    private static final int A4_TENTACLE_SLAP_DAMAGE = 1;
-    private static final int TENTACLE_SLAP_HITS = 3;
-    private static final int BEAM_DAMAGE = 6;
-    private static final int A4_BEAM_DAMAGE = 7;
+    private static final int TENTACLE_SLAP_DAMAGE = 1;
+    private static final int A4_TENTACLE_SLAP_DAMAGE = 2;
+    private static final int TENTACLE_SLAP_HITS = 2;
+    private static final int BEAM_DAMAGE = 5;
+    private static final int A4_BEAM_DAMAGE = 6;
     private static final int BEAM_CHARGES = 1;
-    private static final int A19_BEAM_CHARGES = 2;
-    private static final int SOLAR_ENERGY_CHARGES = 3;
-    private static final int A19_SOLAR_ENERGY_CHARGES = 4;
-    private static final int FLARE_DAMAGE = 0;
-    private static final int A4_FLARE_DAMAGE = 1;
-    private static final int FLARE_HITS = 2;
+    private static final int A19_BEAM_CHARGES = 1;
+    private static final int SOLAR_ENERGY_CHARGES = 2;
+    private static final int A19_SOLAR_ENERGY_CHARGES = 3;
+    private static final int FLARE_DAMAGE = 11;
+    private static final int A4_FLARE_DAMAGE = 13;
     private static final int FLARE_DEBUFFS = 1;
     private static final int FLARE_BURNS = 1;
     private static final int HP = 175;
@@ -131,10 +130,8 @@ public class Sunstalker extends CustomMonster
                 break;
             case SOLAR_FLARE:
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new RoomTintEffect(Color.RED, 0.5F)));
-                for (int i = 0; i < FLARE_HITS; i++) {
-                    AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.power.amount), 0.2F));
-                    AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(2), AbstractGameAction.AttackEffect.FIRE));
-                }
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.power.amount * 2), 0.2F));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(2), AbstractGameAction.AttackEffect.FIRE));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new WeakPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
@@ -180,7 +177,7 @@ public class Sunstalker extends CustomMonster
             solarEnergyChance = 100;
         }
         if (this.power != null && this.power.amount >= SolarChargePower.CHARGES_FOR_FLARE) {
-            this.setMove(MOVES[3], SOLAR_FLARE, Intent.ATTACK_DEBUFF, this.flareDamage, FLARE_HITS, true);
+            this.setMove(MOVES[3], SOLAR_FLARE, Intent.ATTACK_DEBUFF, this.flareDamage);
         }
         else if (!this.lastMove(SOLAR_FLARE) && num < solarEnergyChance) {
             this.setMove(MOVES[2], SOLAR_ENERGY, Intent.MAGIC);

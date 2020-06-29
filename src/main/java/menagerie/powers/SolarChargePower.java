@@ -14,8 +14,8 @@ public class SolarChargePower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static final int CHARGES_FOR_FLARE = 7;
-    private static final int DAMAGE_PER_CHARGE = 15;
+    public static final int CHARGES_FOR_FLARE = 6;
+    private static final int DAMAGE_PER_CHARGE = 10;
 
     private int damageCounter;
 
