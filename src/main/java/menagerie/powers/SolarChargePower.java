@@ -43,7 +43,7 @@ public class SolarChargePower extends AbstractPower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (info.type != DamageInfo.DamageType.HP_LOSS && info.type != DamageInfo.DamageType.THORNS && damageAmount <= 0 && info.output > 0) {
             this.flash();
-            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new SolarChargePower(this.owner, 1), 1));
+            this.addToTop(new ApplyPowerAction(this.owner, this.owner, new SolarChargePower(this.owner, 1), 1));
         }
     }
 
