@@ -22,6 +22,7 @@ public class MirarisWake extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 3;
     private static final int STATS = 1;
+    private static final int UPGRADE_STATS = 1;
 
     public MirarisWake() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
@@ -41,6 +42,7 @@ public class MirarisWake extends CustomCard {
         if (!this.upgraded) {
             this.isEthereal = false;
             this.upgradeName();
+            this.upgradeMagicNumber(UPGRADE_STATS);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

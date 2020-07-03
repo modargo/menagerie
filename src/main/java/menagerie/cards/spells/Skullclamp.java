@@ -22,25 +22,26 @@ public class Skullclamp extends CustomCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
     private static final int STATS = 1;
+    private static final int DRAW = 1;
+    private static final int UPGRADE_DRAW = 1;
 
     public Skullclamp() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
-        this.baseMagicNumber = STATS;
+        this.baseMagicNumber = DRAW;
         this.magicNumber = this.baseMagicNumber;
-        this.isEthereal = true;
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
-        this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));
-        this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, 1), 1));
+        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, STATS), STATS));
+        this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -STATS), -STATS));
+        this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, this.magicNumber), this.magicNumber));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
-            this.isEthereal = false;
             this.upgradeName();
+            this.upgradeMagicNumber(UPGRADE_DRAW);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
