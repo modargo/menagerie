@@ -37,14 +37,18 @@ public class FeatherRabbit extends CustomMonster
     private static final int A7_HP_MAX = 28;
     private int biteDamage;
     private int earTingleBlock;
+    private boolean firstMoveBuff;
 
     public FeatherRabbit() {
         this(0.0f, 0.0f);
     }
 
-    public FeatherRabbit(final float x, final float y) {
+    public FeatherRabbit(final float x, final float y) { this (x, y, false); }
+
+    public FeatherRabbit(final float x, final float y, boolean firstMoveBuff) {
         super(FeatherRabbit.NAME, ID, HP_MAX, -5.0F, 0, 155.0f, 150.0f, IMG, x, y);
         this.type = EnemyType.NORMAL;
+        this.firstMoveBuff = firstMoveBuff;
         if (AbstractDungeon.ascensionLevel >= 7) {
             this.setHp(A7_HP_MIN, A7_HP_MAX);
             this.earTingleBlock = A7_EAR_TINGLE_BLOCK;
@@ -88,7 +92,7 @@ public class FeatherRabbit extends CustomMonster
 
     @Override
     protected void getMove(final int num) {
-        if ((num < 65 && !(this.lastMove(BITE_ATTACK) && this.lastMoveBefore(BITE_ATTACK))) || this.lastMove(EAR_TINGLE_BUFF)) {
+        if ((num < 65 && !(this.lastMove(BITE_ATTACK) && this.lastMoveBefore(BITE_ATTACK)) && !(this.firstMove && this.firstMoveBuff)) || this.lastMove(EAR_TINGLE_BUFF)) {
             this.setMove(MOVES[0], BITE_ATTACK, Intent.ATTACK, this.biteDamage);
         }
         else {
