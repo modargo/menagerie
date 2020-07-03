@@ -34,8 +34,8 @@ public class WhisperingWraith extends CustomMonster
     private static final int A2_FADE_AWAY_DAMAGE = 8;
     private static final int GHOSTLY_TOUCH_DAMAGE = 4;
     private static final int A2_GHOSTLY_TOUCH_DAMAGE = 5;
-    private static final int ABSORB_LIFE_STRENGTH = 1;
-    private static final int A17_ABSORB_LIFE_STRENGTH = 3;
+    private static final int ABSORB_LIFE_STRENGTH = 2;
+    private static final int A17_ABSORB_LIFE_STRENGTH = 4;
     private static final int HP_MIN = 43;
     private static final int HP_MAX = 45;
     private static final int A7_HP_MIN = 44;

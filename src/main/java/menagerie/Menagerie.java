@@ -98,9 +98,9 @@ public class Menagerie implements
                         new WhisperingWraith(X1, 0.0F),
                         new StygianBoar(X2, 0.0F)
                 }));
-        BaseMod.addMonster(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT, () -> new MonsterGroup(
+        BaseMod.addMonster(Encounters.STYGIAN_BOAR_AND_RABBIT, () -> new MonsterGroup(
                 new AbstractMonster[] {
-                        new MonstrousExperiment(X1, 0.0F),
+                        new SilkyRabbit(X1, 0.0F),
                         new StygianBoar(X2, 0.0F)
                 }));
         BaseMod.addMonster(Encounters.RABBITS_3, () -> new MonsterGroup(
@@ -109,7 +109,7 @@ public class Menagerie implements
                         new FeatherRabbit(-175.0F, 0.0F, FeatherRabbit.FirstMove.ATTACK),
                         new FeatherRabbit(50.0F, 0.0F, FeatherRabbit.FirstMove.BUFF)
                 }));
-        BaseMod.addMonster(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, () -> new MonsterGroup(
+        BaseMod.addMonster(Encounters.DREAD_MOTH_AND_GRAFTED_WORMS, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new GraftedWorm(-550.0F, 0.0F),
                         new GraftedWorm(-300.0F, 0.0F),

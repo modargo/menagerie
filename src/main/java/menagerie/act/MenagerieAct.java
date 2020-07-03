@@ -98,11 +98,11 @@ public class MenagerieAct extends CustomDungeon {
         monsters.add(new MonsterInfo(Hexasnake.ID, 8.0F));
         monsters.add(new MonsterInfo(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, 12.0F));
         monsters.add(new MonsterInfo(Encounters.KEEPER_AND_YOUNG_SUNSTALKER, 10.0F));
-        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, 4.0F));
-        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT, 4.0F));
-        monsters.add(new MonsterInfo(Encounters.RABBITS_3, 12.0F));
-        monsters.add(new MonsterInfo(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, 8.0F));
-        monsters.add(new MonsterInfo(Encounters.MENAGERIE_WILDLIFE, 10.0F));
+        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, 5.0F));
+        monsters.add(new MonsterInfo(Encounters.STYGIAN_BOAR_AND_RABBIT, 5.0F));
+        monsters.add(new MonsterInfo(Encounters.RABBITS_3, 10.0F));
+        monsters.add(new MonsterInfo(Encounters.DREAD_MOTH_AND_GRAFTED_WORMS, 8.0F));
+        monsters.add(new MonsterInfo(Encounters.MENAGERIE_WILDLIFE, 12.0F));
         MonsterInfo.normalizeWeights(monsters);
         this.populateFirstStrongEnemy(monsters, this.generateExclusions());
         this.populateMonsterList(monsters, count, false);
@@ -124,17 +124,17 @@ public class MenagerieAct extends CustomDungeon {
         switch (monsterList.get(monsterList.size() - 1))
         {
             case MonstrousExperiment.ID:
-                retVal.add(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT);
                 break;
             case WhisperingWraith.ID:
                 retVal.add(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH);
                 break;
             case StygianBoar.ID:
-                retVal.add(Encounters.STYGIAN_BOAR_AND_MONSTROUS_EXPERIMENT);
+                retVal.add(Encounters.STYGIAN_BOAR_AND_RABBIT);
                 retVal.add(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH);
                 break;
             case Encounters.RABBITS_2:
                 retVal.add(Encounters.RABBITS_3);
+                retVal.add(Encounters.STYGIAN_BOAR_AND_RABBIT);
                 retVal.add(Encounters.MENAGERIE_WILDLIFE);
                 break;
         }
