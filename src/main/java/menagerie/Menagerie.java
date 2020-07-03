@@ -114,7 +114,7 @@ public class Menagerie implements
                         new GraftedWorm(-550.0F, 0.0F),
                         new GraftedWorm(-300.0F, 0.0F),
                         new DreadMoth(-50.0F, 125.0F),
-                        new DreadMoth(-200.0F, 125.0F),
+                        new DreadMoth(200.0F, 125.0F),
                 }));
         BaseMod.addMonster(Encounters.MENAGERIE_WILDLIFE, () -> new MonsterGroup(
                 new AbstractMonster[] {
