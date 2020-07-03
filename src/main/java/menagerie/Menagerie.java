@@ -106,8 +106,8 @@ public class Menagerie implements
         BaseMod.addMonster(Encounters.RABBITS_3, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new SilkyRabbit(-400.0F, 0.0F),
-                        new FeatherRabbit(-175.0F, 0.0F),
-                        new FeatherRabbit(50.0F, 0.0F, true)
+                        new FeatherRabbit(-175.0F, 0.0F, FeatherRabbit.FirstMove.ATTACK),
+                        new FeatherRabbit(50.0F, 0.0F, FeatherRabbit.FirstMove.BUFF)
                 }));
         BaseMod.addMonster(Encounters.DREAD_MOTHS_AND_GRAFTED_WORM, () -> new MonsterGroup(
                 new AbstractMonster[] {
