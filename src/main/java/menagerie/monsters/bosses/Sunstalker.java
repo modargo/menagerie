@@ -136,7 +136,7 @@ public class Sunstalker extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new WeakPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
                 AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Burn(), FLARE_BURNS));
-                AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this, this, SolarChargePower.POWER_ID, SolarChargePower.CHARGES_FOR_FLARE));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new SolarChargePower(this, -SolarChargePower.CHARGES_FOR_FLARE), -SolarChargePower.CHARGES_FOR_FLARE));
                 break;
         }
         AbstractDungeon.actionManager.addToBottom(new RollMoveAction(this));
