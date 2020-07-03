@@ -23,8 +23,8 @@ public class MageAndMonster extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final int HEALTH_LOSS = 7;
-    private static final int A15_HEALTH_LOSS = 10;
+    private static final int HEALTH_LOSS = 6;
+    private static final int A15_HEALTH_LOSS = 8;
 
     private int healthLoss;
     private AbstractCard mageCard;
