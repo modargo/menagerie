@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.status.Wound;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
@@ -33,18 +34,21 @@ public class MaskedSummoner extends CustomMonster
     private static final int GENTLE_SNOW_BLOCK = 4;
     private static final int A8_GENTLE_SNOW_BLOCK = 6;
     private static final int FROST_SUMMON_COUNT = 2;
-    private static final int SILENT_SPEAR_DAMAGE = 13;
-    private static final int A3_SILENT_SPEAR_DAMAGE = 15;
+    private static final int SILENT_SPEAR_DAMAGE = 10;
+    private static final int A3_SILENT_SPEAR_DAMAGE = 12;
+    private static final int SILENT_SPEAR_STATUSES = 2;
+    private static final int A18_SILENT_SPEAR_STATUSES = 4;
     private static final int STARTING_SUMMONS = 2;
     private static final int A18_STARTING_SUMMONS = 2;
-    private static final int HP_MIN = 112;
-    private static final int HP_MAX = 118;
-    private static final int A8_HP_MIN = 116;
-    private static final int A8_HP_MAX = 122;
+    private static final int HP_MIN = 102;
+    private static final int HP_MAX = 108;
+    private static final int A8_HP_MIN = 106;
+    private static final int A8_HP_MAX = 112;
     private int gentleSnowHeal;
     private int gentleSnowStrength;
     private int gentleSnowBlock;
     private int silentSpearDamage;
+    private int silentSpearStatuses;
     private int startingSummons;
     private AbstractMonster[] activeMinions = new AbstractMonster[5];
 
@@ -73,11 +77,13 @@ public class MaskedSummoner extends CustomMonster
         if (AbstractDungeon.ascensionLevel >= 18) {
             this.gentleSnowHeal = A18_GENTLE_SNOW_HEAL;
             this.gentleSnowStrength = A18_GENTLE_SNOW_STRENGTH;
+            this.silentSpearStatuses = A18_SILENT_SPEAR_STATUSES;
             this.startingSummons = A18_STARTING_SUMMONS;
         }
         else {
             this.gentleSnowHeal = GENTLE_SNOW_HEAL;
             this.gentleSnowStrength = GENTLE_SNOW_STRENGTH;
+            this.silentSpearStatuses = SILENT_SPEAR_STATUSES;
             this.startingSummons = STARTING_SUMMONS;
         }
     }
@@ -112,6 +118,7 @@ public class MaskedSummoner extends CustomMonster
             case SILENT_SPEAR_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new AnimateFastAttackAction(this));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Wound(), this.silentSpearStatuses));
                 break;
         }
         AbstractDungeon.actionManager.addToBottom(new RollMoveAction(this));
@@ -134,7 +141,7 @@ public class MaskedSummoner extends CustomMonster
             this.setMove(MOVES[1], move, Intent.UNKNOWN);
         }
         else {
-            this.setMove(MOVES[2], move, Intent.ATTACK, this.silentSpearDamage);
+            this.setMove(MOVES[2], move, Intent.ATTACK_DEBUFF, this.silentSpearDamage);
         }
     }
 
