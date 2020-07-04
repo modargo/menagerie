@@ -63,7 +63,7 @@
   },
   "Menagerie:LoxodonWarhammer": {
     "NAME": "Loxodon Warhammer",
-    "DESCRIPTION": "Gain 2 Strength. Heal 1 HP the next !M! times you deal unblocked attack damage."
+    "DESCRIPTION": "Gain 2 Strength. NL Heal 1 HP the next !M! times you deal unblocked attack damage."
   },
   "Menagerie:CrumblingSanctuary": {
     "NAME": "Crumbling Sanctuary",
