@@ -24,7 +24,7 @@
   "Menagerie:Slaughter": {
     "NAME": "Slaughter",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaust a random card in your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Exhaust a card in your hand."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaust a card in your hand."
   },
   "Menagerie:SagesJudgement": {
     "NAME": "Sage's Judgement",
@@ -42,7 +42,7 @@
   "Menagerie:Skullclamp": {
     "NAME": "Skullclamp",
     "DESCRIPTION": "Gain !M! Strength. NL Lose !M! Dexterity. NL At the start of your turn, draw !M! additional card.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Strength. Lose !M! Dexterity. At the start of your turn, draw !M! additional cards."
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength. NL Lose !M! Dexterity. NL At the start of your turn, draw !M! additional cards."
   },
   "Menagerie:WallOfBlossoms": {
     "NAME": "Wall of Blossoms",
