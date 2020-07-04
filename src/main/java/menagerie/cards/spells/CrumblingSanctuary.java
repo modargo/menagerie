@@ -19,7 +19,7 @@ public class CrumblingSanctuary extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 3;
     public static final int DAMAGE_PER_CARD = 2;
-    public static final int UPGRADE_DAMAGE_PER_CARD = 3;
+    public static final int UPGRADE_DAMAGE_PER_CARD = 1;
 
     public CrumblingSanctuary() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
