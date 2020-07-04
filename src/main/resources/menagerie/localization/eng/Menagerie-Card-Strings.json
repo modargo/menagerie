@@ -6,7 +6,7 @@
   },
   "Menagerie:PurgingElixir": {
     "NAME": "Purging Elixir",
-    "DESCRIPTION": "Retain. NL Remove all constricted, negative Strength, and negative Dexterity. NL Lose !M! HP."
+    "DESCRIPTION": "Retain. NL Remove all Constricted, negative Strength, and negative Dexterity. NL Lose !M! HP."
   },
   "Menagerie:Dismember": {
     "NAME": "Dismember",
