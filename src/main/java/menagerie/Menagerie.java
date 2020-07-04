@@ -14,6 +14,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.events.exordium.GoldenIdolEvent;
+import com.megacrit.cardcrawl.events.shrines.AccursedBlacksmith;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
@@ -152,7 +153,10 @@ public class Menagerie implements
     }
 
     private static void addEvents() {
+        // Golden Idol has enough hooks for future events (including in the Elementarium) that we want to keep it around
         BaseMod.addEvent(GoldenIdolEvent.ID, GoldenIdolEvent.class, MenagerieAct.ID);
+        // Accursed Blacksmith is a cool enough event that we want to keep it around
+        BaseMod.addEvent(AccursedBlacksmith.ID, AccursedBlacksmith.class, MenagerieAct.ID);
 
         BaseMod.addEvent(BeastSpiritShrine.ID, BeastSpiritShrine.class, MenagerieAct.ID);
         BaseMod.addEvent(MageAndMonster.ID, MageAndMonster.class, MenagerieAct.ID);
