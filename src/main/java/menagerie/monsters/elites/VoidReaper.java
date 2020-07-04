@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
+import com.megacrit.cardcrawl.powers.DrawReductionPower;
 import menagerie.Menagerie;
 import menagerie.cards.Necropotence;
 import menagerie.powers.DrawReductionSingleTurnPower;
@@ -46,6 +47,7 @@ public class VoidReaper extends CustomMonster
     private int scytheDanceDamage;
     private int scytheDanceHits;
     private int scytheDanceBlock;
+    private int cutTheFutureCount;
 
     public VoidReaper() {
         this(0.0f, 0.0f);
@@ -83,6 +85,8 @@ public class VoidReaper extends CustomMonster
             this.cutTheFutureDrawReduction = CUT_THE_FUTURE_DRAW_REDUCTION;
             this.scytheDanceHits = SCYTHE_DANCE_HITS;
         }
+
+        this.cutTheFutureCount = 0;
     }
 
     @Override
@@ -99,7 +103,14 @@ public class VoidReaper extends CustomMonster
             case CUT_THE_FUTURE_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new AnimateSlowAttackAction(this));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new DrawReductionSingleTurnPower(AbstractDungeon.player, this.cutTheFutureDrawReduction)));
+                int temporaryDrawReduction = this.cutTheFutureDrawReduction - this.cutTheFutureCount;
+                if (temporaryDrawReduction > 0) {
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new DrawReductionSingleTurnPower(AbstractDungeon.player, temporaryDrawReduction)));
+                }
+                if (this.cutTheFutureCount > 0) {
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new DrawReductionPower(AbstractDungeon.player, 1)));
+                }
+                this.cutTheFutureCount++;
                 break;
             case REAP_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new AnimateSlowAttackAction(this));
