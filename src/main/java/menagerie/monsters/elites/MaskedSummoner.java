@@ -33,8 +33,8 @@ public class MaskedSummoner extends CustomMonster
     private static final int GENTLE_SNOW_BLOCK = 4;
     private static final int A8_GENTLE_SNOW_BLOCK = 6;
     private static final int FROST_SUMMON_COUNT = 2;
-    private static final int SILENT_SPEAR_DAMAGE = 8;
-    private static final int A3_SILENT_SPEAR_DAMAGE = 10;
+    private static final int SILENT_SPEAR_DAMAGE = 13;
+    private static final int A3_SILENT_SPEAR_DAMAGE = 15;
     private static final int STARTING_SUMMONS = 2;
     private static final int A18_STARTING_SUMMONS = 2;
     private static final int HP_MIN = 112;
