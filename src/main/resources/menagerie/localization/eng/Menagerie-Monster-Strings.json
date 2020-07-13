@@ -163,14 +163,14 @@
     ],
     "NAME": "The Grand Magus"
   },
-  "Menagerie:Sunstalker": {
+  "Menagerie:Suneater": {
     "MOVES": [
       "Tentacle Slap",
       "Beam",
       "Solar Energy",
       "Solar Flare"
     ],
-    "NAME": "Sunstalker"
+    "NAME": "Suneater"
   },
   "Menagerie:Hexasnake": {
     "MOVES": [
@@ -180,12 +180,12 @@
     ],
     "NAME": "Hexasnake"
   },
-  "Menagerie:YoungSunstalker": {
+  "Menagerie:YoungSuneater": {
     "MOVES": [
       "Tentacle Slap",
       "Sunbathe"
     ],
-    "NAME": "Young Sunstalker"
+    "NAME": "Young Suneater"
   },
   "Menagerie:KeeperOfTheSacredPool": {
     "MOVES": [

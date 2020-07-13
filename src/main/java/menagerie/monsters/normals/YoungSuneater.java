@@ -16,9 +16,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import menagerie.Menagerie;
 
-public class YoungSunstalker extends CustomMonster
+public class YoungSuneater extends CustomMonster
 {
-    public static final String ID = "Menagerie:YoungSunstalker";
+    public static final String ID = "Menagerie:YoungSuneater";
     private static final MonsterStrings monsterStrings;
     public static final String NAME;
     public static final String[] MOVES;
@@ -41,12 +41,12 @@ public class YoungSunstalker extends CustomMonster
     private int sunbatheBlock;
     private int sunbathePlatedArmor;
 
-    public YoungSunstalker() {
+    public YoungSuneater() {
         this(0.0f, 0.0f);
     }
 
-    public YoungSunstalker(final float x, final float y) {
-        super(YoungSunstalker.NAME, ID, HP_MAX, -5.0F, 0, 305.0f, 145.0f, IMG, x, y);
+    public YoungSuneater(final float x, final float y) {
+        super(YoungSuneater.NAME, ID, HP_MAX, -5.0F, 0, 305.0f, 145.0f, IMG, x, y);
         this.type = EnemyType.NORMAL;
         if (AbstractDungeon.ascensionLevel >= 7) {
             this.setHp(A7_HP_MIN, A7_HP_MAX);
@@ -109,7 +109,7 @@ public class YoungSunstalker extends CustomMonster
 
     static {
         monsterStrings = CardCrawlGame.languagePack.getMonsterStrings(ID);
-        NAME = YoungSunstalker.monsterStrings.NAME;
-        MOVES = YoungSunstalker.monsterStrings.MOVES;
+        NAME = YoungSuneater.monsterStrings.NAME;
+        MOVES = YoungSuneater.monsterStrings.MOVES;
     }
 }

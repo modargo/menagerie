@@ -25,9 +25,9 @@ import menagerie.effects.FireEffect;
 import menagerie.effects.SmallColorLaserEffect;
 import menagerie.powers.SolarChargePower;
 
-public class Sunstalker extends CustomMonster
+public class Suneater extends CustomMonster
 {
-    public static final String ID = "Menagerie:Sunstalker";
+    public static final String ID = "Menagerie:Suneater";
     private static final MonsterStrings monsterStrings;
     public static final String NAME;
     public static final String[] MOVES;
@@ -62,12 +62,12 @@ public class Sunstalker extends CustomMonster
 
     private SolarChargePower power;
 
-    public Sunstalker() {
+    public Suneater() {
         this(0.0f, 0.0f);
     }
 
-    public Sunstalker(final float x, final float y) {
-        super(Sunstalker.NAME, ID, HP, -5.0F, 0, 555.0f, 415.0f, IMG, x, y);
+    public Suneater(final float x, final float y) {
+        super(Suneater.NAME, ID, HP, -5.0F, 0, 555.0f, 415.0f, IMG, x, y);
         this.type = EnemyType.BOSS;
         if (AbstractDungeon.ascensionLevel >= 9) {
             this.setHp(A9_HP);
@@ -212,7 +212,7 @@ public class Sunstalker extends CustomMonster
 
     static {
         monsterStrings = CardCrawlGame.languagePack.getMonsterStrings(ID);
-        NAME = Sunstalker.monsterStrings.NAME;
-        MOVES = Sunstalker.monsterStrings.MOVES;
+        NAME = Suneater.monsterStrings.NAME;
+        MOVES = Suneater.monsterStrings.MOVES;
     }
 }

@@ -22,7 +22,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;
 import menagerie.cards.*;
-import menagerie.cards.spells.*;
 import menagerie.events.*;
 import menagerie.monsters.bosses.*;
 import menagerie.monsters.elites.Hydra;
@@ -89,9 +88,9 @@ public class Menagerie implements
                         new ProwlingAmalgam(X1, 0.0F),
                         new BeastMage(X2, 0.0F)
                 }));
-        BaseMod.addMonster(Encounters.KEEPER_AND_YOUNG_SUNSTALKER, () -> new MonsterGroup(
+        BaseMod.addMonster(Encounters.KEEPER_AND_YOUNG_SUNEATER, () -> new MonsterGroup(
                 new AbstractMonster[] {
-                        new YoungSunstalker(X1, 0.0F),
+                        new YoungSuneater(X1, 0.0F),
                         new KeeperOfTheSacredPool(X2, 0.0F)
                 }));
         BaseMod.addMonster(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, () -> new MonsterGroup(
@@ -132,8 +131,8 @@ public class Menagerie implements
         //Bosses
         BaseMod.addMonster(Chimera.ID, (BaseMod.GetMonster)Chimera::new);
         BaseMod.addBoss(MenagerieAct.ID, Chimera.ID, "menagerie/images/map/bosses/Chimera.png", "menagerie/images/map/bosses/ChimeraOutline.png");
-        BaseMod.addMonster(Sunstalker.ID, (BaseMod.GetMonster)Sunstalker::new);
-        BaseMod.addBoss(MenagerieAct.ID, Sunstalker.ID, "menagerie/images/map/bosses/Sunstalker.png", "menagerie/images/map/bosses/SunstalkerOutline.png");
+        BaseMod.addMonster(Suneater.ID, (BaseMod.GetMonster) Suneater::new);
+        BaseMod.addBoss(MenagerieAct.ID, Suneater.ID, "menagerie/images/map/bosses/Suneater.png", "menagerie/images/map/bosses/SuneaterOutline.png");
         BaseMod.addMonster(Encounters.AVATARS, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new AvatarOfVigor(-550.0F, 50.0F),
