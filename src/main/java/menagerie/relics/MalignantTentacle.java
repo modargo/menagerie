@@ -16,7 +16,7 @@ public class MalignantTentacle extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(Menagerie.relicImage(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(Menagerie.relicOutlineImage(ID));
     private static final int CONSTRICTED = 1;
-    private static final int TURNS = 2;
+    private static final int TURNS = 3;
 
     public MalignantTentacle() {
         super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.SPECIAL, LandingSound.HEAVY);
