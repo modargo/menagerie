@@ -120,8 +120,8 @@ public class Menagerie implements
         BaseMod.addMonster(Encounters.MENAGERIE_WILDLIFE, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new GraftedWorm(-500.0F, 0.0F),
-                        new DreadMoth(-250.0F, 125.0F),
-                        new FeatherRabbit(0.0F, 0.0F)
+                        new DreadMoth(-150.0F, 125.0F),
+                        new FeatherRabbit(200.0F, 0.0F)
                 }));
 
         //Elites
