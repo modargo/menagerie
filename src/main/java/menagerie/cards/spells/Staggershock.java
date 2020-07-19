@@ -26,6 +26,8 @@ public class Staggershock extends CustomCard {
     private static final int DAMAGE = 6;
     private static final int UPGRADE_DAMAGE = 3;
 
+    public boolean rebound = false;
+
     public Staggershock() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = DAMAGE;
@@ -36,7 +38,7 @@ public class Staggershock extends CustomCard {
         this.addToBot(new SFXAction("ATTACK_HEAVY"));
         this.addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-        if (!this.purgeOnUse) {
+        if (!this.rebound) {
             this.addToBot(new ApplyPowerAction(p, p, new StaggershockReboundPower(p, this)));
         }
     }

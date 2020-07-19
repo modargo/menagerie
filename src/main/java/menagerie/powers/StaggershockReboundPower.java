@@ -10,11 +10,14 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import menagerie.Menagerie;
 import menagerie.cards.spells.Staggershock;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class StaggershockReboundPower extends AbstractPower {
     public static final String POWER_ID = "Menagerie:StaggershockRebound";
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
+    private static final AtomicInteger counter = new AtomicInteger();
     private Staggershock staggershock;
 
     public StaggershockReboundPower(AbstractCreature owner, Staggershock staggershock) {
@@ -25,6 +28,7 @@ public class StaggershockReboundPower extends AbstractPower {
         this.updateDescription();
         this.priority = 50;
         Menagerie.LoadPowerImage(this);
+        this.ID = POWER_ID + counter.getAndAdd(1);
     }
 
     @Override
@@ -36,6 +40,7 @@ public class StaggershockReboundPower extends AbstractPower {
     public void atStartOfTurn() {
         this.flash();
         this.staggershock.purgeOnUse = true;
+        this.staggershock.rebound = true;
         AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(this.staggershock, null, this.staggershock.energyOnUse, true, true), true);
         this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }
