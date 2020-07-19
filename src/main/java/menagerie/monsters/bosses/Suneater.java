@@ -49,6 +49,7 @@ public class Suneater extends CustomMonster
     private static final int FLARE_DAMAGE = 9;
     private static final int A4_FLARE_DAMAGE = 11;
     private static final int FLARE_DEBUFFS = 1;
+    private static final int A19_FLARE_DEBUFFS = 2;
     private static final int FLARE_BURNS = 1;
     private static final int A19_FLARE_BURNS = 2;
     private static final int HP = 175;
@@ -58,6 +59,7 @@ public class Suneater extends CustomMonster
     private int beamCharges;
     private int solarEnergyCharges;
     private int flareDamage;
+    private int flareDebuffs;
     private int flareBurns;
 
     private SolarChargePower power;
@@ -91,10 +93,12 @@ public class Suneater extends CustomMonster
         if (AbstractDungeon.ascensionLevel >= 19) {
             this.solarEnergyCharges = A19_SOLAR_ENERGY_CHARGES;
             this.beamCharges = A19_BEAM_CHARGES;
+            this.flareDebuffs = A19_FLARE_DEBUFFS;
             this.flareBurns = A19_FLARE_BURNS;
         } else {
             this.solarEnergyCharges = SOLAR_ENERGY_CHARGES;
             this.beamCharges = BEAM_CHARGES;
+            this.flareDebuffs = FLARE_DEBUFFS;
             this.flareBurns = FLARE_BURNS;
         }
     }
@@ -137,7 +141,7 @@ public class Suneater extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new RoomTintEffect(Color.RED, 0.5F)));
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.power.amount * 2), 0.2F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(2), AbstractGameAction.AttackEffect.FIRE));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, FLARE_DEBUFFS, true), FLARE_DEBUFFS));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, this.flareDebuffs, true), FLARE_DEBUFFS));
                 AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Burn(), this.flareBurns));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new SolarChargePower(this, -SolarChargePower.CHARGES_FOR_FLARE), -SolarChargePower.CHARGES_FOR_FLARE));
                 break;
