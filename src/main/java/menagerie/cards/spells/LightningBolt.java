@@ -30,6 +30,7 @@ public class LightningBolt extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = DAMAGE;
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
+        this.shuffleBackIntoDrawPile = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
