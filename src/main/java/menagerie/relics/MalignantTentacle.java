@@ -29,7 +29,7 @@ public class MalignantTentacle extends CustomRelic {
 
     @Override
     public void atBattleStart() {
-        this.counter = TURNS - 1;
+        this.counter = TURNS - 2;
     }
 
     @Override

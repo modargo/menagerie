@@ -31,7 +31,7 @@
     "NAME": "Malignant Tentacle",
     "FLAVOR": "It's growing larger.",
     "DESCRIPTIONS": [
-      "At the start of combat and every #b{0} turns thereafter, gain {1} #yConstricted."
+      "At the start of the second turn and every #b{0} turns thereafter, gain {1} #yConstricted."
     ]
   }
 }
