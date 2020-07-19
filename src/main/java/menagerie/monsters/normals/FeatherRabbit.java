@@ -28,8 +28,8 @@ public class FeatherRabbit extends CustomMonster
     private static final byte EAR_TINGLE_BUFF = 2;
     private static final int BITE_DAMAGE = 4;
     private static final int A2_BITE_DAMAGE = 5;
-    private static final int EAR_TINGLE_BLOCK = 3;
-    private static final int A7_EAR_TINGLE_BLOCK = 4;
+    private static final int EAR_TINGLE_BLOCK = 2;
+    private static final int A7_EAR_TINGLE_BLOCK = 2;
     private static final int EAR_TINGLE_STRENGTH = 1;
     private static final int HP_MIN = 21;
     private static final int HP_MAX = 26;
