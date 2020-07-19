@@ -45,6 +45,7 @@ public class Menagerie implements
         EditStringsSubscriber {
     private static final float X1 = -350.0F;
     private static final float X2 = 0.0F;
+    private static final float X2_ALT = 100.0F;
 
     public static final Logger logger = LogManager.getLogger(Menagerie.class.getName());
 
@@ -86,12 +87,12 @@ public class Menagerie implements
         BaseMod.addMonster(Encounters.BEAST_MAGE_AND_PROWLING_AMALGAM, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new ProwlingAmalgam(X1, 0.0F),
-                        new BeastMage(X2, 0.0F)
+                        new BeastMage(X2_ALT, 0.0F)
                 }));
         BaseMod.addMonster(Encounters.KEEPER_AND_YOUNG_SUNEATER, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new YoungSuneater(X1, 0.0F),
-                        new KeeperOfTheSacredPool(X2, 0.0F)
+                        new KeeperOfTheSacredPool(X2_ALT, 0.0F)
                 }));
         BaseMod.addMonster(Encounters.STYGIAN_BOAR_AND_WHISPERING_WRAITH, () -> new MonsterGroup(
                 new AbstractMonster[] {
