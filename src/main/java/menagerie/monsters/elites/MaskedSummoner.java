@@ -39,7 +39,7 @@ public class MaskedSummoner extends CustomMonster
     private static final int SILENT_SPEAR_STATUSES = 2;
     private static final int A18_SILENT_SPEAR_STATUSES = 4;
     private static final int STARTING_SUMMONS = 2;
-    private static final int A18_STARTING_SUMMONS = 2;
+    private static final int A18_STARTING_SUMMONS = 3;
     private static final int HP_MIN = 102;
     private static final int HP_MAX = 108;
     private static final int A8_HP_MIN = 106;
@@ -146,6 +146,9 @@ public class MaskedSummoner extends CustomMonster
     }
 
     private byte getMove(int minionCount, int num) {
+        if (this.firstMove) {
+            return SILENT_SPEAR_ATTACK;
+        }
         /* This follows the table:
          * Buff (Gentle Snow): 0/0/20/40/60/60
          * Summon (Frost Summoning): 100/75/50/25/0/0
