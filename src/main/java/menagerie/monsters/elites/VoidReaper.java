@@ -9,10 +9,10 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
-import com.megacrit.cardcrawl.powers.DrawReductionPower;
 import menagerie.Menagerie;
 import menagerie.cards.Necropotence;
 import menagerie.powers.DrawReductionSingleTurnPower;
+import menagerie.powers.PermanentDrawReductionPower;
 
 public class VoidReaper extends CustomMonster
 {
@@ -108,7 +108,7 @@ public class VoidReaper extends CustomMonster
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new DrawReductionSingleTurnPower(AbstractDungeon.player, temporaryDrawReduction)));
                 }
                 if (this.cutTheFutureCount > 0) {
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new DrawReductionPower(AbstractDungeon.player, 1)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new PermanentDrawReductionPower(AbstractDungeon.player, 1)));
                 }
                 this.cutTheFutureCount++;
                 break;

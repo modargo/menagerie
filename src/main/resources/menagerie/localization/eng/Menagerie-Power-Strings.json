@@ -88,5 +88,12 @@
   "Menagerie:StaggershockRebound": {
     "NAME": "Staggershock Rebound",
     "DESCRIPTIONS": ["At the start of your next turn, play Staggershock."]
+  },
+  "Menagerie:PermanentDrawReduction": {
+    "NAME": "Draw",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw #b{0} less card.",
+      "At the start of your turn, draw #b{0} less cards."
+    ]
   }
 }
