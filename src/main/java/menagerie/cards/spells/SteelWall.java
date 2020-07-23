@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.MetallicizePower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import menagerie.Menagerie;
 import menagerie.cards.CustomTags;
@@ -21,13 +22,13 @@ public class SteelWall extends CustomCard {
     private static final int COST = 1;
     private static final int BLOCK = 7;
     private static final int UPGRADE_BLOCK = 1;
-    private static final int PLATED_ARMOR = 1;
-    private static final int UPGRADE_PLATED_ARMOR = 1;
+    private static final int METALLICIZE = 1;
+    private static final int UPGRADE_METALLICIZE = 1;
 
     public SteelWall() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseBlock = BLOCK;
-        this.baseMagicNumber = PLATED_ARMOR;
+        this.baseMagicNumber = METALLICIZE;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
@@ -35,14 +36,14 @@ public class SteelWall extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, this.block));
-        this.addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, this.magicNumber), this.magicNumber));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(UPGRADE_BLOCK);
-            this.upgradeMagicNumber(UPGRADE_PLATED_ARMOR);
+            this.upgradeMagicNumber(UPGRADE_METALLICIZE);
         }
     }
 
