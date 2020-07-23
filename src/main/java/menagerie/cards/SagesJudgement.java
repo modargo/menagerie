@@ -25,7 +25,6 @@ public class SagesJudgement extends CustomCard {
     public SagesJudgement() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = 0;
-        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

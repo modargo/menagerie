@@ -28,8 +28,8 @@
   },
   "Menagerie:SagesJudgement": {
     "NAME": "Sage's Judgement",
-    "DESCRIPTION": "Deal damage to ALL enemies equal to half the number of cards in your deck. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal damage to ALL enemies equal to two-thirds the number of cards in your deck. NL Exhaust.",
+    "DESCRIPTION": "Deal damage to ALL enemies equal to half the number of cards in your deck.",
+    "UPGRADE_DESCRIPTION": "Deal damage to ALL enemies equal to two-thirds the number of cards in your deck.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
