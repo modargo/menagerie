@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import menagerie.Menagerie;
+import menagerie.actions.ExhaustCardInDiscardPileAction;
 import menagerie.cards.CustomTags;
 
 public class RelicOfProgenitus extends CustomCard {
@@ -20,6 +21,7 @@ public class RelicOfProgenitus extends CustomCard {
     private static final int COST = 1;
     private static final int UPGRADE_COST = 0;
     private static final int DRAW = 1;
+    private static final int CARDS_TO_EXHAUST = 1;
 
     public RelicOfProgenitus() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
@@ -40,6 +42,11 @@ public class RelicOfProgenitus extends CustomCard {
             this.upgradeName();
             this.upgradeBaseCost(UPGRADE_COST);
         }
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        this.addToBot(new ExhaustCardInDiscardPileAction(CARDS_TO_EXHAUST, true));
     }
 
     public AbstractCard makeCopy() {

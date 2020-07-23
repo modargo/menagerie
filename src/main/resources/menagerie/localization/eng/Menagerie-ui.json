@@ -6,5 +6,12 @@
       "#bIn #banother #bdirection #byou #bsee #ba #bvast #bland #bfull #bof #bstrange #bbeasts #band #bthe #bruins #bof #bonce #bmighty #bstructures.",
       "Explore the Menagerie"
     ]
+  },
+  "Menagerie:ExhaustCardInDiscardPileAction": {
+    "TEXT": [
+      "Choose a Card to Exhaust.",
+      "Choose ",
+      " Cards to Exhaust."
+    ]
   }
 }

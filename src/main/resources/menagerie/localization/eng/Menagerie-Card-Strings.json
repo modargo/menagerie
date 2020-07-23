@@ -71,7 +71,7 @@
   },
   "Menagerie:RelicOfProgenitus": {
     "NAME": "Relic of Progenitus",
-    "DESCRIPTION": "Exhaust all cards in your discard pile. NL Draw !M! card."
+    "DESCRIPTION": "Exhaust all cards in your discard pile. NL Draw !M! card. NL When this card is drawn, you may Exhaust a card in your discard pile."
   },
   "Menagerie:Tinker": {
     "NAME": "Tinker",
