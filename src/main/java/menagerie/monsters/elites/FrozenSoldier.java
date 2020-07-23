@@ -26,8 +26,8 @@ public class FrozenSoldier extends CustomMonster
     private boolean firstMove = true;
     private static final byte ICE_BARRIER_MOVE = 1;
     private static final byte VIOLENT_THAW_ATTACK = 2;
-    private static final int EXPLOSIVE_THAW_DAMAGE = 1;
-    private static final int A3_EXPLOSIVE_THAW_DAMAGE = 2;
+    private static final int EXPLOSIVE_THAW_DAMAGE = 0;
+    private static final int A3_EXPLOSIVE_THAW_DAMAGE = 1;
     private static final int ICE_BARRIER_BLOCK = 2;
     private static final int A8_ICE_BARRIER_BLOCK = 2;
     private static final int THAWING_AMOUNT = 3;
