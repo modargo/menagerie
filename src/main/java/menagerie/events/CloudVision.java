@@ -47,14 +47,13 @@ public class CloudVision extends AbstractImageEvent {
     public void update() {
         super.update();
         if (this.pickCard && !AbstractDungeon.isScreenUp && !AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
+            AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             if (this.remove) {
-                AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
                 AbstractDungeon.topLevelEffects.add(new PurgeCardEffect(c, (float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2)));
                 AbstractDungeon.player.masterDeck.removeCard(c);
                 AbstractDungeon.gridSelectScreen.selectedCards.remove(c);
             }
             else {
-                AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
                 AbstractDungeon.player.masterDeck.removeCard(c);
                 AbstractDungeon.transformCard(c, false, AbstractDungeon.miscRng);
                 AbstractCard transCard = AbstractDungeon.getTransformedCard();
