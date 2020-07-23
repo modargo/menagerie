@@ -32,12 +32,12 @@ public class RedMage extends CustomMonster
     private static final byte BOLT_ATTACK = 3;
     private static final int MUDDLE_FRAIL = 1;
     private static final int A17_MUDDLE_FRAIL = 2;
-    private static final int RIPOSTE_DAMAGE = 8;
-    private static final int A2_RIPOSTE_DAMAGE = 10;
+    private static final int RIPOSTE_DAMAGE = 9;
+    private static final int A2_RIPOSTE_DAMAGE = 11;
     private static final int RIPOSTE_BLOCK = 6;
     private static final int A7_RIPOSTE_BLOCK = 8;
-    private static final int BOLT_DAMAGE = 6;
-    private static final int A2_BOLT_DAMAGE = 7;
+    private static final int BOLT_DAMAGE = 7;
+    private static final int A2_BOLT_DAMAGE = 8;
     private static final int BOLT_HITS = 2;
     private static final int HP_MIN = 61;
     private static final int HP_MAX = 63;
