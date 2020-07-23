@@ -6,10 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
 import com.megacrit.cardcrawl.actions.animations.FastShakeAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
-import com.megacrit.cardcrawl.actions.common.RollMoveAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Burn;
@@ -17,7 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
-import com.megacrit.cardcrawl.powers.FrailPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.RoomTintEffect;
 import menagerie.Menagerie;
@@ -37,8 +34,8 @@ public class Suneater extends CustomMonster
     private static final byte BEAM_ATTACK = 2;
     private static final byte SOLAR_ENERGY = 3;
     private static final byte SOLAR_FLARE = 4;
-    private static final int TENTACLE_SLAP_DAMAGE = 1;
-    private static final int A4_TENTACLE_SLAP_DAMAGE = 2;
+    private static final int TENTACLE_SLAP_DAMAGE = 2;
+    private static final int A4_TENTACLE_SLAP_DAMAGE = 3;
     private static final int TENTACLE_SLAP_HITS = 2;
     private static final int BEAM_DAMAGE = 6;
     private static final int A4_BEAM_DAMAGE = 7;
@@ -46,8 +43,10 @@ public class Suneater extends CustomMonster
     private static final int A19_BEAM_CHARGES = 1;
     private static final int SOLAR_ENERGY_CHARGES = 2;
     private static final int A19_SOLAR_ENERGY_CHARGES = 3;
-    private static final int FLARE_DAMAGE = 9;
-    private static final int A4_FLARE_DAMAGE = 11;
+    private static final int SOLAR_ENERGY_BLOCK = 5;
+    private static final int A9_SOLAR_ENERGY_BLOCK = 10;
+    private static final int FLARE_DAMAGE = 11;
+    private static final int A4_FLARE_DAMAGE = 13;
     private static final int FLARE_DEBUFFS = 1;
     private static final int A19_FLARE_DEBUFFS = 2;
     private static final int FLARE_BURNS = 1;
@@ -58,6 +57,7 @@ public class Suneater extends CustomMonster
     private int beamDamage;
     private int beamCharges;
     private int solarEnergyCharges;
+    private int solarEnergyBlock;
     private int flareDamage;
     private int flareDebuffs;
     private int flareBurns;
@@ -73,8 +73,10 @@ public class Suneater extends CustomMonster
         this.type = EnemyType.BOSS;
         if (AbstractDungeon.ascensionLevel >= 9) {
             this.setHp(A9_HP);
+            this.solarEnergyBlock = A9_SOLAR_ENERGY_BLOCK;
         } else {
             this.setHp(HP);
+            this.solarEnergyBlock = SOLAR_ENERGY_BLOCK;
         }
 
         if (AbstractDungeon.ascensionLevel >= 4) {
@@ -136,12 +138,13 @@ public class Suneater extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new FastShakeAction(AbstractDungeon.player, 0.6F, 0.2F));
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.ORANGE)));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new SolarChargePower(this, this.solarEnergyCharges), this.solarEnergyCharges));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this.solarEnergyBlock));
                 break;
             case SOLAR_FLARE:
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new RoomTintEffect(Color.RED, 0.5F)));
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.power.amount * 2), 0.2F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(2), AbstractGameAction.AttackEffect.FIRE));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, this.flareDebuffs, true), FLARE_DEBUFFS));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, this.flareDebuffs, true), FLARE_DEBUFFS));
                 AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Burn(), this.flareBurns));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new SolarChargePower(this, -SolarChargePower.CHARGES_FOR_FLARE), -SolarChargePower.CHARGES_FOR_FLARE));
                 break;
