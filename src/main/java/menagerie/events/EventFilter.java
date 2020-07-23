@@ -14,12 +14,12 @@ public class EventFilter {
         ArrayList<String> eventsToRemove = new ArrayList<>();
         for (String event : events) {
             if (event.equals(StasisChamber.ID)) {
-                if (!(AbstractDungeon.currMapNode.y > 6)) {
+                if (!(AbstractDungeon.currMapNode != null && AbstractDungeon.currMapNode.y > 6)) {
                     eventsToRemove.add(event);
                 }
             }
             if (event.equals(MossyPath.ID)) {
-                if (!(AbstractDungeon.currMapNode.y > 6)) {
+                if (!(AbstractDungeon.currMapNode != null && AbstractDungeon.currMapNode.y > 6)) {
                     eventsToRemove.add(event);
                 }
             }
