@@ -26,7 +26,6 @@ public class BeastSpirit extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseMagicNumber = EFFECT;
         this.magicNumber = this.baseMagicNumber;
-        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
