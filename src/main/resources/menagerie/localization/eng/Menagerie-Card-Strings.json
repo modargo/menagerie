@@ -84,7 +84,7 @@
   },
   "Menagerie:LightningBolt": {
     "NAME": "Lightning Bolt",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle this card into your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle this card into your draw pile. NL When this card is Exhausted, attack a random enemy for !D! damage."
   },
   "Menagerie:BloodySpellbook": {
     "NAME": "Bloody Spellbook",
