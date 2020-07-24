@@ -71,7 +71,7 @@
   },
   "Menagerie:RelicOfProgenitus": {
     "NAME": "Relic of Progenitus",
-    "DESCRIPTION": "Exhaust all cards in your discard pile. NL Draw !M! card. NL When this card is drawn, you may Exhaust a card in your discard pile."
+    "DESCRIPTION": "Exhaust all cards in your discard pile. NL Draw !M! card. NL Exhaust. NL When this card is drawn, you may Exhaust a card in your discard pile."
   },
   "Menagerie:Tinker": {
     "NAME": "Tinker",
@@ -84,7 +84,7 @@
   },
   "Menagerie:LightningBolt": {
     "NAME": "Lightning Bolt",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle this card into your draw pile. NL When this card is Exhausted, attack a random enemy for !D! damage."
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle this card into your draw pile. NL When this card is Exhausted, deal !D! damage to a random enemy."
   },
   "Menagerie:BloodySpellbook": {
     "NAME": "Bloody Spellbook",
