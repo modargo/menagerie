@@ -194,7 +194,8 @@ public class Suneater extends CustomMonster
         }
         else {
             int extraTentacleSlaps = tentacleSlapCount - beamCount;
-            if (this.firstMove || num < 50 + (extraTentacleSlaps * 25)) {
+            float beamChance = Math.max(Math.min(0.50F + (extraTentacleSlaps * 0.25F), 1.0F), 0.0F);
+            if (this.firstMove || AbstractDungeon.aiRng.randomBoolean(beamChance)) {
                 this.setMove(MOVES[1], BEAM_ATTACK, Intent.ATTACK_BUFF, this.beamDamage);
             }
             else {
