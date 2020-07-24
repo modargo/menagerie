@@ -31,8 +31,8 @@ public class AvatarOfWisdom extends CustomMonster
     private static final int SHARP_CLAW_DAMAGE = 7;
     private static final int A4_SHARP_CLAW_DAMAGE = 8;
     private static final int INSIGHT_OF_THE_WISE_STRENGTH = 1;
-    private static final int OSMOSIS_DAMAGE = 3;
-    private static final int A4_OSMOSIS_DAMAGE = 4;
+    private static final int OSMOSIS_DAMAGE = 4;
+    private static final int A4_OSMOSIS_DAMAGE = 5;
     private static final int OSMOSIS_HEAL = 3;
     private static final int A19_OSMOSIS_HEAL = 5;
     private static final int WISDOM_AURA_THORNS = 2;
