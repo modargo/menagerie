@@ -105,6 +105,9 @@ public class Chimera extends CustomMonster
                 break;
             case SQUABBLE_MOVE:
                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this.squabbleBlock));
+                if (AbstractDungeon.ascensionLevel >= 19) {
+                    this.addStatus();
+                }
                 this.switchToNextHead();
                 break;
             case CLAW_AND_HORN_ATTACK:
