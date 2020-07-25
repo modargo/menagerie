@@ -108,7 +108,7 @@ public class RedMage extends CustomMonster
 
     @Override
     protected void getMove(final int num) {
-        if (this.firstMove || (num < 35 && !this.lastMove(MUDDLE_DEBUFF) && !this.lastMove(MUDDLE_DEBUFF))) {
+        if (this.firstMove || (num < 35 && !this.lastMove(MUDDLE_DEBUFF) && !this.lastMoveBefore(MUDDLE_DEBUFF))) {
             this.setMove(MOVES[0], MUDDLE_DEBUFF, Intent.DEBUFF);
         }
         else if ((!this.lastMove(RIPOSTE_ATTACK) || !this.lastMoveBefore(RIPOSTE_ATTACK)) && (this.lastMove(BOLT_ATTACK) || num < 50)){
