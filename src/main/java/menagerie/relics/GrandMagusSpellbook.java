@@ -25,7 +25,7 @@ public class GrandMagusSpellbook extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return MessageFormat.format(DESCRIPTIONS[0], TURNS_PER_SPELL);
+        return DESCRIPTIONS[0].replace("{0}", TURNS_PER_SPELL + "");
     }
 
     @Override

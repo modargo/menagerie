@@ -48,7 +48,7 @@ public class GrandMagusTower extends Colosseum {
                 this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                 this.screenNum = 1;
                 this.imageEventText.clearAllDialogs();
-                this.imageEventText.setDialogOption(OPTIONS[1]);
+                this.imageEventText.setDialogOption(OPTIONS[1], this.relic);
                 this.imageEventText.setDialogOption(OPTIONS[2]);
                 break;
             case 1:

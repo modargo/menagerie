@@ -182,10 +182,10 @@
   "Menagerie:GrandMagusTower": {
     "NAME": "Grand Magus's Tower",
     "DESCRIPTIONS": [
-      "As you draw near to the center of the mage's complex that the #bMenagerie once was, you spy an enormous #btower, still in good repair dwarfing the other nearby buildings. NL NL Even from a distance, the tower gives off an inescapable feeling of #p~doom,~ but also the promise of power. NL NL Against your better judgement, you sneak inside.",
-      "Inside the #btower, mindless servitors tend to #ycages and #ychambers that contain all manner of strange beasts, from the exotic to the unspeakable. The undead servants are easy to avoid, and you make your way to the center of the #btower with no alarm raised. NL NL At the center, you find a #gspellbook that crackles with #ypower.. but with #p~dark~ #p~magic~ guarding it. The master of this place will know if you take it.",
-      "You take the spellbook. It crackles with #y~power.~ NL NL A moment later, a voice booms out. NL NL #p@Who@ #p@dares@ #p@steal@ #p@my@ #p@spells?@ NL NL The #pmaster of this place has arrived.",
-      "As ~enticing~ as the #gspellbook is, you decide to leave it untouched and sneak out of the #btower."
+      "As you draw near to the center of the mage's complex that the #bMenagerie once was, you spy an enormous #btower, still in good repair. It dwarfs the other nearby buildings. NL NL Even from a distance, the tower gives off an inescapable feeling of #p~doom,~ but also the promise of power. NL NL Against your better judgement, you sneak inside.",
+      "Inside the #btower, mindless servitors tend to #ycages and #ychambers that contain all manner of strange beasts, from the exotic to the unspeakable. The undead servants are easy to avoid, and you make your way to the center of the #btower with no alarm raised. NL NL At the center, you find a #gspellbook that crackles with #ypower... but with #p~dark~ #p~magic~ guarding it. The #r@dread@ #r@master@ of this place will know if you take it.",
+      "You take the spellbook. It crackles with #y~power.~ NL NL A moment later, a voice booms out. NL NL #p@Who@ #p@dares@ #p@steal@ #p@my@ #p@spells?@ NL NL The #rmaster of this place has arrived.",
+      "As #y~enticing~ as the #gspellbook is, you decide to leave it untouched and sneak out of the #btower."
     ],
     "OPTIONS": [
       "[Continue]",

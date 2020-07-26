@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import menagerie.Menagerie;
@@ -41,17 +42,17 @@ public class GrandMagus extends CustomMonster
     private static final byte SULFURIC_VORTEX_DEBUFF = 4;
     private static final int MIND_TWIST_AMOUNT = 2;
     private static final int A18_MIND_TWIST_AMOUNT = 3;
-    private static final int LIGHTNING_BOLT_DAMAGE = 10;
-    private static final int A3_LIGHTNING_BOLT_DAMAGE = 12;
-    private static final int DARKBLAST_DAMAGE = 2;
-    private static final int A3_DARKBLAST_DAMAGE = 3;
+    private static final int LIGHTNING_BOLT_DAMAGE = 13;
+    private static final int A3_LIGHTNING_BOLT_DAMAGE = 15;
+    private static final int DARKBLAST_DAMAGE = 4;
+    private static final int A3_DARKBLAST_DAMAGE = 5;
     private static final int DARKBLAST_STATS = 1;
     private static final int SULFURIC_VORTEX_AMOUNT = 2;
     private static final int A18_SULFURIC_VORTEX_AMOUNT = 3;
-    private static final int HP_MIN = 141;
-    private static final int HP_MAX = 145;
-    private static final int A8_HP_MIN = 144;
-    private static final int A8_HP_MAX = 149;
+    private static final int HP_MIN = 181;
+    private static final int HP_MAX = 185;
+    private static final int A8_HP_MIN = 184;
+    private static final int A8_HP_MAX = 189;
 
     private int mindTwistAmount;
     private int lightningBoltDamage;
@@ -88,6 +89,12 @@ public class GrandMagus extends CustomMonster
             this.lightningBoltDamage = MIND_TWIST_AMOUNT;
             this.darkBlastDamage = SULFURIC_VORTEX_AMOUNT;
         }
+    }
+
+    @Override
+    public void usePreBattleAction() {
+        AbstractDungeon.scene.fadeOutAmbiance();
+        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
     }
 
     @Override
@@ -161,6 +168,19 @@ public class GrandMagus extends CustomMonster
                 this.setMove(MOVES[0], MIND_TWIST_DEBUFF, Intent.STRONG_DEBUFF);
             }
         }
+    }
+
+    @Override
+    public void die() {
+        super.die();
+        this.useFastShakeAnimation(5.0F);
+        CardCrawlGame.screenShake.rumble(4.0F);
+        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.BLACK));
+        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.PURPLE));
+        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.RED));
+        CardCrawlGame.music.silenceTempBgmInstantly();
+        CardCrawlGame.music.silenceBGMInstantly();
+        playBossStinger();
     }
 
     static {
