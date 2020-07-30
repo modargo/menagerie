@@ -130,7 +130,6 @@ public class MaskedSummoner extends CustomMonster
         for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (m != this && !m.isDying && m.id.equals(FrozenSoldier.ID)) {
                 minionCount++;
-                break;
             }
         }
         byte move = this.getMove(minionCount, num);
