@@ -1,6 +1,7 @@
 package menagerie.powers;
 
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -21,7 +22,7 @@ public class LifelinkPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
-        this.isTurnBased = true;
+        this.isTurnBased = false;
         this.updateDescription();
         Menagerie.LoadPowerImage(this);
     }
@@ -32,9 +33,17 @@ public class LifelinkPower extends AbstractPower {
     }
 
     @Override
-    public void onInflictDamage(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount > 0 && info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS) {
-            this.addToBot(new HealAction(this.owner, this.owner, 1));
+    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
+            this.flash();
+            this.addToTop(new HealAction(this.owner, this.owner, 1));
+            this.amount--;
+            if (this.amount <= 0) {
+                this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+            }
+            else {
+                this.updateDescription();
+            }
         }
     }
 
