@@ -20,7 +20,7 @@
     ],
     "OPTIONS": [
       "[Help the mage] #gGain Sage's Judgement. #rLose #r{0} #rHP.",
-      "[Help the monster] #gGain Outburst. #rLose #r{0} #rHP.",
+      "[Help the monster] #gGain Slaughter. #rLose #r{0} #rHP.",
       "[Leave]"
     ]
   },
