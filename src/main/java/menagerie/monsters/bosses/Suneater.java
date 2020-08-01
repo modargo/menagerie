@@ -34,11 +34,11 @@ public class Suneater extends CustomMonster
     private static final byte BEAM_ATTACK = 2;
     private static final byte SOLAR_ENERGY = 3;
     private static final byte SOLAR_FLARE = 4;
-    private static final int TENTACLE_SLAP_DAMAGE = 2;
-    private static final int A4_TENTACLE_SLAP_DAMAGE = 3;
+    private static final int TENTACLE_SLAP_DAMAGE = 1;
+    private static final int A4_TENTACLE_SLAP_DAMAGE = 2;
     private static final int TENTACLE_SLAP_HITS = 2;
-    private static final int BEAM_DAMAGE = 5;
-    private static final int A4_BEAM_DAMAGE = 6;
+    private static final int BEAM_DAMAGE = 6;
+    private static final int A4_BEAM_DAMAGE = 7;
     private static final int BEAM_CHARGES = 1;
     private static final int A19_BEAM_CHARGES = 1;
     private static final int SOLAR_ENERGY_CHARGES = 2;
