@@ -41,7 +41,7 @@ public class Chimera extends CustomMonster
     private static final int VENOM_SPIT_DAMAGE = 12;
     private static final int A4_VENOM_SPIT_DAMAGE = 14;
     private static final int THREE_AS_ONE_STRENGTH = 2;
-    private static final int HP = 200;
+    private static final int HP = 210;
     private static final int A9_HP = 220;
     private static final AbstractCard[] statuses = new AbstractCard[]{ new Slimed(), new Wound(), new Burn() };
     private int tripleBiteDamage;
