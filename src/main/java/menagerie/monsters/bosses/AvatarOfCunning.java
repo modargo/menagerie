@@ -33,8 +33,8 @@ public class AvatarOfCunning extends CustomMonster
     private static final int ASSAIL_BLOCK = 4;
     private static final int CUNNING_AURA_PLATED_ARMOR = 3;
     private static final int A19_CUNNING_AURA_PLATED_ARMOR = 5;
-    private static final int HP = 65;
-    private static final int A9_HP = 70;
+    private static final int HP = 70;
+    private static final int A9_HP = 75;
     private int finesseOfTheCunningDamage;
     private int finesseOfTheCunningHits;
     private int assailDamage;
