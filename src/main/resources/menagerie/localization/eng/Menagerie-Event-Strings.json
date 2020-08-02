@@ -125,7 +125,7 @@
   "Menagerie:MagicPeddler": {
     "NAME": "Magic Peddler",
     "DESCRIPTIONS": [
-      "\"Hail, friend! Would you care to purchase one of these #gmagical #gscrolls? Perfect for an adventurer seeking #yfame and #yfortune in the spire. My scrolls can give you #ghealth, or help build your #gskills, or master powerful spells of your own. What would you care to buy?",
+      "\"Hail, friend! Would you care to purchase one of these #bmagical #bscrolls? Perfect for an adventurer seeking #yfame and #yfortune in the spire. My scrolls can give you #ghealth, or help build your #gskills, or master #gpowerful #gspells of your own. What would you care to buy?",
       "The peddler thanks you for your purchase and wishes you luck in the spire before packing up shop, headed for another location."
     ],
     "OPTIONS": [
