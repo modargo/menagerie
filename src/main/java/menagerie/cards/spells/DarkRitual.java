@@ -33,7 +33,7 @@ public class DarkRitual extends CustomCard {
 
     public void upgrade() {
         if (!this.upgraded) {
-            this.retain = true;
+            this.selfRetain = true;
             this.upgradeName();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
