@@ -23,10 +23,13 @@ public class MageAndMonster extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final int HEALTH_LOSS = 6;
-    private static final int A15_HEALTH_LOSS = 8;
+    private static final int HEALTH_LOSS = 5;
+    private static final int A15_HEALTH_LOSS = 9;
+    private static final int GOLD = 15;
+    private static final int A15_GOLD = 20;
 
     private int healthLoss;
+    private int gold;
     private AbstractCard mageCard;
     private AbstractCard monsterCard;
     private int screenNum = 0;
@@ -37,10 +40,11 @@ public class MageAndMonster extends AbstractImageEvent {
         this.mageCard = new SagesJudgement();
         this.monsterCard = new Slaughter();
         this.healthLoss = AbstractDungeon.ascensionLevel >= 15 ? A15_HEALTH_LOSS : HEALTH_LOSS;
+        this.gold = AbstractDungeon.ascensionLevel >= 15 ? A15_GOLD : GOLD;
 
         imageEventText.setDialogOption(OPTIONS[0].replace("{0}", this.healthLoss + ""), this.mageCard);
         imageEventText.setDialogOption(MessageFormat.format(OPTIONS[1], this.healthLoss), this.monsterCard);
-        imageEventText.setDialogOption(OPTIONS[2]);
+        imageEventText.setDialogOption(OPTIONS[2].replace("{0}", this.gold + ""));
     }
 
     @Override
@@ -54,7 +58,7 @@ public class MageAndMonster extends AbstractImageEvent {
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.mageCard, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
                         this.screenNum = 1;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                        this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     case 1: // Help the monster
@@ -63,15 +67,15 @@ public class MageAndMonster extends AbstractImageEvent {
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.FIRE));
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.monsterCard, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
                         this.screenNum = 1;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                        this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
                         break;
-                    default: // Leave
+                    default: // Avoid the battle
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
+                        AbstractDungeon.player.loseGold(this.gold);
                         this.screenNum = 1;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                        this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
-                        this.openMap();
                         break;
                 }
                 break;

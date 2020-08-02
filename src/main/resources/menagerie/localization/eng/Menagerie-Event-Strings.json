@@ -16,11 +16,12 @@
       "You come across a pitched battle! A powerful #bmage is fighting an equally fierce #rmonster, and the battle seems to be evenly matched.",
       "You join the #bmage in attacking the #rmonster, adding your strength to his. The #rmonster is no match for both of you, and your coordinated attacks bring it down. NL NL Before parting with the #bmage, he teaches you a way to strike at your enemies with your #ginnate #gpower.",
       "You cut down the #bmage from behind, wounding him and giving the #rmonster an opening to strike. Unable to defend against both of you, the mage quickly falls and the battle is over. NL NL As the #rmonster wanders off, you have a flash of insight as you realize that you can mimic its #gfrenzied #gstrikes.",
-      "Best not to get involved. Nothing good ever comes of it."
+      "Best not to get involved. Nothing good ever comes of it. NL NL As you maneuver around the battle, a stray #rfireball flies towards you! You're able to dodge it, but some of your #ygold spills out."
     ],
     "OPTIONS": [
       "[Help the mage] #gGain Sage's Judgement. #rLose #r{0} #rHP.",
       "[Help the monster] #gGain Slaughter. #rLose #r{0} #rHP.",
+      "[Avoid the battle] #rLose #r{0} #rgold.",
       "[Leave]"
     ]
   },
