@@ -1,6 +1,8 @@
 package menagerie.events;
 
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.Ectoplasm;
+import menagerie.relics.Aurumvore;
 
 import java.util.ArrayList;
 
@@ -33,6 +35,12 @@ public class EventFilter {
 
             if (event.equals(GrandMagusTower.ID)) {
                 if (!(AbstractDungeon.currMapNode != null && AbstractDungeon.currMapNode.y > AbstractDungeon.map.size() / 2)) {
+                    eventsToRemove.add(event);
+                }
+            }
+
+            if (event.equals(ScentOfGold.ID)) {
+                if (AbstractDungeon.player.hasRelic(Ectoplasm.ID)) {
                     eventsToRemove.add(event);
                 }
             }
