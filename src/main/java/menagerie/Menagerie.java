@@ -174,6 +174,7 @@ public class Menagerie implements
         BaseMod.addEvent(CloudVision.ID, CloudVision.class, MenagerieAct.ID);
         BaseMod.addEvent(GrandMagusTower.ID, GrandMagusTower.class, MenagerieAct.ID);
         BaseMod.addEvent(CorruptingLight.ID, CorruptingLight.class, MenagerieAct.ID);
+        BaseMod.addEvent(ShimmeringGrove.ID, ShimmeringGrove.class, MenagerieAct.ID);
     }
 
     private static void addRelics() {

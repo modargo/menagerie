@@ -1,8 +1,10 @@
 package menagerie.events;
 
+import com.megacrit.cardcrawl.daily.mods.Diverse;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.relics.Ectoplasm;
-import menagerie.relics.Aurumvore;
+import com.megacrit.cardcrawl.relics.PrismaticShard;
 
 import java.util.ArrayList;
 
@@ -41,6 +43,12 @@ public class EventFilter {
 
             if (event.equals(ScentOfGold.ID)) {
                 if (AbstractDungeon.player.hasRelic(Ectoplasm.ID)) {
+                    eventsToRemove.add(event);
+                }
+            }
+
+            if (event.equals(ShimmeringGrove.ID)) {
+                if (ModHelper.isModEnabled(Diverse.ID) || AbstractDungeon.player.hasRelic(PrismaticShard.ID)) {
                     eventsToRemove.add(event);
                 }
             }

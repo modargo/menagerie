@@ -205,5 +205,20 @@
       "[Enter] #gUpgrade #g{0} #grandom #gcards. #rGain {1}.",
       "[Leave]"
     ]
+  },
+  "Menagerie:ShimmeringGrove": {
+    "NAME": "Shimmering Grove",
+    "DESCRIPTIONS": [
+      "You reach an area with no sign of the #bstructures that once covered this place. #gNatural #glife has completely reclaimed the land. NL NL A nearby grove catches your eye, where the #gtrees and #ybushes ~shimmer~ with a #rkaleidoscope of #penergies. The power is volatile but could be used to your benefit if you enter the grove.",
+      "You enter the grove, opening yourself to the #penergies in it. The plants reach out and cocoon you, and you feel your power expanding, growing, changing. Your thoughts fade....",
+      "The #bmetamorphosis is complete. You emerge from the grove, #grejuvenated. There's so much more you can do now. NL NL The mages were fools to pursue their experiments instead of embracing what was in front of them.",
+      "You decide to move past the grove, but even though you give it a wide berth, one of the tendril of energy suddenly reaches out to #ptouch you! NL NL You suddenly see a different way of striking your foes... but it isn't any better than what you already know how to do."
+    ],
+    "OPTIONS": [
+      "[Enter] #gGain {0}. #rLose #r{1} #rMax #rHP.",
+      "[Ignore] #rGain {0}.",
+      "[Continue]",
+      "[Leave]"
+    ]
   }
 }
