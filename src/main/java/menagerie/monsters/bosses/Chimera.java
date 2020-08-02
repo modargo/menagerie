@@ -36,13 +36,13 @@ public class Chimera extends CustomMonster
     private static final int TRIPLE_BITE_HITS = 3;
     private static final int SQUABBLE_BLOCK = 6;
     private static final int A9_SQUABBLE_BLOCK = 9;
-    private static final int SQUABBLE_PLATED_ARMOR = 1;
-    private static final int A19_SQUABBLE_PLATED_ARMOR = 3;
+    private static final int SQUABBLE_PLATED_ARMOR = 0;
+    private static final int A19_SQUABBLE_PLATED_ARMOR = 2;
     private static final int CLAW_AND_HORN_DAMAGE = 14;
     private static final int A4_CLAW_AND_HORN_DAMAGE = 16;
     private static final int CLAW_AND_HORN_BLOCK = 5;
-    private static final int VENOM_SPIT_DAMAGE = 11;
-    private static final int A4_VENOM_SPIT_DAMAGE = 13;
+    private static final int VENOM_SPIT_DAMAGE = 10;
+    private static final int A4_VENOM_SPIT_DAMAGE = 12;
     private static final int THREE_AS_ONE_STRENGTH = 1;
     private static final int A19_THREE_AS_ONE_STRENGTH = 2;
     private static final int HP = 210;
