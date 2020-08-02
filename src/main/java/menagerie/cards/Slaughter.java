@@ -28,6 +28,7 @@ public class Slaughter extends CustomCard {
     public Slaughter() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = DAMAGE;
+        this.isMultiDamage = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
