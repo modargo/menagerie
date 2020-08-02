@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.cards.status.Wound;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
+import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
 import menagerie.powers.SquabblingHeadsPower;
@@ -33,21 +34,26 @@ public class Chimera extends CustomMonster
     private static final int TRIPLE_BITE_DAMAGE = 4;
     private static final int A4_TRIPLE_BITE_DAMAGE = 5;
     private static final int TRIPLE_BITE_HITS = 3;
-    private static final int SQUABBLE_BLOCK = 10;
-    private static final int A9_SQUABBLE_BLOCK = 15;
-    private static final int CLAW_AND_HORN_DAMAGE = 15;
-    private static final int A4_CLAW_AND_HORN_DAMAGE = 17;
+    private static final int SQUABBLE_BLOCK = 6;
+    private static final int A9_SQUABBLE_BLOCK = 9;
+    private static final int SQUABBLE_PLATED_ARMOR = 1;
+    private static final int A19_SQUABBLE_PLATED_ARMOR = 3;
+    private static final int CLAW_AND_HORN_DAMAGE = 14;
+    private static final int A4_CLAW_AND_HORN_DAMAGE = 16;
     private static final int CLAW_AND_HORN_BLOCK = 5;
-    private static final int VENOM_SPIT_DAMAGE = 12;
-    private static final int A4_VENOM_SPIT_DAMAGE = 14;
-    private static final int THREE_AS_ONE_STRENGTH = 2;
+    private static final int VENOM_SPIT_DAMAGE = 11;
+    private static final int A4_VENOM_SPIT_DAMAGE = 13;
+    private static final int THREE_AS_ONE_STRENGTH = 1;
+    private static final int A19_THREE_AS_ONE_STRENGTH = 2;
     private static final int HP = 210;
     private static final int A9_HP = 220;
     private static final AbstractCard[] statuses = new AbstractCard[]{ new Slimed(), new Wound(), new Burn() };
     private int tripleBiteDamage;
     private int squabbleBlock;
+    private int squabblePlatedArmor;
     private int clawAndHornDamage;
     private int venomSpitDamage;
+    private int threeAsOneStrength;
 
     private SquabblingHeadsPower power;
     private int statusCount = 0;
@@ -79,6 +85,15 @@ public class Chimera extends CustomMonster
         this.damage.add(new DamageInfo(this, this.tripleBiteDamage));
         this.damage.add(new DamageInfo(this, this.clawAndHornDamage));
         this.damage.add(new DamageInfo(this, this.venomSpitDamage));
+
+        if (AbstractDungeon.ascensionLevel >= 19) {
+            this.squabblePlatedArmor = A19_SQUABBLE_PLATED_ARMOR;
+            this.threeAsOneStrength = A19_THREE_AS_ONE_STRENGTH;
+        }
+        else {
+            this.squabblePlatedArmor = SQUABBLE_PLATED_ARMOR;
+            this.threeAsOneStrength = THREE_AS_ONE_STRENGTH;
+        }
     }
 
     @Override
@@ -105,8 +120,8 @@ public class Chimera extends CustomMonster
                 break;
             case SQUABBLE_MOVE:
                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this.squabbleBlock));
-                if (AbstractDungeon.ascensionLevel >= 19) {
-                    this.addStatus();
+                if (this.squabblePlatedArmor > 0) {
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new PlatedArmorPower(this, this.squabblePlatedArmor), this.squabblePlatedArmor));
                 }
                 this.switchToNextHead();
                 break;
@@ -125,9 +140,7 @@ public class Chimera extends CustomMonster
                 break;
             case THREE_AS_ONE_BUFF:
                 this.activateTogetherMode();
-                if (AbstractDungeon.ascensionLevel >= 19) {
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, THREE_AS_ONE_STRENGTH), THREE_AS_ONE_STRENGTH));
-                }
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.threeAsOneStrength), this.threeAsOneStrength));
                 break;
         }
         AbstractDungeon.actionManager.addToBottom(new RollMoveAction(this));
