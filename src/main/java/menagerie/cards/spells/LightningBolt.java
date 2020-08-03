@@ -25,7 +25,7 @@ public class LightningBolt extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int DAMAGE = 13;
+    private static final int DAMAGE = 12;
     private static final int UPGRADE_DAMAGE = 4;
 
     public LightningBolt() {
