@@ -48,11 +48,6 @@ public class LightningBolt extends CustomCard {
         }
     }
 
-    @Override
-    public void triggerOnExhaust() {
-        this.addToBot(new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.LIGHTNING));
-    }
-
     public AbstractCard makeCopy() {
         return new LightningBolt();
     }
