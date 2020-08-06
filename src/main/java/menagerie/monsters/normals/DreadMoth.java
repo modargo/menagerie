@@ -29,8 +29,8 @@ public class DreadMoth extends CustomMonster
     private static final int A7_WING_WARD_BLOCK = 3;
     private static final int DREAD_WAVE_DAMAGE = 5;
     private static final int A2_DREAD_WAVE_DAMAGE = 6;
-    private static final int HP = 6;
-    private static final int A7_HP = 8;
+    private static final int HP = 8;
+    private static final int A7_HP = 9;
     private static final int STARTING_BLOCK = 4;
     private static final int A17_STARTING_BLOCK = 6;
     private static final int BEAT_OF_DEATH_AMOUNT = 1;
