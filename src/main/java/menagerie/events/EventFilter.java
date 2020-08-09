@@ -2,13 +2,21 @@ package menagerie.events;
 
 import com.megacrit.cardcrawl.daily.mods.Diverse;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.events.shrines.AccursedBlacksmith;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.relics.Ectoplasm;
 import com.megacrit.cardcrawl.relics.PrismaticShard;
+import com.megacrit.cardcrawl.relics.WarpedTongs;
+import menagerie.act.MenagerieAct;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
 public class EventFilter {
+    private static final Logger logger = LogManager.getLogger(EventFilter.class.getName());
+
     //Not supposed to be instantiated
     private EventFilter() {
         throw new AssertionError();
@@ -50,6 +58,17 @@ public class EventFilter {
             if (event.equals(ShimmeringGrove.ID)) {
                 if (ModHelper.isModEnabled(Diverse.ID) || AbstractDungeon.player.hasRelic(PrismaticShard.ID)) {
                     eventsToRemove.add(event);
+                }
+            }
+
+            if (event.startsWith("Accursed_Blacksmith")) {
+                if (AbstractDungeon.player.hasRelic(WarpedTongs.ID)) {
+                    eventsToRemove.add(event);
+                }
+                else if (AbstractDungeon.id.equals(MenagerieAct.ID)) {
+                    if (AbstractDungeon.eventRng.random(1.0F) < 0.5F) {
+                        eventsToRemove.add(event);
+                    }
                 }
             }
         }
