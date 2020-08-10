@@ -24,7 +24,7 @@ public class MageAndMonster extends AbstractImageEvent {
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
     private static final int HEALTH_LOSS = 5;
-    private static final int A15_HEALTH_LOSS = 9;
+    private static final int A15_HEALTH_LOSS = 7;
     private static final int GOLD = 15;
     private static final int A15_GOLD = 20;
 

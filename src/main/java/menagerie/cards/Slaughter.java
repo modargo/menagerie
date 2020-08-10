@@ -22,8 +22,8 @@ public class Slaughter extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private static final int DAMAGE = 11;
-    private static final int UPGRADE_DAMAGE = 2;
+    private static final int DAMAGE = 10;
+    private static final int UPGRADE_DAMAGE = 3;
 
     public Slaughter() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
