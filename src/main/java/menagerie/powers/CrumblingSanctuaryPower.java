@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.BufferPower;
 import menagerie.Menagerie;
 
 import java.text.MessageFormat;
@@ -29,6 +30,9 @@ public class CrumblingSanctuaryPower extends AbstractPower {
 
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
+        if (this.owner.hasPower(BufferPower.POWER_ID)) {
+           return damageAmount;
+        }
         int modifiedDamage = damageAmount;
         int drawPileLeft = AbstractDungeon.player.drawPile.size();
         while (modifiedDamage > 0 && drawPileLeft > 0) {
