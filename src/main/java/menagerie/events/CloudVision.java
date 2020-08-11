@@ -21,8 +21,8 @@ public class CloudVision extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final int MAX_HEALTH = 4;
-    private static final int A15_MAX_HEALTH = 3;
+    private static final int MAX_HEALTH = 3;
+    private static final int A15_MAX_HEALTH = 2;
     private static final int GOLD = 20;
     private static final int A15_GOLD = 15;
 
