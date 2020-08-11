@@ -33,9 +33,9 @@ public class YoungSuneater extends CustomMonster
     private static final int A7_SUNBATHE_BLOCK = 0;
     private static final int SUNBATHE_PLATED_ARMOR = 1;
     private static final int A17_SUNBATHE_PLATED_ARMOR = 2;
-    private static final int HP_MIN = 41;
-    private static final int HP_MAX = 46;
-    private static final int A7_HP_MIN = 44;
+    private static final int HP_MIN = 43;
+    private static final int HP_MAX = 47;
+    private static final int A7_HP_MIN = 45;
     private static final int A7_HP_MAX = 49;
     private int tentacleSlapDamage;
     private int sunbatheBlock;

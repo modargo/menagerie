@@ -34,9 +34,9 @@ public class KeeperOfTheSacredPool extends CustomMonster
     private static final int TRIPLE_BLAST_HITS = 3;
     private static final int INVOKE_THE_SUN_STRENGTH = 1;
     private static final int A17_INVOKE_THE_SUN_STRENGTH = 1;
-    private static final int HP_MIN = 41;
-    private static final int HP_MAX = 46;
-    private static final int A7_HP_MIN = 44;
+    private static final int HP_MIN = 43;
+    private static final int HP_MAX = 47;
+    private static final int A7_HP_MIN = 45;
     private static final int A7_HP_MAX = 49;
     private int tripleBlastDamage;
     private int invokeTheSunStrength;

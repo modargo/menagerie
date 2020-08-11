@@ -41,6 +41,7 @@ public class Chimera extends CustomMonster
     private static final int CLAW_AND_HORN_DAMAGE = 11;
     private static final int A4_CLAW_AND_HORN_DAMAGE = 13;
     private static final int CLAW_AND_HORN_BLOCK = 5;
+    private static final int A9_CLAW_AND_HORN_BLOCK = 7;
     private static final int VENOM_SPIT_DAMAGE = 8;
     private static final int A4_VENOM_SPIT_DAMAGE = 10;
     private static final int THREE_AS_ONE_STRENGTH = 1;
@@ -52,6 +53,7 @@ public class Chimera extends CustomMonster
     private int squabbleBlock;
     private int squabblePlatedArmor;
     private int clawAndHornDamage;
+    private int clawAndHornBlock;
     private int venomSpitDamage;
     private int threeAsOneStrength;
 
@@ -68,9 +70,11 @@ public class Chimera extends CustomMonster
         if (AbstractDungeon.ascensionLevel >= 9) {
             this.setHp(A9_HP);
             this.squabbleBlock = A9_SQUABBLE_BLOCK;
+            this.clawAndHornBlock = A9_CLAW_AND_HORN_BLOCK;
         } else {
             this.setHp(HP);
             this.squabbleBlock = SQUABBLE_BLOCK;
+            this.clawAndHornBlock = CLAW_AND_HORN_BLOCK;
         }
 
         if (AbstractDungeon.ascensionLevel >= 4) {
@@ -128,7 +132,7 @@ public class Chimera extends CustomMonster
             case CLAW_AND_HORN_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new AnimateFastAttackAction(this));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(1), AbstractGameAction.AttackEffect.SHIELD));
-                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, CLAW_AND_HORN_BLOCK));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this.clawAndHornBlock));
                 break;
             case VENOM_SPIT_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new AnimateSlowAttackAction(this));

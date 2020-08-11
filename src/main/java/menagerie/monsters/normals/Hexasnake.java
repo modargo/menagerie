@@ -36,8 +36,8 @@ public class Hexasnake extends CustomMonster {
     private static final int A17_VENOMOUS_BITE_SLIMES = 1;
     private static final int CONSTRICT_DAMAGE = 6;
     private static final int A2_CONSTRICT_DAMAGE = 7;
-    private static final int CONSTRICT_AMOUNT = 1;
-    private static final int A17_CONSTRICT_AMOUNT = 2;
+    private static final int CONSTRICT_AMOUNT = 2;
+    private static final int A17_CONSTRICT_AMOUNT = 3;
     private static final int HP_MIN = 60;
     private static final int HP_MAX = 64;
     private static final int A7_HP_MIN = 63;

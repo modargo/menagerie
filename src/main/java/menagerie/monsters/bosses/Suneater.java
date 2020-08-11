@@ -51,8 +51,8 @@ public class Suneater extends CustomMonster
     private static final int A19_FLARE_DEBUFFS = 2;
     private static final int FLARE_BURNS = 1;
     private static final int A19_FLARE_BURNS = 2;
-    private static final int HP = 190;
-    private static final int A9_HP = 200;
+    private static final int HP = 200;
+    private static final int A9_HP = 210;
     private int tentacleSlapDamage;
     private int beamDamage;
     private int beamCharges;

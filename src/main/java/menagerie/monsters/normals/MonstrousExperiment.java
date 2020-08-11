@@ -31,8 +31,8 @@ public class MonstrousExperiment extends CustomMonster
     private static final byte SLIMY_APPENDAGE_ATTACK = 1;
     private static final byte THRASH_ATTACK = 2;
     private static final byte DEGENERATE_MOVE = 3;
-    private static final int SLIMY_APPENDAGE_DAMAGE = 4;
-    private static final int A2_SLIMY_APPENDAGE_DAMAGE = 5;
+    private static final int SLIMY_APPENDAGE_DAMAGE = 5;
+    private static final int A2_SLIMY_APPENDAGE_DAMAGE = 6;
     private static final int THRASH_DAMAGE = 8;
     private static final int A2_THRASH_DAMAGE = 9;
     private static final int DEGENERATE_BLOCK = 2;
