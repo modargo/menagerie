@@ -41,8 +41,8 @@
   },
   "Menagerie:Skullclamp": {
     "NAME": "Skullclamp",
-    "DESCRIPTION": "Gain !M! Strength. NL Lose !M! Dexterity. NL At the start of your turn, draw !M! additional card.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Strength. NL Lose !M! Dexterity. NL At the start of your turn, draw !M! additional cards."
+    "DESCRIPTION": "Gain 1 Strength. NL Lose 1 Dexterity. NL At the start of your turn, draw !M! additional card.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Strength. NL Lose 1 Dexterity. NL At the start of your turn, draw !M! additional cards."
   },
   "Menagerie:WallOfBlossoms": {
     "NAME": "Wall of Blossoms",
