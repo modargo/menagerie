@@ -35,12 +35,17 @@ public class GrandMagusSpellbook extends CustomRelic {
     }
 
     @Override
-    public void atTurnStart() {
+    public void atTurnStartPostDraw() {
         this.counter = (this.counter + 1) % TURNS_PER_SPELL;
         if (this.counter == 0) {
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             this.addToBot(new GrandMagusSpellbookAction());
         }
+    }
+
+    @Override
+    public void onVictory() {
+        this.counter = -1;
     }
 
     public AbstractRelic makeCopy() {
