@@ -1,6 +1,7 @@
 package menagerie.cards.spells;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -35,6 +36,7 @@ public class RelicOfProgenitus extends CustomCard {
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
             this.addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.discardPile, true));
         }
+        this.addToBot(new DrawCardAction(DRAW));
     }
 
     public void upgrade() {
