@@ -65,7 +65,6 @@ public class Menagerie implements
         CustomDungeon.addAct(MenagerieAct.ACT_NUM, new MenagerieAct());
         addMonsters();
         addEvents();
-        addRelics();
     }
 
     private static void addMonsters() {
@@ -177,14 +176,6 @@ public class Menagerie implements
         BaseMod.addEvent(ShimmeringGrove.ID, ShimmeringGrove.class, MenagerieAct.ID);
     }
 
-    private static void addRelics() {
-        BaseMod.addRelic(new Aurumvore(), RelicType.SHARED);
-        BaseMod.addRelic(new GrandMagusSpellbook(), RelicType.SHARED);
-        BaseMod.addRelic(new HuntersKnife(), RelicType.SHARED);
-        BaseMod.addRelic(new ShiftingBlessing(), RelicType.SHARED);
-        BaseMod.addRelic(new MalignantTentacle(), RelicType.SHARED);
-    }
-
     @Override
     public void receiveEditCards() {
         BaseMod.addCard(new Necropotence());
@@ -202,6 +193,11 @@ public class Menagerie implements
 
     @Override
     public void receiveEditRelics() {
+        BaseMod.addRelic(new Aurumvore(), RelicType.SHARED);
+        BaseMod.addRelic(new GrandMagusSpellbook(), RelicType.SHARED);
+        BaseMod.addRelic(new HuntersKnife(), RelicType.SHARED);
+        BaseMod.addRelic(new ShiftingBlessing(), RelicType.SHARED);
+        BaseMod.addRelic(new MalignantTentacle(), RelicType.SHARED);
     }
 
     private static String makeLocPath(Settings.GameLanguage language, String filename)
