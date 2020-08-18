@@ -32,10 +32,10 @@ public class HuntersKnife extends CustomRelic {
         if (m.type == AbstractMonster.EnemyType.NORMAL && m.currentHealth == 0 && !m.halfDead && !m.hasPower(MinionPower.POWER_ID)) {
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(m, this));
-            this.addToBot(new GainGoldAction(GOLD));
             for (int i = 0; i < GOLD; ++i) {
                 AbstractDungeon.effectList.add(new GainPennyEffect(AbstractDungeon.player, m.hb.cX, m.hb.cY, AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, true));
             }
+            AbstractDungeon.player.gainGold(GOLD);
         }
     }
 
