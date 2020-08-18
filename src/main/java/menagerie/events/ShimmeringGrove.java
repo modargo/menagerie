@@ -25,8 +25,8 @@ public class ShimmeringGrove extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static final float MAX_HEALTH_LOSS_PERCENT = 0.05F;
-    private static final float A15_MAX_HEALTH_LOSS_PERCENT = 0.08F;
+    private static final float MAX_HEALTH_LOSS_PERCENT = 0.03F;
+    private static final int A15_MAX_HEALTH_LOSS_ADDITION = 1;
 
     private int maxHealthLoss;
     private AbstractCard card;
@@ -38,8 +38,7 @@ public class ShimmeringGrove extends AbstractImageEvent {
 
         this.card = this.getCard();
         this.relic = new PrismaticShard();
-        float maxHealthLossPercent = AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH_LOSS_PERCENT : MAX_HEALTH_LOSS_PERCENT;
-        this.maxHealthLoss = (int)((float)AbstractDungeon.player.maxHealth * maxHealthLossPercent);
+        this.maxHealthLoss = (int)((float)AbstractDungeon.player.maxHealth * MAX_HEALTH_LOSS_PERCENT) + (AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH_LOSS_ADDITION : 0);
 
         imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.relic.name, this.maxHealthLoss), this.relic);
         imageEventText.setDialogOption(MessageFormat.format(OPTIONS[1], this.card.name), this.card);
