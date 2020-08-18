@@ -20,8 +20,8 @@ public class LoxodonWarhammer extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int STRENGTH = 2;
-    private static final int LIFELINK = 5;
-    private static final int UPGRADE_LIFELINK = 5;
+    private static final int LIFELINK = 4;
+    private static final int UPGRADE_LIFELINK = 3;
 
     public LoxodonWarhammer() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
