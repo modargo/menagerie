@@ -106,6 +106,7 @@ public class StasisChamber extends Colosseum {
             case 0:
                 switch (buttonPressed) {
                     case 0: // Release
+                        logMetric(ID, "Release");
                         this.screenNum = 1;
                         String elite = this.getRandomElite(this.actID);
                         logger.info("Spawning elite: " + elite);
@@ -117,6 +118,7 @@ public class StasisChamber extends Colosseum {
                         AbstractDungeon.lastCombatMetricKey = elite;
                         break;
                     default: // Leave
+                        logMetricIgnored(ID);
                         this.openMap();
                         break;
                 }

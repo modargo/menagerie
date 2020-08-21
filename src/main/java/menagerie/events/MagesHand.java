@@ -45,6 +45,7 @@ public class MagesHand extends AbstractImageEvent {
                 card = CardUtil.getGrandMagusSpell();
             }
             AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(card, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+            logMetricTransformCard(ID, "Grasp", c, card);
         }
     }
 
@@ -63,6 +64,7 @@ public class MagesHand extends AbstractImageEvent {
                         }
                         break;
                     default: // Leave
+                        logMetricIgnored(ID);
                         this.openMap();
                         break;
                 }

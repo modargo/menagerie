@@ -53,6 +53,7 @@ public class ScentOfGold extends AbstractImageEvent {
                         else {
                             AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), new Circlet());
                         }
+                        logMetricObtainRelic(ID, "Pacify", this.relic);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
@@ -61,6 +62,7 @@ public class ScentOfGold extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.healthLoss));
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+                        logMetricTakeDamage(ID, "Run", this.healthLoss);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();

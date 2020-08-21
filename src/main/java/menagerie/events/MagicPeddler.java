@@ -13,6 +13,7 @@ import menagerie.Menagerie;
 import menagerie.cards.CardUtil;
 
 import java.text.MessageFormat;
+import java.util.Collections;
 
 public class MagicPeddler extends AbstractImageEvent {
     public static final String ID = "Menagerie:MagicPeddler";
@@ -71,6 +72,7 @@ public class MagicPeddler extends AbstractImageEvent {
                         AbstractDungeon.player.loseGold(this.potionCost);
                         AbstractPotion potion = PotionHelper.getRandomPotion();
                         new ObtainPotionAction(potion).update();
+                        logMetric(ID, "Potion", null, null, null, null, Collections.singletonList(potion.ID), null, null, 0, 0, 0, 0, this.potionCost, 0);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
@@ -79,6 +81,7 @@ public class MagicPeddler extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.loseGold(this.healCost);
                         AbstractDungeon.player.heal(this.healAmount);
+                        logMetricHealAtCost(ID, "Heal", this.healCost, this.healAmount);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
@@ -87,11 +90,13 @@ public class MagicPeddler extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.loseGold(this.spellsCost);
                         this.showCardReward(SPELLS);
+                        this.logMetricLoseGold(ID, "Spells", this.spellsCost);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     default: // Leave
+                        logMetricIgnored(ID);
                         this.openMap();
                         break;
                 }

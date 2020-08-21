@@ -57,6 +57,7 @@ public class MageAndMonster extends AbstractImageEvent {
                         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.healthLoss));
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.mageCard, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                        logMetricObtainCardAndDamage(ID, "Help the mage", this.mageCard, this.healthLoss);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
@@ -66,6 +67,7 @@ public class MageAndMonster extends AbstractImageEvent {
                         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.healthLoss));
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.FIRE));
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.monsterCard, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                        logMetricObtainCardAndDamage(ID, "Help the mage", this.monsterCard, this.healthLoss);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
@@ -73,6 +75,7 @@ public class MageAndMonster extends AbstractImageEvent {
                     default: // Avoid the battle
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
                         AbstractDungeon.player.loseGold(this.gold);
+                        logMetricLoseGold(ID, "Avoid the battle", this.gold);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();

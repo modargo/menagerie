@@ -12,6 +12,8 @@ import menagerie.Menagerie;
 import menagerie.cards.CardUtil;
 
 import java.text.MessageFormat;
+import java.util.Collections;
+import java.util.List;
 
 public class HarrowingRitual extends AbstractImageEvent {
     public static final String ID = "Menagerie:HarrowingRitual";
@@ -56,6 +58,7 @@ public class HarrowingRitual extends AbstractImageEvent {
                     case 0: // Shield
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.increaseMaxHp(this.maxHealth, true);
+                        logMetricMaxHPGain(ID, "Shield", this.maxHealth);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
@@ -64,12 +67,15 @@ public class HarrowingRitual extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.healthLoss));
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.POISON));
-                        CardUtil.upgradeRandomCard();
+                        AbstractCard card = CardUtil.upgradeRandomCard();
+                        List<String> cards = card != null ? Collections.singletonList(card.cardID) : null;
+                        logMetric(ID, "Accept", null, null, null, cards, null, null, null, 0, 0, this.healthLoss, 0, 0, 0);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     default: // Leave
+                        logMetricIgnored(ID);
                         this.openMap();
                         break;
                 }

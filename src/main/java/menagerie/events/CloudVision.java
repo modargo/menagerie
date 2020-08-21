@@ -13,6 +13,8 @@ import menagerie.Menagerie;
 import menagerie.cards.CardUtil;
 
 import java.text.MessageFormat;
+import java.util.Collections;
+import java.util.List;
 
 public class CloudVision extends AbstractImageEvent {
     public static final String ID = "Menagerie:CloudVision";
@@ -52,6 +54,7 @@ public class CloudVision extends AbstractImageEvent {
                 AbstractDungeon.topLevelEffects.add(new PurgeCardEffect(c, (float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2)));
                 AbstractDungeon.player.masterDeck.removeCard(c);
                 AbstractDungeon.gridSelectScreen.selectedCards.remove(c);
+                logMetricRemoveCards(ID, "Wisdom", Collections.singletonList(c.cardID));
             }
             else {
                 AbstractDungeon.player.masterDeck.removeCard(c);
@@ -59,6 +62,7 @@ public class CloudVision extends AbstractImageEvent {
                 AbstractCard transCard = AbstractDungeon.getTransformedCard();
                 AbstractDungeon.effectsQueue.add(new ShowCardAndObtainEffect(transCard, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
                 AbstractDungeon.gridSelectScreen.selectedCards.clear();
+                logMetric(ID, "Vigor", Collections.singletonList(transCard.cardID), null, Collections.singletonList(c.cardID), null, null, null, null, 0, 0, 0, this.maxHealth, 0, 0);
             }
 
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
@@ -89,7 +93,9 @@ public class CloudVision extends AbstractImageEvent {
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
                         AbstractDungeon.player.gainGold(this.gold);
-                        CardUtil.upgradeRandomCard();
+                        AbstractCard card = CardUtil.upgradeRandomCard();
+                        List<String> cards = card != null ? Collections.singletonList(card.cardID) : null;
+                        logMetric(ID, "Cunning", null, null, null, cards, null, null, null, 0, 0, 0, 0, this.gold, 0);
                         break;
                     case 2: // Wisdom
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);

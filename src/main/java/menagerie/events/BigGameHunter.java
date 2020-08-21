@@ -58,10 +58,12 @@ public class BigGameHunter extends AbstractImageEvent {
                         else {
                             AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), new Circlet());
                         }
+                        logMetricObtainRelicAndLoseMaxHP(ID, "Take", this.relic, this.maxHealthLoss);
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     default: // Leave
+                        logMetricIgnored(ID);
                         this.openMap();
                         break;
                 }

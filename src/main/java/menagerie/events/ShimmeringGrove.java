@@ -49,17 +49,16 @@ public class ShimmeringGrove extends AbstractImageEvent {
         switch (screenNum) {
             case 0:
                 switch (buttonPressed) {
-                    case 0: //
+                    case 0: // Enter
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         break;
-                    default: //
+                    default: // Ignore
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
-
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.card, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                        logMetricObtainCard(ID, "Ignore", this.card);
                         this.screenNum = 2;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
@@ -72,6 +71,7 @@ public class ShimmeringGrove extends AbstractImageEvent {
                 AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
                 AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), this.relic);
                 AbstractDungeon.shopRelicPool.remove(this.relic.relicId);
+                logMetricObtainRelicAndLoseMaxHP(ID, "Enter", this.relic, this.maxHealthLoss);
                 this.screenNum = 2;
                 this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                 this.imageEventText.clearRemainingOptions();

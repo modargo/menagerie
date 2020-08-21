@@ -14,6 +14,7 @@ import menagerie.Menagerie;
 import menagerie.cards.CardUtil;
 
 import java.text.MessageFormat;
+import java.util.Collections;
 
 public class OvergrownLibrary extends AbstractImageEvent {
     public static final String ID = "Menagerie:OvergrownLibrary";
@@ -52,8 +53,9 @@ public class OvergrownLibrary extends AbstractImageEvent {
                 switch (buttonPressed) {
                     case 0: // Peek
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                        this.screenNum = 1;
+                        logMetric(ID, "Peek");
                         this.showCardReward(1);
+                        this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         break;
@@ -61,6 +63,7 @@ public class OvergrownLibrary extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.curse, (float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2)));
+                        logMetricObtainCardsLoseMapHP(ID, "Read", Collections.singletonList(this.curse.cardID), this.maxHealthLoss);
                         this.showCardReward(3);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
@@ -68,6 +71,7 @@ public class OvergrownLibrary extends AbstractImageEvent {
                         break;
                     default: // Leave
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
+                        logMetricIgnored(ID);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();

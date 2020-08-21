@@ -53,11 +53,13 @@ public class LunarGift extends AbstractImageEvent {
                         else {
                             AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), new Circlet());
                         }
+                        logMetricObtainRelicAndDamage(ID, "Touch", this.relic, this.healthLoss);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[1]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     default: // Leave
+                        logMetricIgnored(ID);
                         this.openMap();
                         break;
                 }

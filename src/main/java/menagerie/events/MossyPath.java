@@ -52,14 +52,16 @@ public class MossyPath extends Colosseum {
         switch (screenNum) {
             case 0:
                 switch (buttonPressed) {
-                    case 0:
+                    case 0: // Continue
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.heal(this.healAmount);
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.curse, (float) Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                        logMetricObtainCard(ID, "Continue", this.curse);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                     case 1: // Detour
+                        logMetric(ID, "Detour");
                         this.screenNum = 1;
                         AbstractDungeon.getCurrRoom().monsters = MonsterHelper.getEncounter(ENCOUNTER);
                         AbstractDungeon.getCurrRoom().addGoldToRewards(AbstractDungeon.miscRng.random(25, 35));

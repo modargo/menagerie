@@ -60,6 +60,7 @@ public class GrandMagusTower extends Colosseum {
                         else {
                             AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), new Circlet());
                         }
+                        logMetricObtainRelic(ID, "Steal", this.relic);
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         this.screenNum = 2;
                         this.imageEventText.clearAllDialogs();
@@ -67,6 +68,7 @@ public class GrandMagusTower extends Colosseum {
                         break;
                     default:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
+                        logMetricIgnored(ID);
                         this.screenNum = 3;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);

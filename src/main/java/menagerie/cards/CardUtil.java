@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CardUtil {
-    public static void upgradeRandomCard() {
+    public static AbstractCard upgradeRandomCard() {
         AbstractDungeon.topLevelEffects.add(new UpgradeShineEffect((float) Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
         ArrayList<AbstractCard> upgradableCards = new ArrayList<>();
         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
@@ -31,7 +31,9 @@ public class CardUtil {
             card.upgrade();
             AbstractDungeon.player.bottledCardUpgradeCheck(card);
             AbstractDungeon.effectList.add(new ShowCardBrieflyEffect(card.makeStatEquivalentCopy()));
+            return card;
         }
+        return null;
     }
 
     public static AbstractCard getGrandMagusSpell() {

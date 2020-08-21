@@ -11,6 +11,8 @@ import menagerie.Menagerie;
 import menagerie.cards.BeastSpirit;
 
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class BeastSpiritShrine extends AbstractImageEvent {
     public static final String ID = "Menagerie:BeastSpiritShrine";
@@ -45,11 +47,14 @@ public class BeastSpiritShrine extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.card, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                        logMetricObtainCardsLoseMapHP(ID, "Knelt", Collections.singletonList(this.card.cardID), this.maxHealthLoss);
+
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[1]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     default: // Leave
+                        logMetricIgnored(ID);
                         this.openMap();
                         break;
                 }
