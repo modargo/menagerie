@@ -34,10 +34,10 @@ public class Hydra extends CustomMonster
     private static final int STRENGTH = 4;
     private static final int A3_STRENGTH = 5;
     private static final int HEAD_DAMAGE_THRESHOLD = 7;
-    private static final int HP_MIN = 83;
-    private static final int HP_MAX = 87;
-    private static final int A8_HP_MIN = 85;
-    private static final int A8_HP_MAX = 89;
+    private static final int HP_MIN = 87;
+    private static final int HP_MAX = 90;
+    private static final int A8_HP_MIN = 89;
+    private static final int A8_HP_MAX = 92;
     private int strength;
 
     public Hydra() {
