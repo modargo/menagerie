@@ -56,7 +56,7 @@ public class EventFilter {
             }
 
             if (event.equals(ShimmeringGrove.ID)) {
-                if (ModHelper.isModEnabled(Diverse.ID) || AbstractDungeon.player.hasRelic(PrismaticShard.ID)) {
+                if (ModHelper.isModEnabled(Diverse.ID) || AbstractDungeon.player.hasRelic(PrismaticShard.ID) || AbstractDungeon.eventRng.random(1.0F) < 0.5F) {
                     eventsToRemove.add(event);
                 }
             }
