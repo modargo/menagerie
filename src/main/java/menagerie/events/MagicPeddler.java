@@ -72,7 +72,7 @@ public class MagicPeddler extends AbstractImageEvent {
                         AbstractDungeon.player.loseGold(this.potionCost);
                         AbstractPotion potion = PotionHelper.getRandomPotion();
                         new ObtainPotionAction(potion).update();
-                        logMetric(ID, "Potion", null, null, null, null, Collections.singletonList(potion.ID), null, null, 0, 0, 0, 0, this.potionCost, 0);
+                        logMetric(ID, "Potion", null, null, null, null, Collections.singletonList(potion.ID), null, null, 0, 0, 0, 0, 0, this.potionCost);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
