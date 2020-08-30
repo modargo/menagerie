@@ -4,8 +4,10 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
 
@@ -60,13 +62,23 @@ public class SolarChargePower extends AbstractPower {
 
     @Override
     public void stackPower(int stackAmount) {
-        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, stackAmount), stackAmount));
+        if (this.owner.hasPower(ArtifactPower.POWER_ID) && stackAmount < 0) {
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new LoseStrengthNonDebuffPower(this.owner, -stackAmount), -stackAmount));
+        }
+        else {
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, stackAmount), stackAmount));
+        }
         super.stackPower(stackAmount);
     }
 
     @Override
     public void reducePower(int reduceAmount) {
-        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -reduceAmount), -reduceAmount));
+        if (this.owner.hasPower(ArtifactPower.POWER_ID)) {
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new LoseStrengthNonDebuffPower(this.owner, reduceAmount), reduceAmount));
+        }
+        else {
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -reduceAmount), -reduceAmount));
+        }
         super.reducePower(reduceAmount);
     }
 

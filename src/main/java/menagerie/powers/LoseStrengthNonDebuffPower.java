@@ -20,7 +20,7 @@ public class LoseStrengthNonDebuffPower extends LoseStrengthPower {
         AbstractPower power = new StrengthPower(this.owner, -this.amount);
         power.type = null;
         this.addToBot(new ApplyPowerAction(this.owner, this.owner, power, -this.amount));
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "Flex"));
+        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, LoseStrengthPower.POWER_ID));
         this.addToBot(new UpdatePowerDescriptionAction(power));
     }
 }
