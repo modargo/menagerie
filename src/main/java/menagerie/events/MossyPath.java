@@ -60,6 +60,7 @@ public class MossyPath extends Colosseum {
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
+                        break;
                     case 1: // Detour
                         logMetric(ID, "Detour");
                         this.screenNum = 1;

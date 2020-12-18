@@ -109,7 +109,8 @@
     ],
     "OPTIONS": [
       "[Continue] #gHeal #g{0} #gHP. #rBecome #rCursed #r- #rDecay.",
-      "[Detour] Fight a group of normal enemies with low rewards."
+      "[Detour] Fight a group of normal enemies with low rewards.",
+      "[Leave]"
     ]
   },
   "Menagerie:LunarGift": {
