@@ -87,6 +87,7 @@ public class CardUtil {
                 new LightningHelix(),
                 new LoxodonWarhammer(),
                 new MirarisWake(),
+                new QuirionDryad(),
                 new RelicOfProgenitus(),
                 new Skullclamp(),
                 new Staggershock(),

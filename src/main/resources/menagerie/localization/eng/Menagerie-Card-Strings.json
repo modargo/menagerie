@@ -93,5 +93,10 @@
   "Menagerie:Staggershock": {
     "NAME": "Staggershock",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. At the start of your next turn, play this card again."
+  },
+  "Menagerie:QuirionDryad": {
+    "NAME": "Quirion Dryad",
+    "DESCRIPTION": "The first time you play each color of card this combat, gain !M! Strength and !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL The first time you play each color of card this combat, gain !M! Strength and !M! Dexterity."
   }
 }

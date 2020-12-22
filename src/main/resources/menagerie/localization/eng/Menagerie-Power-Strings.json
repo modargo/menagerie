@@ -95,5 +95,9 @@
       "At the start of your turn, draw #b{0} less card.",
       "At the start of your turn, draw #b{0} less cards."
     ]
+  },
+  "Menagerie:QuirionDryad": {
+    "NAME": "Quirion Dryad",
+    "DESCRIPTIONS": ["The first time you play each color of card this combat, gain 1 Strength and 1 Dexterity. NL (Colors played: {0}.)", "None", "Red", "Green", "Blue", "Purple", "Colorless", "Curse"]
   }
 }
