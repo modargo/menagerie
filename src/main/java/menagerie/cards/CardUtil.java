@@ -72,6 +72,10 @@ public class CardUtil {
 
     private static ArrayList<AbstractCard> getRandomlyOrderedGrandMagusSpells(Random random) {
         ArrayList<AbstractCard> list = CardUtil.getAllGrandMagusSpells();
+        //Removing these spells from being generated in favor of new additions, but leaving them in the code so that
+        //existing and historical runs don't break
+        list.removeIf(c -> c.cardID.equals(RelicOfProgenitus.ID));
+        list.removeIf(c -> c.cardID.equals(Skullclamp.ID));
         Collections.shuffle(list, random.random);
         return new ArrayList<>(list);
     }
