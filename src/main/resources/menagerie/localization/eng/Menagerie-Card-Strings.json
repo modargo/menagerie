@@ -75,8 +75,8 @@
   },
   "Menagerie:Tinker": {
     "NAME": "Tinker",
-    "DESCRIPTION": "Search your deck for a power and play it. NL Exhaust a random card in your hand.",
-    "UPGRADE_DESCRIPTION": "Search your deck for a power and play it. NL Exhaust a card in your hand."
+    "DESCRIPTION": "Search your draw pile for a power and play it. NL Exhaust a random card in your hand.",
+    "UPGRADE_DESCRIPTION": "Search your draw pile for a power and play it. NL Exhaust a card in your hand."
   },
   "Menagerie:SteelWall": {
     "NAME": "Steel Wall",
@@ -98,5 +98,10 @@
     "NAME": "Quirion Dryad",
     "DESCRIPTION": "The first time you play each color of card this combat, gain !M! Strength and !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Innate. NL The first time you play each color of card this combat, gain !M! Strength and !M! Dexterity."
+  },
+  "Menagerie:SuddenReclamation": {
+    "NAME": "Sudden Reclamation",
+    "DESCRIPTION": "Put the top !M! cards of your draw pile into your discard pile. NL Put an Attack, a Skill, and a Power from your discard pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put the top !M! cards of your draw pile into your discard pile. NL Put an Attack, a Skill, and a Power from your discard pile into your hand."
   }
 }

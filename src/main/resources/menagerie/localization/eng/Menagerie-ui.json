@@ -13,5 +13,15 @@
       "Choose ",
       " Cards to Exhaust."
     ]
+  },
+  "Menagerie:CardTypeDiscardPileToHandAction": {
+    "TEXT": [
+      "Choose an Attack to Put into Your Hand.",
+      "Choose a Skill to Put into Your Hand.",
+      "Choose a Power to Put into Your Hand.",
+      "Choose {0} Attacks to Put into Your Hand.",
+      "Choose {0} Skills to Put into Your Hand.",
+      "Choose {0} Powers to Put into Your Hand."
+    ]
   }
 }

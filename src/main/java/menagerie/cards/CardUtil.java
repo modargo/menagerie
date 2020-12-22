@@ -92,6 +92,7 @@ public class CardUtil {
                 new Skullclamp(),
                 new Staggershock(),
                 new SteelWall(),
+                new SuddenReclamation(),
                 new Tinker(),
                 new WallOfBlossoms()
         );
