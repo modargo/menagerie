@@ -92,6 +92,6 @@ public class ShimmeringGrove extends AbstractImageEvent {
 
         cards = Arrays.stream(cards).filter(c -> c.color != AbstractDungeon.player.getCardColor()).toArray(AbstractCard[]::new);
 
-        return cards[AbstractDungeon.eventRng.random(cards.length - 1)];
+        return cards[AbstractDungeon.miscRng.random(cards.length - 1)];
     }
 }

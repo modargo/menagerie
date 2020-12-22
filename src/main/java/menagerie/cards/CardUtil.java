@@ -17,7 +17,6 @@ import java.util.List;
 
 public class CardUtil {
     public static AbstractCard upgradeRandomCard() {
-        AbstractDungeon.topLevelEffects.add(new UpgradeShineEffect((float) Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
         ArrayList<AbstractCard> upgradableCards = new ArrayList<>();
         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
             if (c.canUpgrade()) {
