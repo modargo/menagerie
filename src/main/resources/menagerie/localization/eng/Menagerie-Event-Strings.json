@@ -42,12 +42,12 @@
     "NAME": "Three Animals",
     "DESCRIPTIONS": [
       "Walking through an area of gloom and shadow, you find yourself confronted by the ghostly heads of three animals: a #ylion, a #bgoat, and a #gsnake. No matter how you move, they float in front of you, and you realize that you need to walk through one of the ghostly heads to continue on your journey. NL NL As you pause to consider, you begin to think that each one has something to offer you....",
-      "Walking through the #ylion, you feel a #rsharp #rbite, but find yourself in possession of a #gnew #grelic as well.",
+      "Walking through the #ylion, you feel #bstrange #binstincts.",
       "Walking through the #bgoat, you feel #ginvigorated.",
-      "Walking through the #gsnake, you feel your thoughts sharpen."
+      "Walking through the #gsnake, you feel your #ythoughts #ysharpen."
     ],
     "OPTIONS": [
-      "[Lion] #gGain #ga #grelic. #rBecome #rCursed #r- #rInjury.",
+      "[Lion] #gAdd #ga #gcard #gof #ga #gdifferent #gcolor #gto #gyour #gdeck.",
       "[Goat] #gHeal #g{0} #gHP.",
       "[Snake] #gRemove #ga #gcard #gfrom #gyour #gdeck.",
       "[Leave]",

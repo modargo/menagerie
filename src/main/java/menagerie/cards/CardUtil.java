@@ -1,19 +1,19 @@
 package menagerie.cards;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 import menagerie.cards.spells.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class CardUtil {
     public static AbstractCard upgradeRandomCard() {
@@ -35,6 +35,42 @@ public class CardUtil {
         return null;
     }
 
+    public static int getNumCardsForRewards() {
+        int numCards = 3;
+        for (AbstractRelic r : AbstractDungeon.player.relics) {
+            numCards = r.changeNumberOfCardsInReward(numCards);
+        }
+        if (ModHelper.isModEnabled("Binary")) {
+            --numCards;
+        }
+        return numCards;
+    }
+
+    public static AbstractCard getOtherColorCard(AbstractCard.CardRarity rarity, List<AbstractCard.CardColor> excludedColors) {
+        CardGroup anyCard = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        Iterator var2 = CardLibrary.cards.entrySet().iterator();
+
+        while(true) {
+            Map.Entry c;
+            do {
+                do {
+                    do {
+                        do {
+                            if (!var2.hasNext()) {
+                                anyCard.shuffle(AbstractDungeon.cardRng);
+                                return anyCard.getRandomCard(true, rarity).makeCopy();
+                            }
+
+                            c = (Map.Entry)var2.next();
+                        } while(((AbstractCard)c.getValue()).rarity != rarity || excludedColors.contains(((AbstractCard)c.getValue()).color));
+                    } while(((AbstractCard)c.getValue()).type == AbstractCard.CardType.CURSE);
+                } while(((AbstractCard)c.getValue()).type == AbstractCard.CardType.STATUS);
+            } while(UnlockTracker.isCardLocked((String)c.getKey()) && !Settings.treatEverythingAsUnlocked());
+
+            anyCard.addToBottom((AbstractCard)c.getValue());
+        }
+    }
+
     public static AbstractCard getGrandMagusSpell() {
         ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells(AbstractDungeon.cardRng);
         return list.get(0);
@@ -53,13 +89,7 @@ public class CardUtil {
 
     public static ArrayList<AbstractCard> getGrandMagusSpellReward() {
         ArrayList<AbstractCard> list = CardUtil.getRandomlyOrderedGrandMagusSpells(AbstractDungeon.cardRng);
-        int numCards = 3;
-        for (AbstractRelic r : AbstractDungeon.player.relics) {
-            numCards = r.changeNumberOfCardsInReward(numCards);
-        }
-        if (ModHelper.isModEnabled("Binary")) {
-            --numCards;
-        }
+        int numCards = CardUtil.getNumCardsForRewards();
         List<AbstractCard> rewardCards = list.subList(0, numCards);
         for (AbstractRelic r : AbstractDungeon.player.relics) {
             for (AbstractCard c : rewardCards) {

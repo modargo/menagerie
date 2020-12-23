@@ -2,18 +2,20 @@ package menagerie.events;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.cards.curses.Injury;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rewards.RewardItem;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import menagerie.Menagerie;
+import menagerie.cards.CardUtil;
 
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ThreeAnimals extends AbstractImageEvent {
     public static final String ID = "Menagerie:ThreeAnimals";
@@ -26,17 +28,16 @@ public class ThreeAnimals extends AbstractImageEvent {
     private static final float A15_HEAL_PERCENT = 0.20f;
 
     private int healAmount;
-    private AbstractCard curse;
     private int screenNum = 0;
 
     public ThreeAnimals() {
         super(NAME, DESCRIPTIONS[0], IMG);
+        this.noCardsInRewards = true;
 
-        this.curse = new Injury();
         float healPercent = AbstractDungeon.ascensionLevel >= 15 ? A15_HEAL_PERCENT : HEAL_PERCENT;
         this.healAmount = (int)(AbstractDungeon.player.maxHealth * healPercent);
 
-        imageEventText.setDialogOption(OPTIONS[0], this.curse);
+        imageEventText.setDialogOption(OPTIONS[0]);
         imageEventText.setDialogOption(MessageFormat.format(OPTIONS[1], this.healAmount));
         imageEventText.setDialogOption(OPTIONS[2]);
     }
@@ -60,10 +61,8 @@ public class ThreeAnimals extends AbstractImageEvent {
                 switch (buttonPressed) {
                     case 0: // Lion
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                        AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.curse, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
-                        AbstractRelic r = AbstractDungeon.returnRandomScreenlessRelic(AbstractDungeon.returnRandomRelicTier());
-                        AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), r);
-                        logMetricObtainCardAndRelic(ID, "Lion", this.curse, r);
+                        this.showCardReward(1);
+                        logMetric(ID, "Lion");
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
@@ -91,5 +90,23 @@ public class ThreeAnimals extends AbstractImageEvent {
                 this.openMap();
                 break;
         }
+    }
+
+    private void showCardReward(int numRewards) {
+        AbstractDungeon.getCurrRoom().rewards.clear();
+        for(int i = 0; i < numRewards; ++i) {
+            RewardItem reward = new RewardItem();
+            ArrayList<AbstractCard> cards = new ArrayList<>();
+            //We see what was already generated and use that, to avoid advancing the rare counter further
+            for (AbstractCard c : reward.cards) {
+                AbstractCard.CardRarity rarity = c.rarity == AbstractCard.CardRarity.COMMON || c.rarity == AbstractCard.CardRarity.UNCOMMON || c.rarity == AbstractCard.CardRarity.RARE ? c.rarity : AbstractCard.CardRarity.COMMON;
+                cards.add(CardUtil.getOtherColorCard(rarity, Arrays.asList(AbstractDungeon.player.getCardColor(), AbstractCard.CardColor.COLORLESS)));
+            }
+            reward.cards = cards;
+            AbstractDungeon.getCurrRoom().addCardReward(reward);
+        }
+
+        AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
+        AbstractDungeon.combatRewardScreen.open();
     }
 }

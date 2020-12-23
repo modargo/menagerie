@@ -85,9 +85,9 @@ public class OvergrownLibrary extends AbstractImageEvent {
         }
     }
 
-    private void showCardReward(int numCards) {
+    private void showCardReward(int numRewards) {
         AbstractDungeon.getCurrRoom().rewards.clear();
-        for(int i = 0; i < numCards; ++i) {
+        for(int i = 0; i < numRewards; ++i) {
             RewardItem reward = new RewardItem();
             reward.cards = CardUtil.getGrandMagusSpellReward();
             AbstractDungeon.getCurrRoom().addCardReward(reward);
