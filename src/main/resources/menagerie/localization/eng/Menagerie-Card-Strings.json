@@ -75,8 +75,8 @@
   },
   "Menagerie:Tinker": {
     "NAME": "Tinker",
-    "DESCRIPTION": "Search your draw pile for a power and play it. NL Exhaust a random card in your hand.",
-    "UPGRADE_DESCRIPTION": "Search your draw pile for a power and play it. NL Exhaust a card in your hand."
+    "DESCRIPTION": "Choose a Power in your draw pile and play it. NL Exhaust a random card in your hand.",
+    "UPGRADE_DESCRIPTION": "Choose a Power in your draw pile and play it. NL Exhaust a card in your hand."
   },
   "Menagerie:SteelWall": {
     "NAME": "Steel Wall",
