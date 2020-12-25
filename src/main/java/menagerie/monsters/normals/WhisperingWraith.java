@@ -25,6 +25,7 @@ public class WhisperingWraith extends CustomMonster
     private static final MonsterStrings monsterStrings;
     public static final String NAME;
     public static final String[] MOVES;
+    public static final String[] DIALOG;
     private static final String IMG = Menagerie.monsterImage(ID);
     private boolean firstMove = true;
     private static final byte FADE_AWAY_ATTACK = 1;
