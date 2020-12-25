@@ -99,5 +99,8 @@
   "Menagerie:QuirionDryad": {
     "NAME": "Quirion Dryad",
     "DESCRIPTIONS": ["The first time you play each color of card this combat, gain 1 Strength and 1 Dexterity. NL (Colors played: {0}.)", "None", "Red", "Green", "Blue", "Purple", "Colorless", "Curse"]
+  },
+  "Menagerie:FixedTextIntangiblePower": {
+    "DESCRIPTIONS": ["Reduce ALL damage taken and HP loss to #b1 for #b{0} turns."]
   }
 }

@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import menagerie.Menagerie;
+import menagerie.powers.FixedTextIntangiblePower;
 import menagerie.powers.ThawingPower;
 
 public class FrozenSoldier extends CustomMonster
@@ -75,7 +76,7 @@ public class FrozenSoldier extends CustomMonster
     @Override
     public void usePreBattleAction() {
         AbstractPower thawing = new ThawingPower(this, this.thawingAmount);
-        AbstractPower intangible = new IntangiblePower(this, this.thawingAmount);
+        AbstractPower intangible = new FixedTextIntangiblePower(this, this.thawingAmount);
         if (this.startOfCombat) {
             // To force justApplied to be false
             thawing.atEndOfRound();
