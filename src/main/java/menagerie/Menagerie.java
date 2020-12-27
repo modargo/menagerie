@@ -4,13 +4,12 @@ import actlikeit.dungeons.CustomDungeon;
 import basemod.BaseMod;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
-import basemod.interfaces.EditCardsSubscriber;
-import basemod.interfaces.EditRelicsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
-import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.*;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.events.exordium.GoldenIdolEvent;
@@ -34,6 +33,8 @@ import menagerie.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.nio.charset.StandardCharsets;
+
 import static com.megacrit.cardcrawl.core.Settings.GameLanguage;
 import static com.megacrit.cardcrawl.core.Settings.language;
 
@@ -42,7 +43,8 @@ public class Menagerie implements
         PostInitializeSubscriber,
         EditCardsSubscriber,
         EditRelicsSubscriber,
-        EditStringsSubscriber {
+        EditStringsSubscriber,
+        EditKeywordsSubscriber {
     private static final float X1 = -350.0F;
     private static final float X2 = 0.0F;
     private static final float X2_ALT = 100.0F;
@@ -230,6 +232,20 @@ public class Menagerie implements
         }
     }
 
+    @Override
+    public void receiveEditKeywords() {
+        Gson gson = new Gson();
+        String json = Gdx.files.internal(makeLocPath(Settings.language, "Menagerie-Keyword-Strings")).readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+
+        if (keywords != null) {
+            for (Keyword keyword : keywords) {
+                //The modID here must be lowercase
+                BaseMod.addKeyword("menagerie", keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
+            }
+        }
+    }
+
     public static String cardImage(String id) {
         return "menagerie/images/cards/" + removeModId(id) + ".png";
     }
@@ -268,4 +284,10 @@ public class Menagerie implements
         power.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
     }
 
+    private static class Keyword
+    {
+        public String PROPER_NAME;
+        public String[] NAMES;
+        public String DESCRIPTION;
+    }
 }

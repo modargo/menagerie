@@ -1,0 +1,12 @@
+[
+  {
+    "PROPER_NAME": "Metallicize",
+    "NAMES": ["metallicize"],
+    "DESCRIPTION": "Gain #yBlock at the end of your turn."
+  },
+  {
+    "PROPER_NAME": "Constricted",
+    "NAMES": ["constricted"],
+    "DESCRIPTION": "Deals damage to you at the end of your turn."
+  }
+]

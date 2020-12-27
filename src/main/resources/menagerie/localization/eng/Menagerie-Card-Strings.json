@@ -6,7 +6,7 @@
   },
   "Menagerie:PurgingElixir": {
     "NAME": "Purging Elixir",
-    "DESCRIPTION": "Retain. NL Remove all Constricted, negative Strength, and negative Dexterity. NL Lose !M! HP."
+    "DESCRIPTION": "Retain. NL Remove all menagerie:Constricted, negative Strength, and negative Dexterity. NL Lose !M! HP."
   },
   "Menagerie:Dismember": {
     "NAME": "Dismember",
@@ -80,7 +80,7 @@
   },
   "Menagerie:SteelWall": {
     "NAME": "Steel Wall",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Metallicize. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! menagerie:Metallicize. NL Exhaust."
   },
   "Menagerie:LightningBolt": {
     "NAME": "Lightning Bolt",
