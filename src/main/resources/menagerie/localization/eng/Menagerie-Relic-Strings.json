@@ -17,7 +17,7 @@
     "NAME": "Aurumvore",
     "FLAVOR": "What does it do with the gold it eats?",
     "DESCRIPTIONS": [
-      "Eats half your current gold and half of gold you gain. For each #b{0} gold eaten, start each combat with #b1 #yStrength."
+      "Eats half your current gold and half of gold you gain. For every #b{0} gold eaten, start each combat with #b1 #yStrength."
     ]
   },
   "Menagerie:GrandMagusSpellbook": {
