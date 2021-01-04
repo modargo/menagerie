@@ -176,6 +176,8 @@ public class Menagerie implements
         BaseMod.addEvent(GrandMagusTower.ID, GrandMagusTower.class, MenagerieAct.ID);
         BaseMod.addEvent(CorruptingLight.ID, CorruptingLight.class, MenagerieAct.ID);
         BaseMod.addEvent(ShimmeringGrove.ID, ShimmeringGrove.class, MenagerieAct.ID);
+        BaseMod.addEvent(Silence.ID, Silence.class, MenagerieAct.ID);
+        BaseMod.addEvent(AtThePeak.ID, AtThePeak.class, MenagerieAct.ID);
     }
 
     @Override
@@ -200,6 +202,8 @@ public class Menagerie implements
         BaseMod.addRelic(new HuntersKnife(), RelicType.SHARED);
         BaseMod.addRelic(new ShiftingBlessing(), RelicType.SHARED);
         BaseMod.addRelic(new MalignantTentacle(), RelicType.SHARED);
+        BaseMod.addRelic(new GhostlyEgg(), RelicType.SHARED);
+        BaseMod.addRelic(new ExplorersFlag(), RelicType.SHARED);
     }
 
     private static String makeLocPath(Settings.GameLanguage language, String filename)

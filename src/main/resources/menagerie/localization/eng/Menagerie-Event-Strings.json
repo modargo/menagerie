@@ -221,5 +221,29 @@
       "[Continue]",
       "[Leave]"
     ]
+  },
+  "Menagerie:Silence": {
+    "NAME": "Silence",
+    "DESCRIPTIONS": [
+      "You suddenly realize that the sounds of the forest have shifted from the soft noises of flora and fauna to a deeper #bsilence. Figures move through the mist and birds flit through the air, but make no sound and cast no shadow. The path through seems #gsafe, but you're tempted to #yexplore and see what you can find deeper in.",
+      "Leaving the path, you venture deep into the gloom. The spectral animals seem harmless, but you give a wide berth to the more humanoid #pphantasms. Eventually, you notice what looks to be a large nest built into the hollow of a tree, with a #gfaintly #gglowing, #ytranslucent #b~egg~ in it. NL NL Reaching for the #begg, you find that it has enough substance for you to take it... but feel a #rterrible #rchill behind you! You flee back towards the safety of the path, #pwraiths trailing behind you.",
+      "You take the path through the forest without incident."
+    ],
+    "OPTIONS": [
+      "[Explore] #gGain {0}. #rLose #r{1} #rHP.",
+      "[Leave]"
+    ]
+  },
+  "Menagerie:AtThePeak": {
+    "NAME": "At The Peak",
+    "DESCRIPTIONS": [
+      "The highest peak. The land stretches out in front of you, in all its #gglory and #rruin. As tremendous an accomplishment as scaling this peak was, there's a long journey waiting. NL NL Looks like someone got here before you too, and planted a #bflag between a few of the rocks. You consider whether to take it with you or not.",
+      "You wrestle the flag down. It's surprisingly hard to get out and as you finally ~wrestle~ it free, the force of your pull causes you to stumble and bump into the rocks. That was #rclumsy.",
+      "You start your trek down the mountain, with the flag left behind."
+    ],
+    "OPTIONS": [
+      "[Take] #gGain {0}. #rBecome #rCursed #r- #rClumsy.",
+      "[Leave]"
+    ]
   }
 }

@@ -33,5 +33,19 @@
     "DESCRIPTIONS": [
       "At the start of the second turn and every #b{0} turns thereafter, gain {1} #yConstricted."
     ]
+  },
+  "Menagerie:GhostlyEgg": {
+    "NAME": "Ghostly Egg",
+    "FLAVOR": "Eggs have ghosts?",
+    "DESCRIPTIONS": [
+      "Whenever you add a card to your deck that #yExhausts or is #yEthereal, #yUpgrade it."
+    ]
+  },
+  "Menagerie:ExplorersFlag": {
+    "NAME": "Explorer's Flag",
+    "FLAVOR": "Always looking for the next frontier.",
+    "DESCRIPTIONS": [
+      "Whenever you enter a #y? room, heal #b{0}."
+    ]
   }
 }
