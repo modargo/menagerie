@@ -86,8 +86,8 @@ public class GrandMagus extends CustomMonster
             this.mindTwistAmount = A18_MIND_TWIST_AMOUNT;
             this.sulfuricVortexAmount = A18_SULFURIC_VORTEX_AMOUNT;
         } else {
-            this.lightningBoltDamage = MIND_TWIST_AMOUNT;
-            this.darkBlastDamage = SULFURIC_VORTEX_AMOUNT;
+            this.mindTwistAmount = MIND_TWIST_AMOUNT;
+            this.sulfuricVortexAmount = SULFURIC_VORTEX_AMOUNT;
         }
     }
 
