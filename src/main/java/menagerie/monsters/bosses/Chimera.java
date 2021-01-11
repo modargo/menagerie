@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 import menagerie.Menagerie;
 import menagerie.powers.SquabblingHeadsPower;
 
@@ -102,9 +103,11 @@ public class Chimera extends CustomMonster
 
     @Override
     public void usePreBattleAction() {
-        CardCrawlGame.music.unsilenceBGM();
-        AbstractDungeon.scene.fadeOutAmbiance();
-        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+        if (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss) {
+            CardCrawlGame.music.unsilenceBGM();
+            AbstractDungeon.scene.fadeOutAmbiance();
+            AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+        }
 
         this.power = new SquabblingHeadsPower(this);
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, this.power));

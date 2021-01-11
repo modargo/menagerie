@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 import menagerie.Menagerie;
 import menagerie.powers.WisdomAuraPower;
 
@@ -78,9 +79,11 @@ public class AvatarOfWisdom extends CustomMonster
 
     @Override
     public void usePreBattleAction() {
-        CardCrawlGame.music.unsilenceBGM();
-        AbstractDungeon.scene.fadeOutAmbiance();
-        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+        if (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss) {
+            CardCrawlGame.music.unsilenceBGM();
+            AbstractDungeon.scene.fadeOutAmbiance();
+            AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+        }
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new WisdomAuraPower(this, this.wisdomAuraThorns)));
     }

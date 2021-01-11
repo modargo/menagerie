@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.RoomTintEffect;
 import menagerie.Menagerie;
@@ -107,9 +108,11 @@ public class Suneater extends CustomMonster
 
     @Override
     public void usePreBattleAction() {
-        CardCrawlGame.music.unsilenceBGM();
-        AbstractDungeon.scene.fadeOutAmbiance();
-        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+        if (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss) {
+            CardCrawlGame.music.unsilenceBGM();
+            AbstractDungeon.scene.fadeOutAmbiance();
+            AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BOTTOM");
+        }
 
         this.power = new SolarChargePower(this, 0);
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, this.power));
