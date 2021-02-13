@@ -45,7 +45,7 @@
     "NAME": "Explorer's Flag",
     "FLAVOR": "Always looking for the next frontier.",
     "DESCRIPTIONS": [
-      "Whenever you enter a #y? room, heal #b{0}."
+      "Whenever you enter a #y? room, heal #b{0} HP."
     ]
   }
 }
