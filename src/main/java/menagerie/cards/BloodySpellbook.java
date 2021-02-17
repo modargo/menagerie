@@ -20,7 +20,7 @@ public class BloodySpellbook extends CustomCard {
     private static final int DAMAGE = 5;
 
     public BloodySpellbook() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, CardType.CURSE, CardColor.CURSE, CardRarity.CURSE, CardTarget.NONE);
+        super(ID, NAME, IMG, COST, DESCRIPTION, CardType.CURSE, CardColor.CURSE, CardRarity.SPECIAL, CardTarget.NONE);
         this.baseMagicNumber = DAMAGE;
         this.magicNumber = this.baseMagicNumber;
     }
