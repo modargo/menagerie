@@ -109,6 +109,6 @@ public class FeatherRabbit extends CustomMonster
     public enum FirstMove {
         RANDOM,
         ATTACK,
-        BUFF;
+        BUFF
     }
 }

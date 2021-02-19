@@ -2,19 +2,14 @@ package menagerie.events;
 
 import com.megacrit.cardcrawl.daily.mods.Diverse;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.events.shrines.AccursedBlacksmith;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.relics.Ectoplasm;
 import com.megacrit.cardcrawl.relics.PrismaticShard;
 import com.megacrit.cardcrawl.relics.WarpedTongs;
 import menagerie.act.MenagerieAct;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class EventFilter {

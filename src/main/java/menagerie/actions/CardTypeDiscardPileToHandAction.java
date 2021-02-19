@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import menagerie.Menagerie;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

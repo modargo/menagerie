@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
-import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import menagerie.Menagerie;
 import menagerie.relics.GhostlyEgg;
 

@@ -90,7 +90,7 @@ public class MagicPeddler extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.loseGold(this.spellsCost);
                         this.showCardReward(SPELLS);
-                        this.logMetricLoseGold(ID, "Spells", this.spellsCost);
+                        logMetricLoseGold(ID, "Spells", this.spellsCost);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();

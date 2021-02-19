@@ -11,8 +11,6 @@ import menagerie.actions.GrandMagusSpellbookAction;
 import menagerie.cards.BloodySpellbook;
 import menagerie.util.TextureLoader;
 
-import java.text.MessageFormat;
-
 public class GrandMagusSpellbook extends CustomRelic {
     public static final String ID = "Menagerie:GrandMagusSpellbook";
     private static final Texture IMG = TextureLoader.getTexture(Menagerie.relicImage(ID));

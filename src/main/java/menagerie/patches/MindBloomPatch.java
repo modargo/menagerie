@@ -3,7 +3,6 @@ package menagerie.patches;
 import actlikeit.savefields.BreadCrumbs;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.events.beyond.MindBloom;
-import com.megacrit.cardcrawl.random.Random;
 import javassist.CtBehavior;
 import menagerie.act.Encounters;
 import menagerie.act.MenagerieAct;

@@ -11,7 +11,6 @@ import menagerie.Menagerie;
 import menagerie.cards.BeastSpirit;
 
 import java.text.MessageFormat;
-import java.util.ArrayList;
 import java.util.Collections;
 
 public class BeastSpiritShrine extends AbstractImageEvent {

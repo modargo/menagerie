@@ -11,7 +11,6 @@ import menagerie.Menagerie;
 import menagerie.cards.CardUtil;
 import menagerie.relics.MalignantTentacle;
 
-import java.lang.reflect.Array;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Collections;
