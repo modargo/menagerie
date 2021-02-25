@@ -46,7 +46,7 @@ public class QuirionDryadPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0].replace("{0}", this.getPlayedColors());
+        this.description = DESCRIPTIONS[0].replace("{0}", this.amount + "").replace("{1}", this.getPlayedColors());
     }
 
     private String getPlayedColors() {
