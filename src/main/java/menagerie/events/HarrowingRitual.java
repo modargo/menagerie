@@ -69,7 +69,7 @@ public class HarrowingRitual extends AbstractImageEvent {
                         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.POISON));
                         AbstractCard card = CardUtil.upgradeRandomCard();
                         List<String> cards = card != null ? Collections.singletonList(card.cardID) : null;
-                        logMetric(ID, "Accept", null, null, null, cards, null, null, null, 0, 0, this.healthLoss, 0, 0, 0);
+                        logMetric(ID, "Accept", null, null, null, cards, null, null, null, this.healthLoss, 0, 0, 0, 0, 0);
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
