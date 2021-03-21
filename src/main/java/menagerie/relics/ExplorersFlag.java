@@ -13,7 +13,7 @@ public class ExplorersFlag extends CustomRelic {
     public static final String ID = "Menagerie:ExplorersFlag";
     private static final Texture IMG = TextureLoader.getTexture(Menagerie.relicImage(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(Menagerie.relicOutlineImage(ID));
-    private static int HEAL_AMOUNT = 5;
+    private static int HEAL_AMOUNT = 6;
 
     public ExplorersFlag() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.FLAT);
