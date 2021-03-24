@@ -34,7 +34,7 @@
     "DESCRIPTIONS": ["On death, applies #b{0} #yWeak and #b{0} #yFrail."]
   },
   "Menagerie:Melting": {
-    "NAME": "Leaf Spores",
+    "NAME": "Melting",
     "DESCRIPTIONS": ["This enemy is melting down! Loses #b{0} #yMetallicize each turn. NL When all #yMetallicize is lost, performs a dangerous attack."]
   },
   "Menagerie:Thawing": {
