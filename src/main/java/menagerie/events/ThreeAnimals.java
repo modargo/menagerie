@@ -100,7 +100,14 @@ public class ThreeAnimals extends AbstractImageEvent {
             //We see what was already generated and use that, to avoid advancing the rare counter further
             for (AbstractCard c : reward.cards) {
                 AbstractCard.CardRarity rarity = c.rarity == AbstractCard.CardRarity.COMMON || c.rarity == AbstractCard.CardRarity.UNCOMMON || c.rarity == AbstractCard.CardRarity.RARE ? c.rarity : AbstractCard.CardRarity.COMMON;
-                cards.add(CardUtil.getOtherColorCard(rarity, Arrays.asList(AbstractDungeon.player.getCardColor(), AbstractCard.CardColor.COLORLESS)));
+                AbstractCard card = null;
+                while (card == null) {
+                    AbstractCard potentialCard = CardUtil.getOtherColorCard(rarity, Arrays.asList(AbstractDungeon.player.getCardColor(), AbstractCard.CardColor.COLORLESS));
+                    if (cards.stream().noneMatch(c1 -> c1.cardID.equals(potentialCard.cardID))) {
+                        card = potentialCard;
+                    }
+                }
+                cards.add(card);
             }
             reward.cards = cards;
             AbstractDungeon.getCurrRoom().addCardReward(reward);
