@@ -103,5 +103,10 @@
     "NAME": "Sudden Reclamation",
     "DESCRIPTION": "Put the top !M! cards of your draw pile into your discard pile. NL Put an Attack, a Skill, and a Power from your discard pile into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Put the top !M! cards of your draw pile into your discard pile. NL Put an Attack, a Skill, and a Power from your discard pile into your hand."
+  },
+  "Menagerie:Hexdrinker": {
+    "NAME": "Hexdrinker",
+    "DESCRIPTION": "Deal !D! damage and gain !B! Block X times. NL If X is 1+, apply 4 Poison; 2+, gain 1 Artifact; 3+, gain 1 Strength and Dexterity; 4+, double these effects. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain !B! Block X times. NL If X is 1+, apply 4 Poison; 2+, gain 1 Artifact; 3+, gain 1 Strength and Dexterity; 4+, triple these effects. NL Exhaust."
   }
 }

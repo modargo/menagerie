@@ -116,6 +116,7 @@ public class CardUtil {
                 new DarkRitual(),
                 new Dismember(),
                 new Foresee(),
+                new Hexdrinker(),
                 new Languish(),
                 new LightningBolt(),
                 new LightningHelix(),
