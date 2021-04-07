@@ -3,10 +3,12 @@
     "NAME": "Beast Spirit Shrine",
     "DESCRIPTIONS": [
       "A curious silence reveals the presence of a small shrine, cracked and covered with vines but still standing. Even your footsteps are swallowed by the silence. NL NL Peering inside, carvings and statues of #ganimals and #gbeasts fill the structure. A power fills the air, and you feel something is #bwatching you, #b~judging~ you. You are drawn to kneel at the statues that you can see within.",
-      "You kneel before the #gstatues. You feel bestial spirits vigor and cunning come to you. Their claws and fangs dig into your flesh, but you feel that the spirits remain with you, empowering you. You rise, stronger, fiercer, bestial."
+      "You kneel before the #gstatues. You feel bestial spirits of vigor and cunning come to you. Their claws and fangs dig into your flesh, but you feel that the spirits remain with you, empowering you. You rise, stronger, fiercer, bestial.",
+      "You kneel before the #gstatues, holding up the embodiment of harmony of different energies and powers. The bestial spirits come to you as one of their kindred, endowing you with their claws and fangs. You rise, stronger, fiercer, bestial."
     ],
     "OPTIONS": [
       "[Kneel] #gGain Beast Spirit. #rLose #r{0} #rMax #rHP.",
+      "[Present Prismatic Shard] #gGain Beast Spirit.",
       "[Leave]"
     ]
   },
@@ -212,11 +214,13 @@
     "DESCRIPTIONS": [
       "You reach an area with no sign of the #bstructures that once covered this place. #gNatural #glife has completely reclaimed the land. NL NL A nearby grove catches your eye, where the #gtrees and #ybushes ~shimmer~ with a #rkaleidoscope of #penergies. The power is volatile but could be used to your benefit if you enter the grove.",
       "You enter the grove, opening yourself to the #penergies in it. The plants reach out and cocoon you, and you feel your power expanding, growing, changing. Your thoughts fade....",
+      "Embracing the spirit of the beast within you, you enter the grove. The #penergies within it welcome you. The plants reach out and cocoon you, and you feel your power expanding, growing, and changing as you fade into restful sleep....",
       "The #bmetamorphosis is complete. You emerge from the grove, #grejuvenated. There's so much more you can do now. NL NL The mages were fools to pursue their experiments instead of embracing what was in front of them.",
       "You decide to move past the grove, but even though you give it a wide berth, one of the tendril of energy suddenly reaches out to #ptouch you! NL NL You suddenly see a different way of striking your foes... but it isn't any better than what you already know how to do."
     ],
     "OPTIONS": [
       "[Enter] #gGain {0}. #rLose #r{1} #rMax #rHP.",
+      "[Embrace the Beast Spirit] #gGain {0}",
       "[Ignore] #rGain {0}.",
       "[Continue]",
       "[Leave]"

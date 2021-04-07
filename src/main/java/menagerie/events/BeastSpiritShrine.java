@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
+import com.megacrit.cardcrawl.relics.PrismaticShard;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import menagerie.Menagerie;
 import menagerie.cards.BeastSpirit;
@@ -25,16 +26,23 @@ public class BeastSpiritShrine extends AbstractImageEvent {
 
     private int maxHealthLoss;
     private AbstractCard card;
+    private boolean hasPrismaticShard;
     private int screenNum = 0;
 
     public BeastSpiritShrine() {
         super(NAME, DESCRIPTIONS[0], IMG);
 
         this.card = new BeastSpirit();
+        this.hasPrismaticShard = AbstractDungeon.player.hasRelic(PrismaticShard.ID);
         this.maxHealthLoss = AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH_LOSS : MAX_HEALTH_LOSS;
 
-        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.maxHealthLoss), this.card);
-        imageEventText.setDialogOption(OPTIONS[1]);
+        if (!this.hasPrismaticShard) {
+            imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.maxHealthLoss), this.card);
+        }
+        else {
+            imageEventText.setDialogOption(OPTIONS[1], this.card);
+        }
+        imageEventText.setDialogOption(OPTIONS[2]);
     }
 
     @Override
@@ -43,13 +51,19 @@ public class BeastSpiritShrine extends AbstractImageEvent {
             case 0:
                 switch (buttonPressed) {
                     case 0: // Kneel
-                        this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                        AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
+                        if (!this.hasPrismaticShard) {
+                            this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
+                            AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
+                            logMetricObtainCardsLoseMapHP(ID, "Knelt", Collections.singletonList(this.card.cardID), this.maxHealthLoss);
+                        }
+                        else {
+                            this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
+                            logMetricObtainCard(ID, "Presented Prismatic Shard", this.card);
+                        }
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.card, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
-                        logMetricObtainCardsLoseMapHP(ID, "Knelt", Collections.singletonList(this.card.cardID), this.maxHealthLoss);
 
                         this.screenNum = 1;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[1]);
+                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     default: // Leave

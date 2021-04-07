@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.PrismaticShard;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import menagerie.Menagerie;
+import menagerie.cards.BeastSpirit;
 
 import java.text.MessageFormat;
 import java.util.Arrays;
@@ -31,6 +32,7 @@ public class ShimmeringGrove extends AbstractImageEvent {
     private int maxHealthLoss;
     private AbstractCard card;
     private AbstractRelic relic;
+    private boolean hasBeastSpirit;
     private int screenNum = 0;
 
     public ShimmeringGrove() {
@@ -38,10 +40,16 @@ public class ShimmeringGrove extends AbstractImageEvent {
 
         this.card = this.getCard();
         this.relic = new PrismaticShard();
+        this.hasBeastSpirit = AbstractDungeon.player.masterDeck.group.stream().anyMatch(c -> c.cardID.equals(BeastSpirit.ID));
         this.maxHealthLoss = (int)((float)AbstractDungeon.player.maxHealth * MAX_HEALTH_LOSS_PERCENT) + (AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH_LOSS_ADDITION : 0);
 
-        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.relic.name, this.maxHealthLoss), this.relic);
-        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[1], this.card.name), this.card);
+        if (!this.hasBeastSpirit) {
+            imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.relic.name, this.maxHealthLoss), this.relic);
+        }
+        else {
+            imageEventText.setDialogOption(MessageFormat.format(OPTIONS[1], this.relic.name), this.relic);
+        }
+        imageEventText.setDialogOption(MessageFormat.format(OPTIONS[2], this.card.name), this.card);
     }
 
     @Override
@@ -50,30 +58,40 @@ public class ShimmeringGrove extends AbstractImageEvent {
             case 0:
                 switch (buttonPressed) {
                     case 0: // Enter
-                        this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
+                        if (!this.hasBeastSpirit) {
+                            this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
+                        }
+                        else {
+                            this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
+                        }
                         this.screenNum = 1;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                        this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                     default: // Ignore
-                        this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
+                        this.imageEventText.updateBodyText(DESCRIPTIONS[4]);
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(this.card, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
                         logMetricObtainCard(ID, "Ignore", this.card);
                         this.screenNum = 2;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[3]);
+                        this.imageEventText.updateDialogOption(0, OPTIONS[4]);
                         this.imageEventText.clearRemainingOptions();
                         break;
                 }
                 break;
             case 1:
-                this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
+                this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
 
-                AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
+                if (!this.hasBeastSpirit) {
+                    AbstractDungeon.player.decreaseMaxHealth(this.maxHealthLoss);
+                    logMetricObtainRelicAndLoseMaxHP(ID, "Enter", this.relic, this.maxHealthLoss);
+                }
+                else {
+                    logMetricObtainRelic(ID, "Embrace the Beast Spirit", this.relic);
+                }
                 AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2), (float) (Settings.HEIGHT / 2), this.relic);
                 AbstractDungeon.shopRelicPool.remove(this.relic.relicId);
-                logMetricObtainRelicAndLoseMaxHP(ID, "Enter", this.relic, this.maxHealthLoss);
                 this.screenNum = 2;
-                this.imageEventText.updateDialogOption(0, OPTIONS[3]);
+                this.imageEventText.updateDialogOption(0, OPTIONS[4]);
                 this.imageEventText.clearRemainingOptions();
                 break;
             default:
