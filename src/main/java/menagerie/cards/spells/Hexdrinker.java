@@ -20,7 +20,7 @@ public class Hexdrinker extends CustomCard {
     private static final int BLOCK = 4;
     private static final int UPGRADE_DAMAGE = 1;
     private static final int UPGRADE_BLOCK = 1;
-    public static final int POISON = 4;
+    public static final int POISON = 3;
     public static final int ARTIFACT = 1;
     public static final int STATS = 1;
 
