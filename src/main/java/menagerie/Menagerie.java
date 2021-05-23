@@ -65,11 +65,14 @@ public class Menagerie implements
         BaseMod.registerModBadge(badgeTexture, "Menagerie", "modargo", "An alternate act 1 themed around beasts and mages. Once the stronghold of a cabal of mages who experimented with the boundaries of life itself, the Menagerie is now overrun by their twisted creations.", new ModPanel());
 
         CustomDungeon.addAct(MenagerieAct.ACT_NUM, new MenagerieAct());
-        addMonsters();
+        addActAndMonsters();
         addEvents();
     }
 
-    private static void addMonsters() {
+    private static void addActAndMonsters() {
+        CustomDungeon act = new MenagerieAct();
+        act.addAct(MenagerieAct.ACT_NUM);
+
         //Weak encounters
         BaseMod.addMonster(MonstrousExperiment.ID, (BaseMod.GetMonster)MonstrousExperiment::new);
         BaseMod.addMonster(WhisperingWraith.ID, (BaseMod.GetMonster)WhisperingWraith::new);
@@ -131,17 +134,14 @@ public class Menagerie implements
         BaseMod.addMonster(MaskedSummoner.ID, () -> new MaskedSummoner(200.0F, 0.0F));
 
         //Bosses
-        BaseMod.addMonster(Chimera.ID, (BaseMod.GetMonster)Chimera::new);
-        BaseMod.addBoss(MenagerieAct.ID, Chimera.ID, "menagerie/images/map/bosses/Chimera.png", "menagerie/images/map/bosses/ChimeraOutline.png");
-        BaseMod.addMonster(Suneater.ID, (BaseMod.GetMonster) Suneater::new);
-        BaseMod.addBoss(MenagerieAct.ID, Suneater.ID, "menagerie/images/map/bosses/Suneater.png", "menagerie/images/map/bosses/SuneaterOutline.png");
-        BaseMod.addMonster(Encounters.AVATARS, () -> new MonsterGroup(
+        act.addBoss(Chimera.ID, (BaseMod.GetMonster)Chimera::new,"menagerie/images/map/bosses/Chimera.png", "menagerie/images/map/bosses/ChimeraOutline.png");
+        act.addBoss(Suneater.ID, (BaseMod.GetMonster) Suneater::new, "menagerie/images/map/bosses/Suneater.png", "menagerie/images/map/bosses/SuneaterOutline.png");
+        act.addBoss(Encounters.AVATARS, () -> new MonsterGroup(
                 new AbstractMonster[] {
                         new AvatarOfVigor(-550.0F, 50.0F),
                         new AvatarOfCunning(-200.0F, 50.0F),
                         new AvatarOfWisdom(150.0F, 0.0F),
-                }));
-        BaseMod.addBoss(MenagerieAct.ID, Encounters.AVATARS, "menagerie/images/map/bosses/Avatars.png", "menagerie/images/map/bosses/AvatarsOutline.png");
+                }), "menagerie/images/map/bosses/Avatars.png", "menagerie/images/map/bosses/AvatarsOutline.png");
 
         //Special fights
         BaseMod.addMonster(GrandMagus.ID, (BaseMod.GetMonster)GrandMagus::new);
