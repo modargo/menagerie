@@ -121,9 +121,8 @@ public class MonstrousExperiment extends CustomMonster
         else {
             ArrayList<Byte> movesWithoutDegenerate = this.moveHistory.stream().filter(m -> m != DEGENERATE_MOVE).collect(Collectors.toCollection(ArrayList::new));
             byte lastNonDegenerateMove = movesWithoutDegenerate.size() >= 1 ? movesWithoutDegenerate.get(movesWithoutDegenerate.size() - 1) : 0;
-            byte lastNonDegenerateMoveBefore = movesWithoutDegenerate.size() >= 2 ? movesWithoutDegenerate.get(movesWithoutDegenerate.size() - 2) : 0;
 
-            if (!this.firstMove && lastNonDegenerateMove != THRASH_ATTACK && lastNonDegenerateMoveBefore != THRASH_ATTACK && (lastNonDegenerateMove == SLIMY_APPENDAGE_ATTACK || num < 65)){
+            if (!this.firstMove && (lastNonDegenerateMove != THRASH_ATTACK || num < 65)){
                 this.setMove(MonstrousExperiment.MOVES[1], THRASH_ATTACK, Intent.ATTACK, this.thrashDamage);
             }
             else {
