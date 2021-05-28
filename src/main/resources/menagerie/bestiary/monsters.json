@@ -1,0 +1,2272 @@
+{
+	"monsters": [
+		{
+			"name": "Monstrous Experiment",
+			"id": "Menagerie:MonstrousExperiment",
+			"ai": [
+				{
+				  "min_asc": 0,
+				  "desc": "Starts with #wSlimy #wAppendage. Afterwards, has a 65-35 split between #wThrash and #wSlimy #wAppendage, but cannot use #wThrash three times in a row or #wSlimy #wAppendage twice in a row. Uses #wDegenerate every three or four turns with a 50-50 split.",
+				  "hp": "(42 - 45 HP)",
+				  "notes": "Innate #uThorns #u1, #uMalleable #u1, and #uMetallicize #u1. Slimed status cards go in the draw pile.",
+				  "moves": [
+					{
+					  "name": "Slimy Appendage",
+					  "effects": [
+						{
+						  "name": "5",
+						  "color": "DAMAGE"
+						},
+						{
+						  "name": "Slimed 1",
+						  "color": "DEBUFF"
+						}
+					  ]
+					},
+					{
+					  "name": "Thrash",
+					  "effects": [
+						{
+						  "name": "9",
+						  "color": "DAMAGE"
+						}
+					  ]
+					},
+					{
+					  "name": "Degenerate",
+					  "effects": [
+						{
+						  "name": "Block 2",
+						  "color": "BLOCK"
+						},
+						{
+						  "name": "Thorns 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Malleable 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Metallicize 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Self Damage 3",
+						  "color": "DAMAGE"
+						}
+					  ]
+					}
+				  ]
+				},
+				{
+				  "min_asc": 2,
+				  "desc": "Starts with #wSlimy #wAppendage. Afterwards, has a 65-35 split between #wThrash and #wSlimy #wAppendage, but cannot use #wThrash three times in a row or #wSlimy #wAppendage twice in a row. Uses #wDegenerate every three or four turns with a 50-50 split.",
+				  "hp": "(42 - 45 HP)",
+				  "notes": "Innate #uThorns #u1, #uMalleable #u1, and #uMetallicize #u1. Slimed status cards go in the draw pile.",
+				  "moves": [
+					{
+					  "name": "Slimy Appendage",
+					  "effects": [
+						{
+						  "name": "6",
+						  "color": "DAMAGE"
+						},
+						{
+						  "name": "Slimed 1",
+						  "color": "DEBUFF"
+						}
+					  ]
+					},
+					{
+					  "name": "Thrash",
+					  "effects": [
+						{
+						  "name": "10",
+						  "color": "DAMAGE"
+						}
+					  ]
+					},
+					{
+					  "name": "Degenerate",
+					  "effects": [
+						{
+						  "name": "Block 2",
+						  "color": "BLOCK"
+						},
+						{
+						  "name": "Thorns 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Malleable 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Metallicize 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Self Damage 3",
+						  "color": "DAMAGE"
+						}
+					  ]
+					}
+				  ]
+				},
+				{
+				  "min_asc": 7,
+				  "desc": "Starts with #wSlimy #wAppendage. Afterwards, has a 65-35 split between #wThrash and #wSlimy #wAppendage, but cannot use #wThrash three times in a row or #wSlimy #wAppendage twice in a row. Uses #wDegenerate every three or four turns with a 50-50 split.",
+				  "hp": "(44 - 47 HP)",
+				  "notes": "Innate #uThorns #u1, #uMalleable #u1, and #uMetallicize #u1. Slimed status cards go in the draw pile.",
+				  "moves": [
+					{
+					  "name": "Slimy Appendage",
+					  "effects": [
+						{
+						  "name": "6",
+						  "color": "DAMAGE"
+						},
+						{
+						  "name": "Slimed 1",
+						  "color": "DEBUFF"
+						}
+					  ]
+					},
+					{
+					  "name": "Thrash",
+					  "effects": [
+						{
+						  "name": "10",
+						  "color": "DAMAGE"
+						}
+					  ]
+					},
+					{
+					  "name": "Degenerate",
+					  "effects": [
+						{
+						  "name": "Block 2",
+						  "color": "BLOCK"
+						},
+						{
+						  "name": "Thorns 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Malleable 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Metallicize 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Self Damage 2",
+						  "color": "DAMAGE"
+						}
+					  ]
+					}
+				  ]
+				},
+				{
+				  "min_asc": 17,
+				  "desc": "Starts with #wSlimy #wAppendage. Afterwards, has a 65-35 split between #wThrash and #wSlimy #wAppendage, but cannot use #wThrash three times in a row or #wSlimy #wAppendage twice in a row. Uses #wDegenerate every three or four turns with a 50-50 split.",
+				  "hp": "(44 - 47 HP)",
+				  "notes": "Innate #uThorns #u1, #uMalleable #u1, and #uMetallicize #u1. Slimed status cards go in the draw pile.",
+				  "moves": [
+					{
+					  "name": "Slimy Appendage",
+					  "effects": [
+						{
+						  "name": "6",
+						  "color": "DAMAGE"
+						},
+						{
+						  "name": "Slimed 1",
+						  "color": "DEBUFF"
+						}
+					  ]
+					},
+					{
+					  "name": "Thrash",
+					  "effects": [
+						{
+						  "name": "10",
+						  "color": "DAMAGE"
+						}
+					  ]
+					},
+					{
+					  "name": "Degenerate",
+					  "effects": [
+						{
+						  "name": "Block 8",
+						  "color": "BLOCK"
+						},
+						{
+						  "name": "Thorns 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Malleable 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Metallicize 1",
+						  "color": "BUFF"
+						},
+						{
+						  "name": "Self Damage 2",
+						  "color": "DAMAGE"
+						}
+					  ]
+					}
+				  ]
+				}
+			]
+		},
+		{
+			"name": "Whispering Wraith",
+			"id": "Menagerie:WhisperingWraith",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Cycles in the order #wFade #wAway -> #wGhostly #wTouch -> #wAbsorb #wLife.",
+					"hp": "(43 - 45 HP)",
+					"moves": [
+						{
+							"name": "Fade Away",
+							"effects": [
+								{
+									"name": "10",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Intangible 1",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Ghostly Touch",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Absorb Life",
+							"effects": [
+								{
+									"name": "Strength 2",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 2,
+					"desc": "Cycles in the order #wFade #wAway -> #wGhostly #wTouch -> #wAbsorb #wLife.",
+					"hp": "(43 - 45 HP)",
+					"moves": [
+						{
+							"name": "Fade Away",
+							"effects": [
+								{
+									"name": "11",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Intangible 1",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Ghostly Touch",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Absorb Life",
+							"effects": [
+								{
+									"name": "Strength 2",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 7,
+					"desc": "Cycles in the order #wFade #wAway -> #wGhostly #wTouch -> #wAbsorb #wLife.",
+					"hp": "(44 - 46 HP)",
+					"moves": [
+						{
+							"name": "Fade Away",
+							"effects": [
+								{
+									"name": "11",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Intangible 1",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Ghostly Touch",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Absorb Life",
+							"effects": [
+								{
+									"name": "Strength 2",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 17,
+					"desc": "Cycles in the order #wFade #wAway -> #wGhostly #wTouch -> #wAbsorb #wLife.",
+					"hp": "(44 - 46 HP)",
+					"moves": [
+						{
+							"name": "Fade Away",
+							"effects": [
+								{
+									"name": "11",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Intangible 1",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Ghostly Touch",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Absorb Life",
+							"effects": [
+								{
+									"name": "Strength 4",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Stygian Boar",
+			"id": "Menagerie:StygianBoar",
+			"ai": []
+		},
+		{
+			"name": "Silky Rabbit",
+			"id": "Menagerie:SilkyRabbit",
+			"ai": []
+		},
+		{
+			"name": "Feather Rabbit",
+			"id": "Menagerie:FeatherRabbit",
+			"ai": []
+		},
+		{
+			"name": "Entropy Warlock",
+			"id": "Menagerie:EntropyWarlock",
+			"ai": []
+		},
+		{
+			"name": "Melting Salamander",
+			"id": "Menagerie:MeltingSalamander",
+			"ai": []
+		},
+		{
+			"name": "Red Mage",
+			"id": "Menagerie:RedMage",
+			"ai": []
+		},
+		{
+			"name": "Hexasnake",
+			"id": "Menagerie:Hexasnake",
+			"ai": []
+		},
+		{
+			"name": "Prowling Amalgam",
+			"id": "Menagerie:ProwlingAmalgam",
+			"ai": []
+		},
+		{
+			"name": "Beast Mage",
+			"id": "Menagerie:BeastMage",
+			"ai": []
+		},
+		{
+			"name": "Young Suneater",
+			"id": "Menagerie:YoungSuneaster",
+			"ai": []
+		},
+		{
+			"name": "Keeper of the Sacred Pool",
+			"id": "Menagerie:KeeperOfTheSacredPool",
+			"ai": []
+		},
+		{
+			"name": "Grafted Worm",
+			"id": "Menagerie:GraftedWorm",
+			"ai": []
+		},
+		{
+			"name": "Dread Moth",
+			"id": "Menagerie:DreadMoth",
+			"ai": []
+		},
+		{
+			"name": "Hydra",
+			"id": "Menagerie:Hydra",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wSwipe.",
+					"notes": "Innate #uStrength 4 and #uHydra #uHeads.",
+					"hp": "(87 - 90 HP)",
+					"moves": [
+						{
+							"name": "Tail Whip",
+							"effects": [
+								{
+									"name": "4",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Swipe",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ravenous Hunger",
+							"effects": [
+								{
+									"name": "0x5",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 3,
+					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wSwipe.",
+					"notes": "Innate #uStrength 5 and #uHydra #uHeads.",
+					"hp": "(87 - 90 HP)",
+					"moves": [
+						{
+							"name": "Tail Whip",
+							"effects": [
+								{
+									"name": "4",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Swipe",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ravenous Hunger",
+							"effects": [
+								{
+									"name": "0x5",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 8,
+					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wSwipe.",
+					"notes": "Innate #uStrength 5 and #uHydra #uHeads.",
+					"hp": "(89 - 92 HP)",
+					"moves": [
+						{
+							"name": "Tail Whip",
+							"effects": [
+								{
+									"name": "4",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Swipe",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ravenous Hunger",
+							"effects": [
+								{
+									"name": "0x5",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 18,
+					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wRavenous #wHunger -> #wSwipe.",
+					"notes": "Innate #uStrength 5 and #uHydra #uHeads.",
+					"hp": "(89 - 92 HP)",
+					"moves": [
+						{
+							"name": "Tail Whip",
+							"effects": [
+								{
+									"name": "4",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Swipe",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ravenous Hunger",
+							"effects": [
+								{
+									"name": "0x5",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Void Reaper",
+			"id": "Menagerie:VoidReaper",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Cycles #wScythe #wDance -> #wCut #wthe #wFuture -> #wReap.",
+					"notes": "Puts a Necropotence card into your hand at the start of the fight. NL NL Each use of #wCut #wthe #wFuture after the first converts one draw reduction to permanent draw reduction.",
+					"hp": "(100 - 105 HP)",
+					"moves": [
+						{
+							"name": "Cut the Future",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Draw Reduction 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Reap",
+							"effects": [
+								{
+									"name": "11",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Scythe Dance",
+							"effects": [
+								{
+									"name": "5x3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 1",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 3,
+					"desc": "Cycles #wScythe #wDance -> #wCut #wthe #wFuture -> #wReap.",
+					"notes": "Puts a Necropotence card into your hand at the start of the fight. NL NL Each use of #wCut #wthe #wFuture after the first converts one draw reduction to permanent draw reduction.",
+					"hp": "(100 - 105 HP)",
+					"moves": [
+						{
+							"name": "Cut the Future",
+							"effects": [
+								{
+									"name": "15",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Draw Reduction 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Reap",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Scythe Dance",
+							"effects": [
+								{
+									"name": "6x3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 1",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 8,
+					"desc": "Cycles #wScythe #wDance -> #wCut #wthe #wFuture -> #wReap.",
+					"notes": "Puts a Necropotence card into your hand at the start of the fight. NL NL Each use of #wCut #wthe #wFuture after the first converts one draw reduction to permanent draw reduction.",
+					"hp": "(104 - 109 HP)",
+					"moves": [
+						{
+							"name": "Cut the Future",
+							"effects": [
+								{
+									"name": "15",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Draw Reduction 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Reap",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Scythe Dance",
+							"effects": [
+								{
+									"name": "6x3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 2",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 18,
+					"desc": "Cycles #wCut #wthe #wFuture -> #wReap -> #wScythe #wDance.",
+					"notes": "Puts a Necropotence card into your hand at the start of the fight. NL NL Each use of #wCut #wthe #wFuture after the first converts one draw reduction to permanent draw reduction.",
+					"hp": "(104 - 109 HP)",
+					"moves": [
+						{
+							"name": "Cut the Future",
+							"effects": [
+								{
+									"name": "15",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Draw Reduction 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Reap",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Scythe Dance",
+							"effects": [
+								{
+									"name": "6x3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 2",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Masked Summoner",
+			"id": "Menagerie:MaskedSummoner",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Starts with #wSilent #wSpear. Afterwards, moves are based on the number of minions, avoiding using the same move twice: NL If 0, uses #wFrost #wSummon. NL If 1, 25-75 split between #wSilent #wSpear and #wFrost #wSummon. NL If 2, 30-50-20 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL If 3, 35-25-40 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL Otherwise, 40-60 split between Silent Spear and #wGentle #wSnow.",
+					"notes": "Spawns with 2 Frozen Soldiers. Wound status cards go in the discard pile.",
+					"hp": "(103 - 109 HP)",
+					"moves": [
+						{
+							"name": "Silent Spear",
+							"effects": [
+								{
+									"name": "10",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Wound 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Frost Summon",
+							"effects": [
+								{
+									"name": "Summon 2 Frozen Soldiers",
+									"color": "SPECIAL"
+								}
+							]
+						},
+						{
+							"name": "Gentle Snow",
+							"effects": [
+								{
+									"name": "Minions Heal 1",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Minions Strength 4",
+									"color": "BUFF"
+								},
+								{
+									"name": "Block 4",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 3,
+					"desc": "Starts with #wSilent #wSpear. Afterwards, moves are based on the number of minions, avoiding using the same move twice: NL If 0, uses #wFrost #wSummon. NL If 1, 25-75 split between #wSilent #wSpear and #wFrost #wSummon. NL If 2, 30-50-20 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL If 3, 35-25-40 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL Otherwise, 40-60 split between Silent Spear and #wGentle #wSnow.",
+					"notes": "Spawns with 2 Frozen Soldiers. Wound status cards go in the discard pile.",
+					"hp": "(103 - 109 HP)",
+					"moves": [
+						{
+							"name": "Silent Spear",
+							"effects": [
+								{
+									"name": "12",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Wound 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Frost Summon",
+							"effects": [
+								{
+									"name": "Summon 2 Frozen Soldiers",
+									"color": "SPECIAL"
+								}
+							]
+						},
+						{
+							"name": "Gentle Snow",
+							"effects": [
+								{
+									"name": "Minions Heal 1",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Minions Strength 4",
+									"color": "BUFF"
+								},
+								{
+									"name": "Block 4",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 8,
+					"desc": "Starts with #wSilent #wSpear. Afterwards, moves are based on the number of minions, avoiding using the same move twice: NL If 0, uses #wFrost #wSummon. NL If 1, 25-75 split between #wSilent #wSpear and #wFrost #wSummon. NL If 2, 30-50-20 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL If 3, 35-25-40 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL Otherwise, 40-60 split between Silent Spear and #wGentle #wSnow.",
+					"notes": "Spawns with 2 Frozen Soldiers. Wound status cards go in the discard pile.",
+					"hp": "(107 - 113 HP)",
+					"moves": [
+						{
+							"name": "Silent Spear",
+							"effects": [
+								{
+									"name": "12",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Wound 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Frost Summon",
+							"effects": [
+								{
+									"name": "Summon 2 Frozen Soldiers",
+									"color": "SPECIAL"
+								}
+							]
+						},
+						{
+							"name": "Gentle Snow",
+							"effects": [
+								{
+									"name": "Minions Heal 1",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Minions Strength 4",
+									"color": "BUFF"
+								},
+								{
+									"name": "Block 6",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 18,
+					"desc": "Starts with #wSilent #wSpear. Afterwards, moves are based on the number of minions, avoiding using the same move twice: NL If 0, uses #wFrost #wSummon. NL If 1, 25-75 split between #wSilent #wSpear and #wFrost #wSummon. NL If 2, 30-50-20 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL If 3, 35-25-40 split between #wSilent #wSpear, #wFrost #wSummon, and #wGentle #wSnow. NL Otherwise, 40-60 split between Silent Spear and #wGentle #wSnow.",
+					"notes": "Spawns with 3 Frozen Soldiers. Wound status cards go in the discard pile.",
+					"hp": "(107 - 113 HP)",
+					"moves": [
+						{
+							"name": "Silent Spear",
+							"effects": [
+								{
+									"name": "12",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Wound 3",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Frost Summon",
+							"effects": [
+								{
+									"name": "Summon 2 Frozen Soldiers",
+									"color": "SPECIAL"
+								}
+							]
+						},
+						{
+							"name": "Gentle Snow",
+							"effects": [
+								{
+									"name": "Minions Heal 1",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Minions Strength 5",
+									"color": "BUFF"
+								},
+								{
+									"name": "Block 6",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Frozen Soldier",
+			"id": "Menagerie:FrozenSoldier",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Uses #wIce #wBarrier twice, then #wViolent #wThaw.",
+					"notes": "Innate #uIntangible 3 and #uThawing 3. Dying from Violent Thaw will not damage Masked Summoner.",
+					"hp": "(3 HP)",
+					"moves": [
+						{
+							"name": "Ice Barrier",
+							"effects": [
+								{
+									"name": "Masked Summoner Block 2",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Violent Thaw",
+							"effects": [
+								{
+									"name": "0 + HP * 3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Dies",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 3,
+					"desc": "Uses #wIce #wBarrier twice, then #wViolent #wThaw.",
+					"notes": "Innate #uIntangible 3 and #uThawing 3. Dying from Violent Thaw will not damage Masked Summoner.",
+					"hp": "(3 HP)",
+					"moves": [
+						{
+							"name": "Ice Barrier",
+							"effects": [
+								{
+									"name": "Masked Summoner Block 2",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Violent Thaw",
+							"effects": [
+								{
+									"name": "1 + HP * 3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Dies",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Chimera",
+			"id": "Menagerie:Chimera",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Cycles #wTriple #wBite -> #wSquabble -> #wClaw #wand #wHorn -> #wVenom Spit. If at half HP or less, uses #wThree #wAs #wOne and then starts the cycle from the beginning, skipping #wSquabble.",
+					"hp": "(210 HP)",
+					"notes": "Innate #uSquabbling #uHeads. The status given by moves rotates Slimed -> Wound -> Burned. All status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Triple Bite",
+							"effects": [
+								{
+									"name": "4x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Squabble",
+							"effects": [
+								{
+									"name": "Block 6",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Switch to next head",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Claw and Horn",
+							"effects": [
+								{
+									"name": "11",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 5",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Venom Spit",
+							"effects": [
+								{
+									"name": "8",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Status card",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Three As One",
+							"effects": [
+								{
+									"name": "Strength 1",
+									"color": "BUFF"
+								},
+								{
+									"name": "Activate all three heads",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 4,
+					"desc": "Cycles #wTriple #wBite -> #wSquabble -> #wClaw #wand #wHorn -> #wVenom Spit. If at half HP or less, uses #wThree #wAs #wOne and then starts the cycle from the beginning, skipping #wSquabble.",
+					"hp": "(210 HP)",
+					"notes": "Innate #uSquabbling #uHeads. The status given by moves rotates Slimed -> Wound -> Burned. All status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Triple Bite",
+							"effects": [
+								{
+									"name": "5x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Squabble",
+							"effects": [
+								{
+									"name": "Block 6",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Switch to next head",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Claw and Horn",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 5",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Venom Spit",
+							"effects": [
+								{
+									"name": "10",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Status card",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Three As One",
+							"effects": [
+								{
+									"name": "Strength 1",
+									"color": "BUFF"
+								},
+								{
+									"name": "Activate all three heads",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 9,
+					"desc": "Cycles #wTriple #wBite -> #wSquabble -> #wClaw #wand #wHorn -> #wVenom Spit. If at half HP or less, uses #wThree #wAs #wOne and then starts the cycle from the beginning, skipping #wSquabble.",
+					"hp": "(220 HP)",
+					"notes": "Innate #uSquabbling #uHeads. The status given by moves rotates Slimed -> Wound -> Burned. All status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Triple Bite",
+							"effects": [
+								{
+									"name": "5x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Squabble",
+							"effects": [
+								{
+									"name": "Block 9",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Switch to next head",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Claw and Horn",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 7",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Venom Spit",
+							"effects": [
+								{
+									"name": "10",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Status card",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Three As One",
+							"effects": [
+								{
+									"name": "Strength 1",
+									"color": "BUFF"
+								},
+								{
+									"name": "Activate all three heads",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 19,
+					"desc": "Cycles #wTriple #wBite -> #wSquabble -> #wClaw #wand #wHorn -> #wVenom Spit. If at half HP or less, uses #wThree #wAs #wOne and then starts the cycle from the beginning, skipping #wSquabble.",
+					"hp": "(220 HP)",
+					"notes": "Innate #uSquabbling #uHeads. The status given by moves rotates Slimed -> Wound -> Burned. All status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Triple Bite",
+							"effects": [
+								{
+									"name": "5x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Squabble",
+							"effects": [
+								{
+									"name": "Block 9",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Plated Armor 2",
+									"color": "BUFF"
+								},
+								{
+									"name": "Switch to next head",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Claw and Horn",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Block 7",
+									"color": "BLOCK"
+								}
+							]
+						},
+						{
+							"name": "Venom Spit",
+							"effects": [
+								{
+									"name": "10",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Status card 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Three As One",
+							"effects": [
+								{
+									"name": "Strength 2",
+									"color": "BUFF"
+								},
+								{
+									"name": "Activate all three heads",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Suneater",
+			"id": "Menagerie:Suneater",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"hp": "(200 HP)",
+					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Tentacle Slap",
+							"effects": [
+								{
+									"name": "1x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Beam",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Solar Charge 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Energy",
+							"effects": [
+								{
+									"name": "Block 5",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Solar Charge 2",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Flare",
+							"effects": [
+								{
+									"name": "10",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Vulnerable 1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Burn 1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Solar Charge -7",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 4,
+					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"hp": "(200 HP)",
+					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Tentacle Slap",
+							"effects": [
+								{
+									"name": "2x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Beam",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Solar Charge 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Energy",
+							"effects": [
+								{
+									"name": "Block 5",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Solar Charge 2",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Flare",
+							"effects": [
+								{
+									"name": "12",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Vulnerable 1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Burn 1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Solar Charge -7",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 9,
+					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"hp": "(210 HP)",
+					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Tentacle Slap",
+							"effects": [
+								{
+									"name": "2x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Beam",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Solar Charge 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Energy",
+							"effects": [
+								{
+									"name": "Block 10",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Solar Charge 2",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Flare",
+							"effects": [
+								{
+									"name": "12",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Vulnerable 1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Burn 1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Solar Charge -7",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 19,
+					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"hp": "(210 HP)",
+					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
+					"moves": [
+						{
+							"name": "Tentacle Slap",
+							"effects": [
+								{
+									"name": "2x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Beam",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Solar Charge 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Energy",
+							"effects": [
+								{
+									"name": "Block 10",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Solar Charge 3",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Solar Flare",
+							"effects": [
+								{
+									"name": "12",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Vulnerable 2",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Burn 2",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Solar Charge -7",
+									"color": "BUFF"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Avatar of Vigor",
+			"id": "Menagerie:AvatarOfVigor",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Cycles #wEndurance #wof #wthe #wVigorous -> #wAssault -> #wBody #wSlam.",
+					"hp": "(80 HP)",
+					"notes": "Innate #uVigor #uAura.",
+					"moves": [
+						{
+							"name": "Endurance of the Vigorous",
+							"effects": [
+								{
+									"name": "Party Plated Armor 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Assault",
+							"effects": [
+								{
+									"name": "4x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Body Slam",
+							"effects": [
+								{
+									"name": "12",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 4,
+					"desc": "Cycles #wEndurance #wof #wthe #wVigorous -> #wAssault -> #wBody #wSlam.",
+					"hp": "(80 HP)",
+					"notes": "Innate #uVigor #uAura.",
+					"moves": [
+						{
+							"name": "Endurance of the Vigorous",
+							"effects": [
+								{
+									"name": "Party Plated Armor 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Assault",
+							"effects": [
+								{
+									"name": "5x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Body Slam",
+							"effects": [
+								{
+									"name": "14",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 9,
+					"desc": "Cycles #wEndurance #wof #wthe #wVigorous -> #wAssault -> #wBody #wSlam.",
+					"hp": "(85 HP)",
+					"notes": "Innate #uVigor #uAura.",
+					"moves": [
+						{
+							"name": "Endurance of the Vigorous",
+							"effects": [
+								{
+									"name": "Party Plated Armor 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Assault",
+							"effects": [
+								{
+									"name": "5x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Body Slam",
+							"effects": [
+								{
+									"name": "14",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 19,
+					"desc": "Cycles #wEndurance #wof #wthe #wVigorous -> #wAssault -> #wBody #wSlam.",
+					"hp": "(85 HP)",
+					"notes": "Innate #uVigor #uAura.",
+					"moves": [
+						{
+							"name": "Endurance of the Vigorous",
+							"effects": [
+								{
+									"name": "Party Plated Armor 2",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Assault",
+							"effects": [
+								{
+									"name": "5x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Body Slam",
+							"effects": [
+								{
+									"name": "14",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Avatar of Cunning",
+			"id": "Menagerie:AvatarOfCunning",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Cycles #wFinesse #wof #wthe #wCunning -> #wAssail.",
+					"hp": "(80 HP)",
+					"notes": "Innate #uCunning #uAura.",
+					"moves": [
+						{
+							"name": "Finesse of the Cunning",
+							"effects": [
+								{
+									"name": "1x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Assail",
+							"effects": [
+								{
+									"name": "8",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 4,
+					"desc": "Cycles #wFinesse #wof #wthe #wCunning -> #wAssail.",
+					"hp": "(80 HP)",
+					"notes": "Innate #uCunning #uAura.",
+					"moves": [
+						{
+							"name": "Finesse of the Cunning",
+							"effects": [
+								{
+									"name": "2x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Assail",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 9,
+					"desc": "Cycles #wFinesse #wof #wthe #wCunning -> #wAssail.",
+					"hp": "(85 HP)",
+					"notes": "Innate #uCunning #uAura.",
+					"moves": [
+						{
+							"name": "Finesse of the Cunning",
+							"effects": [
+								{
+									"name": "2x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Assail",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 19,
+					"desc": "Cycles #wFinesse #wof #wthe #wCunning -> #wAssail.",
+					"hp": "(85 HP)",
+					"notes": "Innate #uCunning #uAura.",
+					"moves": [
+						{
+							"name": "Finesse of the Cunning",
+							"effects": [
+								{
+									"name": "2x3",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Assail",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Avatar of Wisdom",
+			"id": "Menagerie:AvatarOfWisdom",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Cycles #wSharp #wClaw -> #wInsight #wof #wthe #wWise -> #wOsmosis.",
+					"hp": "(80 HP)",
+					"notes": "Innate #uWisdom #uAura.",
+					"moves": [
+						{
+							"name": "Sharp Claw",
+							"effects": [
+								{
+									"name": "8",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Insight of the Wise",
+							"effects": [
+								{
+									"name": "Party Strength 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Osmosis",
+							"effects": [
+								{
+									"name": "5",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Heal 3",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 0,
+					"desc": "Cycles #wSharp #wClaw -> #wInsight #wof #wthe #wWise -> #wOsmosis.",
+					"hp": "(80 HP)",
+					"notes": "Innate #uWisdom #uAura.",
+					"moves": [
+						{
+							"name": "Sharp Claw",
+							"effects": [
+								{
+									"name": "8",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Insight of the Wise",
+							"effects": [
+								{
+									"name": "Party Strength 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Osmosis",
+							"effects": [
+								{
+									"name": "5",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Heal 3",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 4,
+					"desc": "Cycles #wSharp #wClaw -> #wInsight #wof #wthe #wWise -> #wOsmosis.",
+					"hp": "(80 HP)",
+					"notes": "Innate #uWisdom #uAura.",
+					"moves": [
+						{
+							"name": "Sharp Claw",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Insight of the Wise",
+							"effects": [
+								{
+									"name": "Party Strength 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Osmosis",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Heal 3",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 9,
+					"desc": "Cycles #wSharp #wClaw -> #wInsight #wof #wthe #wWise -> #wOsmosis.",
+					"hp": "(85 HP)",
+					"notes": "Innate #uWisdom #uAura.",
+					"moves": [
+						{
+							"name": "Sharp Claw",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Insight of the Wise",
+							"effects": [
+								{
+									"name": "Party Strength 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Osmosis",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Heal 3",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 19,
+					"desc": "Cycles #wSharp #wClaw -> #wInsight #wof #wthe #wWise -> #wOsmosis.",
+					"hp": "(85 HP)",
+					"notes": "Innate #uWisdom #uAura.",
+					"moves": [
+						{
+							"name": "Sharp Claw",
+							"effects": [
+								{
+									"name": "9",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Insight of the Wise",
+							"effects": [
+								{
+									"name": "Party Strength 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Osmosis",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Heal 5",
+									"color": "BLOCK"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Grand Magus",
+			"id": "Menagerie:GrandMagus",
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Cycles one of #wMind #wTwist or #wSulfuric #wVortex -> one of #wLightning #wBolt or #wDarkblast -> the other of #wMind #wTwist or #wSulfuric #wVortex -> the other of #wLightning #wBolt or #wDarkblast.",
+					"notes": "Dazed status cards go on top of the draw pile. #uSulfuric #uVortex is a debuff that deals damage each turn.",
+					"hp": "(181 - 185 HP)",
+					"moves": [
+						{
+							"name": "Mind Twist",
+							"effects": [
+								{
+									"name": "Dazed 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Lightning Bolt",
+							"effects": [
+								{
+									"name": "13",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Darkblast",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Strength -1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Dexterity -1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Sulfuric Vortex",
+							"effects": [
+								{
+									"name": "Sulfuric Vortex 3",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 3,
+					"desc": "Cycles one of #wMind #wTwist or #wSulfuric #wVortex -> one of #wLightning #wBolt or #wDarkblast -> the other of #wMind #wTwist or #wSulfuric #wVortex -> the other of #wLightning #wBolt or #wDarkblast.",
+					"notes": "Dazed status cards go on top of the draw pile. #uSulfuric #uVortex is a debuff that deals damage each turn.",
+					"hp": "(181 - 185 HP)",
+					"moves": [
+						{
+							"name": "Mind Twist",
+							"effects": [
+								{
+									"name": "Dazed 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Lightning Bolt",
+							"effects": [
+								{
+									"name": "15",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Darkblast",
+							"effects": [
+								{
+									"name": "8",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Strength -1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Dexterity -1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Sulfuric Vortex",
+							"effects": [
+								{
+									"name": "Sulfuric Vortex 3",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 8,
+					"desc": "Cycles one of #wMind #wTwist or #wSulfuric #wVortex -> one of #wLightning #wBolt or #wDarkblast -> the other of #wMind #wTwist or #wSulfuric #wVortex -> the other of #wLightning #wBolt or #wDarkblast.",
+					"notes": "Dazed status cards go on top of the draw pile. #uSulfuric #uVortex is a debuff that deals damage each turn.",
+					"hp": "(184 - 189 HP)",
+					"moves": [
+						{
+							"name": "Mind Twist",
+							"effects": [
+								{
+									"name": "Dazed 2",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Lightning Bolt",
+							"effects": [
+								{
+									"name": "15",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Darkblast",
+							"effects": [
+								{
+									"name": "8",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Strength -1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Dexterity -1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Sulfuric Vortex",
+							"effects": [
+								{
+									"name": "Sulfuric Vortex 3",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 18,
+					"desc": "Cycles one of #wMind #wTwist or #wSulfuric #wVortex -> one of #wLightning #wBolt or #wDarkblast -> the other of #wMind #wTwist or #wSulfuric #wVortex -> the other of #wLightning #wBolt or #wDarkblast.",
+					"notes": "Dazed status cards go on top of the draw pile. #uSulfuric #uVortex is a debuff that deals damage each turn.",
+					"hp": "(184 - 189 HP)",
+					"moves": [
+						{
+							"name": "Mind Twist",
+							"effects": [
+								{
+									"name": "Dazed 3",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Lightning Bolt",
+							"effects": [
+								{
+									"name": "15",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Darkblast",
+							"effects": [
+								{
+									"name": "8",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Strength -1",
+									"color": "DEBUFF"
+								},
+								{
+									"name": "Dexterity -1",
+									"color": "DEBUFF"
+								}
+							]
+						},
+						{
+							"name": "Sulfuric Vortex",
+							"effects": [
+								{
+									"name": "Sulfuric Vortex 3",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
