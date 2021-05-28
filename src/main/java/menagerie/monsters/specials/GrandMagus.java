@@ -48,7 +48,7 @@ public class GrandMagus extends CustomMonster
     private static final int A3_DARKBLAST_DAMAGE = 8;
     private static final int DARKBLAST_STATS = 1;
     private static final int SULFURIC_VORTEX_AMOUNT = 3;
-    private static final int A18_SULFURIC_VORTEX_AMOUNT = 3;
+    private static final int A18_SULFURIC_VORTEX_AMOUNT = 4;
     private static final int HP_MIN = 181;
     private static final int HP_MAX = 185;
     private static final int A8_HP_MIN = 184;
