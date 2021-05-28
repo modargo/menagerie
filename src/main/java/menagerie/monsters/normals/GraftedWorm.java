@@ -3,11 +3,15 @@ package menagerie.monsters.normals;
 import basemod.abstracts.CustomMonster;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateSlowAttackAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.RollMoveAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
 import menagerie.powers.LeafSporesPower;
 
@@ -24,12 +28,15 @@ public class GraftedWorm extends CustomMonster
     private static final int A2_LEAF_BLADE_DAMAGE = 4;
     private static final int LEAF_SPORES_AMOUNT = 1;
     private static final int A17_LEAF_SPORES_AMOUNT = 2;
+    private static final int TEMPORARY_STRENGTH = 0;
+    private static final int A17_TEMPORARY_STRENGTH = 1;
     private static final int HP_MIN = 11;
     private static final int HP_MAX = 13;
     private static final int A7_HP_MIN = 12;
     private static final int A7_HP_MAX = 14;
     private int leafBladeDamage;
     private int leafSporesAmount;
+    private int temporaryStrength;
 
     public GraftedWorm() {
         this(0.0f, 0.0f);
@@ -53,14 +60,20 @@ public class GraftedWorm extends CustomMonster
 
         if (AbstractDungeon.ascensionLevel >= 17) {
             this.leafSporesAmount = A17_LEAF_SPORES_AMOUNT;
+            this.temporaryStrength = A17_TEMPORARY_STRENGTH;
         } else {
             this.leafSporesAmount = LEAF_SPORES_AMOUNT;
+            this.temporaryStrength = TEMPORARY_STRENGTH;
         }
     }
 
     @Override
     public void usePreBattleAction() {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new LeafSporesPower(this, this.leafSporesAmount)));
+        if (this.temporaryStrength > 0) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.temporaryStrength), this.temporaryStrength));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new LoseStrengthPower(this, this.temporaryStrength), this.temporaryStrength));
+        }
     }
 
     @Override
