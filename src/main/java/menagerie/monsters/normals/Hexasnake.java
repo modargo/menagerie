@@ -117,7 +117,7 @@ public class Hexasnake extends CustomMonster {
             this.setMove(MOVES[1], VENOMOUS_BITE_ATTACK, Intent.ATTACK_DEBUFF, this.venomousBiteDamage, VENOMOUS_BITE_HITS, true);
         }
         else {
-            this.setMove(MOVES[1], CONSTRICT_ATTACK, Intent.ATTACK_DEBUFF, this.constrictDamage);
+            this.setMove(MOVES[2], CONSTRICT_ATTACK, Intent.ATTACK_DEBUFF, this.constrictDamage);
         }
     }
 
