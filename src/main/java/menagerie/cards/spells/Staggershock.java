@@ -31,6 +31,7 @@ public class Staggershock extends CustomCard {
     public Staggershock() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = DAMAGE;
+        this.isMultiDamage = true;
         this.tags.add(CustomTags.GRAND_MAGUS_SPELL);
     }
 
