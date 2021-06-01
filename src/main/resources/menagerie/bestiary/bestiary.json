@@ -1341,7 +1341,7 @@
 			"ai": [
 				{
 					"min_asc": 0,
-					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"desc": "Starts with #wBeam. NL NL Afterwards, if #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
 					"hp": "(200 HP)",
 					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
 					"moves": [
@@ -1405,7 +1405,7 @@
 				},
 				{
 					"min_asc": 4,
-					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"desc": "Starts with #wBeam. NL NL Afterwards, if #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
 					"hp": "(200 HP)",
 					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
 					"moves": [
@@ -1469,7 +1469,7 @@
 				},
 				{
 					"min_asc": 9,
-					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"desc": "Starts with #wBeam. NL NL Afterwards, if #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
 					"hp": "(210 HP)",
 					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
 					"moves": [
@@ -1533,7 +1533,7 @@
 				},
 				{
 					"min_asc": 19,
-					"desc": "If #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
+					"desc": "Starts with #wBeam. NL NL Afterwards, if #uSolar #uCharge has 7 or more charges, uses #wSolar #wFlare. NL NL Otherwise, has a chance to use #wSolar #wEnergy based on the number of turns since the last time it used the move: 0% for 1 turn, 25% for 2, 50% for 3, 75% for 4, 100% for 5 or more. NL NL Otherwise, uses either #wBeam or #wTentacle #wSlap with a 50-50 chance that is shifted by 25 for each additional time one move has been used compared to the other, in favor of the less used move. For example, if two #wBeams and one #wTentacle #wSlap had been used so far, that would give a 25% chance of #wBeam and a 75% chance of #wTentacle #wSlap.",
 					"hp": "(210 HP)",
 					"notes": "Innate #uSolar #uCharge. Burn status cards go in the discard pile.",
 					"moves": [
