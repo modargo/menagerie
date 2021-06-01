@@ -387,67 +387,622 @@
 		{
 			"name": "Stygian Boar",
 			"id": "Menagerie:StygianBoar",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "Starts with #wEnraging #wCharge, then cycles #wTusk #wSlash -> #wBreathe #wFire.",
+					"hp": "(41 - 44 HP)",
+					"moves": [
+						{
+							"name": "Enraging Charge",
+							"effects": [
+								{
+									"name": "4",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Enraged 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Tusk Slash",
+							"effects": [
+								{
+									"name": "1x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Breathe Fire",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 2,
+					"desc": "Starts with #wEnraging #wCharge, then cycles #wTusk #wSlash -> #wBreathe #wFire.",
+					"hp": "(41 - 44 HP)",
+					"moves": [
+						{
+							"name": "Enraging Charge",
+							"effects": [
+								{
+									"name": "5",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Enraged 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Tusk Slash",
+							"effects": [
+								{
+									"name": "2x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Breathe Fire",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 7,
+					"desc": "Starts with #wEnraging #wCharge, then cycles #wTusk #wSlash -> #wBreathe #wFire.",
+					"hp": "(43 - 46 HP)",
+					"moves": [
+						{
+							"name": "Enraging Charge",
+							"effects": [
+								{
+									"name": "5",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Enraged 1",
+									"color": "BUFF"
+								}
+							]
+						},
+						{
+							"name": "Tusk Slash",
+							"effects": [
+								{
+									"name": "2x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Breathe Fire",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 17,
+					"desc": "Cycles #wTusk #wSlash -> #wBreathe #wFire.",
+					"hp": "(43 - 46 HP)",
+					"notes": "Innate #uEnraged 1.",
+					"moves": [
+						{
+							"name": "Tusk Slash",
+							"effects": [
+								{
+									"name": "2x2",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Breathe Fire",
+							"effects": [
+								{
+									"name": "7",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Silky Rabbit",
 			"id": "Menagerie:SilkyRabbit",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "65-35 split between #wBite and #wEar #wSwat, but can't use #wBite three times in a row or #wEar #wSwat twice in a row.",
+					"hp": "(21 - 26 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "5",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Swat",
+							"effects": [
+								{
+									"name": "2",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 1",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 2,
+					"desc": "65-35 split between #wBite and #wEar #wSwat, but can't use #wBite three times in a row or #wEar #wSwat twice in a row.",
+					"hp": "(21 - 26 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Swat",
+							"effects": [
+								{
+									"name": "3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 1",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 7,
+					"desc": "65-35 split between #wBite and #wEar #wSwat, but can't use #wBite three times in a row or #wEar #wSwat twice in a row.",
+					"hp": "(23 - 28 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Swat",
+							"effects": [
+								{
+									"name": "3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 1",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 17,
+					"desc": "65-35 split between #wBite and #wEar #wSwat, but can't use #wBite three times in a row or #wEar #wSwat twice in a row.",
+					"hp": "(23 - 28 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Swat",
+							"effects": [
+								{
+									"name": "3",
+									"color": "DAMAGE"
+								},
+								{
+									"name": "Weak 2",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Feather Rabbit",
 			"id": "Menagerie:FeatherRabbit",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "65-35 split between #wBite and #wEar #wTingle, but can't use #wBite three times in a row or #wEar #wTingle twice in a row. NL NL In the Silky Rabbit - Feather Rabbit - Feather Rabbit fight, the left Feather Rabbit always starts with #wBite and the right Feather Rabbit always starts with #wEar #wTingle.",
+					"hp": "(21 - 26 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "5",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Tingle",
+							"effects": [
+								{
+									"name": "Block 3",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Party Strength 1",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 2,
+					"desc": "65-35 split between #wBite and #wEar #wTingle, but can't use #wBite three times in a row or #wEar #wTingle twice in a row. NL NL In the Silky Rabbit - Feather Rabbit - Feather Rabbit fight, the left Feather Rabbit always starts with #wBite and the right Feather Rabbit always starts with #wEar #wTingle.",
+					"hp": "(21 - 26 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Tingle",
+							"effects": [
+								{
+									"name": "Block 3",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Party Strength 1",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 7,
+					"desc": "65-35 split between #wBite and #wEar #wTingle, but can't use #wBite three times in a row or #wEar #wTingle twice in a row. NL NL In the Silky Rabbit - Feather Rabbit - Feather Rabbit fight, the left Feather Rabbit always starts with #wBite and the right Feather Rabbit always starts with #wEar #wTingle.",
+					"hp": "(23 - 28 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Tingle",
+							"effects": [
+								{
+									"name": "Block 4",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Party Strength 1",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				},
+				{
+					"min_asc": 17,
+					"desc": "65-35 split between #wBite and #wEar #wTingle, but can't use #wBite three times in a row or #wEar #wTingle twice in a row. NL NL In the Silky Rabbit - Feather Rabbit - Feather Rabbit fight, the left Feather Rabbit always starts with #wBite and the right Feather Rabbit always starts with #wEar #wTingle.",
+					"hp": "(23 - 28 HP)",
+					"moves": [
+						{
+							"name": "Bite",
+							"effects": [
+								{
+									"name": "6",
+									"color": "DAMAGE"
+								}
+							]
+						},
+						{
+							"name": "Ear Tingle",
+							"effects": [
+								{
+									"name": "Party Block 4",
+									"color": "BLOCK"
+								},
+								{
+									"name": "Party Strength 1",
+									"color": "DEBUFF"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Entropy Warlock",
 			"id": "Menagerie:EntropyWarlock",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Melting Salamander",
 			"id": "Menagerie:MeltingSalamander",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Red Mage",
 			"id": "Menagerie:RedMage",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Hexasnake",
 			"id": "Menagerie:Hexasnake",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Prowling Amalgam",
 			"id": "Menagerie:ProwlingAmalgam",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Beast Mage",
 			"id": "Menagerie:BeastMage",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Young Suneater",
 			"id": "Menagerie:YoungSuneaster",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Keeper of the Sacred Pool",
 			"id": "Menagerie:KeeperOfTheSacredPool",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Grafted Worm",
 			"id": "Menagerie:GraftedWorm",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Dread Moth",
 			"id": "Menagerie:DreadMoth",
-			"ai": []
+			"ai": [
+				{
+					"min_asc": 0,
+					"desc": "TODO.",
+					"hp": "(X - Y HP)",
+					"notes": "TODO.",
+					"moves": [
+						{
+							"name": "TODO",
+							"effects": [
+								{
+									"name": "X",
+									"color": "DAMAGE"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Hydra",
