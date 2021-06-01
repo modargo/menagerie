@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.animations.FastShakeAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.RollMoveAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -34,12 +35,15 @@ public class KeeperOfTheSacredPool extends CustomMonster
     private static final int TRIPLE_BLAST_HITS = 3;
     private static final int INVOKE_THE_SUN_STRENGTH = 1;
     private static final int A17_INVOKE_THE_SUN_STRENGTH = 1;
+    private static final int INVOKE_THE_SUN_HEAL = 0;
+    private static final int A17_INVOKE_THE_SUN_HEAL = 4;
     private static final int HP_MIN = 43;
     private static final int HP_MAX = 47;
     private static final int A7_HP_MIN = 45;
     private static final int A7_HP_MAX = 49;
     private int tripleBlastDamage;
     private int invokeTheSunStrength;
+    private int invokeTheSunHeal;
 
     public KeeperOfTheSacredPool() {
         this(0.0f, 0.0f);
@@ -63,8 +67,10 @@ public class KeeperOfTheSacredPool extends CustomMonster
 
         if (AbstractDungeon.ascensionLevel >= 17) {
             this.invokeTheSunStrength = A17_INVOKE_THE_SUN_STRENGTH;
+            this.invokeTheSunHeal = A17_INVOKE_THE_SUN_HEAL;
         } else {
             this.invokeTheSunStrength = INVOKE_THE_SUN_STRENGTH;
+            this.invokeTheSunHeal = INVOKE_THE_SUN_HEAL;
         }
     }
 
@@ -80,6 +86,9 @@ public class KeeperOfTheSacredPool extends CustomMonster
                     if (m == this || !m.isDying) {
                         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, this.invokeTheSunStrength), this.invokeTheSunStrength));
                     }
+                }
+                if (this.invokeTheSunHeal > 0) {
+                    AbstractDungeon.actionManager.addToBottom(new HealAction(this, this, this.invokeTheSunHeal));
                 }
                 break;
             case TRIPLE_BLAST_ATTACK:
