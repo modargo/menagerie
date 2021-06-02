@@ -57,7 +57,7 @@ public class HexdrinkerAction extends AbstractGameAction {
                 this.addToBot(new DamageAction(this.m, new DamageInfo(this.p, this.damage, this.damageTypeForTurn), AttackEffect.BLUNT_LIGHT));
             }
 
-            int multiplier = effect >= 4 ? (upgraded ? 3 : 2) : 1;
+            int multiplier = effect >= 4 && upgraded ? 2 : 1;
             int poison = Hexdrinker.POISON * multiplier;
             this.addToBot(new ApplyPowerAction(this.m, this.p, new PoisonPower(this.m, this.p, poison), poison));
             if (effect >= 2) {
