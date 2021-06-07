@@ -1,0 +1,51 @@
+{
+  "Menagerie:HuntersKnife": {
+    "NAME": "猎刀",
+    "FLAVOR": "狩猎成功后用于剥皮的刀子，锋利而嗜血",
+    "DESCRIPTIONS": [
+      "每当杀死一名非爪牙的普通敌人，获得 #b5 金币。"
+    ]
+  },
+  "Menagerie:ShiftingBlessing": {
+    "NAME": "变幻的祝福",
+    "FLAVOR": "来自月亮的祝福，不断地变换着。",
+    "DESCRIPTIONS": [
+      "每个奇数回合开始时，获得 #b1 临时力量。每个偶数回合开始时，获得 #b1 临时敏捷。"
+    ]
+  },
+  "Menagerie:Aurumvore": {
+    "NAME": "吞金兽",
+    "FLAVOR": "它吃这些金币是要干啥？",
+    "DESCRIPTIONS": [
+      "吞食你当前的和你将获得的半数金币。每吃掉 #b{0} 金币，每场战斗开始时，你获得 #b1 #y力量 。"
+    ]
+  },
+  "Menagerie:GrandMagusSpellbook": {
+    "NAME": "大法师的咒语书",
+    "FLAVOR": "画满了混合兽的涂鸦。",
+    "DESCRIPTIONS": [
+      "战斗开始时，以及此后的每 #b{0} 个回合，添加1张大法师的咒术到手上。 NL 战斗开始时，将1张 #r诅咒 洗入抽牌堆。"
+    ]
+  },
+  "Menagerie:MalignantTentacle": {
+    "NAME": "恶性增生的触手",
+    "FLAVOR": "这玩意越长越大了。。",
+    "DESCRIPTIONS": [
+      "第二个回合开始时，以及此后的每 #b{0} 个回合，获得 {1} #y缠绕 。"
+    ]
+  },
+  "Menagerie:GhostlyEgg": {
+    "NAME": "幽灵之卵",
+    "FLAVOR": "蛋也会变幽灵的吗？？",
+    "DESCRIPTIONS": [
+      "每当你往牌组添加1张带 #y消耗 或 #y虚无 属性的牌时， #y升级 之。"
+    ]
+  },
+  "Menagerie:ExplorersFlag": {
+    "NAME": "探索者旗帜",
+    "FLAVOR": "始终在开拓下一个新的边域。",
+    "DESCRIPTIONS": [
+      "每当你进入一个问号房，治疗 #b{0} 生命。"
+    ]
+  }
+}

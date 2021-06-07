@@ -1,0 +1,197 @@
+{
+  "Menagerie:Hydra": {
+    "MOVES": [
+      "扫尾",
+      "挥击",
+      "贪婪之饥"
+    ],
+    "NAME": "多头巨龙"
+  },
+  "Menagerie:VoidReaper": {
+    "MOVES": [
+      "切割未来",
+      "收割",
+      "镰刀之舞"
+    ],
+    "NAME": "虚空收割者"
+  },
+  "Menagerie:MonstrousExperiment": {
+    "MOVES": [
+      "黏滑附肢",
+      "猛击",
+      "退化"
+    ],
+    "NAME": "畸异实验品"
+  },
+  "Menagerie:WhisperingWraith": {
+    "MOVES": [
+      "消退",
+      "幽魂之触",
+      "生命吸收"
+    ],
+    "NAME": "低语的鬼灵",
+    "DIALOG": ["踏足此地是最大的愚行。", "你的追求毫无意义。", "尖塔永垂不朽。", "止步即止损。"]
+  },
+  "Menagerie:SilkyRabbit": {
+    "MOVES": [
+      "噬咬",
+      "耳掴"
+    ],
+    "NAME": "丝兔"
+  },
+  "Menagerie:FeatherRabbit": {
+    "MOVES": [
+      "噬咬",
+      "抽扯"
+    ],
+    "NAME": "羽兔"
+  },
+  "Menagerie:StygianBoar": {
+    "MOVES": [
+      "獠牙猛击",
+      "烈焰呼吸",
+      "狂怒冲锋"
+    ],
+    "NAME": "幽冥刚鬣"
+  },
+  "Menagerie:Chimera": {
+    "MOVES": [
+      "三重噬咬",
+      "争吵",
+      "爪角齐出",
+      "毒液喷吐",
+      "三位一体"
+    ],
+    "NAME": "奇美拉"
+  },
+  "Menagerie:BeastMage": {
+    "MOVES": [
+      "衰弱",
+      "妖法",
+      "奥术堡垒",
+      "兽性狂暴"
+    ],
+    "NAME": "野兽法师"
+  },
+  "Menagerie:ProwlingAmalgam": {
+    "MOVES": [
+      "噬咬践踏",
+      "疯狂"
+    ],
+    "NAME": "巡行混合兽"
+  },
+  "Menagerie:EntropyWarlock": {
+    "MOVES": [
+      "黑暗咒语",
+      "触手抓握"
+    ],
+    "NAME": "熵控术士"
+  },
+  "Menagerie:GraftedWorm": {
+    "MOVES": [
+      "叶之刃"
+    ],
+    "NAME": "嫁接蠕虫"
+  },
+  "Menagerie:DreadMoth": {
+    "MOVES": [
+      "翅卫",
+      "惊惧声波"
+    ],
+    "NAME": "恐惧之蛾"
+  },
+  "Menagerie:MeltingSalamander": {
+    "MOVES": [
+      "炽烈喷吐",
+      "过热",
+      "熔化"
+    ],
+    "NAME": "熔体火蜥"
+  },
+  "Menagerie:RedMage": {
+    "MOVES": [
+      "混淆",
+      "回击",
+      "弩"
+    ],
+    "NAME": "红魔师"
+  },
+  "Menagerie:FrozenSoldier": {
+    "MOVES": [
+      "冰之屏障",
+      "猛烈解冻"
+    ],
+    "NAME": "霜冻军士"
+  },
+  "Menagerie:MaskedSummoner": {
+    "MOVES": [
+      "柔雪",
+      "冰霜召唤",
+      "沉默之矛"
+    ],
+    "NAME": "蒙面召唤师"
+  },
+  "Menagerie:AvatarOfWisdom": {
+    "MOVES": [
+      "利爪",
+      "智者的洞见",
+      "渗透"
+    ],
+    "NAME": "智慧的化身"
+  },
+  "Menagerie:AvatarOfCunning": {
+    "MOVES": [
+      "机狡之巧",
+      "抨击"
+    ],
+    "NAME": "机狡的化身"
+  },
+  "Menagerie:AvatarOfVigor": {
+    "MOVES": [
+      "生命力之坚耐",
+      "突袭",
+      "猛压式"
+    ],
+    "NAME": "活力的化身"
+  },
+  "Menagerie:GrandMagus": {
+    "MOVES": [
+      "心灵扭曲",
+      "雷霆",
+      "黑暗冲击",
+      "硫磺涡流"
+    ],
+    "NAME": "术士宗师"
+  },
+  "Menagerie:Suneater": {
+    "MOVES": [
+      "触手猛击",
+      "光波",
+      "太阳之能",
+      "日晕"
+    ],
+    "NAME": "噬日者"
+  },
+  "Menagerie:Hexasnake": {
+    "MOVES": [
+      "蛇之凝视",
+      "剧毒噬咬",
+      "束紧"
+    ],
+    "NAME": "多头蛇"
+  },
+  "Menagerie:YoungSuneater": {
+    "MOVES": [
+      "触手猛击",
+      "阳浴"
+    ],
+    "NAME": "年幼的噬日者"
+  },
+  "Menagerie:KeeperOfTheSacredPool": {
+    "MOVES": [
+      "征引太阳",
+      "三重爆发"
+    ],
+    "NAME": "猩红之池看守者"
+  }
+}

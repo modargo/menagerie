@@ -1,0 +1,106 @@
+{
+  "Menagerie:HydraHeads": {
+    "NAME": "多重头颅",
+    "DESCRIPTIONS": ["每颗头颅提供 #b1 #y力量 。每当此目标从一击中遭受了不少于 #b{0} 点伤害，将丧失一颗头颅，并于两回合内，再生出2倍的头颅。"]
+  },
+  "Menagerie:HydraHeadRegrowth": {
+    "NAME": "头颅再生",
+    "DESCRIPTIONS": ["两回合内，再生出 #b{0} 颗头颅。"]
+  },
+  "Menagerie:DrawReductionSingleTurn": {
+    "NAME": "抽牌减少",
+    "DESCRIPTIONS": ["下回合少抽 #b1 张牌。", "下回合少抽 #b{0} 张牌。"]
+  },
+  "Menagerie:SerpentsGaze": {
+    "NAME": "蛇之凝视",
+    "DESCRIPTIONS": ["抽到的第一张牌于此回合耗费加 #b{0} 。", "抽到的第 #b{0} 张牌于此回合耗费加 #b{1} 。"]
+  },
+  "Menagerie:SquabblingHeads": {
+    "NAME": "纷扰的头颅们",
+    "DESCRIPTIONS": [
+      "奇美拉的头颅们为主宰权而争吵。玩家每打出3张牌，更换一次主宰的头颅。 NL 狮之巨口：每当玩家受到此敌人的攻击伤害，添加1张 #y黏液 或 #y伤口 或 #y灼伤 到弃牌堆。 NL 羊之坚角：此敌人获得 #b1 #y柔韧. NL 蛇之凝视：玩家抽取的第一张牌于此回合耗费加 #b1 。",
+      "#b所有头颅都在活动！",
+      "#b狮子 头颅获得了控制权。",
+      "#b山羊 头颅获得了控制权。",
+      "#b巨蛇 头颅获得了控制权。"
+    ]
+  },
+  "Menagerie:EntropyAura": {
+    "NAME": "熵变领域",
+    "DESCRIPTIONS": ["此敌人每回合开始，使玩家失去 #b1 力量和敏捷。"]
+  },
+  "Menagerie:LeafSpores": {
+    "NAME": "叶孢",
+    "DESCRIPTIONS": ["死亡时，施加 #b{0} #y虚弱 和 #b{0} #y脆弱 。"]
+  },
+  "Menagerie:Melting": {
+    "NAME": "熔化",
+    "DESCRIPTIONS": ["每回合失去 #b{0} #y金属化 。 NL 丧失所有金属化层数后，将进行一次猛烈的攻击。"]
+  },
+  "Menagerie:Thawing": {
+    "NAME": "融化",
+    "DESCRIPTIONS": ["将在 #b{0} 回合内融化。融化后，会发动进攻：每有1点生命，造成额外 #b{1} 点伤害，然后死亡。 NL 当被杀死，蒙面召唤师会流失 #b{2} 生命。"]
+  },
+  "Menagerie:WisdomAura": {
+    "NAME": "智慧光环",
+    "DESCRIPTIONS": ["当此名敌人存活，玩家的每回合开始时，额外抽取 #b{0} 张牌。 NL 其它角色的回合开始时，施加 #b{1} #y脆弱 。 NL 死亡时，所有敌人获得 #b{2} #y荆棘 。"]
+  },
+  "Menagerie:Wisdom": {
+    "NAME": "智慧",
+    "DESCRIPTIONS": ["每回合开始，额外抽取 #b{0} 张牌。"]
+  },
+  "Menagerie:CunningAura": {
+    "NAME": "狡诈光环",
+    "DESCRIPTIONS": ["当此名敌人存活，获得 #b{0} #y敏捷 。 NL 每当玩家打出1张牌，遭受 #b{1} 伤害。 NL 死亡时，所有敌人获得 #b{2} #y多层护甲 。"]
+  },
+  "Menagerie:Cunning": {
+    "NAME": "狡猾",
+    "DESCRIPTIONS": ["获得 #b{0} #y敏捷 。"]
+  },
+  "Menagerie:VigorAura": {
+    "NAME": "活力光环",
+    "DESCRIPTIONS": ["当此名敌人存活，每回合开始时获得 [E] 。 NL 每回合结束时，添加 #b{1} 张 #y眩晕 到你的弃牌堆。 NL 死亡时，施加 {2} #y易伤 。"]
+  },
+  "Menagerie:Vigor": {
+    "NAME": "精力充沛",
+    "DESCRIPTIONS": ["每回合开始时，获得 [E] 。"]
+  },
+  "Menagerie:Lifelink": {
+    "NAME": "生命链接",
+    "DESCRIPTIONS": ["下 #b{0} 次你造成未经格挡的攻击伤害时，治疗 #b1 生命。"]
+  },
+  "Menagerie:CrumblingSanctuary": {
+    "NAME": "崩坏的避难所",
+    "DESCRIPTIONS": ["若抽牌不为空，每受到等量于层数的伤害时，消耗抽牌堆顶牌，防止等量伤害。"]
+  },
+  "Menagerie:SulfuricVortex": {
+    "NAME": "硫磺涡流",
+    "DESCRIPTIONS": ["每回合结束时，遭受 #b{0} 伤害。"]
+  },
+  "Menagerie:SolarCharge": {
+    "NAME": "日光充能",
+    "DESCRIPTIONS": ["每当此敌人的攻击被完全格挡时，此敌人会获得1层 #y日光充能 。 NL 每当玩家在此轮造成 #b{0} 伤害，此敌人获得获得1层 #y日光充能 。 NL 每层 #y日光充能 提供 #b1 #y力量 。 NL 此敌人回合开始时，若其有不少于 #b{1} 层日光充能，会使出一招强力的攻击，然后失去 #b{1} 层 #y日光充能"]
+  },
+  "Menagerie:MirarisWake": {
+    "NAME": "米拉里的觉醒",
+    "DESCRIPTIONS": ["回合开始时，获得 {0} 。"]
+  },
+  "Menagerie:StaggershockRebound": {
+    "NAME": "交错冲击",
+    "DESCRIPTIONS": ["下回合开始时，打出交错冲击。"]
+  },
+  "Menagerie:PermanentDrawReduction": {
+    "NAME": "抽牌减少",
+    "DESCRIPTIONS": [
+      "每回合开始时，少抽 #b{0} 张牌。",
+      "每回合开始时，少抽 #b{0} 张牌。"
+    ]
+  },
+  "Menagerie:QuirionDryad": {
+    "NAME": "奎利恩树妖",
+    "DESCRIPTIONS": ["此战中首次打出某种颜色的牌时，获得 {0} 力量和 {0} 敏捷。 NL (已打出的颜色: {1}.)", "无", "红", "绿", "蓝", "紫", "无色", "诅咒"]
+  },
+  "Menagerie:FixedTextIntangiblePower": {
+    "DESCRIPTIONS": ["将遭受的所有伤害和生命流失减少至 #b1 点。持续 #b{0} 回合。"]
+  }
+}

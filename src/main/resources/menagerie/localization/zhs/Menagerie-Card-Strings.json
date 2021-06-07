@@ -1,0 +1,112 @@
+{
+  "Menagerie:Necropotence": {
+    "NAME": "死灵权能",
+    "DESCRIPTION": "保留 。 NL 抽 !M! 张牌。 NL 流失1生命。 NL 此牌返回手中。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 抽 !M! 张牌。 NL 流失1生命。 NL 此牌返回手中。"
+  },
+  "Menagerie:PurgingElixir": {
+    "NAME": "净化灵药",
+    "DESCRIPTION": "保留 。 NL 移除所有 menagerie:缠绕 、负数力量、负数敏捷。 NL 流失 !M! 生命。"
+  },
+  "Menagerie:Dismember": {
+    "NAME": "肢解",
+    "DESCRIPTION": "敌人于此回合失去 !M! 力量，流失 !M! 生命。 NL 你流失2生命。 NL 消耗 。"
+  },
+  "Menagerie:Languish": {
+    "NAME": "凋萎",
+    "DESCRIPTION": "虚无 。 NL 所有敌人于此回合失去 !M! 力量，流失 !M! 生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "所有敌人于此回合失去 !M! 力量，流失 !M! 生命。 NL 消耗 。"
+  },
+  "Menagerie:BeastSpirit": {
+    "NAME": "野兽心灵",
+    "DESCRIPTION": "获得 !M! 力量、 !M! 敏捷、 !M! 荆棘 。"
+  },
+  "Menagerie:Slaughter": {
+    "NAME": "大屠杀",
+    "DESCRIPTION": "对全敌造成 !D! 伤害。 NL 随机消耗手中1张牌。",
+    "UPGRADE_DESCRIPTION": "对全敌造成 !D! 伤害。 NL 消耗手中1张牌。"
+  },
+  "Menagerie:SagesJudgement": {
+    "NAME": "贤者的审判",
+    "DESCRIPTION": "对全敌造成等同于牌组数一半的伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "对全敌造成等同于牌组数三分之二的伤害。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (造成 !D! 伤害)"
+    ]
+  },
+  "Menagerie:MirarisWake": {
+    "NAME": "米拉里的觉醒",
+    "DESCRIPTION": "虚无 。 NL 获得 !M! 力量。 NL 获得 !M! 敏捷。 NL 回合开始时，获得 [E]",
+    "UPGRADE_DESCRIPTION": "获得 !M! 力量。 NL 获得 !M! 敏捷。 NL 回合开始时，获得 [E]"
+  },
+  "Menagerie:Skullclamp": {
+    "NAME": "颅骨夹钳",
+    "DESCRIPTION": "获得1力量。 NL 失去1敏捷。 NL 回合开始时，额外抽取 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "获得1力量。 NL 失去1敏捷。 NL 回合开始时，额外抽取 !M! 张牌。"
+  },
+  "Menagerie:WallOfBlossoms": {
+    "NAME": "繁花之墙",
+    "DESCRIPTION": "获得 !M! 敏捷。 NL 抽1张牌。"
+  },
+  "Menagerie:DarkRitual": {
+    "NAME": "黑暗仪式",
+    "DESCRIPTION": "获得 [E] [E] [E] 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 获得 [E] [E] [E] 。 NL 消耗 。"
+  },
+  "Menagerie:LightningHelix": {
+    "NAME": "螺旋闪电",
+    "DESCRIPTION": "造成 !D! 伤害。 NL 治疗 !M! 生命。 NL 消耗 。"
+  },
+  "Menagerie:Foresee": {
+    "NAME": "预知",
+    "DESCRIPTION": "预见 !M! 。 NL 抽2牌。"
+  },
+  "Menagerie:LoxodonWarhammer": {
+    "NAME": "巨象战锤",
+    "DESCRIPTION": "获得2力量。 NL 下 !M! 次造成未被格挡的攻击伤害时，治疗1生命。"
+  },
+  "Menagerie:CrumblingSanctuary": {
+    "NAME": "崩坏的避难所",
+    "DESCRIPTION": "每当遭受 !M! 点伤害，消耗抽牌堆顶牌来防止 !M! 伤害。"
+  },
+  "Menagerie:RelicOfProgenitus": {
+    "NAME": "后裔的遗物",
+    "DESCRIPTION": "消耗弃牌堆所有牌。 NL 抽 !M! 张牌。 NL 消耗 。 NL 每当抽到此牌，可消耗弃牌堆1张牌。"
+  },
+  "Menagerie:Tinker": {
+    "NAME": "流浪魔匠",
+    "DESCRIPTION": "选择抽牌堆一张能力牌打出。 NL 随机消耗一张手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "选择抽牌堆一张能力牌打出。 NL 消耗一张手牌。 NL 消耗 。"
+  },
+  "Menagerie:SteelWall": {
+    "NAME": "钢铁之墙",
+    "DESCRIPTION": "获得 !B! 格挡。 NL 获得 !M! menagerie:金属化 。 NL 消耗 。"
+  },
+  "Menagerie:LightningBolt": {
+    "NAME": "雷霆",
+    "DESCRIPTION": "造成 !D! 伤害。 NL 将此牌洗入抽牌堆。"
+  },
+  "Menagerie:BloodySpellbook": {
+    "NAME": "染血咒语书",
+    "DESCRIPTION": "无法打出。 NL 在手上时，每当术士宗师使用咒语，失去 !M! 生命。"
+  },
+  "Menagerie:Staggershock": {
+    "NAME": "交错冲击",
+    "DESCRIPTION": "对全敌造成 !D! 伤害。下回合开始时，再次打出此牌。"
+  },
+  "Menagerie:QuirionDryad": {
+    "NAME": "奎利恩树妖",
+    "DESCRIPTION": "此战中首次打出某种颜色的牌时，获得 !M! 力量和 !M! 敏捷。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 此战中首次打出不同颜色的牌时，获得 !M! 力量和 !M! 敏捷。"
+  },
+  "Menagerie:SuddenReclamation": {
+    "NAME": "收复领土",
+    "DESCRIPTION": "将抽牌堆顶端的 !M! 张牌置入弃牌堆。 NL 从弃牌堆移动攻击、技能、能力各1张到手牌中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将抽牌堆顶端的 !M! 张牌置入弃牌堆。 NL 从弃牌堆移动攻击、技能、能力各1张到手牌中。"
+  },
+  "Menagerie:Hexdrinker": {
+    "NAME": "饮魔者",
+    "DESCRIPTION": "造成 !D! 伤害并获得 !B! 格挡X次。 NL 若 X为1+，施加3 中毒 ；2+，获得1 人工制品 ；3+，获得1力量和敏捷；4+，效果翻倍。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害并获得 !B! 格挡X次。 NL 若 X为1+，施加3 中毒 ；2+，获得1 人工制品 ；3+，获得1力量和敏捷；4+，效果翻倍。 NL 消耗 。"
+  }
+}

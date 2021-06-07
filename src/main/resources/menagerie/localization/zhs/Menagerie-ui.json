@@ -1,0 +1,27 @@
+{
+  "Menagerie:Menagerie": {
+    "TEXT": [
+      "珍异展",
+      "第一幕",
+      "在另一个方向，你看到一片广阔的土地，充满了奇怪的野兽和曾经雄伟的建筑废墟。",
+      "探索珍异展"
+    ]
+  },
+  "Menagerie:ExhaustCardInDiscardPileAction": {
+    "TEXT": [
+      "选择1张牌来消耗。",
+      "选择 ",
+      " 张牌来消耗。"
+    ]
+  },
+  "Menagerie:CardTypeDiscardPileToHandAction": {
+    "TEXT": [
+      "选择一张攻击置入手中",
+      "选择一张技能置入手中",
+      "选择一张能力置入手中",
+      "选择 {0} 张攻击置入手中",
+      "选择 {0} 张技能置入手中",
+      "选择 {0} 张能力置入手中"
+    ]
+  }
+}

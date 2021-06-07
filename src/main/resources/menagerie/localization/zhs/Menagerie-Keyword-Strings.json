@@ -1,0 +1,12 @@
+[
+  {
+    "PROPER_NAME": "金属化",
+    "NAMES": ["金属化"],
+    "DESCRIPTION": "于回合末获得格挡。"
+  },
+  {
+    "PROPER_NAME": "缠绕",
+    "NAMES": ["缠绕"],
+    "DESCRIPTION": "于回合末受到伤害。"
+  }
+]
