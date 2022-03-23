@@ -2306,7 +2306,7 @@
 							"name": "Cut the Future",
 							"effects": [
 								{
-									"name": "13",
+									"name": "14",
 									"color": "DAMAGE"
 								},
 								{
@@ -2319,7 +2319,7 @@
 							"name": "Reap",
 							"effects": [
 								{
-									"name": "11",
+									"name": "12",
 									"color": "DAMAGE"
 								}
 							]
@@ -2349,7 +2349,7 @@
 							"name": "Cut the Future",
 							"effects": [
 								{
-									"name": "15",
+									"name": "16",
 									"color": "DAMAGE"
 								},
 								{
@@ -2362,7 +2362,7 @@
 							"name": "Reap",
 							"effects": [
 								{
-									"name": "13",
+									"name": "14",
 									"color": "DAMAGE"
 								}
 							]
@@ -2392,7 +2392,7 @@
 							"name": "Cut the Future",
 							"effects": [
 								{
-									"name": "15",
+									"name": "16",
 									"color": "DAMAGE"
 								},
 								{
@@ -2405,7 +2405,7 @@
 							"name": "Reap",
 							"effects": [
 								{
-									"name": "13",
+									"name": "14",
 									"color": "DAMAGE"
 								}
 							]
@@ -2435,7 +2435,7 @@
 							"name": "Cut the Future",
 							"effects": [
 								{
-									"name": "15",
+									"name": "16",
 									"color": "DAMAGE"
 								},
 								{
@@ -2448,7 +2448,7 @@
 							"name": "Reap",
 							"effects": [
 								{
-									"name": "13",
+									"name": "14",
 									"color": "DAMAGE"
 								}
 							]

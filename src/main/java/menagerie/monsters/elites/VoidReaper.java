@@ -25,12 +25,12 @@ public class VoidReaper extends CustomMonster
     private static final byte CUT_THE_FUTURE_ATTACK = 1;
     private static final byte REAP_ATTACK = 2;
     private static final byte SCYTHE_DANCE_ATTACK = 3;
-    private static final int CUT_THE_FUTURE_DAMAGE = 13;
-    private static final int A3_CUT_THE_FUTURE_DAMAGE = 15;
+    private static final int CUT_THE_FUTURE_DAMAGE = 14;
+    private static final int A3_CUT_THE_FUTURE_DAMAGE = 16;
     private static final int CUT_THE_FUTURE_DRAW_REDUCTION = 2;
     private static final int A18_CUT_THE_FUTURE_DRAW_REDUCTION = 2;
-    private static final int REAP_DAMAGE = 11;
-    private static final int A3_REAP_DAMAGE = 13;
+    private static final int REAP_DAMAGE = 12;
+    private static final int A3_REAP_DAMAGE = 14;
     private static final int SCYTHE_DANCE_DAMAGE = 5;
     private static final int A3_SCYTHE_DANCE_DAMAGE = 6;
     private static final int SCYTHE_DANCE_HITS = 3;
