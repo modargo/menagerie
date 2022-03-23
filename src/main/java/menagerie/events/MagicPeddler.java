@@ -26,8 +26,8 @@ public class MagicPeddler extends AbstractImageEvent {
     public static final int A15_POTION_COST = 20;
     private static final int HEAL_COST = 30;
     private static final int A15_HEAL_COST = 35;
-    private static final int SPELLS_COST = 70;
-    private static final int A15_SPELLS_COST = 80;
+    private static final int SPELLS_COST = 80;
+    private static final int A15_SPELLS_COST = 90;
     private static final float HEAL_PERCENT = 0.25f;
     private static final int SPELLS = 2;
 
