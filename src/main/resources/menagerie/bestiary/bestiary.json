@@ -2138,13 +2138,13 @@
 					"min_asc": 0,
 					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wSwipe.",
 					"notes": "Innate #uStrength 4 and #uHydra #uHeads.",
-					"hp": "(87 - 90 HP)",
+					"hp": "(94 - 97 HP)",
 					"moves": [
 						{
 							"name": "Tail Whip",
 							"effects": [
 								{
-									"name": "4",
+									"name": "5",
 									"color": "DAMAGE"
 								},
 								{
@@ -2177,13 +2177,13 @@
 					"min_asc": 3,
 					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wSwipe.",
 					"notes": "Innate #uStrength 5 and #uHydra #uHeads.",
-					"hp": "(87 - 90 HP)",
+					"hp": "(94 - 97 HP)",
 					"moves": [
 						{
 							"name": "Tail Whip",
 							"effects": [
 								{
-									"name": "4",
+									"name": "5",
 									"color": "DAMAGE"
 								},
 								{
@@ -2216,13 +2216,13 @@
 					"min_asc": 8,
 					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wSwipe.",
 					"notes": "Innate #uStrength 5 and #uHydra #uHeads.",
-					"hp": "(89 - 92 HP)",
+					"hp": "(96 - 99 HP)",
 					"moves": [
 						{
 							"name": "Tail Whip",
 							"effects": [
 								{
-									"name": "4",
+									"name": "5",
 									"color": "DAMAGE"
 								},
 								{
@@ -2255,13 +2255,13 @@
 					"min_asc": 18,
 					"desc": "Starts with #wTail #wWhip. Afterwards cycles #wRavenous #wHunger -> #wRavenous #wHunger -> #wSwipe.",
 					"notes": "Innate #uStrength 5 and #uHydra #uHeads.",
-					"hp": "(89 - 92 HP)",
+					"hp": "(96 - 99 HP)",
 					"moves": [
 						{
 							"name": "Tail Whip",
 							"effects": [
 								{
-									"name": "4",
+									"name": "5",
 									"color": "DAMAGE"
 								},
 								{
