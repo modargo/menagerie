@@ -71,7 +71,7 @@
   },
   "Menagerie:CrumblingSanctuary": {
     "NAME": "Crumbling Sanctuary",
-    "DESCRIPTIONS": ["If your draw pile isn't empty, for each damage you would take, instead #yExhaust the top card of your draw pile."]
+    "DESCRIPTIONS": ["If your draw pile isn''t empty, for each damage you would take, instead #yExhaust the top card of your draw pile."]
   },
   "Menagerie:SulfuricVortex": {
     "NAME": "Sulfuric Vortex",
