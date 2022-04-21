@@ -24,8 +24,8 @@ public class GraftedWorm extends CustomMonster
     private static final String IMG = Menagerie.monsterImage(ID);
     private boolean firstMove = true;
     private static final byte LEAF_BLADE_ATTACK = 1;
-    private static final int LEAF_BLADE_DAMAGE = 3;
-    private static final int A2_LEAF_BLADE_DAMAGE = 4;
+    private static final int LEAF_BLADE_DAMAGE = 4;
+    private static final int A2_LEAF_BLADE_DAMAGE = 5;
     private static final int LEAF_SPORES_AMOUNT = 1;
     private static final int A17_LEAF_SPORES_AMOUNT = 2;
     private static final int TEMPORARY_STRENGTH = 0;
