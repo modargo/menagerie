@@ -26,7 +26,7 @@ public class Hydra extends CustomMonster
     private static final byte TAIL_WHIP_ATTACK = 1;
     private static final byte SWIPE_ATTACK = 2;
     private static final byte RAVENOUS_HUNGER_ATTACK = 3;
-    private static final int TAIL_WHIP_DAMAGE = 5;
+    private static final int TAIL_WHIP_DAMAGE = 8;
     private static final int TAIL_WHIP_WEAK = 1;
     private static final int SWIPE_DAMAGE = 9;
     private static final int RAVENOUS_HUNGER_DAMAGE = 0;
