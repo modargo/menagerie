@@ -1,0 +1,112 @@
+{
+  "Menagerie:Necropotence": {
+    "NAME": "죽음의 권세",
+    "DESCRIPTION": "보존. NL 카드를 !M! 장 뽑습니다. NL 체력을 1 잃습니다. NL 사용 후 이 카드를 다시 손으로 가져옵니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 카드를 !M! 장 뽑습니다. NL 체력을 1 잃습니다. NL 사용 후 이 카드를 다시 손으로 가져옵니다."
+  },
+  "Menagerie:PurgingElixir": {
+    "NAME": "불순물 제거 영약",
+    "DESCRIPTION": "보존. NL menagerie:포박 을 전부 제거합니다. 음수 수치의 힘과 민첩을 다시 0으로 만듭니다. NL 체력을 !M! 잃습니다."
+  },
+  "Menagerie:Dismember": {
+    "NAME": "훼손",
+    "DESCRIPTION": "이번 턴 동안 대상 적이 힘을 !M! 잃고 체력을 !M! 잃습니다. NL 체력을 2 잃습니다. NL 소멸."
+  },
+  "Menagerie:Languish": {
+    "NAME": "쇠퇴",
+    "DESCRIPTION": "휘발성. NL 이번 턴 동안 모든 적이 힘을 !M! 잃고 체력을 !M! 잃습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "이번 턴 동안 모든 적이 힘을 !M! 잃고 체력을 !M! 잃습니다. NL 소멸."
+  },
+  "Menagerie:BeastSpirit": {
+    "NAME": "야수의 혼",
+    "DESCRIPTION": "힘을 !M! 얻고 민첩을 !M! 얻으며 가시를 !M! 얻습니다."
+  },
+  "Menagerie:Slaughter": {
+    "NAME": "도살",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 손 안에 있는 무작위 카드 1장을 소멸시킵니다.",
+    "UPGRADE_DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 선택한 카드 1장을 소멸시킵니다."
+  },
+  "Menagerie:SagesJudgement": {
+    "NAME": "현자의 심판",
+    "DESCRIPTION": "적 전체에게 덱에 보유한 카드 수의 50%만큼 피해를 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "적 전체에게 덱에 보유한 카드 수의 2/3만큼 피해를 줍니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)"
+    ]
+  },
+  "Menagerie:MirarisWake": {
+    "NAME": "미라리의 각성",
+    "DESCRIPTION": "휘발성. NL 힘을 !M! 얻습니다. NL 민첩을 !M! 얻습니다. NL 매 턴 시작시 [E] 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "힘을 !M! 얻습니다. NL 민첩을 !M! 얻습니다. NL 매 턴 시작시 [E] 를 얻습니다."
+  },
+  "Menagerie:Skullclamp": {
+    "NAME": "스컬클램프",
+    "DESCRIPTION": "힘을 1 얻습니다. NL 민첩을 1 잃습니다. NL 매 턴 시작시 카드를 !M! 장 추가로 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "힘을 1 얻습니다. NL 민첩을 1 잃습니다. NL 매 턴 시작시 카드를 !M! 장 추가로 뽑습니다."
+  },
+  "Menagerie:WallOfBlossoms": {
+    "NAME": "꽃의 벽",
+    "DESCRIPTION": "민첩을 !M! 얻습니다. NL 카드를 1 장 뽑습니다."
+  },
+  "Menagerie:DarkRitual": {
+    "NAME": "어둠의 의식",
+    "DESCRIPTION": "[E] [E] [E] 를 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL [E] [E] [E] 를 얻습니다. NL 소멸."
+  },
+  "Menagerie:LightningHelix": {
+    "NAME": "나선 번개",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "Menagerie:Foresee": {
+    "NAME": "예견",
+    "DESCRIPTION": "예지 !M!. NL 카드를 2장 뽑습니다."
+  },
+  "Menagerie:LoxodonWarhammer": {
+    "NAME": "록소돈의 전쟁 망치",
+    "DESCRIPTION": "힘을 2 얻습니다. NL 막히지 않은 공격 피해를 !M! 번 입힐때마다 체력을 1 회복합니다."
+  },
+  "Menagerie:CrumblingSanctuary": {
+    "NAME": "무너져가는 성소",
+    "DESCRIPTION": "뽑을 카드 더미가 비어있지 않으면, !M! 피해를 받을때마다, 그 피해를 무효화하고 뽑을 카드 더미 맨 위의 카드 1장을 소멸시킵니다."
+  },
+  "Menagerie:RelicOfProgenitus": {
+    "NAME": "프로제니투스의 유물",
+    "DESCRIPTION": "버린 카드 더미에 있는 모든 카드를 소멸시킵니다. NL 카드를 !M! 장 뽑습니다. NL 소멸. NL 이 카드가 뽑히면, 버린 카드 더미에 있는 카드 1장을 선택해 소멸시킵니다."
+  },
+  "Menagerie:Tinker": {
+    "NAME": "땜장이",
+    "DESCRIPTION": "뽑을 카드 더미에 있는 파워 카드를 선택해 사용합니다. NL 손에 있는 무작위 카드 1장을 소멸시킵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "뽑을 카드 더미에 있는 파워 카드를 선택해 사용합니다. NL 손에 있는 카드 1장을 선택해 소멸시킵니다. NL 소멸."
+  },
+  "Menagerie:SteelWall": {
+    "NAME": "강철의 벽",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL !M! menagerie:금속화 를 얻습니다. NL 소멸."
+  },
+  "Menagerie:LightningBolt": {
+    "NAME": "라이트닝 볼트",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이 카드를 뽑을 카드 더미에 넣습니다."
+  },
+  "Menagerie:BloodySpellbook": {
+    "NAME": "피투성이 마법책",
+    "DESCRIPTION": "사용불가. NL 이 카드가 손에 있으면, 고대의 마법사가 마법을 사용할때 체력을 !M! 잃습니다."
+  },
+  "Menagerie:Staggershock": {
+    "NAME": "스태거 쇼크",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. 다음 턴 시작시, 이 카드를 다시 사용합니다."
+  },
+  "Menagerie:QuirionDryad": {
+    "NAME": "퀴리온 드라이어드",
+    "DESCRIPTION": "이번 전투동안 각기 다른 색상들의 카드를 사용하면, 힘을 !M! 얻고 민첩을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 이번 전투동안 각기 다른 색상들의 카드를 사용하면, 힘을 !M! 얻고 민첩을 !M! 얻습니다."
+  },
+  "Menagerie:SuddenReclamation": {
+    "NAME": "갑작스런 재활용",
+    "DESCRIPTION": "뽑을 카드 더미 맨 위의 카드 !M! 장을 버립니다. NL 버린 카드 더미에 있는 공격, 스킬, 파워 카드를 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "뽑을 카드 더미 맨 위의 카드 !M! 장을 버립니다. NL 버린 카드 더미에 있는 공격, 스킬, 파워 카드를 손으로 가져옵니다."
+  },
+  "Menagerie:Hexdrinker": {
+    "NAME": "주문포식자",
+    "DESCRIPTION": "피해룰 !D! 주고 !B! 방어도를 X 번 얻습니다. NL X 가 1 이상이라면, 중독을 3 부여합니다; 2번: 인공물을 1 얻습니다; 3번: 힘과 민첩을 1 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "피해룰 !D! 주고 !B! 방어도를 X 번 얻습니다. NL X 가 1 이상이라면, 중독을 3 부여합니다; 2번: 인공물을 1 얻습니다; 3번: 힘과 민첩을 1 얻습니다; 4번: 이 효과들을 2배로 늘려서 얻습니다. NL 소멸."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "Menagerie:HydraHeads": {
+    "NAME": "히드라 머리",
+    "DESCRIPTIONS": ["머리 하나당 #y힘을 #b1 얻습니다. 이 적에게 한번의 공격으로 #b{0} 또는 그 이상의 피해를 입히면, 이 적이 머리를 잃습니다. 2턴 후 머리 2개가 다시 재생됩니다."]
+  },
+  "Menagerie:HydraHeadRegrowth": {
+    "NAME": "머리 재생",
+    "DESCRIPTIONS": ["2턴 후 머리 #b{0} 개가 다시 재생됩니다."]
+  },
+  "Menagerie:DrawReductionSingleTurn": {
+    "NAME": "드로우 감소",
+    "DESCRIPTIONS": ["다음 턴에 카드를 #b1 장 적게 뽑습니다.", "다음 턴에 카드를 #b{0} 장 적게 뽑습니다."]
+  },
+  "Menagerie:SerpentsGaze": {
+    "NAME": "뱀의 눈빛",
+    "DESCRIPTIONS": ["처음 뽑히는 카드의 비용이 이번턴동안 #b{0} 증가합니다.", "처음 뽑히는 카드 #b{0} 장의 비용이 이번턴동안 #b{1} 증가합니다."]
+  },
+  "Menagerie:SquabblingHeads": {
+    "NAME": "시끌벅적한 머리들",
+    "DESCRIPTIONS": [
+      "이 키메라의 머리들이 몸의 지배권을 두고 다투고 있습니다. 현재 머리에 따른 효과를 받습니다. 카드를 3장 사용할때마다 머리가 변경됩니다. NL #r사자의 #r머리: 이 적에게 막히지 않은 피해를 받으면, #y점액덩어리, #y부상, 또는 #y화상을 버린 카드 더미에 넣습니다. NL #b염소의 #b뿔: 이 적이 #y탄성을 #b1 #y얻습니다. NL #g뱀의 #g눈빛: 처음 뽑히는 카드의 비용이 이번턴동안 #b1 증가합니다.",
+      "#r모든 #r머리의 #r효과를 #r받고 #r있습니다!",
+      "현재 #r사자의 #b머리 효과를 받고 있습니다.",
+      "현재 #b염소의 #b뿔 효과를 받고 있습니다.",
+      "현재 #g뱀의 #g눈빛 효과를 받고 있습니다."
+    ]
+  },
+  "Menagerie:EntropyAura": {
+    "NAME": "엔트로피의 오라",
+    "DESCRIPTIONS": ["이 적의 턴이 시작될 때, 당신이 #y힘을 #b1 잃고 #y민첩을 #b1 잃습니다."]
+  },
+  "Menagerie:LeafSpores": {
+    "NAME": "잎사귀 포자",
+    "DESCRIPTIONS": ["사망시, #y약화를 #b{0} 부여하고 #y손상을 #b{0} 부여합니다."]
+  },
+  "Menagerie:Melting": {
+    "NAME": "용해중",
+    "DESCRIPTIONS": ["이 적은 용해되고 있습니다! 매 턴 #y금속화를 #b{0} 잃습니다. NL 이 적이 모든 #y금속화를 잃을시, 강력한 공격을 사용합니다."]
+  },
+  "Menagerie:Thawing": {
+    "NAME": "해빙중",
+    "DESCRIPTIONS": ["이 적은 #b{0} 턴 후에 해빙됩니다. 해빙되는 턴에는, 이 적이 공격합니다. 남은 체력 1당 이 적의 공격력이 #b{1} 증가하고, 공격시 #r자살합니다.  NL 이 적이 죽으면, 가면 소환사가 체력을 #b{2} 잃습니다."]
+  },
+  "Menagerie:WisdomAura": {
+    "NAME": "지혜의 오라",
+    "DESCRIPTIONS": ["이 적이 살아있으면, 매 턴 시작시, 카드를 #b{0} 장 추가로 뽑습니다. NL 이 적의 턴 시작시, 당신에게 #y손상을 #b{1} 부여합니다. NL 이 적이 죽으면, 모든 적이 #y가시를 #b{2} 얻습니다."]
+  },
+  "Menagerie:Wisdom": {
+    "NAME": "지혜",
+    "DESCRIPTIONS": ["매 턴 시작시, 카드를 #b{0} 장 추가로 뽑습니다."]
+  },
+  "Menagerie:CunningAura": {
+    "NAME": "교활의 오라",
+    "DESCRIPTIONS": ["이 적이 살아있으면, #y민첩을 #b{0} 얻습니다. NL 카드를 사용할때마다, 플레이어가 피해를 #b{1} 받습니다. NL 이 적이 죽으면, 모든 적에게 #y판금 #y갑옷을 #b{2} 부여합니다."]
+  },
+  "Menagerie:Cunning": {
+    "NAME": "교활",
+    "DESCRIPTIONS": ["#y민첩을 #b{0} 얻습니다."]
+  },
+  "Menagerie:VigorAura": {
+    "NAME": "활력의 오라",
+    "DESCRIPTIONS": ["이 적이 살아있으면, 매 턴 시작시, [E] 를 얻습니다. NL 이 적의 턴 종료시, #y어지러움 #b{1} 장을 버린 카드 더미에 넣습니다. NL 이 적이 죽으면, 당신에게 #y취약을 {2} 부여합니다."]
+  },
+  "Menagerie:Vigor": {
+    "NAME": "활력",
+    "DESCRIPTIONS": ["매 턴 시작시 [E] 를 얻습니다."]
+  },
+  "Menagerie:Lifelink": {
+    "NAME": "생명 연결",
+    "DESCRIPTIONS": ["막히지 않은 피해를 #b{0} 번 입힐때마다, 체력을 #b1 회복합니다."]
+  },
+  "Menagerie:CrumblingSanctuary": {
+    "NAME": "무너져가는 성소",
+    "DESCRIPTIONS": ["뽑을 카드 더미가 비어있지 않으면, 피해를 받을때마다, 그 피해를 무효화하고 뽑을 카드 더미 맨 위의 카드 1장을 소멸시킵니다."]
+  },
+  "Menagerie:SulfuricVortex": {
+    "NAME": "유황 소용돌이",
+    "DESCRIPTIONS": ["턴 종료시, 플레리어가 피해를 #b{0} 받습니다."]
+  },
+  "Menagerie:SolarCharge": {
+    "NAME": "태양광 충전",
+    "DESCRIPTIONS": ["이 적의 공격을 완전히 막아냈다면, 이 적이 #y태양광 #y충전을 얻습니다. NL 이 적에게 피해를 #b{0} 이상 입힐때마다, #y태양광 #y충전을 얻습니다. NL #y태양광 #y충전 하나당 #y힘을 #b1 #y얻습니다. NL 턴 시작시, #y태양광 #y충전 중첩이 #b{1} 또는 그 이상일 경우, 아주 강력한 공격을 사용하고 #y태양광 #y충전을 #b{1} 잃습니다."]
+  },
+  "Menagerie:MirarisWake": {
+    "NAME": "미라리의 각성",
+    "DESCRIPTIONS": ["턴 시작시, {0} 를 얻습니다."]
+  },
+  "Menagerie:StaggershockRebound": {
+    "NAME": "스태거쇼크 재활용",
+    "DESCRIPTIONS": ["다음턴 시작시, 스태거쇼크 카드를 재사용합니다."]
+  },
+  "Menagerie:PermanentDrawReduction": {
+    "NAME": "영구적 드로우 감소",
+    "DESCRIPTIONS": [
+      "턴 시작시, 카드를 #b{0} 장 적게 뽑습니다.",
+      "턴 시작시, 카드를 #b{0} 장 적게 뽑습니다."
+    ]
+  },
+  "Menagerie:QuirionDryad": {
+    "NAME": "퀴리온 드라이어드",
+    "DESCRIPTIONS": ["이번 전투동안 각기 다른 색상들의 카드를 사용하면, 힘을 {0} 얻고 민첩을 {0} 얻습니다. NL (사용한 색상: {1}.)", "없음", "빨강", "초록", "파랑", "보라", "무색", "저주"]
+  },
+  "Menagerie:FixedTextIntangiblePower": {
+    "DESCRIPTIONS": ["#b{0} 턴 동안 받는 모든 피해와 체력 감소를 #b1 로 줄입니다."]
+  }
+}

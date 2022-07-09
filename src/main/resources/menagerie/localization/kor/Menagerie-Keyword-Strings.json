@@ -1,0 +1,12 @@
+[
+  {
+    "PROPER_NAME": "금속화",
+    "NAMES": ["금속화"],
+    "DESCRIPTION": "턴 종료시 #y방어도를 얻습니다."
+  },
+  {
+    "PROPER_NAME": "포박",
+    "NAMES": ["포박"],
+    "DESCRIPTION": "턴 종료시 피해를 받습니다."
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "Menagerie:HuntersKnife": {
+    "NAME": "사냥꾼의 칼",
+    "FLAVOR": "사냥이 성공한 후 가죽을 벗기는데 사용하는 칼입니다.",
+    "DESCRIPTIONS": [
+      "하수인이 아닌 일반 적을 처치할때마다, #b5 골드를 얻습니다."
+    ]
+  },
+  "Menagerie:ShiftingBlessing": {
+    "NAME": "변화성 축복",
+    "FLAVOR": "달의 축복은, 계속 변합니다.",
+    "DESCRIPTIONS": [
+      "홀수 턴이 시작될 때마다, 임시 #y힘을 #b1 얻습니다. 짝수 턴이 시작될 때마다, 임시 #y민첩을 #b1 얻습니다."
+    ]
+  },
+  "Menagerie:Aurumvore": {
+    "NAME": "아우롬보락스",
+    "FLAVOR": "대체 이 녀석이 돈을 먹는 이유가 뭘까요?",
+    "DESCRIPTIONS": [
+      "현재 소유한 골드의 50%를 빼앗고, 앞으로 획득하는 골드의 50%를 이 유물이 먹습니다. 골드를 #b{0} 만큼 흡수할때마다, 전투 시작시 #y힘을 #b1 얻습니다."
+    ]
+  },
+  "Menagerie:GrandMagusSpellbook": {
+    "NAME": "고대 마법사의 마법서",
+    "FLAVOR": "혼종들의 낙서로 가득차있습니다.",
+    "DESCRIPTIONS": [
+      "전투 시작 #b{0} 턴마다, 고대 마법사의 마법 카드를 얻습니다. NL 전투 시작시, #r저주 1장을 뽑을 카드 더미에 넣습니다."
+    ]
+  },
+  "Menagerie:MalignantTentacle": {
+    "NAME": "악성 촉수",
+    "FLAVOR": "더욱 성장하고 있습니다.",
+    "DESCRIPTIONS": [
+      "2번째 턴 시작 후 #b{0} 턴마다, #y포박 을 {1} 얻습니다."
+    ]
+  },
+  "Menagerie:GhostlyEgg": {
+    "NAME": "귀신들린 알",
+    "FLAVOR": "알도 귀신 들리나요?",
+    "DESCRIPTIONS": [
+      "#y소멸 또는 #y휘발성 카드를 덱에 추가할때마다, 그 카드를 #y강화 합니다."
+    ]
+  },
+  "Menagerie:ExplorersFlag": {
+    "NAME": "탐험가의 깃발",
+    "FLAVOR": "항상 다음 모험지를 찾아다니십시오.",
+    "DESCRIPTIONS": [
+      "#y? 방에 입장할때마다, 체력을 #b{0} 회복합니다."
+    ]
+  }
+}

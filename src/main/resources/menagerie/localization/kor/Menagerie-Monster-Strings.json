@@ -1,0 +1,197 @@
+{
+  "Menagerie:Hydra": {
+    "MOVES": [
+      "꼬리 흔들기",
+      "후려치기",
+      "엄청난 굶주림"
+    ],
+    "NAME": "히드라"
+  },
+  "Menagerie:VoidReaper": {
+    "MOVES": [
+      "미래 절단",
+      "수확",
+      "낫 춤"
+    ],
+    "NAME": "공허 사신"
+  },
+  "Menagerie:MonstrousExperiment": {
+    "MOVES": [
+      "미끌미끌한 부속물",
+      "몸부림",
+      "타락 가속"
+    ],
+    "NAME": "거대 실험체"
+  },
+  "Menagerie:WhisperingWraith": {
+    "MOVES": [
+      "희미해짐",
+      "유령의 손길",
+      "생명 흡수"
+    ],
+    "NAME": "속삭이는 망령",
+    "DIALOG": ["이 곳에 온 건 정말 어리석은 행동이다.", "네 탐구는 무의미하다.", "첨탑은 영원할것이다.", "지금이라도 포기한다면 고통은 줄어들것이다."]
+  },
+  "Menagerie:SilkyRabbit": {
+    "MOVES": [
+      "물기",
+      "귀 채찍"
+    ],
+    "NAME": "비단 토끼"
+  },
+  "Menagerie:FeatherRabbit": {
+    "MOVES": [
+      "물기",
+      "경련하는 귀"
+    ],
+    "NAME": "깃털 토끼"
+  },
+  "Menagerie:StygianBoar": {
+    "MOVES": [
+      "상아 베기",
+      "화염 브레스",
+      "분노의 돌진"
+    ],
+    "NAME": "잿빛 멧돼지"
+  },
+  "Menagerie:Chimera": {
+    "MOVES": [
+      "연속 물어뜯기",
+      "옥신각신",
+      "뿔과 발톱",
+      "독액 발사",
+      "셋이서 하나"
+    ],
+    "NAME": "키메라"
+  },
+  "Menagerie:BeastMage": {
+    "MOVES": [
+      "기력 저하술",
+      "주술",
+      "신비 방벽",
+      "야성의 분노"
+    ],
+    "NAME": "야수술사"
+  },
+  "Menagerie:ProwlingAmalgam": {
+    "MOVES": [
+      "물고 짓밟기",
+      "광란의 도가니"
+    ],
+    "NAME": "배회하는 혼종"
+  },
+  "Menagerie:EntropyWarlock": {
+    "MOVES": [
+      "어둠의 주문",
+      "촉수 포박"
+    ],
+    "NAME": "엔트로피 흑마법사"
+  },
+  "Menagerie:GraftedWorm": {
+    "MOVES": [
+      "잎날"
+    ],
+    "NAME": "접목벌레"
+  },
+  "Menagerie:DreadMoth": {
+    "MOVES": [
+      "날개짓",
+      "악몽의 음파"
+    ],
+    "NAME": "악몽 나방"
+  },
+  "Menagerie:MeltingSalamander": {
+    "MOVES": [
+      "화염 타액",
+      "과열",
+      "용해"
+    ],
+    "NAME": "녹아내리는 샐러맨더"
+  },
+  "Menagerie:RedMage": {
+    "MOVES": [
+      "콘퓨",
+      "리포스트",
+      "볼트"
+    ],
+    "NAME": "적마도사"
+  },
+  "Menagerie:FrozenSoldier": {
+    "MOVES": [
+      "얼음 장벽",
+      "난폭한 해빙"
+    ],
+    "NAME": "동결된 병사"
+  },
+  "Menagerie:MaskedSummoner": {
+    "MOVES": [
+      "부드러운 눈",
+      "냉빙 소환술",
+      "정적의 창"
+    ],
+    "NAME": "가면 소환사"
+  },
+  "Menagerie:AvatarOfWisdom": {
+    "MOVES": [
+      "날카로운 발톱",
+      "지혜로운 통찰력",
+      "삼투압"
+    ],
+    "NAME": "지혜의 화신"
+  },
+  "Menagerie:AvatarOfCunning": {
+    "MOVES": [
+      "파상 공세",
+      "교활함의 방벽"
+    ],
+    "NAME": "교활의 화신"
+  },
+  "Menagerie:AvatarOfVigor": {
+    "MOVES": [
+      "활기의 인내력",
+      "강습",
+      "몸통박치기"
+    ],
+    "NAME": "활력의 화신"
+  },
+  "Menagerie:GrandMagus": {
+    "MOVES": [
+      "정신 충격",
+      "라이트닝 볼트",
+      "어둠 방출",
+      "유황 소용돌이"
+    ],
+    "NAME": "고대의 마법사"
+  },
+  "Menagerie:Suneater": {
+    "MOVES": [
+      "촉수 강타",
+      "빔",
+      "태양 에너지",
+      "태양 플레어"
+    ],
+    "NAME": "태양 포식자"
+  },
+  "Menagerie:Hexasnake": {
+    "MOVES": [
+      "뱀의 눈빛",
+      "독성 이빨",
+      "포박"
+    ],
+    "NAME": "육면뱀"
+  },
+  "Menagerie:YoungSuneater": {
+    "MOVES": [
+      "촉수 휘두르기",
+      "일광욕"
+    ],
+    "NAME": "유체 태양포식자"
+  },
+  "Menagerie:KeeperOfTheSacredPool": {
+    "MOVES": [
+      "태양 호출",
+      "삼연격"
+    ],
+    "NAME": "성스러운 연못의 수호자"
+  }
+}
