@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
-import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import menagerie.Menagerie;
+import menagerie.effects.BlueExplosionSmallEffect;
 import menagerie.powers.FixedTextIntangiblePower;
 import menagerie.powers.ThawingPower;
 
@@ -105,7 +105,7 @@ public class FrozenSoldier extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new FastShakeAction(this, 0.5F, 0.2F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                 AbstractDungeon.actionManager.addToBottom(new RemoveAllBlockAction(this, this));
-                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ExplosionSmallEffect(this.hb.cX, this.hb.cY), 0.1F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new BlueExplosionSmallEffect(this.hb.cX, this.hb.cY), 0.1F));
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(this));
                 break;
         }
