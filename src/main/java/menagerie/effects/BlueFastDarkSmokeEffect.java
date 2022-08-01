@@ -57,8 +57,7 @@ public class BlueFastDarkSmokeEffect {
         this.x += this.vX * Gdx.graphics.getDeltaTime();
         this.rotation += this.vX * 2.0F * Gdx.graphics.getDeltaTime();
         if (this.killed) {
-            Color var10000 = this.color;
-            var10000.a -= this.killSpeed * Gdx.graphics.getDeltaTime();
+            this.color.a -= this.killSpeed * Gdx.graphics.getDeltaTime();
             if (this.color.a < 0.0F) {
                 this.color.a = 0.0F;
             }
