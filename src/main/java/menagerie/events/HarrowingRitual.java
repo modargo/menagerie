@@ -28,7 +28,6 @@ public class HarrowingRitual extends AbstractImageEvent {
     private static final int HEALTH_LOSS = 5;
     private static final int A15_HEALTH_LOSS = 7;
 
-    private final boolean hasCardWithEnoughBlock;
     private final int maxHealth;
     private final int healthLoss;
     private int screenNum = 0;
@@ -36,11 +35,10 @@ public class HarrowingRitual extends AbstractImageEvent {
     public HarrowingRitual() {
         super(NAME, DESCRIPTIONS[0], IMG);
 
-        this.hasCardWithEnoughBlock = this.hasCardWithEnoughBlock();
         this.maxHealth = AbstractDungeon.ascensionLevel >= 15 ? A15_MAX_HEALTH : MAX_HEALTH;
         this.healthLoss = AbstractDungeon.ascensionLevel >= 15 ? A15_HEALTH_LOSS : HEALTH_LOSS;
 
-        if (this.hasCardWithEnoughBlock) {
+        if (this.hasCardWithEnoughBlock()) {
             imageEventText.setDialogOption(MessageFormat.format(OPTIONS[0], this.maxHealth));
         }
         else {
