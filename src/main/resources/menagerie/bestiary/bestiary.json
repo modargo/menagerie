@@ -3557,44 +3557,9 @@
 							"name": "Insight of the Wise",
 							"effects": [
 								{
-									"name": "Party Strength 1",
+									"name": "Strength 2",
 									"color": "BUFF"
-								}
-							]
-						},
-						{
-							"name": "Osmosis",
-							"effects": [
-								{
-									"name": "5",
-									"color": "DAMAGE"
 								},
-								{
-									"name": "Heal 3",
-									"color": "BLOCK"
-								}
-							]
-						}
-					]
-				},
-				{
-					"min_asc": 0,
-					"desc": "Cycles #wSharp #wClaw -> #wInsight #wof #wthe #wWise -> #wOsmosis.",
-					"hp": "(80 HP)",
-					"notes": "Innate #uWisdom #uAura.",
-					"moves": [
-						{
-							"name": "Sharp Claw",
-							"effects": [
-								{
-									"name": "8",
-									"color": "DAMAGE"
-								}
-							]
-						},
-						{
-							"name": "Insight of the Wise",
-							"effects": [
 								{
 									"name": "Party Strength 1",
 									"color": "BUFF"
@@ -3635,6 +3600,10 @@
 							"name": "Insight of the Wise",
 							"effects": [
 								{
+									"name": "Strength 2",
+									"color": "BUFF"
+								},
+								{
 									"name": "Party Strength 1",
 									"color": "BUFF"
 								}
@@ -3674,6 +3643,10 @@
 							"name": "Insight of the Wise",
 							"effects": [
 								{
+									"name": "Strength 2",
+									"color": "BUFF"
+								},
+								{
 									"name": "Party Strength 1",
 									"color": "BUFF"
 								}
@@ -3712,6 +3685,10 @@
 						{
 							"name": "Insight of the Wise",
 							"effects": [
+								{
+									"name": "Strength 4",
+									"color": "BUFF"
+								},
 								{
 									"name": "Party Strength 1",
 									"color": "BUFF"

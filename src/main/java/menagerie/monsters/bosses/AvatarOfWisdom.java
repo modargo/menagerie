@@ -31,6 +31,8 @@ public class AvatarOfWisdom extends CustomMonster
     private static final int SHARP_CLAW_DAMAGE = 8;
     private static final int A4_SHARP_CLAW_DAMAGE = 9;
     private static final int INSIGHT_OF_THE_WISE_STRENGTH = 1;
+    private static final int INSIGHT_OF_THE_WISE_SELF_STRENGTH = 2;
+    private static final int A19_INSIGHT_OF_THE_WISE_SELF_STRENGTH = 4;
     private static final int OSMOSIS_DAMAGE = 5;
     private static final int A4_OSMOSIS_DAMAGE = 6;
     private static final int OSMOSIS_HEAL = 3;
@@ -40,6 +42,7 @@ public class AvatarOfWisdom extends CustomMonster
     private static final int HP = 80;
     private static final int A9_HP = 85;
     private int sharpClawDamage;
+    private int insightOfTheWiseSelfStrength;
     private int osmosisDamage;
     private int osmosisHeal;
     private int wisdomAuraThorns;
@@ -68,9 +71,11 @@ public class AvatarOfWisdom extends CustomMonster
         this.damage.add(new DamageInfo(this, this.osmosisDamage));
 
         if (AbstractDungeon.ascensionLevel >= 19) {
+            this.insightOfTheWiseSelfStrength = A19_INSIGHT_OF_THE_WISE_SELF_STRENGTH;
             this.wisdomAuraThorns = A19_WISDOM_AURA_THORNS;
             this.osmosisHeal = A19_OSMOSIS_HEAL;
         } else {
+            this.insightOfTheWiseSelfStrength = INSIGHT_OF_THE_WISE_SELF_STRENGTH;
             this.wisdomAuraThorns = WISDOM_AURA_THORNS;
             this.osmosisHeal = OSMOSIS_HEAL;
         }
@@ -100,7 +105,8 @@ public class AvatarOfWisdom extends CustomMonster
             case INSIGHT_OF_THE_WISE_BUFF:
                 for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
                     if (m == this || !m.isDying) {
-                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, INSIGHT_OF_THE_WISE_STRENGTH), INSIGHT_OF_THE_WISE_STRENGTH));
+                        int strength = m == this ? this.insightOfTheWiseSelfStrength : INSIGHT_OF_THE_WISE_STRENGTH;
+                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, strength)));
                     }
                 }
                 break;
