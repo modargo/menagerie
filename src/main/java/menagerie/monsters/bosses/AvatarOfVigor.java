@@ -32,11 +32,11 @@ public class AvatarOfVigor extends CustomMonster
     private static final int A9_ENDURANCE_OF_THE_VIGOROUS_BLOCK = 0;
     private static final int ENDURANCE_OF_THE_VIGOROUS_PLATED_ARMOR = 1;
     private static final int A19_ENDURANCE_OF_THE_VIGOROUS_PLATED_ARMOR = 2;
-    private static final int ASSAULT_DAMAGE = 4;
-    private static final int A4_ASSAULT_DAMAGE = 5;
+    private static final int ASSAULT_DAMAGE = 5;
+    private static final int A4_ASSAULT_DAMAGE = 6;
     private static final int ASSAULT_HITS = 2;
-    private static final int BODY_SLAM_DAMAGE = 12;
-    private static final int A4_BODY_SLAM_DAMAGE = 14;
+    private static final int BODY_SLAM_DAMAGE = 13;
+    private static final int A4_BODY_SLAM_DAMAGE = 15;
     private static final int VIGOR_AURA_VULNERABLE = 2;
     private static final int A19_VIGOR_AURA_VULNERABLE = 3;
     private static final int HP = 80;

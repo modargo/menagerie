@@ -3301,7 +3301,7 @@
 							"name": "Assault",
 							"effects": [
 								{
-									"name": "4x2",
+									"name": "5x2",
 									"color": "DAMAGE"
 								}
 							]
@@ -3310,7 +3310,7 @@
 							"name": "Body Slam",
 							"effects": [
 								{
-									"name": "12",
+									"name": "13",
 									"color": "DAMAGE"
 								}
 							]
@@ -3336,7 +3336,7 @@
 							"name": "Assault",
 							"effects": [
 								{
-									"name": "5x2",
+									"name": "6x2",
 									"color": "DAMAGE"
 								}
 							]
@@ -3345,7 +3345,7 @@
 							"name": "Body Slam",
 							"effects": [
 								{
-									"name": "14",
+									"name": "15",
 									"color": "DAMAGE"
 								}
 							]
@@ -3371,7 +3371,7 @@
 							"name": "Assault",
 							"effects": [
 								{
-									"name": "5x2",
+									"name": "6x2",
 									"color": "DAMAGE"
 								}
 							]
@@ -3380,7 +3380,7 @@
 							"name": "Body Slam",
 							"effects": [
 								{
-									"name": "14",
+									"name": "15",
 									"color": "DAMAGE"
 								}
 							]
@@ -3406,7 +3406,7 @@
 							"name": "Assault",
 							"effects": [
 								{
-									"name": "5x2",
+									"name": "6x2",
 									"color": "DAMAGE"
 								}
 							]
@@ -3415,7 +3415,7 @@
 							"name": "Body Slam",
 							"effects": [
 								{
-									"name": "14",
+									"name": "15",
 									"color": "DAMAGE"
 								}
 							]
