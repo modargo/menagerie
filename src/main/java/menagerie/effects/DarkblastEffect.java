@@ -13,8 +13,8 @@ import com.megacrit.cardcrawl.vfx.CollectorStakeEffect;
 
 public class DarkblastEffect extends AbstractGameEffect {
     private static final int COUNT = 4;
-    private float x;
-    private float y;
+    private final float x;
+    private final float y;
     private int count;
     private float stakeTimer = 0.0F;
 

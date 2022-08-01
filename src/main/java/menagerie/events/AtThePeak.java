@@ -23,8 +23,8 @@ public class AtThePeak extends AbstractImageEvent {
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
 
-    private AbstractRelic relic;
-    private AbstractCard curse;
+    private final AbstractRelic relic;
+    private final AbstractCard curse;
     private int screenNum = 0;
 
     public AtThePeak() {

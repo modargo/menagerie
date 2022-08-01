@@ -22,8 +22,8 @@ public class BigGameHunter extends AbstractImageEvent {
     private static final float MAX_HEALTH_LOSS_PERCENT = 0.08f;
     private static final float A15_MAX_HEALTH_LOSS_PERCENT = 0.1f;
 
-    private int maxHealthLoss;
-    private AbstractRelic relic;
+    private final int maxHealthLoss;
+    private final AbstractRelic relic;
     private int screenNum = 0;
 
     public BigGameHunter() {

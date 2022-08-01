@@ -23,7 +23,7 @@ public class GrandMagusTower extends Colosseum {
     public static final String IMG = Menagerie.eventImage(ID);
     private static final String ENCOUNTER = GrandMagus.ID;
 
-    private AbstractRelic relic;
+    private final AbstractRelic relic;
     private int screenNum = 0;
 
     public GrandMagusTower() {

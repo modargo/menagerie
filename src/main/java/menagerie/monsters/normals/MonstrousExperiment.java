@@ -47,7 +47,7 @@ public class MonstrousExperiment extends CustomMonster
     private int thrashDamage;
     private int degenerateBlock;
     private int degenerateHealthLoss;
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public MonstrousExperiment() {
         this(0.0f, 0.0f);

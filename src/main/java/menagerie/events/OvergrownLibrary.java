@@ -28,8 +28,8 @@ public class OvergrownLibrary extends AbstractImageEvent {
     private static final int MAX_HEALTH_LOSS_FLOOR = 3;
     private static final int A15_MAX_HEALTH_LOSS_FLOOR = 4;
 
-    private int maxHealthLoss;
-    private AbstractCard curse;
+    private final int maxHealthLoss;
+    private final AbstractCard curse;
     private int screenNum = 0;
 
     public OvergrownLibrary() {

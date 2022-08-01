@@ -28,10 +28,10 @@ public class MageAndMonster extends AbstractImageEvent {
     private static final int GOLD = 15;
     private static final int A15_GOLD = 20;
 
-    private int healthLoss;
-    private int gold;
-    private AbstractCard mageCard;
-    private AbstractCard monsterCard;
+    private final int healthLoss;
+    private final int gold;
+    private final AbstractCard mageCard;
+    private final AbstractCard monsterCard;
     private int screenNum = 0;
 
     public MageAndMonster() {

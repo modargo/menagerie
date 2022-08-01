@@ -24,8 +24,8 @@ public class LunarGift extends AbstractImageEvent {
     private static final int HEALTH_LOSS = 8;
     private static final int A15_HEALTH_LOSS = 11;
 
-    private int healthLoss;
-    private AbstractRelic relic;
+    private final int healthLoss;
+    private final AbstractRelic relic;
     private int screenNum = 0;
 
     public LunarGift() {

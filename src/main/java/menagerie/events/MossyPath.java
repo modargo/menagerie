@@ -25,8 +25,8 @@ public class MossyPath extends Colosseum {
     private static final float A15_HEAL_PERCENT = 0.25f;
     private static final String ENCOUNTER = Encounters.MOSSY_WILDLIFE;
 
-    private int healAmount;
-    private AbstractCard curse;
+    private final int healAmount;
+    private final AbstractCard curse;
     private int screenNum = 0;
 
     public MossyPath() {

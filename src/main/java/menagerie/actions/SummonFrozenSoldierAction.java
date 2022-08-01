@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import menagerie.monsters.elites.FrozenSoldier;
 
 public class SummonFrozenSoldierAction extends AbstractGameAction {
-    private AbstractMonster m;
+    private final AbstractMonster m;
 
     public SummonFrozenSoldierAction(float x, float y, boolean firstTurn, AbstractMonster[] minions, int slot) {
         this.actionType = ActionType.SPECIAL;

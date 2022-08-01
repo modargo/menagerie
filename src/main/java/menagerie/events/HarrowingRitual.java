@@ -28,9 +28,9 @@ public class HarrowingRitual extends AbstractImageEvent {
     private static final int HEALTH_LOSS = 5;
     private static final int A15_HEALTH_LOSS = 7;
 
-    private boolean hasCardWithEnoughBlock;
-    private int maxHealth;
-    private int healthLoss;
+    private final boolean hasCardWithEnoughBlock;
+    private final int maxHealth;
+    private final int healthLoss;
     private int screenNum = 0;
 
     public HarrowingRitual() {

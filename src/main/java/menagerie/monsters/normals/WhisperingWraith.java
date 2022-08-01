@@ -44,7 +44,7 @@ public class WhisperingWraith extends CustomMonster
     private int fadeAwayDamage;
     private int ghostlyTouchDamage;
     private int absorbLifeStrength;
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public WhisperingWraith() {
         this(0.0f, 0.0f);

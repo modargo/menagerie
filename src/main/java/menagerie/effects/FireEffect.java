@@ -10,9 +10,9 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.RedFireballEffect;
 
 public class FireEffect extends AbstractGameEffect {
-    private float x;
-    private float y;
-    private int intensity;
+    private final float x;
+    private final float y;
+    private final int intensity;
 
     public FireEffect(float x, float y, int intensity) {
         this.x = x;

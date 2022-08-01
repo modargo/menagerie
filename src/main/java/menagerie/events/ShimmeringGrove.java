@@ -29,10 +29,10 @@ public class ShimmeringGrove extends AbstractImageEvent {
     private static final float MAX_HEALTH_LOSS_PERCENT = 0.03F;
     private static final int A15_MAX_HEALTH_LOSS_ADDITION = 1;
 
-    private int maxHealthLoss;
-    private AbstractCard card;
-    private AbstractRelic relic;
-    private boolean hasBeastSpirit;
+    private final int maxHealthLoss;
+    private final AbstractCard card;
+    private final AbstractRelic relic;
+    private final boolean hasBeastSpirit;
     private int screenNum = 0;
 
     public ShimmeringGrove() {

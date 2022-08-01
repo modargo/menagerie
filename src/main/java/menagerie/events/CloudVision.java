@@ -28,8 +28,8 @@ public class CloudVision extends AbstractImageEvent {
     private static final int GOLD = 20;
     private static final int A15_GOLD = 15;
 
-    private int maxHealth;
-    private int gold;
+    private final int maxHealth;
+    private final int gold;
     private int screenNum = 0;
     private boolean pickCard = false;
     private boolean remove = false;

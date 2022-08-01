@@ -30,7 +30,7 @@ public class StasisChamber extends Colosseum {
     private static final String HallownestActId = "Hallownest:Greenpath";
 
     private int screenNum = 0;
-    private String actID;
+    private final String actID;
 
     public StasisChamber() {
         super();

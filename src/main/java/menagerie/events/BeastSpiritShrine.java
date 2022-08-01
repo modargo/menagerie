@@ -24,9 +24,9 @@ public class BeastSpiritShrine extends AbstractImageEvent {
     private static final int MAX_HEALTH_LOSS = 3;
     private static final int A15_MAX_HEALTH_LOSS = 5;
 
-    private int maxHealthLoss;
-    private AbstractCard card;
-    private boolean hasPrismaticShard;
+    private final int maxHealthLoss;
+    private final AbstractCard card;
+    private final boolean hasPrismaticShard;
     private int screenNum = 0;
 
     public BeastSpiritShrine() {

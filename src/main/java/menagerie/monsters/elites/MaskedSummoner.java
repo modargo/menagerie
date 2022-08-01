@@ -50,7 +50,7 @@ public class MaskedSummoner extends CustomMonster
     private int silentSpearDamage;
     private int silentSpearStatuses;
     private int startingSummons;
-    private AbstractMonster[] activeMinions = new AbstractMonster[5];
+    private final AbstractMonster[] activeMinions = new AbstractMonster[5];
 
     public MaskedSummoner() {
         this(0.0f, 0.0f);

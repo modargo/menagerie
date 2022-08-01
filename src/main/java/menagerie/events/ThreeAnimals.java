@@ -27,7 +27,7 @@ public class ThreeAnimals extends AbstractImageEvent {
     private static final float HEAL_PERCENT = 0.25f;
     private static final float A15_HEAL_PERCENT = 0.20f;
 
-    private int healAmount;
+    private final int healAmount;
     private int screenNum = 0;
 
     public ThreeAnimals() {

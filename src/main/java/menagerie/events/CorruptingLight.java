@@ -23,9 +23,9 @@ public class CorruptingLight extends AbstractImageEvent {
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = Menagerie.eventImage(ID);
-    private static int UPGRADES = 2;
+    private static final int UPGRADES = 2;
 
-    private AbstractRelic relic;
+    private final AbstractRelic relic;
     private int screenNum = 0;
 
     public CorruptingLight() {

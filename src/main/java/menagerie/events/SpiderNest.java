@@ -22,8 +22,8 @@ public class SpiderNest extends AbstractImageEvent {
     private static final int GOLD = 225;
     private static final int A15_GOLD = 200;
 
-    private int gold;
-    private AbstractCard curse;
+    private final int gold;
+    private final AbstractCard curse;
     private int screenNum = 0;
 
     public SpiderNest() {

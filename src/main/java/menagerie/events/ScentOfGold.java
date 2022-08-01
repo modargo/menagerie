@@ -25,8 +25,8 @@ public class ScentOfGold extends AbstractImageEvent {
     private static final int HEALTH_LOSS_PERCENT = 15;
     private static final int A15_HEALTH_LOSS_PERCENT = 20;
 
-    private int healthLoss;
-    private AbstractRelic relic;
+    private final int healthLoss;
+    private final AbstractRelic relic;
     private int screenNum = 0;
 
     public ScentOfGold() {

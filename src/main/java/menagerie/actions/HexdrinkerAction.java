@@ -18,14 +18,14 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import menagerie.cards.spells.Hexdrinker;
 
 public class HexdrinkerAction extends AbstractGameAction {
-    private boolean freeToPlayOnce;
-    private int damage;
-    private int block;
-    private boolean upgraded;
-    private AbstractPlayer p;
-    private AbstractMonster m;
-    private DamageType damageTypeForTurn;
-    private int energyOnUse;
+    private final boolean freeToPlayOnce;
+    private final int damage;
+    private final int block;
+    private final boolean upgraded;
+    private final AbstractPlayer p;
+    private final AbstractMonster m;
+    private final DamageType damageTypeForTurn;
+    private final int energyOnUse;
 
     public HexdrinkerAction(AbstractPlayer p, AbstractMonster m, int damage, int block, boolean upgraded, DamageType damageTypeForTurn, boolean freeToPlayOnce, int energyOnUse) {
         this.p = p;

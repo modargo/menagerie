@@ -19,9 +19,9 @@ public class SquabblingHeadsPower extends AbstractPower {
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    private static int SWITCH_THRESHOLD = 3;
-    private static int MALLEABLE_AMOUNT = 2;
-    private static int SERPENTS_GAZE_AMOUNT = 1;
+    private final static int SWITCH_THRESHOLD = 3;
+    private final static int MALLEABLE_AMOUNT = 2;
+    private final static int SERPENTS_GAZE_AMOUNT = 1;
     private boolean lionActive;
     private boolean goatActive;
     private boolean snakeActive;

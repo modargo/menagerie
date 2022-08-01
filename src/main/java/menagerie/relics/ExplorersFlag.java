@@ -22,7 +22,7 @@ public class ExplorersFlag extends CustomRelic {
     public static final String ID = "Menagerie:ExplorersFlag";
     private static final Texture IMG = TextureLoader.getTexture(Menagerie.relicImage(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(Menagerie.relicOutlineImage(ID));
-    private static int HEAL_AMOUNT = 6;
+    private static final int HEAL_AMOUNT = 6;
 
     private static final Map<String, Integer> stats = new HashMap<>();
     private static final String HEAL_STAT = "heal";

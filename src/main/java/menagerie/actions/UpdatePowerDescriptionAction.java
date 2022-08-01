@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class UpdatePowerDescriptionAction extends AbstractGameAction {
-    private AbstractPower power;
+    private final AbstractPower power;
 
     public UpdatePowerDescriptionAction(AbstractPower power) {
         this.power = power;
