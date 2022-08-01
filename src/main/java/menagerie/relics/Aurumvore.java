@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import menagerie.Menagerie;
 import menagerie.util.TextureLoader;
 
-import java.text.DecimalFormat;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
