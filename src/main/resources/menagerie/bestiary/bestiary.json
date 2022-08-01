@@ -2005,7 +2005,7 @@
 					"min_asc": 17,
 					"desc": "Repeats #wLeaf #wBlade.",
 					"hp": "(12 - 14 HP)",
-					"notes": "Innate #uLeaf #uSpores 2.",
+					"notes": "Innate #uLeaf #uSpores 2, #uTemporary #uStrength 1.",
 					"moves": [
 						{
 							"name": "Leaf Blade",
