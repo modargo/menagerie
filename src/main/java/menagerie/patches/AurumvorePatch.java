@@ -19,10 +19,12 @@ public class AurumvorePatch {
 
     @SpireInsertPatch(locator = AurumvorePatch.Locator.class)
     public static void ApplyAurumvore(AbstractPlayer __instance, @ByRef int[] amount) {
-        if (AbstractDungeon.player.hasRelic(Aurumvore.ID)) {
+        Aurumvore aurumvore = (Aurumvore)AbstractDungeon.player.getRelic(Aurumvore.ID);
+        if (aurumvore != null) {
             int goldEaten = (amount[0] + 1) / 2;
             amount[0] -= goldEaten;
-            AbstractDungeon.player.getRelic(Aurumvore.ID).counter += goldEaten;
+            Aurumvore.incrementGoldStat(goldEaten);
+            aurumvore.counter += goldEaten;
             logger.info("Aurumvore ate " + goldEaten + " gold");
         }
     }
