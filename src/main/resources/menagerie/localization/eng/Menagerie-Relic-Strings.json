@@ -4,7 +4,7 @@
     "FLAVOR": "A knife used for skinning after a successful hunt, sharp-edged and hungry.",
     "DESCRIPTIONS": [
       "When you kill a non-minion normal enemy, gain #b5 gold.",
-      "Gold earned: #b{0}."
+      "Gold earned: {0}"
     ]
   },
   "Menagerie:ShiftingBlessing": {
@@ -19,7 +19,7 @@
     "FLAVOR": "What does it do with the gold it eats?",
     "DESCRIPTIONS": [
       "Eats half your current gold and half of gold you gain. For every #b{0} gold eaten, start each combat with #b1 #yStrength.",
-      "Gold eaten: #b{0}."
+      "Gold eaten: {0}"
     ]
   },
   "Menagerie:GrandMagusSpellbook": {
@@ -34,8 +34,8 @@
     "FLAVOR": "It's growing larger.",
     "DESCRIPTIONS": [
       "At the start of the second turn and every #b{0} turns thereafter, gain {1} #yConstricted.",
-      "Constricted applied: #b{0}.",
-      " NL Per turn: #b{0} NL Per combat: #b{1}"
+      "Constricted applied: {0}",
+      " NL Per turn: {0} NL Per combat: {1}"
     ]
   },
   "Menagerie:GhostlyEgg": {
@@ -50,7 +50,7 @@
     "FLAVOR": "Always looking for the next frontier.",
     "DESCRIPTIONS": [
       "Whenever you enter a #y? room, heal #b{0} HP.",
-      "HP healed: #b{0}."
+      "HP healed: {0}"
     ]
   }
 }
