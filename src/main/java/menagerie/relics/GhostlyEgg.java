@@ -22,8 +22,10 @@ public class GhostlyEgg extends CustomRelic {
     @Override
     public void onEquip() {
         for (RewardItem reward : AbstractDungeon.combatRewardScreen.rewards) {
-            for (AbstractCard c : reward.cards) {
-                this.onPreviewObtainCard(c);
+            if (reward.cards != null) {
+                for (AbstractCard c : reward.cards) {
+                    this.onPreviewObtainCard(c);
+                }
             }
         }
     }
