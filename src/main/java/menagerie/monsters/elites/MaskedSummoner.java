@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import menagerie.Menagerie;
 import menagerie.actions.SummonFrozenSoldierAction;
+import menagerie.effects.BlueExplosionSmallEffect;
 
 public class MaskedSummoner extends CustomMonster
 {
@@ -230,7 +231,7 @@ public class MaskedSummoner extends CustomMonster
         super.die();
         for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (m.id.equals(FrozenSoldier.ID) && !m.isDying) {
-                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ExplosionSmallEffect(m.hb.cX, m.hb.cY), 0.1F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new BlueExplosionSmallEffect(m.hb.cX, m.hb.cY), 0.1F));
                 AbstractDungeon.actionManager.addToBottom(new SuicideAction(m));
             }
         }
