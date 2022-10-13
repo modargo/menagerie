@@ -28,8 +28,8 @@ public class StygianBoar extends CustomMonster
     private static final int TUSK_SLASH_DAMAGE = 1;
     private static final int A2_TUSK_SLASH_DAMAGE = 2;
     private static final int TUSK_SLASH_HITS = 2;
-    private static final int BREATHE_FIRE_DAMAGE = 6;
-    private static final int A2_BREATHE_FIRE_DAMAGE = 7;
+    private static final int BREATHE_FIRE_DAMAGE = 7;
+    private static final int A2_BREATHE_FIRE_DAMAGE = 8;
     private static final int ENRAGING_CHARGE_DAMAGE = 4;
     private static final int A2_ENRAGING_CHARGE_DAMAGE = 5;
     private static final int HP_MIN = 41;
