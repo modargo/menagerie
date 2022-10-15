@@ -239,7 +239,7 @@
 							"name": "Fade Away",
 							"effects": [
 								{
-									"name": "10",
+									"name": "11",
 									"color": "DAMAGE"
 								},
 								{
@@ -252,7 +252,7 @@
 							"name": "Ghostly Touch",
 							"effects": [
 								{
-									"name": "6",
+									"name": "7",
 									"color": "DAMAGE"
 								}
 							]
@@ -277,7 +277,7 @@
 							"name": "Fade Away",
 							"effects": [
 								{
-									"name": "11",
+									"name": "12",
 									"color": "DAMAGE"
 								},
 								{
@@ -290,7 +290,7 @@
 							"name": "Ghostly Touch",
 							"effects": [
 								{
-									"name": "7",
+									"name": "8",
 									"color": "DAMAGE"
 								}
 							]
@@ -315,7 +315,7 @@
 							"name": "Fade Away",
 							"effects": [
 								{
-									"name": "11",
+									"name": "12",
 									"color": "DAMAGE"
 								},
 								{
@@ -328,7 +328,7 @@
 							"name": "Ghostly Touch",
 							"effects": [
 								{
-									"name": "7",
+									"name": "8",
 									"color": "DAMAGE"
 								}
 							]
@@ -353,7 +353,7 @@
 							"name": "Fade Away",
 							"effects": [
 								{
-									"name": "11",
+									"name": "12",
 									"color": "DAMAGE"
 								},
 								{
@@ -366,7 +366,7 @@
 							"name": "Ghostly Touch",
 							"effects": [
 								{
-									"name": "7",
+									"name": "8",
 									"color": "DAMAGE"
 								}
 							]
@@ -419,7 +419,7 @@
 							"name": "Breathe Fire",
 							"effects": [
 								{
-									"name": "6",
+									"name": "7",
 									"color": "DAMAGE"
 								}
 							]
@@ -457,7 +457,7 @@
 							"name": "Breathe Fire",
 							"effects": [
 								{
-									"name": "7",
+									"name": "8",
 									"color": "DAMAGE"
 								}
 							]
@@ -495,7 +495,7 @@
 							"name": "Breathe Fire",
 							"effects": [
 								{
-									"name": "7",
+									"name": "8",
 									"color": "DAMAGE"
 								}
 							]
@@ -521,7 +521,7 @@
 							"name": "Breathe Fire",
 							"effects": [
 								{
-									"name": "7",
+									"name": "8",
 									"color": "DAMAGE"
 								}
 							]
