@@ -23,10 +23,10 @@ public class SilkyRabbit extends CustomMonster
     private boolean firstMove = true;
     private static final byte BITE_ATTACK = 1;
     private static final byte EAR_SWAT_ATTACK = 2;
-    private static final int BITE_DAMAGE = 5;
-    private static final int A2_BITE_DAMAGE = 6;
-    private static final int EAR_SWAT_DAMAGE = 2;
-    private static final int A2_EAR_SWAT_DAMAGE = 3;
+    private static final int BITE_DAMAGE = 6;
+    private static final int A2_BITE_DAMAGE = 7;
+    private static final int EAR_SWAT_DAMAGE = 3;
+    private static final int A2_EAR_SWAT_DAMAGE = 4;
     private static final int EAR_SWAT_WEAK = 1;
     private static final int A17_EAR_SWAT_WEAK = 2;
     private static final int HP_MIN = 21;

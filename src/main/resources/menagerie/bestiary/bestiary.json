@@ -543,7 +543,7 @@
 							"name": "Bite",
 							"effects": [
 								{
-									"name": "5",
+									"name": "6",
 									"color": "DAMAGE"
 								}
 							]
@@ -552,7 +552,7 @@
 							"name": "Ear Swat",
 							"effects": [
 								{
-									"name": "2",
+									"name": "3",
 									"color": "DAMAGE"
 								},
 								{
@@ -572,7 +572,7 @@
 							"name": "Bite",
 							"effects": [
 								{
-									"name": "6",
+									"name": "7",
 									"color": "DAMAGE"
 								}
 							]
@@ -581,7 +581,7 @@
 							"name": "Ear Swat",
 							"effects": [
 								{
-									"name": "3",
+									"name": "4",
 									"color": "DAMAGE"
 								},
 								{
@@ -601,7 +601,7 @@
 							"name": "Bite",
 							"effects": [
 								{
-									"name": "6",
+									"name": "7",
 									"color": "DAMAGE"
 								}
 							]
@@ -610,7 +610,7 @@
 							"name": "Ear Swat",
 							"effects": [
 								{
-									"name": "3",
+									"name": "4",
 									"color": "DAMAGE"
 								},
 								{
@@ -630,7 +630,7 @@
 							"name": "Bite",
 							"effects": [
 								{
-									"name": "6",
+									"name": "7",
 									"color": "DAMAGE"
 								}
 							]
@@ -639,7 +639,7 @@
 							"name": "Ear Swat",
 							"effects": [
 								{
-									"name": "3",
+									"name": "4",
 									"color": "DAMAGE"
 								},
 								{
