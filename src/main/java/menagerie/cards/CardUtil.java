@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 import menagerie.cards.spells.*;
+import menagerie.util.CollectionsUtil;
 
 import java.util.*;
 
@@ -106,7 +107,7 @@ public class CardUtil {
         //existing and historical runs don't break
         list.removeIf(c -> c.cardID.equals(RelicOfProgenitus.ID));
         list.removeIf(c -> c.cardID.equals(Skullclamp.ID));
-        Collections.shuffle(list, random.random);
+        CollectionsUtil.shuffle(list, random);
         return new ArrayList<>(list);
     }
 
