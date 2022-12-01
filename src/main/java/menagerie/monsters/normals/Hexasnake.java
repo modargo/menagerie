@@ -29,13 +29,13 @@ public class Hexasnake extends CustomMonster {
     private static final byte CONSTRICT_ATTACK = 3;
     private static final int SERPENTS_GAZE_AMOUNT = 2;
     private static final int A17_SERPENTS_GAZE_AMOUNT = 3;
-    private static final int VENOMOUS_BITE_DAMAGE = 2;
-    private static final int A2_VENOMOUS_BITE_DAMAGE = 2;
+    private static final int VENOMOUS_BITE_DAMAGE = 3;
+    private static final int A2_VENOMOUS_BITE_DAMAGE = 4;
     private static final int VENOMOUS_BITE_HITS = 6;
     private static final int VENOMOUS_BITE_SLIMES = 1;
     private static final int A17_VENOMOUS_BITE_SLIMES = 1;
-    private static final int CONSTRICT_DAMAGE = 6;
-    private static final int A2_CONSTRICT_DAMAGE = 7;
+    private static final int CONSTRICT_DAMAGE = 7;
+    private static final int A2_CONSTRICT_DAMAGE = 8;
     private static final int CONSTRICT_AMOUNT = 2;
     private static final int A17_CONSTRICT_AMOUNT = 3;
     private static final int HP_MIN = 60;
