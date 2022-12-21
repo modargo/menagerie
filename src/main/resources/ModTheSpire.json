@@ -4,7 +4,7 @@
   "author_list": ["modargo"],
   "description": "An alternate act 1 themed around beasts and mages. Once the stronghold of a cabal of mages who experimented with the boundaries of life itself, the Menagerie is now overrun by their twisted creations.",
   "version": "1.5.2",
-  "sts_version": "12-01-2022",
+  "sts_version": "12-18-2022",
   "mts_version": "3.15.0",
   "dependencies": ["basemod", "actlikeit"]
 }
