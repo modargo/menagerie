@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import menagerie.Menagerie;
+import menagerie.powers.FixedTextIntangiblePower;
 
 import java.util.Random;
 
@@ -87,7 +88,7 @@ public class WhisperingWraith extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[this.random.nextInt(DIALOG.length)]));
                 AbstractDungeon.actionManager.addToBottom(new AnimateSlowAttackAction(this));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.NONE));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new IntangiblePower(this, 1)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new FixedTextIntangiblePower(this, 1)));
                 break;
             case GHOSTLY_TOUCH_ATTACK:
                 AbstractDungeon.actionManager.addToBottom(new AnimateFastAttackAction(this));
