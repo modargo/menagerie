@@ -144,7 +144,7 @@ public class Suneater extends CustomMonster
                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this.solarEnergyBlock));
                 break;
             case SOLAR_FLARE:
-                AbstractDungeon.actionManager.addToBottom(new VFXAction(new RoomTintEffect(Color.RED, 0.5F)));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new RoomTintEffect(Color.RED.cpy(), 0.5F)));
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.power.amount * 2), 0.2F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(2), AbstractGameAction.AttackEffect.FIRE));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, this.flareDebuffs, true), FLARE_DEBUFFS));
